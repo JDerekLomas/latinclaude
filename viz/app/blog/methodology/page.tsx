@@ -51,9 +51,45 @@ export default function Methodology() {
             </p>
 
             <div className="bg-amber-900/20 border border-amber-700/50 rounded-lg p-4 my-6">
-              <h4 className="text-amber-400 font-semibold mb-2">Editions vs. Works</h4>
+              <h4 className="text-amber-400 font-semibold mb-2">Editions vs. Works: Our Analysis</h4>
+              <p className="text-slate-300 text-sm mb-3">
+                The USTC counts <em>editions</em> (individual printings), not unique works. A popular text like Cicero&apos;s <em>De Officiis</em> might appear in 500+ editions. To estimate unique works, we analyzed the USTC Latin dataset:
+              </p>
+              <div className="bg-slate-800/50 rounded p-3 my-3">
+                <table className="w-full text-sm">
+                  <tbody className="text-slate-300">
+                    <tr className="border-b border-slate-700">
+                      <td className="py-1">Total Latin editions</td>
+                      <td className="py-1 font-mono text-right">533,307</td>
+                    </tr>
+                    <tr className="border-b border-slate-700">
+                      <td className="py-1">Unique author+title combinations</td>
+                      <td className="py-1 font-mono text-right">~150,000</td>
+                    </tr>
+                    <tr className="border-b border-slate-700">
+                      <td className="py-1">Unique author names</td>
+                      <td className="py-1 font-mono text-right">~52,000</td>
+                    </tr>
+                    <tr>
+                      <td className="py-1">Unique title strings</td>
+                      <td className="py-1 font-mono text-right">~99,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-300 text-sm mb-2">
+                The <strong className="text-white">~150,000 unique author+title pairs</strong> is our best proxy for &ldquo;works,&rdquo; though this still overcounts because:
+              </p>
+              <ul className="text-slate-400 text-xs space-y-1 list-disc list-inside mb-3">
+                <li>Same work with variant titles counts multiple times</li>
+                <li>Spelling/abbreviation differences across editions</li>
+                <li>Anonymous works harder to deduplicate</li>
+              </ul>
               <p className="text-slate-300 text-sm">
-                The USTC counts <em>editions</em>, not unique works. A popular text like Cicero&apos;s <em>De Officiis</em> might appear in 200+ editions. The actual number of unique Latin works is significantly smaller than 533,320, but still numbers in the tens of thousands.
+                <strong className="text-white">Conservative estimate: 80,000&ndash;120,000 unique Latin works</strong> in USTC. This means the average work was reprinted ~5 times, though the distribution is highly skewed&mdash;canonical authors have hundreds of editions while most works have just 1&ndash;2.
+              </p>
+              <p className="text-slate-500 text-xs mt-3">
+                Analysis: Computed from USTC Latin export (December 2024) using author_name + std_title deduplication.
               </p>
             </div>
           </section>
@@ -101,6 +137,13 @@ export default function Methodology() {
             <h3 className="text-xl font-medium text-violet-400 mt-6 mb-3">Digital Libraries</h3>
             <div className="bg-slate-900 border border-slate-700 rounded-lg p-4 my-6">
               <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-left text-slate-400 border-b border-slate-700">
+                    <th className="pb-2">Source</th>
+                    <th className="pb-2">Texts</th>
+                    <th className="pb-2">Notes</th>
+                  </tr>
+                </thead>
                 <tbody className="text-slate-300">
                   <tr className="border-b border-slate-800">
                     <td className="py-2">
@@ -111,8 +154,32 @@ export default function Methodology() {
                     <td className="py-2 font-mono">631</td>
                     <td className="py-2 text-slate-500">Latin works with translations (Scaife Viewer)</td>
                   </tr>
+                  <tr className="border-b border-slate-800">
+                    <td className="py-2">
+                      <a href="https://philological.cal.bham.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">
+                        The Philological Museum
+                      </a>
+                    </td>
+                    <td className="py-2 font-mono">~200</td>
+                    <td className="py-2 text-slate-500">British neo-Latin with translations (Dana Sutton)</td>
+                  </tr>
                 </tbody>
               </table>
+            </div>
+
+            <div className="bg-emerald-900/20 border border-emerald-700/50 rounded-lg p-4 my-6">
+              <h4 className="text-emerald-400 font-semibold mb-2">The Philological Museum</h4>
+              <p className="text-slate-300 text-sm">
+                Dana Sutton&apos;s{" "}
+                <a href="https://philological.cal.bham.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">
+                  Philological Museum
+                </a>
+                {" "}at the University of Birmingham is a major open-access resource. It contains critical editions of ~200 British neo-Latin texts (plays, poems, letters, essays) from the 16th&ndash;17th centuries, most with facing-page English translations. The associated{" "}
+                <a href="https://philological.cal.bham.ac.uk/bibliography/index.htm" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">
+                  Analytic Bibliography
+                </a>
+                {" "}indexes <strong>79,760 neo-Latin texts</strong> freely available online (though most are Latin-only scans without translations).
+              </p>
             </div>
 
             <h3 className="text-xl font-medium text-violet-400 mt-6 mb-3">Renaissance &amp; Neo-Latin</h3>
@@ -341,9 +408,9 @@ export default function Methodology() {
             </div>
 
             <div className="bg-amber-900/20 border border-amber-700/50 rounded-lg p-4 my-6">
-              <h4 className="text-amber-400 font-semibold mb-2">Editions vs. Works</h4>
+              <h4 className="text-amber-400 font-semibold mb-2">Translation Coverage of Unique Works</h4>
               <p className="text-slate-300 text-sm">
-                The USTC counts <em>editions</em> (printings), not unique works. A single work like Erasmus&apos;s <em>Adagia</em> may have 100+ editions. The number of unique Latin <em>works</em> is perhaps 50,000&ndash;100,000, meaning translation coverage of unique works could be 2&ndash;4%. Still, the vast majority of Renaissance Latin literature remains untranslated.
+                Given our estimate of <strong className="text-white">~100,000 unique Latin works</strong> in USTC and <strong className="text-white">~1,500&ndash;2,000 translated works</strong>, translation coverage is approximately <strong className="text-white">1.5&ndash;2%</strong> of unique works. The vast majority of Renaissance Latin literature remains untranslated.
               </p>
             </div>
           </section>
@@ -429,28 +496,43 @@ export default function Methodology() {
                 </thead>
                 <tbody className="text-slate-300">
                   <tr className="border-t border-slate-700">
-                    <td className="p-3">Total Latin editions (USTC)</td>
-                    <td className="p-3 font-mono">533,320</td>
-                    <td className="p-3 text-slate-500">USTC query</td>
+                    <td className="p-3">Total USTC editions (all languages)</td>
+                    <td className="p-3 font-mono">1.65 million</td>
+                    <td className="p-3 text-slate-500">USTC website</td>
                   </tr>
                   <tr className="border-t border-slate-700 bg-slate-900/50">
+                    <td className="p-3">Latin editions (USTC)</td>
+                    <td className="p-3 font-mono">533,307</td>
+                    <td className="p-3 text-slate-500">USTC query</td>
+                  </tr>
+                  <tr className="border-t border-slate-700">
+                    <td className="p-3">Unique author+title pairs (Latin)</td>
+                    <td className="p-3 font-mono">~150,000</td>
+                    <td className="p-3 text-slate-500">Our analysis</td>
+                  </tr>
+                  <tr className="border-t border-slate-700 bg-slate-900/50">
+                    <td className="p-3">Estimated unique Latin works</td>
+                    <td className="p-3 font-mono">~80,000&ndash;120,000</td>
+                    <td className="p-3 text-slate-500">Estimated (dedup)</td>
+                  </tr>
+                  <tr className="border-t border-slate-700">
                     <td className="p-3">Editions with digital scans (all languages)</td>
                     <td className="p-3 font-mono">~450,000 (27%)</td>
                     <td className="p-3 text-slate-500">USTC website</td>
                   </tr>
-                  <tr className="border-t border-slate-700">
+                  <tr className="border-t border-slate-700 bg-slate-900/50">
                     <td className="p-3">High-quality transcriptions (English texts only)</td>
                     <td className="p-3 font-mono">~60,000</td>
                     <td className="p-3 text-slate-500">EEBO-TCP</td>
                   </tr>
-                  <tr className="border-t border-slate-700 bg-slate-900/50">
+                  <tr className="border-t border-slate-700">
                     <td className="p-3">Latin works with English translations</td>
                     <td className="p-3 font-mono">~1,500&ndash;2,000</td>
                     <td className="p-3 text-slate-500">Series counts</td>
                   </tr>
-                  <tr className="border-t border-slate-700">
-                    <td className="p-3">Translation coverage (of editions)</td>
-                    <td className="p-3 font-mono">~0.3%</td>
+                  <tr className="border-t border-slate-700 bg-slate-900/50">
+                    <td className="p-3">Translation coverage (of unique works)</td>
+                    <td className="p-3 font-mono">~1.5&ndash;2%</td>
                     <td className="p-3 text-slate-500">Calculated</td>
                   </tr>
                 </tbody>
@@ -468,6 +550,13 @@ export default function Methodology() {
                   About Page
                 </a>
                 . University of St Andrews.
+              </li>
+              <li>
+                &ldquo;Celebrating 30 years of USTC.&rdquo;{" "}
+                <a href="https://staffnews.wp.st-andrews.ac.uk/2025/10/29/30-years-of-universal-short-title-catalogue/" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">
+                  St Andrews Staff News
+                </a>
+                . October 2025. (1.65 million editions, 7 million copies, 10,000+ institutions)
               </li>
               <li>
                 Perseus Digital Library.{" "}
@@ -524,6 +613,13 @@ export default function Methodology() {
                   Liverpool University Press
                 </a>
                 . 170+ volumes.
+              </li>
+              <li>
+                Sutton, Dana F. (ed.). The Philological Museum.{" "}
+                <a href="https://philological.cal.bham.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">
+                  University of Birmingham
+                </a>
+                . ~200 British neo-Latin texts with translations.
               </li>
             </ul>
           </section>
