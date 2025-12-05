@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const posts = [
   {
+    slug: "methodology",
+    title: "Methodology: How We Estimated Digitization Rates",
+    date: "December 2024",
+    excerpt: "Documenting the sources and methods behind our accessibility estimates. How we derived the 18% digitized, 8% OCR, and 3% translated figures.",
+    tag: "Methods",
+  },
+  {
     slug: "rivers-of-esoteric-life",
     title: "Rivers of Esoteric Life: Mapping the Hermetic Tradition",
     date: "December 2024",

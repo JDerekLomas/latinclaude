@@ -148,7 +148,10 @@ export default function Home() {
               ))}
             </div>
             <p className="text-slate-500 text-sm mt-6 italic">
-              Estimates based on Internet Archive, Google Books, and HathiTrust coverage research
+              Estimates based on Internet Archive, Google Books, and HathiTrust coverage research.{" "}
+              <a href="/blog/methodology" className="text-violet-400 hover:underline">
+                See methodology
+              </a>
             </p>
           </div>
         </section>
