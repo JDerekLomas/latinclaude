@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const posts = [
   {
+    slug: "rivers-of-esoteric-life",
+    title: "Rivers of Esoteric Life: Mapping the Hermetic Tradition",
+    date: "December 2024",
+    excerpt: "Applying Forlong's 'Rivers of Life' methodology to trace how Hermetica, alchemy, Kabbalah, and Rosicrucianism flowed through Renaissance publishing. Draft for discussion.",
+    tag: "Draft",
+  },
+  {
     slug: "why-latin-matters",
     title: "Why Latin Matters: 500,000 Unread Books",
     date: "December 2024",

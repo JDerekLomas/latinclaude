@@ -1,0 +1,2028 @@
+{
+  "rivers": {
+    "hermetica": {
+      "color": "#9b59b6",
+      "description": "Corpus Hermeticum, Egyptian wisdom tradition"
+    },
+    "alchemy": {
+      "color": "#f1c40f",
+      "description": "Transmutation, philosophers stone, laboratory practice"
+    },
+    "mysticism": {
+      "color": "#3498db",
+      "description": "Christian mysticism, contemplative tradition"
+    },
+    "rosicrucianism": {
+      "color": "#e74c3c",
+      "description": "Rosicrucian manifestos and movement"
+    },
+    "kabbalah": {
+      "color": "#2ecc71",
+      "description": "Jewish mysticism, tree of life"
+    },
+    "neoplatonism": {
+      "color": "#1abc9c",
+      "description": "Platonic philosophy, emanation, theurgy"
+    },
+    "magic": {
+      "color": "#8e44ad",
+      "description": "Ceremonial magic, occult philosophy"
+    },
+    "paracelsianism": {
+      "color": "#e67e22",
+      "description": "Paracelsian medicine and philosophy"
+    },
+    "theosophy": {
+      "color": "#34495e",
+      "description": "Jacob Boehme and followers"
+    }
+  },
+  "timeline": {
+    "1469": {
+      "hermetica": 1,
+      "neoplatonism": 1
+    },
+    "1472": {
+      "hermetica": 1
+    },
+    "1473": {
+      "mysticism": 1
+    },
+    "1474": {
+      "hermetica": 2
+    },
+    "1475": {
+      "hermetica": 1,
+      "neoplatonism": 1,
+      "mysticism": 1
+    },
+    "1476": {
+      "mysticism": 1
+    },
+    "1477": {
+      "hermetica": 1
+    },
+    "1478": {
+      "mysticism": 1
+    },
+    "1480": {
+      "hermetica": 2,
+      "mysticism": 2
+    },
+    "1481": {
+      "hermetica": 1
+    },
+    "1482": {
+      "mysticism": 1
+    },
+    "1484": {
+      "hermetica": 2,
+      "mysticism": 1,
+      "neoplatonism": 1
+    },
+    "1485": {
+      "mysticism": 2,
+      "hermetica": 1,
+      "alchemy": 1
+    },
+    "1486": {
+      "mysticism": 1
+    },
+    "1487": {
+      "mysticism": 1
+    },
+    "1488": {
+      "mysticism": 1
+    },
+    "1489": {
+      "hermetica": 2
+    },
+    "1490": {
+      "mysticism": 1,
+      "hermetica": 1
+    },
+    "1491": {
+      "mysticism": 2
+    },
+    "1492": {
+      "mysticism": 1
+    },
+    "1493": {
+      "mysticism": 1,
+      "hermetica": 3,
+      "neoplatonism": 1
+    },
+    "1494": {
+      "mysticism": 3,
+      "hermetica": 2
+    },
+    "1495": {
+      "mysticism": 4
+    },
+    "1496": {
+      "hermetica": 1
+    },
+    "1497": {
+      "hermetica": 3,
+      "neoplatonism": 1,
+      "mysticism": 2
+    },
+    "1498": {
+      "mysticism": 6,
+      "hermetica": 1,
+      "neoplatonism": 1
+    },
+    "1499": {
+      "mysticism": 2
+    },
+    "1500": {
+      "mysticism": 6,
+      "hermetica": 2,
+      "neoplatonism": 1,
+      "alchemy": 1
+    },
+    "1501": {
+      "hermetica": 7,
+      "neoplatonism": 1,
+      "mysticism": 3
+    },
+    "1502": {
+      "hermetica": 8,
+      "mysticism": 11
+    },
+    "1503": {
+      "hermetica": 6,
+      "neoplatonism": 1,
+      "mysticism": 5
+    },
+    "1504": {
+      "mysticism": 5,
+      "hermetica": 3
+    },
+    "1505": {
+      "mysticism": 6,
+      "hermetica": 3
+    },
+    "1506": {
+      "hermetica": 4,
+      "mysticism": 3
+    },
+    "1507": {
+      "hermetica": 5,
+      "neoplatonism": 1,
+      "mysticism": 4
+    },
+    "1508": {
+      "mysticism": 3,
+      "hermetica": 4
+    },
+    "1509": {
+      "alchemy": 1,
+      "hermetica": 5,
+      "mysticism": 2
+    },
+    "1510": {
+      "mysticism": 5,
+      "hermetica": 3,
+      "kabbalah": 1,
+      "neoplatonism": 1
+    },
+    "1511": {
+      "mysticism": 5,
+      "hermetica": 2,
+      "neoplatonism": 1,
+      "alchemy": 1
+    },
+    "1512": {
+      "mysticism": 4,
+      "hermetica": 2,
+      "neoplatonism": 1
+    },
+    "1513": {
+      "mysticism": 5,
+      "hermetica": 9
+    },
+    "1514": {
+      "hermetica": 5,
+      "mysticism": 3
+    },
+    "1515": {
+      "hermetica": 8,
+      "kabbalah": 1,
+      "mysticism": 5
+    },
+    "1516": {
+      "hermetica": 5,
+      "mysticism": 7,
+      "neoplatonism": 2
+    },
+    "1517": {
+      "hermetica": 10,
+      "mysticism": 6
+    },
+    "1518": {
+      "mysticism": 7,
+      "hermetica": 8,
+      "alchemy": 1,
+      "neoplatonism": 2
+    },
+    "1519": {
+      "hermetica": 13,
+      "mysticism": 2
+    },
+    "1520": {
+      "mysticism": 7,
+      "hermetica": 3
+    },
+    "1521": {
+      "hermetica": 9,
+      "mysticism": 4,
+      "neoplatonism": 1
+    },
+    "1522": {
+      "hermetica": 6,
+      "mysticism": 4
+    },
+    "1523": {
+      "hermetica": 5,
+      "mysticism": 6
+    },
+    "1524": {
+      "mysticism": 5,
+      "hermetica": 1
+    },
+    "1525": {
+      "mysticism": 5,
+      "hermetica": 4,
+      "alchemy": 2
+    },
+    "1526": {
+      "mysticism": 6,
+      "alchemy": 2,
+      "hermetica": 1
+    },
+    "1527": {
+      "mysticism": 5,
+      "hermetica": 3
+    },
+    "1528": {
+      "mysticism": 3,
+      "hermetica": 5
+    },
+    "1529": {
+      "alchemy": 2,
+      "hermetica": 5,
+      "mysticism": 5
+    },
+    "1530": {
+      "hermetica": 3,
+      "mysticism": 3
+    },
+    "1531": {
+      "hermetica": 7,
+      "mysticism": 5,
+      "magic": 3,
+      "alchemy": 2
+    },
+    "1532": {
+      "hermetica": 9,
+      "neoplatonism": 3,
+      "alchemy": 2,
+      "mysticism": 2,
+      "magic": 1
+    },
+    "1533": {
+      "mysticism": 6,
+      "hermetica": 5,
+      "neoplatonism": 1,
+      "magic": 4
+    },
+    "1534": {
+      "mysticism": 6,
+      "hermetica": 4,
+      "alchemy": 1,
+      "magic": 1
+    },
+    "1535": {
+      "hermetica": 6,
+      "mysticism": 2,
+      "alchemy": 1,
+      "magic": 1
+    },
+    "1536": {
+      "hermetica": 10,
+      "mysticism": 4,
+      "paracelsianism": 1,
+      "magic": 1
+    },
+    "1537": {
+      "hermetica": 3,
+      "magic": 1
+    },
+    "1538": {
+      "mysticism": 6,
+      "alchemy": 1,
+      "hermetica": 4
+    },
+    "1539": {
+      "hermetica": 8,
+      "magic": 2,
+      "mysticism": 3
+    },
+    "1540": {
+      "hermetica": 3,
+      "neoplatonism": 1,
+      "mysticism": 3
+    },
+    "1541": {
+      "hermetica": 4,
+      "alchemy": 2,
+      "mysticism": 2,
+      "neoplatonism": 1
+    },
+    "1542": {
+      "mysticism": 3,
+      "hermetica": 8,
+      "neoplatonism": 2,
+      "alchemy": 3
+    },
+    "1543": {
+      "hermetica": 5,
+      "alchemy": 1,
+      "mysticism": 1
+    },
+    "1544": {
+      "mysticism": 4,
+      "hermetica": 4,
+      "neoplatonism": 2,
+      "alchemy": 1
+    },
+    "1545": {
+      "hermetica": 6,
+      "mysticism": 3,
+      "alchemy": 1
+    },
+    "1546": {
+      "alchemy": 3,
+      "magic": 1,
+      "hermetica": 8,
+      "mysticism": 1,
+      "neoplatonism": 1
+    },
+    "1547": {
+      "mysticism": 9,
+      "hermetica": 4,
+      "neoplatonism": 1
+    },
+    "1548": {
+      "hermetica": 4,
+      "neoplatonism": 1,
+      "mysticism": 10,
+      "alchemy": 1,
+      "paracelsianism": 1
+    },
+    "1549": {
+      "magic": 1,
+      "hermetica": 7,
+      "neoplatonism": 1,
+      "mysticism": 1,
+      "alchemy": 2
+    },
+    "1550": {
+      "hermetica": 9,
+      "mysticism": 7,
+      "alchemy": 3,
+      "magic": 1
+    },
+    "1551": {
+      "hermetica": 11,
+      "mysticism": 5,
+      "alchemy": 2,
+      "neoplatonism": 1
+    },
+    "1552": {
+      "mysticism": 4,
+      "hermetica": 9,
+      "neoplatonism": 1,
+      "alchemy": 1
+    },
+    "1553": {
+      "hermetica": 8,
+      "neoplatonism": 1,
+      "mysticism": 2,
+      "alchemy": 1
+    },
+    "1554": {
+      "mysticism": 7,
+      "alchemy": 1,
+      "hermetica": 6,
+      "neoplatonism": 1
+    },
+    "1555": {
+      "mysticism": 6,
+      "hermetica": 10
+    },
+    "1556": {
+      "mysticism": 10,
+      "hermetica": 8,
+      "alchemy": 2
+    },
+    "1557": {
+      "mysticism": 10,
+      "alchemy": 7,
+      "hermetica": 10
+    },
+    "1558": {
+      "mysticism": 16,
+      "hermetica": 7,
+      "neoplatonism": 1
+    },
+    "1559": {
+      "hermetica": 5,
+      "neoplatonism": 2,
+      "alchemy": 3,
+      "magic": 1,
+      "mysticism": 3
+    },
+    "1560": {
+      "hermetica": 6,
+      "neoplatonism": 2,
+      "mysticism": 2,
+      "alchemy": 2,
+      "paracelsianism": 1,
+      "kabbalah": 1
+    },
+    "1561": {
+      "hermetica": 10,
+      "neoplatonism": 4,
+      "mysticism": 6,
+      "alchemy": 2
+    },
+    "1562": {
+      "hermetica": 9,
+      "mysticism": 4,
+      "alchemy": 1
+    },
+    "1563": {
+      "hermetica": 6,
+      "mysticism": 2,
+      "paracelsianism": 1,
+      "alchemy": 2
+    },
+    "1564": {
+      "alchemy": 2,
+      "hermetica": 7,
+      "paracelsianism": 1,
+      "mysticism": 1,
+      "rosicrucianism": 1
+    },
+    "1565": {
+      "hermetica": 4,
+      "magic": 1,
+      "paracelsianism": 1,
+      "mysticism": 2
+    },
+    "1566": {
+      "mysticism": 3,
+      "hermetica": 8,
+      "paracelsianism": 2,
+      "alchemy": 3
+    },
+    "1567": {
+      "hermetica": 7,
+      "mysticism": 1,
+      "alchemy": 4,
+      "paracelsianism": 4
+    },
+    "1568": {
+      "alchemy": 2,
+      "paracelsianism": 4,
+      "hermetica": 6,
+      "magic": 1,
+      "neoplatonism": 1
+    },
+    "1569": {
+      "hermetica": 7,
+      "paracelsianism": 3,
+      "mysticism": 1,
+      "magic": 1
+    },
+    "1570": {
+      "alchemy": 2,
+      "hermetica": 10,
+      "paracelsianism": 7,
+      "mysticism": 3,
+      "neoplatonism": 1
+    },
+    "1571": {
+      "hermetica": 2,
+      "paracelsianism": 1,
+      "alchemy": 2,
+      "mysticism": 3
+    },
+    "1572": {
+      "mysticism": 4,
+      "alchemy": 9,
+      "hermetica": 5,
+      "paracelsianism": 2
+    },
+    "1573": {
+      "alchemy": 2,
+      "kabbalah": 1,
+      "hermetica": 1
+    },
+    "1574": {
+      "hermetica": 7,
+      "paracelsianism": 2,
+      "alchemy": 2,
+      "mysticism": 1
+    },
+    "1575": {
+      "hermetica": 6,
+      "mysticism": 2,
+      "alchemy": 3,
+      "magic": 1
+    },
+    "1576": {
+      "mysticism": 4,
+      "hermetica": 4,
+      "alchemy": 2,
+      "neoplatonism": 1
+    },
+    "1577": {
+      "hermetica": 4,
+      "mysticism": 3,
+      "neoplatonism": 1,
+      "magic": 1
+    },
+    "1578": {
+      "hermetica": 7,
+      "paracelsianism": 1,
+      "alchemy": 3,
+      "mysticism": 1
+    },
+    "1579": {
+      "hermetica": 7,
+      "mysticism": 2,
+      "magic": 1,
+      "neoplatonism": 1
+    },
+    "1580": {
+      "hermetica": 2,
+      "mysticism": 2,
+      "neoplatonism": 1
+    },
+    "1581": {
+      "alchemy": 2,
+      "paracelsianism": 1,
+      "hermetica": 4,
+      "mysticism": 3
+    },
+    "1582": {
+      "alchemy": 3,
+      "hermetica": 8,
+      "paracelsianism": 1,
+      "neoplatonism": 1,
+      "mysticism": 1
+    },
+    "1583": {
+      "hermetica": 6,
+      "mysticism": 3,
+      "alchemy": 5,
+      "paracelsianism": 1
+    },
+    "1584": {
+      "hermetica": 8,
+      "paracelsianism": 5,
+      "alchemy": 2,
+      "mysticism": 1
+    },
+    "1585": {
+      "hermetica": 9,
+      "mysticism": 3,
+      "kabbalah": 1,
+      "paracelsianism": 1
+    },
+    "1586": {
+      "hermetica": 5,
+      "mysticism": 9,
+      "alchemy": 1,
+      "paracelsianism": 1
+    },
+    "1587": {
+      "hermetica": 4,
+      "mysticism": 2,
+      "alchemy": 1
+    },
+    "1588": {
+      "hermetica": 6,
+      "mysticism": 2,
+      "alchemy": 1,
+      "neoplatonism": 1
+    },
+    "1589": {
+      "hermetica": 5,
+      "magic": 1,
+      "mysticism": 2,
+      "kabbalah": 1,
+      "paracelsianism": 1
+    },
+    "1590": {
+      "alchemy": 2,
+      "hermetica": 1,
+      "mysticism": 2
+    },
+    "1591": {
+      "hermetica": 8,
+      "mysticism": 2,
+      "neoplatonism": 1,
+      "alchemy": 1
+    },
+    "1592": {
+      "mysticism": 4,
+      "hermetica": 1,
+      "alchemy": 2
+    },
+    "1593": {
+      "alchemy": 6,
+      "mysticism": 2,
+      "hermetica": 6,
+      "magic": 1
+    },
+    "1594": {
+      "alchemy": 3,
+      "hermetica": 2,
+      "neoplatonism": 1,
+      "paracelsianism": 1
+    },
+    "1595": {
+      "mysticism": 3,
+      "hermetica": 4,
+      "alchemy": 1,
+      "neoplatonism": 1
+    },
+    "1596": {
+      "mysticism": 11,
+      "alchemy": 3,
+      "hermetica": 3
+    },
+    "1597": {
+      "alchemy": 4,
+      "mysticism": 3,
+      "hermetica": 4
+    },
+    "1598": {
+      "hermetica": 4,
+      "alchemy": 5
+    },
+    "1599": {
+      "hermetica": 6,
+      "alchemy": 8,
+      "mysticism": 3,
+      "paracelsianism": 2,
+      "magic": 1
+    },
+    "1600": {
+      "hermetica": 4,
+      "mysticism": 3,
+      "alchemy": 5,
+      "magic": 1,
+      "rosicrucianism": 1
+    },
+    "1601": {
+      "magic": 1
+    },
+    "1602": {
+      "alchemy": 6,
+      "hermetica": 1
+    },
+    "1603": {
+      "alchemy": 10,
+      "magic": 4,
+      "hermetica": 6,
+      "paracelsianism": 1,
+      "mysticism": 3
+    },
+    "1604": {
+      "alchemy": 8,
+      "hermetica": 5,
+      "mysticism": 1
+    },
+    "1605": {
+      "mysticism": 2,
+      "alchemy": 9,
+      "hermetica": 5,
+      "magic": 1
+    },
+    "1606": {
+      "rosicrucianism": 1,
+      "alchemy": 5,
+      "kabbalah": 1,
+      "hermetica": 6,
+      "mysticism": 1,
+      "magic": 1
+    },
+    "1607": {
+      "hermetica": 4,
+      "neoplatonism": 1,
+      "mysticism": 4,
+      "alchemy": 3,
+      "magic": 1
+    },
+    "1608": {
+      "mysticism": 4,
+      "alchemy": 15,
+      "hermetica": 4,
+      "paracelsianism": 2
+    },
+    "1609": {
+      "rosicrucianism": 1,
+      "mysticism": 2,
+      "alchemy": 8,
+      "hermetica": 7,
+      "magic": 3
+    },
+    "1610": {
+      "hermetica": 2,
+      "neoplatonism": 1,
+      "alchemy": 9,
+      "magic": 1,
+      "mysticism": 2,
+      "rosicrucianism": 1
+    },
+    "1611": {
+      "hermetica": 5,
+      "alchemy": 11,
+      "mysticism": 4,
+      "magic": 2
+    },
+    "1612": {
+      "rosicrucianism": 1,
+      "hermetica": 6,
+      "alchemy": 11,
+      "mysticism": 2,
+      "kabbalah": 2,
+      "magic": 2
+    },
+    "1613": {
+      "alchemy": 8,
+      "mysticism": 8,
+      "hermetica": 7,
+      "rosicrucianism": 4,
+      "magic": 1,
+      "theosophy": 1
+    },
+    "1614": {
+      "hermetica": 4,
+      "alchemy": 6,
+      "paracelsianism": 1,
+      "mysticism": 9,
+      "magic": 1,
+      "rosicrucianism": 7
+    },
+    "1615": {
+      "rosicrucianism": 21,
+      "mysticism": 3,
+      "hermetica": 8,
+      "kabbalah": 1,
+      "alchemy": 5,
+      "magic": 2
+    },
+    "1616": {
+      "alchemy": 8,
+      "rosicrucianism": 28,
+      "mysticism": 4,
+      "hermetica": 4,
+      "theosophy": 1,
+      "paracelsianism": 1,
+      "kabbalah": 2,
+      "neoplatonism": 1
+    },
+    "1617": {
+      "rosicrucianism": 28,
+      "mysticism": 4,
+      "alchemy": 8,
+      "hermetica": 6
+    },
+    "1618": {
+      "rosicrucianism": 27,
+      "mysticism": 19,
+      "alchemy": 14,
+      "hermetica": 8,
+      "paracelsianism": 3,
+      "magic": 1
+    },
+    "1619": {
+      "rosicrucianism": 29,
+      "mysticism": 8,
+      "alchemy": 6,
+      "hermetica": 4
+    },
+    "1620": {
+      "rosicrucianism": 23,
+      "mysticism": 12,
+      "alchemy": 9,
+      "hermetica": 3
+    },
+    "1621": {
+      "alchemy": 6,
+      "hermetica": 8,
+      "mysticism": 9,
+      "rosicrucianism": 8
+    },
+    "1622": {
+      "alchemy": 4,
+      "rosicrucianism": 6,
+      "mysticism": 9,
+      "paracelsianism": 1,
+      "theosophy": 1,
+      "hermetica": 4
+    },
+    "1623": {
+      "rosicrucianism": 8,
+      "alchemy": 7,
+      "hermetica": 8,
+      "paracelsianism": 2,
+      "mysticism": 2
+    },
+    "1624": {
+      "rosicrucianism": 4,
+      "alchemy": 13,
+      "mysticism": 12,
+      "paracelsianism": 1,
+      "hermetica": 4
+    },
+    "1625": {
+      "hermetica": 1,
+      "rosicrucianism": 6,
+      "mysticism": 14,
+      "alchemy": 16,
+      "paracelsianism": 1,
+      "kabbalah": 1,
+      "magic": 1
+    },
+    "1626": {
+      "alchemy": 5,
+      "paracelsianism": 1,
+      "rosicrucianism": 3,
+      "hermetica": 3,
+      "mysticism": 5
+    },
+    "1627": {
+      "alchemy": 5,
+      "mysticism": 2,
+      "hermetica": 3,
+      "neoplatonism": 1
+    },
+    "1628": {
+      "alchemy": 11,
+      "hermetica": 4,
+      "neoplatonism": 1,
+      "mysticism": 4,
+      "rosicrucianism": 1
+    },
+    "1629": {
+      "hermetica": 9,
+      "mysticism": 4,
+      "rosicrucianism": 1,
+      "alchemy": 7,
+      "paracelsianism": 2,
+      "magic": 1,
+      "kabbalah": 1,
+      "neoplatonism": 1
+    },
+    "1630": {
+      "alchemy": 10,
+      "mysticism": 9,
+      "hermetica": 5,
+      "neoplatonism": 2,
+      "magic": 1,
+      "rosicrucianism": 2
+    },
+    "1631": {
+      "mysticism": 9,
+      "alchemy": 6,
+      "hermetica": 10,
+      "paracelsianism": 1
+    },
+    "1632": {
+      "mysticism": 6,
+      "hermetica": 3,
+      "theosophy": 1,
+      "kabbalah": 1,
+      "alchemy": 2
+    },
+    "1633": {
+      "hermetica": 3,
+      "mysticism": 1,
+      "alchemy": 3,
+      "rosicrucianism": 1
+    },
+    "1634": {
+      "hermetica": 4,
+      "mysticism": 7,
+      "alchemy": 1,
+      "theosophy": 2
+    },
+    "1635": {
+      "alchemy": 4,
+      "theosophy": 5,
+      "hermetica": 5,
+      "mysticism": 6
+    },
+    "1636": {
+      "mysticism": 2,
+      "alchemy": 3,
+      "magic": 1,
+      "hermetica": 3,
+      "theosophy": 1,
+      "rosicrucianism": 1
+    },
+    "1637": {
+      "mysticism": 4,
+      "theosophy": 1,
+      "hermetica": 3
+    },
+    "1638": {
+      "mysticism": 7,
+      "hermetica": 3,
+      "alchemy": 4,
+      "rosicrucianism": 1
+    },
+    "1639": {
+      "alchemy": 3,
+      "mysticism": 7,
+      "theosophy": 1,
+      "rosicrucianism": 1,
+      "hermetica": 1
+    },
+    "1640": {
+      "hermetica": 4,
+      "mysticism": 8,
+      "theosophy": 1,
+      "alchemy": 1
+    },
+    "1641": {
+      "mysticism": 4,
+      "theosophy": 3,
+      "hermetica": 4,
+      "alchemy": 1,
+      "rosicrucianism": 6
+    },
+    "1642": {
+      "mysticism": 16,
+      "theosophy": 14,
+      "hermetica": 6,
+      "rosicrucianism": 2,
+      "neoplatonism": 1,
+      "alchemy": 1
+    },
+    "1643": {
+      "alchemy": 3,
+      "hermetica": 6,
+      "kabbalah": 1,
+      "mysticism": 4,
+      "magic": 1
+    },
+    "1644": {
+      "mysticism": 3,
+      "rosicrucianism": 3,
+      "alchemy": 2,
+      "hermetica": 4
+    },
+    "1645": {
+      "alchemy": 4,
+      "hermetica": 2,
+      "mysticism": 2
+    },
+    "1646": {
+      "mysticism": 5,
+      "alchemy": 5,
+      "rosicrucianism": 1,
+      "hermetica": 4,
+      "neoplatonism": 1
+    },
+    "1647": {
+      "mysticism": 7,
+      "alchemy": 5,
+      "theosophy": 3,
+      "hermetica": 5,
+      "neoplatonism": 2
+    },
+    "1648": {
+      "hermetica": 4,
+      "alchemy": 5,
+      "paracelsianism": 1,
+      "mysticism": 9,
+      "theosophy": 9,
+      "rosicrucianism": 1
+    },
+    "1649": {
+      "mysticism": 10,
+      "theosophy": 9,
+      "rosicrucianism": 2,
+      "alchemy": 1,
+      "hermetica": 1
+    },
+    "1650": {
+      "mysticism": 5,
+      "rosicrucianism": 4,
+      "magic": 5,
+      "hermetica": 9,
+      "theosophy": 1,
+      "alchemy": 3,
+      "paracelsianism": 2
+    },
+    "1651": {
+      "alchemy": 9,
+      "hermetica": 6,
+      "rosicrucianism": 2,
+      "magic": 2,
+      "mysticism": 2,
+      "theosophy": 1
+    },
+    "1652": {
+      "mysticism": 7,
+      "theosophy": 5,
+      "hermetica": 9,
+      "alchemy": 3,
+      "paracelsianism": 1,
+      "rosicrucianism": 2
+    },
+    "1653": {
+      "hermetica": 5,
+      "alchemy": 8,
+      "mysticism": 5,
+      "theosophy": 2
+    },
+    "1654": {
+      "theosophy": 4,
+      "alchemy": 2,
+      "hermetica": 5,
+      "mysticism": 5,
+      "rosicrucianism": 2,
+      "kabbalah": 1
+    },
+    "1655": {
+      "magic": 2,
+      "rosicrucianism": 2,
+      "theosophy": 3,
+      "hermetica": 10,
+      "mysticism": 9,
+      "neoplatonism": 1
+    },
+    "1656": {
+      "mysticism": 8,
+      "rosicrucianism": 4,
+      "alchemy": 5,
+      "theosophy": 5,
+      "paracelsianism": 1,
+      "magic": 1,
+      "hermetica": 1
+    },
+    "1657": {
+      "alchemy": 9,
+      "paracelsianism": 4,
+      "mysticism": 5,
+      "hermetica": 6,
+      "rosicrucianism": 1,
+      "magic": 2
+    },
+    "1658": {
+      "alchemy": 13,
+      "mysticism": 8,
+      "theosophy": 4,
+      "hermetica": 3,
+      "magic": 1,
+      "paracelsianism": 1
+    },
+    "1659": {
+      "mysticism": 10,
+      "alchemy": 11,
+      "paracelsianism": 1,
+      "hermetica": 4,
+      "theosophy": 3,
+      "rosicrucianism": 1
+    },
+    "1660": {
+      "mysticism": 10,
+      "alchemy": 11,
+      "rosicrucianism": 4,
+      "hermetica": 8,
+      "theosophy": 3
+    },
+    "1661": {
+      "theosophy": 16,
+      "mysticism": 11,
+      "hermetica": 11,
+      "alchemy": 5,
+      "magic": 1
+    },
+    "1662": {
+      "mysticism": 7,
+      "alchemy": 6,
+      "hermetica": 5,
+      "paracelsianism": 1,
+      "theosophy": 2,
+      "rosicrucianism": 2
+    },
+    "1663": {
+      "alchemy": 7,
+      "mysticism": 9,
+      "rosicrucianism": 2,
+      "hermetica": 5,
+      "theosophy": 1,
+      "magic": 1,
+      "kabbalah": 1
+    },
+    "1664": {
+      "alchemy": 4,
+      "mysticism": 9,
+      "rosicrucianism": 2,
+      "hermetica": 3
+    },
+    "1665": {
+      "hermetica": 6,
+      "mysticism": 5,
+      "theosophy": 2,
+      "rosicrucianism": 2,
+      "alchemy": 2
+    },
+    "1666": {
+      "alchemy": 6,
+      "mysticism": 3,
+      "hermetica": 5,
+      "neoplatonism": 1
+    },
+    "1667": {
+      "mysticism": 2,
+      "alchemy": 11,
+      "neoplatonism": 1,
+      "hermetica": 6,
+      "magic": 1
+    },
+    "1668": {
+      "alchemy": 11,
+      "hermetica": 6,
+      "mysticism": 1
+    },
+    "1669": {
+      "hermetica": 10,
+      "alchemy": 9,
+      "rosicrucianism": 5,
+      "mysticism": 5
+    },
+    "1670": {
+      "hermetica": 7,
+      "alchemy": 8,
+      "mysticism": 6
+    },
+    "1671": {
+      "hermetica": 2,
+      "alchemy": 11,
+      "mysticism": 1
+    },
+    "1672": {
+      "mysticism": 3,
+      "alchemy": 7,
+      "magic": 1,
+      "hermetica": 1
+    },
+    "1673": {
+      "alchemy": 13,
+      "hermetica": 5,
+      "mysticism": 7,
+      "rosicrucianism": 1,
+      "magic": 1
+    },
+    "1674": {
+      "alchemy": 11,
+      "mysticism": 8,
+      "theosophy": 2,
+      "paracelsianism": 3,
+      "hermetica": 3,
+      "rosicrucianism": 1
+    },
+    "1675": {
+      "mysticism": 14,
+      "rosicrucianism": 2,
+      "alchemy": 14,
+      "theosophy": 5,
+      "hermetica": 1,
+      "paracelsianism": 1
+    },
+    "1676": {
+      "alchemy": 11,
+      "mysticism": 12,
+      "theosophy": 5,
+      "hermetica": 5,
+      "paracelsianism": 1,
+      "rosicrucianism": 1
+    },
+    "1677": {
+      "alchemy": 17,
+      "mysticism": 8,
+      "hermetica": 6,
+      "theosophy": 2,
+      "neoplatonism": 1
+    },
+    "1678": {
+      "alchemy": 16,
+      "rosicrucianism": 1,
+      "hermetica": 5,
+      "mysticism": 3,
+      "neoplatonism": 1,
+      "theosophy": 1
+    },
+    "1679": {
+      "alchemy": 7,
+      "hermetica": 4,
+      "mysticism": 12,
+      "paracelsianism": 1,
+      "kabbalah": 1
+    },
+    "1680": {
+      "alchemy": 22,
+      "mysticism": 8,
+      "hermetica": 4,
+      "kabbalah": 1
+    },
+    "1681": {
+      "mysticism": 10,
+      "hermetica": 3,
+      "alchemy": 13,
+      "paracelsianism": 1
+    },
+    "1682": {
+      "theosophy": 28,
+      "mysticism": 32,
+      "alchemy": 10,
+      "hermetica": 5
+    },
+    "1683": {
+      "alchemy": 8,
+      "mysticism": 9,
+      "hermetica": 5
+    },
+    "1684": {
+      "alchemy": 11,
+      "mysticism": 15,
+      "hermetica": 10,
+      "magic": 1,
+      "paracelsianism": 2
+    },
+    "1685": {
+      "hermetica": 2,
+      "theosophy": 9,
+      "alchemy": 9,
+      "mysticism": 10
+    },
+    "1686": {
+      "hermetica": 10,
+      "theosophy": 5,
+      "alchemy": 6,
+      "mysticism": 9,
+      "magic": 1,
+      "paracelsianism": 2
+    },
+    "1687": {
+      "mysticism": 11,
+      "alchemy": 5
+    },
+    "1688": {
+      "alchemy": 7,
+      "hermetica": 4,
+      "mysticism": 5,
+      "magic": 1
+    },
+    "1689": {
+      "alchemy": 11,
+      "mysticism": 3,
+      "hermetica": 4,
+      "rosicrucianism": 1
+    },
+    "1690": {
+      "hermetica": 6,
+      "rosicrucianism": 2,
+      "alchemy": 4,
+      "mysticism": 6,
+      "theosophy": 1,
+      "neoplatonism": 1
+    },
+    "1691": {
+      "mysticism": 7,
+      "hermetica": 3,
+      "alchemy": 4,
+      "theosophy": 2
+    },
+    "1692": {
+      "hermetica": 3,
+      "alchemy": 7,
+      "mysticism": 10,
+      "theosophy": 1
+    },
+    "1693": {
+      "hermetica": 4,
+      "alchemy": 3,
+      "mysticism": 5,
+      "theosophy": 3,
+      "rosicrucianism": 1
+    },
+    "1694": {
+      "hermetica": 6,
+      "alchemy": 5,
+      "paracelsianism": 1,
+      "mysticism": 4,
+      "theosophy": 1
+    },
+    "1695": {
+      "mysticism": 13,
+      "alchemy": 5,
+      "hermetica": 5,
+      "theosophy": 1,
+      "rosicrucianism": 1
+    },
+    "1696": {
+      "alchemy": 7,
+      "mysticism": 12,
+      "hermetica": 5
+    },
+    "1697": {
+      "mysticism": 19,
+      "alchemy": 8,
+      "hermetica": 4,
+      "rosicrucianism": 1,
+      "theosophy": 1
+    },
+    "1698": {
+      "mysticism": 21,
+      "theosophy": 2,
+      "alchemy": 3,
+      "magic": 1,
+      "rosicrucianism": 1,
+      "hermetica": 5
+    },
+    "1699": {
+      "alchemy": 5,
+      "hermetica": 3,
+      "mysticism": 12,
+      "rosicrucianism": 1
+    },
+    "1700": {
+      "mysticism": 37,
+      "hermetica": 6,
+      "theosophy": 7,
+      "neoplatonism": 1,
+      "alchemy": 5
+    },
+    "1701": {
+      "alchemy": 4,
+      "mysticism": 22,
+      "rosicrucianism": 2,
+      "hermetica": 2
+    },
+    "1702": {
+      "mysticism": 25,
+      "hermetica": 7,
+      "alchemy": 11,
+      "kabbalah": 1,
+      "theosophy": 1
+    },
+    "1703": {
+      "alchemy": 4,
+      "mysticism": 7
+    },
+    "1704": {
+      "mysticism": 15,
+      "alchemy": 9,
+      "hermetica": 4,
+      "theosophy": 2,
+      "rosicrucianism": 2,
+      "magic": 2
+    },
+    "1705": {
+      "alchemy": 16,
+      "mysticism": 10,
+      "hermetica": 2
+    },
+    "1706": {
+      "alchemy": 21,
+      "mysticism": 10,
+      "kabbalah": 1,
+      "hermetica": 5,
+      "rosicrucianism": 2
+    },
+    "1707": {
+      "alchemy": 7,
+      "rosicrucianism": 1,
+      "mysticism": 5,
+      "hermetica": 4,
+      "neoplatonism": 1
+    },
+    "1708": {
+      "alchemy": 13,
+      "mysticism": 14,
+      "theosophy": 1,
+      "hermetica": 2,
+      "paracelsianism": 1
+    },
+    "1709": {
+      "mysticism": 12,
+      "alchemy": 10,
+      "hermetica": 7,
+      "theosophy": 2,
+      "rosicrucianism": 1,
+      "neoplatonism": 1
+    },
+    "1710": {
+      "alchemy": 5,
+      "mysticism": 22,
+      "neoplatonism": 1,
+      "theosophy": 2,
+      "rosicrucianism": 1,
+      "kabbalah": 1,
+      "hermetica": 3
+    },
+    "1711": {
+      "mysticism": 14,
+      "theosophy": 2,
+      "hermetica": 2,
+      "paracelsianism": 2,
+      "alchemy": 8
+    },
+    "1712": {
+      "mysticism": 10,
+      "hermetica": 4,
+      "alchemy": 6,
+      "rosicrucianism": 2,
+      "paracelsianism": 1
+    },
+    "1713": {
+      "mysticism": 8,
+      "hermetica": 4,
+      "alchemy": 2
+    },
+    "1714": {
+      "hermetica": 1,
+      "alchemy": 10,
+      "mysticism": 14,
+      "rosicrucianism": 1
+    },
+    "1715": {
+      "mysticism": 13,
+      "theosophy": 9,
+      "hermetica": 4,
+      "alchemy": 4,
+      "rosicrucianism": 1,
+      "paracelsianism": 1
+    },
+    "1716": {
+      "alchemy": 6,
+      "hermetica": 2,
+      "mysticism": 1
+    },
+    "1717": {
+      "mysticism": 9,
+      "alchemy": 13,
+      "hermetica": 3
+    },
+    "1718": {
+      "mysticism": 9,
+      "alchemy": 8,
+      "theosophy": 3,
+      "hermetica": 3,
+      "kabbalah": 1
+    },
+    "1719": {
+      "mysticism": 11,
+      "alchemy": 5,
+      "hermetica": 1
+    },
+    "1720": {
+      "mysticism": 8,
+      "alchemy": 3,
+      "hermetica": 7
+    },
+    "1721": {
+      "mysticism": 9,
+      "hermetica": 3,
+      "alchemy": 5
+    },
+    "1722": {
+      "alchemy": 8,
+      "mysticism": 9,
+      "theosophy": 3,
+      "hermetica": 1
+    },
+    "1723": {
+      "alchemy": 11,
+      "neoplatonism": 1,
+      "hermetica": 6,
+      "mysticism": 9
+    },
+    "1724": {
+      "mysticism": 9,
+      "alchemy": 6,
+      "paracelsianism": 1,
+      "hermetica": 2
+    },
+    "1725": {
+      "alchemy": 8,
+      "mysticism": 3,
+      "hermetica": 2
+    },
+    "1726": {
+      "mysticism": 11,
+      "hermetica": 4,
+      "alchemy": 5,
+      "magic": 1
+    },
+    "1727": {
+      "mysticism": 10,
+      "hermetica": 2,
+      "magic": 1,
+      "alchemy": 10
+    },
+    "1728": {
+      "alchemy": 8,
+      "mysticism": 11,
+      "hermetica": 4,
+      "theosophy": 3
+    },
+    "1729": {
+      "mysticism": 15,
+      "alchemy": 4,
+      "theosophy": 1
+    },
+    "1730": {
+      "hermetica": 4,
+      "alchemy": 5,
+      "mysticism": 34,
+      "theosophy": 27
+    },
+    "1731": {
+      "mysticism": 11,
+      "alchemy": 6,
+      "theosophy": 9,
+      "hermetica": 3
+    },
+    "1732": {
+      "hermetica": 2,
+      "magic": 2,
+      "alchemy": 2,
+      "mysticism": 12,
+      "theosophy": 1
+    },
+    "1733": {
+      "mysticism": 15,
+      "hermetica": 4,
+      "alchemy": 4,
+      "theosophy": 1
+    },
+    "1734": {
+      "alchemy": 5,
+      "hermetica": 4,
+      "mysticism": 5,
+      "kabbalah": 1
+    },
+    "1735": {
+      "mysticism": 14,
+      "hermetica": 3,
+      "rosicrucianism": 1,
+      "alchemy": 6,
+      "magic": 2,
+      "theosophy": 1
+    },
+    "1736": {
+      "alchemy": 4,
+      "hermetica": 3,
+      "mysticism": 13,
+      "paracelsianism": 1
+    },
+    "1737": {
+      "mysticism": 8,
+      "alchemy": 7,
+      "hermetica": 3
+    },
+    "1738": {
+      "alchemy": 10,
+      "mysticism": 8,
+      "paracelsianism": 1
+    },
+    "1739": {
+      "hermetica": 1,
+      "mysticism": 1,
+      "alchemy": 9,
+      "paracelsianism": 1
+    },
+    "1740": {
+      "mysticism": 11,
+      "rosicrucianism": 2,
+      "hermetica": 4,
+      "alchemy": 4
+    },
+    "1741": {
+      "alchemy": 11,
+      "mysticism": 5,
+      "magic": 2,
+      "rosicrucianism": 2,
+      "hermetica": 1
+    },
+    "1742": {
+      "hermetica": 3,
+      "mysticism": 2,
+      "alchemy": 6,
+      "theosophy": 1
+    },
+    "1743": {
+      "hermetica": 2,
+      "alchemy": 2,
+      "mysticism": 1
+    },
+    "1744": {
+      "alchemy": 11,
+      "mysticism": 7,
+      "hermetica": 6,
+      "theosophy": 1
+    },
+    "1745": {
+      "alchemy": 2,
+      "mysticism": 1,
+      "hermetica": 1
+    },
+    "1746": {
+      "mysticism": 6,
+      "hermetica": 3,
+      "alchemy": 6,
+      "kabbalah": 2,
+      "paracelsianism": 1
+    },
+    "1747": {
+      "mysticism": 7,
+      "alchemy": 7,
+      "hermetica": 6,
+      "theosophy": 1,
+      "neoplatonism": 1,
+      "kabbalah": 1,
+      "magic": 1
+    },
+    "1748": {
+      "alchemy": 8,
+      "mysticism": 5
+    },
+    "1749": {
+      "alchemy": 11,
+      "rosicrucianism": 1,
+      "magic": 1,
+      "mysticism": 1,
+      "hermetica": 1
+    },
+    "1750": {
+      "alchemy": 9,
+      "hermetica": 8,
+      "mysticism": 5,
+      "rosicrucianism": 1
+    }
+  },
+  "confluences": [
+    {
+      "year": 1500,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "neoplatonism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 10
+    },
+    {
+      "year": 1510,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "kabbalah",
+        "neoplatonism"
+      ],
+      "count": 4,
+      "total_works": 10
+    },
+    {
+      "year": 1511,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "neoplatonism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 9
+    },
+    {
+      "year": 1518,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "alchemy",
+        "neoplatonism"
+      ],
+      "count": 4,
+      "total_works": 18
+    },
+    {
+      "year": 1531,
+      "rivers": [
+        "hermetica",
+        "mysticism",
+        "magic",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 17
+    },
+    {
+      "year": 1532,
+      "rivers": [
+        "hermetica",
+        "neoplatonism",
+        "alchemy",
+        "mysticism",
+        "magic"
+      ],
+      "count": 5,
+      "total_works": 17
+    },
+    {
+      "year": 1533,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "neoplatonism",
+        "magic"
+      ],
+      "count": 4,
+      "total_works": 16
+    },
+    {
+      "year": 1534,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "alchemy",
+        "magic"
+      ],
+      "count": 4,
+      "total_works": 12
+    },
+    {
+      "year": 1535,
+      "rivers": [
+        "hermetica",
+        "mysticism",
+        "alchemy",
+        "magic"
+      ],
+      "count": 4,
+      "total_works": 10
+    },
+    {
+      "year": 1536,
+      "rivers": [
+        "hermetica",
+        "mysticism",
+        "paracelsianism",
+        "magic"
+      ],
+      "count": 4,
+      "total_works": 16
+    },
+    {
+      "year": 1541,
+      "rivers": [
+        "hermetica",
+        "alchemy",
+        "mysticism",
+        "neoplatonism"
+      ],
+      "count": 4,
+      "total_works": 9
+    },
+    {
+      "year": 1542,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "neoplatonism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 16
+    },
+    {
+      "year": 1544,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "neoplatonism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 11
+    },
+    {
+      "year": 1546,
+      "rivers": [
+        "alchemy",
+        "magic",
+        "hermetica",
+        "mysticism",
+        "neoplatonism"
+      ],
+      "count": 5,
+      "total_works": 14
+    },
+    {
+      "year": 1548,
+      "rivers": [
+        "hermetica",
+        "neoplatonism",
+        "mysticism",
+        "alchemy",
+        "paracelsianism"
+      ],
+      "count": 5,
+      "total_works": 17
+    },
+    {
+      "year": 1549,
+      "rivers": [
+        "magic",
+        "hermetica",
+        "neoplatonism",
+        "mysticism",
+        "alchemy"
+      ],
+      "count": 5,
+      "total_works": 12
+    },
+    {
+      "year": 1550,
+      "rivers": [
+        "hermetica",
+        "mysticism",
+        "alchemy",
+        "magic"
+      ],
+      "count": 4,
+      "total_works": 20
+    },
+    {
+      "year": 1551,
+      "rivers": [
+        "hermetica",
+        "mysticism",
+        "alchemy",
+        "neoplatonism"
+      ],
+      "count": 4,
+      "total_works": 19
+    },
+    {
+      "year": 1552,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "neoplatonism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 15
+    },
+    {
+      "year": 1553,
+      "rivers": [
+        "hermetica",
+        "neoplatonism",
+        "mysticism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 12
+    },
+    {
+      "year": 1554,
+      "rivers": [
+        "mysticism",
+        "alchemy",
+        "hermetica",
+        "neoplatonism"
+      ],
+      "count": 4,
+      "total_works": 15
+    },
+    {
+      "year": 1559,
+      "rivers": [
+        "hermetica",
+        "neoplatonism",
+        "alchemy",
+        "magic",
+        "mysticism"
+      ],
+      "count": 5,
+      "total_works": 14
+    },
+    {
+      "year": 1560,
+      "rivers": [
+        "hermetica",
+        "neoplatonism",
+        "mysticism",
+        "alchemy",
+        "paracelsianism",
+        "kabbalah"
+      ],
+      "count": 6,
+      "total_works": 14
+    },
+    {
+      "year": 1561,
+      "rivers": [
+        "hermetica",
+        "neoplatonism",
+        "mysticism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 22
+    },
+    {
+      "year": 1563,
+      "rivers": [
+        "hermetica",
+        "mysticism",
+        "paracelsianism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 11
+    },
+    {
+      "year": 1564,
+      "rivers": [
+        "alchemy",
+        "hermetica",
+        "paracelsianism",
+        "mysticism",
+        "rosicrucianism"
+      ],
+      "count": 5,
+      "total_works": 12
+    },
+    {
+      "year": 1565,
+      "rivers": [
+        "hermetica",
+        "magic",
+        "paracelsianism",
+        "mysticism"
+      ],
+      "count": 4,
+      "total_works": 8
+    },
+    {
+      "year": 1566,
+      "rivers": [
+        "mysticism",
+        "hermetica",
+        "paracelsianism",
+        "alchemy"
+      ],
+      "count": 4,
+      "total_works": 16
+    },
+    {
+      "year": 1567,
+      "rivers": [
+        "hermetica",
+        "mysticism",
+        "alchemy",
+        "paracelsianism"
+      ],
+      "count": 4,
+      "total_works": 16
+    },
+    {
+      "year": 1568,
+      "rivers": [
+        "alchemy",
+        "paracelsianism",
+        "hermetica",
+        "magic",
+        "neoplatonism"
+      ],
+      "count": 5,
+      "total_works": 14
+    }
+  ]
+}

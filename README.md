@@ -1,85 +1,103 @@
-# Latin Master Bibliography (1450-1900)
+# The Hidden Renaissance: Latin Works in Print (1450-1700)
 
-A comprehensive, deduplicated master bibliography of Latin printed works from 1450-1900, created by combining data from multiple major bibliographic catalogues.
+Exploring the vast corpus of Latin literature from the Renaissance and early modern period—over 500,000 works, 97% of which have never been translated into English.
 
-## Project Goal
+## Live Site
 
-To produce a single, research-grade CSV file (`data/processed/final/latin_master_bibliography.csv`) that answers:
+**[latinclaude.vercel.app](https://latinclaude.vercel.app)**
 
-1. **What Latin works/editions exist across USTC, VD16/17/18, ESTC, etc.?**
-2. **Which catalogs attest each work?**
-3. **Is there any known digital facsimile?**
+## The Problem
 
-## Source Catalogues
+The Renaissance produced an explosion of intellectual output in Latin: theology, philosophy, medicine, law, science, poetry. The Universal Short Title Catalogue (USTC) records over 500,000 Latin works printed between 1450 and 1700.
 
-- **USTC** (Universal Short Title Catalogue) - Comprehensive coverage of early printed works
-- **VD16** (Verzeichnis der im deutschen Sprachraum erschienenen Drucke des 16. Jahrhunderts)
-- **VD17** (Verzeichnis der im deutschen Sprachraum erschienenen Drucke des 17. Jahrhunderts)
-- **VD18** (Verzeichnis der im deutschen Sprachraum erschienenen Drucke des 18. Jahrhunderts)
-- **ESTC** (English Short Title Catalogue)
-- **Additional catalogues** as identified
+- **~3%** have English translations
+- **~18%** are digitized
+- **~8%** have searchable OCR text
+
+Most of this heritage is locked away, accessible only to the small number of scholars who can read early modern Latin.
+
+## Data Sources
+
+### USTC (Universal Short Title Catalogue)
+- 1.6 million total records
+- 533,000 Latin works extracted
+- Bibliographic data: authors, titles, places, printers, dates, classifications
+
+### BPH (Bibliotheca Philosophica Hermetica / Ritman Library)
+- 28,000 records focused on Western esotericism
+- 2,700+ works digitized
+- Core holdings: Hermetica, alchemy, Kabbalah, Rosicrucianism, mysticism
 
 ## Project Structure
 
 ```
 latinclaude/
 ├── data/
-│   ├── raw/                    # Raw data from each catalogue
-│   │   ├── ustc/
-│   │   ├── vd16/
-│   │   ├── vd17/
-│   │   ├── vd18/
-│   │   ├── estc/
-│   │   └── other/
-│   └── processed/
-│       ├── intermediate/       # Intermediate processing results
-│       └── final/             # Final outputs
-├── scripts/                   # Data collection and processing scripts
-├── notebooks/                 # Jupyter notebooks for analysis
-├── docs/                      # Documentation and methodology
-└── config/                    # Configuration files
+│   ├── raw/
+│   │   ├── ustc/           # USTC exports (not in git - too large)
+│   │   └── bph/            # BPH catalog (not in git)
+│   ├── viz_data.json       # Aggregated data for visualization
+│   └── bph_rivers_of_life.json
+├── viz/                    # Next.js visualization app
+│   ├── app/
+│   │   ├── page.tsx        # Main dashboard
+│   │   └── blog/           # Research notes
+│   └── public/
+│       └── viz_data.json
+├── docs/                   # Methodology documentation
+└── scripts/                # Data processing (Python)
 ```
 
-## Main Output
+## Research Questions Explored
 
-**`data/processed/final/latin_master_bibliography.csv`**
+1. **The Translation Gap**: Only 416 Latin works ever appeared in Latin-English bilingual editions
+2. **Forgotten Authors**: 181 prolific authors (100+ works each) with almost no translations
+3. **Renaissance Bestsellers**: Works with 100+ editions that remain untranslated
+4. **Famous Humanists**: Even Ficino, Pico, and Valla aren't fully translated
+5. **Rivers of Esoteric Life**: Mapping how Hermetic traditions flowed through publishing
 
-Each row represents a deduplicated Latin work/edition, including:
-- Bibliographic information (title, author, date, place, printer)
-- Source catalogue attestations
-- Digital facsimile links where available
-- Deduplication confidence scores
+## Blog Posts
 
-## Methodology
+- [Why Latin Matters: 500,000 Unread Books](/blog/why-latin-matters)
+- [The Forgotten Giants](/blog/forgotten-authors)
+- [Renaissance Bestsellers Nobody Reads](/blog/renaissance-bestsellers)
+- [The Translation Gap](/blog/translation-gap)
+- [Even Ficino Isn't Fully Translated](/blog/famous-humanists)
+- [Rivers of Esoteric Life](/blog/rivers-of-esoteric-life) (Draft)
 
-1. **Data Collection**: Harvest Latin-language records from each source catalogue
-2. **Normalization**: Standardize bibliographic data across different catalog formats
-3. **Deduplication**: Identify and merge duplicate entries across catalogues
-4. **Enrichment**: Add digital facsimile information and other metadata
-5. **Validation**: Quality control and confidence scoring
+## Data Not in Repository
 
-## Current Status
+Large data files are excluded from git (see `.gitignore`):
 
-🚧 **Project in initial setup phase**
+- `data/raw/ustc/ustc_editions_july_2025.csv` (685 MB, 1.6M records)
+- `data/raw/ustc/ustc_latin_editions.csv` (225 MB, 533K records)
+- `data/raw/bph/bph_catalog.csv` (12 MB, 28K records)
 
-- [x] Project structure created
-- [ ] Data source research and access setup
-- [ ] Data collection scripts
-- [ ] Deduplication implementation
-- [ ] Output generation
+Contact for access to raw data exports.
 
-## Usage
+## Tech Stack
 
-Once complete, the main bibliography CSV can be:
-- Analyzed for statistical research on Latin printing
-- Used as a reference for scholarly work
-- Integrated into digital humanities projects
-- Extended with additional catalogues or metadata
+- **Data processing**: Python, pandas
+- **Visualization**: Next.js 14, Recharts, Tailwind CSS
+- **Hosting**: Vercel
 
-## Contributing
+## Future Work
 
-This project is designed for academic research use. Documentation of methodology and data processing transparency are priorities for research reproducibility.
+- [ ] Interactive timeline of esoteric publishing ("Rivers of Life")
+- [ ] Animated map of European printing centers
+- [ ] Timeline of major publishers
+- [ ] Timeline of major authors
+- [ ] Cross-reference with Internet Archive/Google Books digitization
+- [ ] AI-assisted translation pipeline exploration
+
+## Acknowledgments
+
+- [Universal Short Title Catalogue (USTC)](https://www.ustc.ac.uk/)
+- [Embassy of the Free Mind / Bibliotheca Philosophica Hermetica](https://embassyofthefreemind.com/)
+- [I Tatti Renaissance Library](https://www.hup.harvard.edu/collection.php?cpk=1272)
 
 ## License
 
-[License to be determined based on source catalogue terms of use]
+Data visualizations and analysis: MIT License
+
+Source data subject to respective catalogue terms of use.
