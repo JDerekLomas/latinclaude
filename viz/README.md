@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ancient Wisdom Research Labs
 
-## Getting Started
+**Live site: [ancientwisdomresearch.vercel.app](https://ancientwisdomresearch.vercel.app)**
 
-First, run the development server:
+Mapping the hidden libraries of Western esotericism. Part of the Source Library Project.
+
+## What We Study
+
+- **The Hidden Corpus**: 533,000 Latin works printed 1450-1700. Theology, philosophy, alchemy, magic, natural philosophy—the intellectual DNA of modernity, largely unread.
+- **Esoteric Traditions**: Hermetica, Kabbalah, alchemy, Rosicrucianism, natural magic—tracing how ancient wisdom flowed through Renaissance publishing into the modern age.
+- **AI Translation**: Using large language models to unlock texts that will never receive professional translation.
+
+## The Scale of the Problem
+
+| Metric | Value |
+|--------|-------|
+| Latin editions (USTC 1450-1700) | 533,000 |
+| Unique works (estimated) | ~100,000 |
+| Translated to English | ~3% |
+| Inaccessible to non-Latinists | 97% |
+
+## Site Structure
+
+- `/` - Landing page
+- `/explore` - USTC data explorer with interactive visualizations
+- `/roadmap` - Translation priority roadmap
+- `/blog` - Research notes
+- `/blog/esoteric-timeline` - Visual timeline of esoteric publishing (1469-1750)
+- `/map` - Geographic visualization of printing centers
+- `/timelines` - Timeline charts
+
+## Data Sources
+
+- [Universal Short Title Catalogue (USTC)](https://www.ustc.ac.uk/) - University of St Andrews
+- [Library of Latin Texts (Brepols)](https://www.brepolis.net/)
+- [Philological Museum](https://philological.cal.bham.ac.uk/) - University of Birmingham
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Data from USTC used under their terms of service. Code is MIT licensed.
