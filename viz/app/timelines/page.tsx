@@ -141,17 +141,20 @@ export default function Timelines() {
           </div>
         </div>
 
-        {/* Future: Map teaser */}
+        {/* Map link */}
         <div className="mt-12 bg-gradient-to-r from-violet-900/30 to-cyan-900/30 border border-violet-500/30 rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">Coming Soon: Animated Map</h2>
+          <h2 className="text-2xl font-bold mb-4">Animated Map Available</h2>
           <p className="text-slate-300 max-w-2xl mx-auto">
             Watch the spread of Latin printing across Europe from 1450 to 1700.
             See how printing began in Mainz, spread to Venice and Paris, and eventually
             covered the continent.
           </p>
-          <p className="text-slate-500 text-sm mt-4">
-            Data ready: 8,600+ geocoded records across 48 cities
-          </p>
+          <a
+            href="/map"
+            className="inline-block mt-6 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg font-semibold transition-colors"
+          >
+            Explore the Map
+          </a>
         </div>
       </main>
 

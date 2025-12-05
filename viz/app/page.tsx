@@ -398,6 +398,12 @@ export default function Home() {
                 Explore Timelines
               </a>
               <a
+                href="/map"
+                className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg font-semibold transition-colors"
+              >
+                Animated Map
+              </a>
+              <a
                 href="https://github.com/JDerekLomas/latinclaude"
                 className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-colors"
               >
