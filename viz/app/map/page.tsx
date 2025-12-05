@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Map from "react-map-gl/maplibre";
 import DeckGL from "@deck.gl/react";
 import { ScatterplotLayer } from "@deck.gl/layers";
@@ -15,6 +15,15 @@ interface PrintingData {
   lng: number;
 }
 
+interface CityData {
+  place: string;
+  lat: number;
+  lng: number;
+  cumulativeTotal: number;  // Total works up to current year (for size)
+  yearlyCount: number;      // Works this specific year
+  yearlyPercent: number;    // This year's output as % of total output this year (for brightness)
+}
+
 const INITIAL_VIEW_STATE = {
   longitude: 10,
   latitude: 50,
@@ -23,18 +32,18 @@ const INITIAL_VIEW_STATE = {
   bearing: 0,
 };
 
-// Color scale based on output volume
-function getColor(count: number): [number, number, number, number] {
-  if (count > 500) return [139, 92, 246, 220]; // violet - major center
-  if (count > 200) return [6, 182, 212, 200];  // cyan
-  if (count > 100) return [16, 185, 129, 180]; // emerald
-  if (count > 50) return [245, 158, 11, 160];  // amber
-  return [248, 113, 113, 140];                  // red - smaller
+// Base violet color - opacity based on yearly activity
+function getColor(yearlyPercent: number): [number, number, number, number] {
+  // yearlyPercent is 0-100, map to opacity 40-255
+  const minOpacity = 40;
+  const maxOpacity = 255;
+  const opacity = Math.min(maxOpacity, minOpacity + (yearlyPercent * 8));
+  return [139, 92, 246, opacity]; // violet with variable opacity
 }
 
-// Size based on output
-function getRadius(count: number): number {
-  return Math.sqrt(count) * 800;
+// Size based on cumulative total
+function getRadius(cumulativeTotal: number): number {
+  return Math.sqrt(cumulativeTotal) * 600;
 }
 
 export default function PrintingMap() {
@@ -42,7 +51,6 @@ export default function PrintingMap() {
   const [year, setYear] = useState(1470);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(200);
-  const [cumulative, setCumulative] = useState(false);
 
   // Load data
   useEffect(() => {
@@ -68,50 +76,85 @@ export default function PrintingMap() {
     return () => clearInterval(interval);
   }, [isPlaying, speed]);
 
-  // Filter data for current year
-  const filteredData = cumulative
-    ? data.filter((d) => d.year <= year)
-    : data.filter((d) => d.year === year);
+  // Compute city data: cumulative totals and yearly percentages
+  const cityData = useMemo(() => {
+    if (data.length === 0) return [];
 
-  // Aggregate by city for cumulative view
-  const aggregatedData = cumulative
-    ? Object.values(
-        filteredData.reduce((acc, d) => {
-          const key = d.place;
-          if (!acc[key]) {
-            acc[key] = { ...d, count: 0 };
-          }
-          acc[key].count += d.count;
-          return acc;
-        }, {} as Record<string, PrintingData>)
-      )
-    : filteredData;
+    // Calculate cumulative totals up to current year
+    const cumulativeTotals: Record<string, { total: number; lat: number; lng: number }> = {};
+    const yearlyTotals: Record<string, number> = {};
+    let totalThisYear = 0;
+
+    for (const d of data) {
+      if (d.year <= year) {
+        if (!cumulativeTotals[d.place]) {
+          cumulativeTotals[d.place] = { total: 0, lat: d.lat, lng: d.lng };
+        }
+        cumulativeTotals[d.place].total += d.count;
+      }
+      if (d.year === year) {
+        yearlyTotals[d.place] = (yearlyTotals[d.place] || 0) + d.count;
+        totalThisYear += d.count;
+      }
+    }
+
+    // Build city data array
+    const cities: CityData[] = [];
+    for (const [place, info] of Object.entries(cumulativeTotals)) {
+      const yearlyCount = yearlyTotals[place] || 0;
+      const yearlyPercent = totalThisYear > 0 ? (yearlyCount / totalThisYear) * 100 : 0;
+
+      cities.push({
+        place,
+        lat: info.lat,
+        lng: info.lng,
+        cumulativeTotal: info.total,
+        yearlyCount,
+        yearlyPercent,
+      });
+    }
+
+    return cities;
+  }, [data, year]);
 
   // Calculate stats for current view
-  const totalWorks = aggregatedData.reduce((sum, d) => sum + d.count, 0);
-  const activeCities = new Set(aggregatedData.map((d) => d.place)).size;
+  const totalWorksThisYear = cityData.reduce((sum, d) => sum + d.yearlyCount, 0);
+  const totalWorksCumulative = cityData.reduce((sum, d) => sum + d.cumulativeTotal, 0);
+  const activeCitiesThisYear = cityData.filter(d => d.yearlyCount > 0).length;
+  const totalCities = cityData.length;
 
-  // Top cities for current year
-  const topCities = [...aggregatedData]
-    .sort((a, b) => b.count - a.count)
+  // Top cities by cumulative total
+  const topCitiesCumulative = [...cityData]
+    .sort((a, b) => b.cumulativeTotal - a.cumulativeTotal)
+    .slice(0, 5);
+
+  // Top cities this year
+  const topCitiesThisYear = [...cityData]
+    .filter(d => d.yearlyCount > 0)
+    .sort((a, b) => b.yearlyCount - a.yearlyCount)
     .slice(0, 5);
 
   const layers = [
     new ScatterplotLayer({
       id: "printing-centers",
-      data: aggregatedData,
+      data: cityData,
       pickable: true,
-      opacity: 0.8,
+      opacity: 1,
       stroked: true,
       filled: true,
       radiusScale: 1,
-      radiusMinPixels: 3,
-      radiusMaxPixels: 100,
+      radiusMinPixels: 4,
+      radiusMaxPixels: 120,
       lineWidthMinPixels: 1,
-      getPosition: (d: PrintingData) => [d.lng, d.lat],
-      getRadius: (d: PrintingData) => getRadius(d.count),
-      getFillColor: (d: PrintingData) => getColor(d.count),
-      getLineColor: [255, 255, 255, 100],
+      getPosition: (d: CityData) => [d.lng, d.lat],
+      getRadius: (d: CityData) => getRadius(d.cumulativeTotal),
+      getFillColor: (d: CityData) => getColor(d.yearlyPercent),
+      getLineColor: (d: CityData) => d.yearlyCount > 0 ? [255, 255, 255, 150] : [255, 255, 255, 30],
+      updateTriggers: {
+        getFillColor: [year],
+        getLineColor: [year],
+        getRadius: [year],
+      },
     }),
   ];
 
@@ -134,12 +177,16 @@ export default function PrintingMap() {
           initialViewState={INITIAL_VIEW_STATE}
           controller={true}
           layers={layers}
-          getTooltip={({ object }: { object?: PrintingData }) => {
+          getTooltip={({ object }: { object?: CityData }) => {
             if (!object) return null;
             return {
-              html: `<div style="padding: 8px; background: #1e293b; border-radius: 4px;">
-                <strong>${object.place}</strong><br/>
-                ${cumulative ? "Total" : year}: ${object.count.toLocaleString()} works
+              html: `<div style="padding: 8px; background: #1e293b; border-radius: 4px; min-width: 150px;">
+                <strong style="font-size: 14px;">${object.place}</strong><br/>
+                <div style="margin-top: 6px; font-size: 12px;">
+                  <div style="color: #a78bfa;">This year: ${object.yearlyCount.toLocaleString()} works</div>
+                  <div style="color: #94a3b8;">Total to date: ${object.cumulativeTotal.toLocaleString()}</div>
+                  ${object.yearlyPercent > 0 ? `<div style="color: #6ee7b7;">${object.yearlyPercent.toFixed(1)}% of ${year} output</div>` : ''}
+                </div>
               </div>`,
             };
           }}
@@ -153,23 +200,46 @@ export default function PrintingMap() {
         {/* Year display overlay */}
         <div className="absolute top-4 left-4 bg-slate-900/90 rounded-xl p-4 backdrop-blur">
           <div className="text-5xl font-bold text-violet-400">{year}</div>
-          <div className="text-slate-400 text-sm mt-1">
-            {totalWorks.toLocaleString()} works in {activeCities} cities
+          <div className="text-slate-400 text-sm mt-2">
+            <div>{totalWorksThisYear.toLocaleString()} works this year</div>
+            <div className="text-slate-500">{activeCitiesThisYear} active cities</div>
+          </div>
+          <div className="text-slate-500 text-xs mt-2 pt-2 border-t border-slate-700">
+            {totalWorksCumulative.toLocaleString()} total works
+            <br />{totalCities} cities to date
           </div>
         </div>
 
-        {/* Top cities panel */}
-        <div className="absolute top-4 right-4 bg-slate-900/90 rounded-xl p-4 backdrop-blur min-w-[200px]">
-          <div className="text-sm font-semibold text-slate-400 mb-2">
-            Top Centers {cumulative ? "(cumulative)" : ""}
+        {/* Top cities panels */}
+        <div className="absolute top-4 right-4 bg-slate-900/90 rounded-xl p-4 backdrop-blur min-w-[220px]">
+          <div className="text-sm font-semibold text-violet-400 mb-2">
+            Top This Year ({year})
           </div>
-          {topCities.map((city, i) => (
+          {topCitiesThisYear.length > 0 ? (
+            topCitiesThisYear.map((city, i) => (
+              <div key={city.place} className="flex justify-between text-sm py-1">
+                <span className="text-slate-300">
+                  {i + 1}. {city.place}
+                </span>
+                <span className="text-violet-400 font-mono">
+                  {city.yearlyCount.toLocaleString()}
+                </span>
+              </div>
+            ))
+          ) : (
+            <div className="text-slate-500 text-sm">No data for this year</div>
+          )}
+
+          <div className="text-sm font-semibold text-slate-400 mt-4 mb-2 pt-3 border-t border-slate-700">
+            Cumulative Leaders
+          </div>
+          {topCitiesCumulative.map((city, i) => (
             <div key={city.place} className="flex justify-between text-sm py-1">
-              <span className="text-slate-300">
+              <span className="text-slate-400">
                 {i + 1}. {city.place}
               </span>
-              <span className="text-violet-400 font-mono">
-                {city.count.toLocaleString()}
+              <span className="text-slate-500 font-mono">
+                {city.cumulativeTotal.toLocaleString()}
               </span>
             </div>
           ))}
@@ -178,43 +248,24 @@ export default function PrintingMap() {
         {/* Legend */}
         <div className="absolute bottom-24 right-4 bg-slate-900/90 rounded-xl p-4 backdrop-blur">
           <div className="text-sm font-semibold text-slate-400 mb-2">
-            Annual Output
+            How to Read
           </div>
-          <div className="space-y-1 text-xs">
+          <div className="space-y-2 text-xs text-slate-400">
             <div className="flex items-center gap-2">
-              <div
-                className="w-4 h-4 rounded-full"
-                style={{ backgroundColor: "rgb(139, 92, 246)" }}
-              ></div>
-              <span className="text-slate-300">500+ works</span>
+              <div className="flex gap-1">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "rgba(139, 92, 246, 0.2)" }}></div>
+                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: "rgba(139, 92, 246, 0.2)" }}></div>
+                <div className="w-5 h-5 rounded-full" style={{ backgroundColor: "rgba(139, 92, 246, 0.2)" }}></div>
+              </div>
+              <span>Size = cumulative total</span>
             </div>
             <div className="flex items-center gap-2">
-              <div
-                className="w-4 h-4 rounded-full"
-                style={{ backgroundColor: "rgb(6, 182, 212)" }}
-              ></div>
-              <span className="text-slate-300">200-500</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div
-                className="w-4 h-4 rounded-full"
-                style={{ backgroundColor: "rgb(16, 185, 129)" }}
-              ></div>
-              <span className="text-slate-300">100-200</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div
-                className="w-4 h-4 rounded-full"
-                style={{ backgroundColor: "rgb(245, 158, 11)" }}
-              ></div>
-              <span className="text-slate-300">50-100</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div
-                className="w-4 h-4 rounded-full"
-                style={{ backgroundColor: "rgb(248, 113, 113)" }}
-              ></div>
-              <span className="text-slate-300">&lt;50</span>
+              <div className="flex gap-1 items-center">
+                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: "rgba(139, 92, 246, 0.3)" }}></div>
+                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: "rgba(139, 92, 246, 0.6)" }}></div>
+                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: "rgba(139, 92, 246, 1)" }}></div>
+              </div>
+              <span>Brightness = yearly share</span>
             </div>
           </div>
         </div>
@@ -266,17 +317,6 @@ export default function PrintingMap() {
                 <option value={50}>Very Fast</option>
               </select>
             </div>
-
-            {/* Cumulative toggle */}
-            <label className="flex items-center gap-2 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={cumulative}
-                onChange={(e) => setCumulative(e.target.checked)}
-                className="accent-violet-500"
-              />
-              <span className="text-slate-300 text-sm">Cumulative</span>
-            </label>
 
             {/* Reset */}
             <button
