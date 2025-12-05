@@ -87,16 +87,17 @@ export default function FamousHumanists() {
             <h3 className="text-lg font-semibold mb-3 text-emerald-400">What IS translated:</h3>
             <ul className="text-slate-300 space-y-1 mb-4">
               <li>• On the Donation of Constantine</li>
-              <li>• On Pleasure / On the True Good</li>
-              <li>• Some dialogues and letters</li>
+              <li>• De Voluptate / On Pleasure (his philosophical dialogue)</li>
+              <li>• On Free Will</li>
+              <li>• Some letters and shorter works</li>
             </ul>
 
             <h3 className="text-lg font-semibold mb-3 text-red-400">What is NOT translated:</h3>
             <ul className="text-slate-300 space-y-1">
               <li>• <strong>De Elegantia Linguae Latinae</strong> — 255 editions, no complete English translation</li>
-              <li>• Dialectical Disputations</li>
-              <li>• Annotations on the New Testament (used by Erasmus)</li>
-              <li>• Most of his polemical and philological works</li>
+              <li>• Dialectical Disputations (Repastinatio Dialectice)</li>
+              <li>• Most of his polemical works and invectives</li>
+              <li>• Historical works (Gesta Ferdinandi Regis)</li>
             </ul>
           </div>
 
