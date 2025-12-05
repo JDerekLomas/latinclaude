@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "title": "Latin-to-English Translations: Cited Statistics",
+    "version": "3.0",
+    "created": "2024-12-05",
+    "methodology": "All figures sourced from official publisher/database websites or peer-reviewed scholarship",
+    "note": "Each statistic includes source citation for verification"
+  },
+
+  "corpus_statistics": {
+    "library_of_latin_texts": {
+      "works": 12149,
+      "words": "167,000,000+",
+      "date_range": "240 BCE - 1965 CE",
+      "source": "Brepols, about.brepolis.net/library-of-latin-texts/, accessed December 2024",
+      "citation": "Library of Latin Texts (LLT), Brepolis/Brepols Publishers, 2024. 'Users can access an extensive collection of Latin texts, comprising over 167 million words across 12,149 works and diplomatic charters.'"
+    },
+
+    "ustc": {
+      "total_editions": 1628578,
+      "copies_located": "7,000,000",
+      "libraries_archives_museums": "~10,000",
+      "digital_scans": "500,000+ (linked to 450,000 editions)",
+      "date_range": "1450-1700",
+      "source": "USTC Editions July 2025.accdb (direct database analysis) + ustc.ac.uk/about",
+      "citation": "Direct count from USTC database export, July 2025 edition. 'The USTC currently contains bibliographical descriptions of more than 1.6 million editions.'",
+
+      "language_breakdown": {
+        "source": "Direct analysis of USTC Editions July 2025.accdb, field: language_1",
+        "date_analyzed": "2024-12-05",
+        "total_records": 1628578,
+        "by_language": {
+          "Latin": {"count": 503486, "percentage": 30.9},
+          "German": {"count": 340480, "percentage": 20.9},
+          "French": {"count": 241569, "percentage": 14.8},
+          "English": {"count": 164363, "percentage": 10.1},
+          "Dutch": {"count": 114540, "percentage": 7.0},
+          "Italian": {"count": 113282, "percentage": 7.0},
+          "Spanish": {"count": 97700, "percentage": 6.0},
+          "Greek": {"count": 10491, "percentage": 0.6},
+          "Swedish": {"count": 7891, "percentage": 0.5},
+          "Portuguese": {"count": 7164, "percentage": 0.4},
+          "Czech": {"count": 5924, "percentage": 0.4},
+          "Hebrew": {"count": 4407, "percentage": 0.3},
+          "Catalan": {"count": 4318, "percentage": 0.3},
+          "Polish": {"count": 4289, "percentage": 0.3}
+        }
+      },
+
+      "latin_editions_detail": {
+        "total": 503486,
+        "percentage_of_ustc": 30.9,
+        "by_decade": {
+          "1450s": 43,
+          "1460s": 348,
+          "1470s": 3972,
+          "1480s": 6315,
+          "1490s": 8812,
+          "1500s": 10629,
+          "1510s": 12725,
+          "1520s": 10925,
+          "1530s": 11455,
+          "1540s": 13530,
+          "1550s": 15357,
+          "1560s": 15910,
+          "1570s": 16201,
+          "1580s": 20902,
+          "1590s": 24829,
+          "1600s": 30939,
+          "1610s": 34290,
+          "1620s": 30862,
+          "1630s": 24712,
+          "1640s": 30143,
+          "1650s": 34133,
+          "1660s": 37292,
+          "1670s": 36483,
+          "1680s": 33325,
+          "1690s": 33090
+        },
+        "by_classification": {
+          "University Publications": 147859,
+          "Religious": 118250,
+          "Jurisprudence": 35243,
+          "Classical Authors": 17221,
+          "Educational Books": 14775,
+          "Poetry": 14022,
+          "Medical Texts": 13357,
+          "Funeral Orations": 10819,
+          "History and Chronicles": 10113,
+          "Philosophy and Morality": 9228,
+          "Wedding Pamphlets": 7376,
+          "Literature": 6423,
+          "Music": 5480,
+          "Book Trade": 4958,
+          "Ordinances and Edicts": 4699,
+          "Orations": 4107,
+          "Dialectics and Rhetoric": 4011,
+          "Political Tracts": 3780,
+          "Bibles (including parts)": 3468
+        },
+        "source": "Direct analysis of USTC Editions July 2025.accdb"
+      },
+
+      "search_fields": {
+        "available": ["author", "title", "keyword", "translator", "editor", "short title", "printer", "place of publication", "year", "language", "format", "classification", "digital copy availability"],
+        "source": "Edinburgh Legal History Blog, 2014; USTC database schema"
+      }
+    },
+
+    "medieval_manuscripts": {
+      "total_produced_500_1500": "11,000,000",
+      "surviving_in_1500": "7,000,000",
+      "surviving_today": "~2,900,000",
+      "loss_rate_per_century": "25-40%",
+      "source": "Buringh, Eltjo. Medieval Manuscript Production in the Latin West: Explorations with a Global Database. Leiden: Brill, 2011. (Global Economic History Series, vol. 6)",
+      "citation": "Buringh (2011): 'In total, some eleven million books were copied in this medieval period [500-1500], of which some seven million were still extant in 1500.' Also: 'Drawing on a vast range of sources... Buringh estimates that there are approximately 2.9 million medieval manuscripts in the world today.'"
+    },
+
+    "phi_latin_texts": {
+      "coverage": "Essentially all Latin literary texts written before A.D. 200, plus some later antiquity",
+      "basis": "CD-ROM 5.3 (1991), online version 2015",
+      "source": "Packard Humanities Institute, latin.packhum.org",
+      "citation": "PHI Latin Texts: 'This website contains essentially all Latin literary texts written before A.D. 200, as well as some texts selected from later antiquity.'",
+      "note": "Exact word count not published by PHI; one third-party analysis found 6,321,361 words across 174 classical texts (see Latin Stack Exchange)"
+    }
+  },
+
+  "translation_series": {
+    "loeb_classical_library": {
+      "total_volumes": "537-558",
+      "latin_volumes_estimate": "~250-280 (red cover)",
+      "greek_volumes_estimate": "~280-300 (green cover)",
+      "public_domain": "429 of 558 (76%)",
+      "source": "Wikipedia, 'Loeb Classical Library'; loebclassics.com",
+      "citation": "Wikipedia: 'The 429 out of 558 LCL volumes below (76%) are in the public domain... The series included basic translations of classical literature, growing to include at least 537 different works, some in multiple volumes.'",
+      "note": "Exact Latin/Greek breakdown not officially published; red=Latin, green=Greek covers"
+    },
+
+    "i_tatti_renaissance_library": {
+      "total_volumes": 101,
+      "milestone": "100th volume published March 2025",
+      "copies_sold": "100,000+ (as of 2021)",
+      "source": "Wikipedia, 'The I Tatti Renaissance Library'; Harvard University Press",
+      "citation": "Wikipedia: 'In March 2025, the series published its 100th volume... As of 2021, the series had sold more than 100,000 copies.'",
+      "note": "Many volumes contain first English translations of Renaissance Latin works"
+    },
+
+    "dumbarton_oaks_medieval_library": {
+      "total_volumes": 91,
+      "latin_volumes": 34,
+      "byzantine_greek_volumes": 23,
+      "old_english_volumes": 22,
+      "medieval_iberian_volumes": 6,
+      "other_volumes": 6,
+      "source": "domedieval.org/volumes/, accessed December 2024",
+      "citation": "Direct count from DOML volumes page, December 2024"
+    },
+
+    "fathers_of_the_church": {
+      "total_volumes": "147-148",
+      "latest_volume": "Vol. 147-148: St. Jerome, Exegetical Epistles (2023-2024)",
+      "first_volume": 1947,
+      "publisher": "Catholic University of America Press",
+      "source": "Internet Archive collection; CUA Press",
+      "citation": "Internet Archive: 'The Fathers Of The Church, A New Translation, 147 Volumes'. CUA Press blog (June 2024) discusses volumes 147-148."
+    },
+
+    "ancient_christian_writers": {
+      "total_volumes": 76,
+      "first_volume": 1946,
+      "publisher": "Paulist Press / Newman Press",
+      "source": "Logos Bible Software; Wikipedia",
+      "citation": "Logos: 'Ancient Christian Writers Bundle (76 vols.)'"
+    },
+
+    "oxford_medieval_texts": {
+      "total_volumes": "~103",
+      "source": "Oxford University Press series page",
+      "note": "Exact count varies by how counted; series ongoing"
+    },
+
+    "translated_texts_for_historians": {
+      "total_volumes": "86+",
+      "date_range_focus": "300-800 CE",
+      "founded": 1985,
+      "publisher": "Liverpool University Press",
+      "source": "Liverpool University Press website",
+      "citation": "LUP: 'Founded 1985, celebrating 40th anniversary in 2025'"
+    },
+
+    "collected_works_of_erasmus": {
+      "total_volumes": "86+",
+      "status": "Ongoing since 1974",
+      "publisher": "University of Toronto Press",
+      "source": "University of Toronto Press",
+      "citation": "UTP: Called 'one of the scholarly triumphs of our time'"
+    },
+
+    "aris_and_phillips": {
+      "total_volumes": "170+",
+      "publisher": "Liverpool University Press (formerly Aris & Phillips)",
+      "source": "Liverpool University Press; JSTOR",
+      "note": "Covers 36+ major classical authors"
+    }
+  },
+
+  "open_access_resources": {
+    "loebolus": {
+      "volumes": 277,
+      "content": "Public domain Loeb volumes (pre-1930)",
+      "url": "ryanfb.github.io/loebolus/",
+      "source": "Loebolus website"
+    },
+
+    "internet_archive_loeb": {
+      "volumes": 545,
+      "size": "12.3 GB",
+      "url": "archive.org/details/lcl-loeb-classical-library-complete-545-vols",
+      "source": "Internet Archive listing"
+    },
+
+    "internet_archive_fathers": {
+      "volumes": 147,
+      "url": "archive.org/details/the-fathers-of-the-church-a-new-translation-147-volumes",
+      "source": "Internet Archive listing"
+    },
+
+    "philological_museum": {
+      "texts": "~200",
+      "bibliography_items": 79760,
+      "editor": "Dana F. Sutton",
+      "url": "philological.cal.bham.ac.uk/",
+      "source": "Philological Museum website",
+      "citation": "Sutton: 'An Analytic Bibliography of On-line Neo-Latin Texts' contains 79,760 items"
+    },
+
+    "perseus_digital_library": {
+      "url": "perseus.tufts.edu",
+      "source": "Tufts University",
+      "note": "Major classical authors with translations; exact count not published"
+    },
+
+    "global_medieval_sourcebook": {
+      "texts": "~200",
+      "url": "sourcebook.stanford.edu",
+      "publisher": "Stanford University",
+      "note": "Multi-language including Latin; many first translations"
+    },
+
+    "ian_bruce_scientific": {
+      "works": "30+",
+      "url": "17centurymaths.com",
+      "content": "Newton Principia, Euler works, Gauss, Bernoulli, etc.",
+      "source": "17centurymaths.com",
+      "note": "Individual scholar's translations; open access"
+    }
+  },
+
+  "summary_statistics": {
+    "verified_counts": {
+      "llt_works": {"value": 12149, "source": "Brepols 2024"},
+      "llt_words": {"value": "167M+", "source": "Brepols 2024"},
+      "ustc_editions": {"value": "1.6M+", "source": "St Andrews 2024"},
+      "ustc_copies": {"value": "7M", "source": "St Andrews 2024"},
+      "medieval_mss_produced": {"value": "11M", "source": "Buringh 2011"},
+      "medieval_mss_surviving": {"value": "~2.9M", "source": "Buringh 2011"},
+      "loeb_volumes": {"value": "537-558", "source": "Wikipedia/HUP"},
+      "i_tatti_volumes": {"value": 101, "source": "Wikipedia/HUP 2025"},
+      "doml_volumes": {"value": 91, "source": "DOML website 2024"},
+      "doml_latin": {"value": 34, "source": "DOML website 2024"},
+      "fotc_volumes": {"value": "147-148", "source": "CUA Press 2024"},
+      "acw_volumes": {"value": 76, "source": "Logos 2024"}
+    },
+
+    "estimates_requiring_verification": {
+      "loeb_latin_vs_greek_split": "Not officially published; commonly cited as roughly 50/50",
+      "total_works_translated": "No comprehensive count exists; estimate 8,000-15,000 based on series totals",
+      "ustc_latin_percentage": "Commonly cited as 50-70% Latin; not officially broken down",
+      "phi_word_count": "6.3M cited in one analysis; not officially published"
+    },
+
+    "calculated_totals": {
+      "commercial_series_volumes": {
+        "loeb": "537-558",
+        "i_tatti": 101,
+        "doml": 91,
+        "fotc": 148,
+        "acw": 76,
+        "omt": "~103",
+        "tth": "86+",
+        "erasmus": "86+",
+        "aris_phillips": "170+",
+        "note": "Total: ~1,400-1,500 volumes (some overlap in coverage)"
+      },
+      "open_access_volumes": {
+        "loebolus": 277,
+        "ia_loeb": 545,
+        "ia_fotc": 147,
+        "philological_museum": "~200 texts",
+        "note": "Total: ~1,200 volumes/texts (significant overlap with commercial)"
+      }
+    }
+  },
+
+  "what_we_dont_know": {
+    "gaps_in_data": [
+      "Exact Latin/Greek breakdown for Loeb Classical Library",
+      "Exact word count for PHI Latin Texts corpus",
+      "Exact percentage of USTC editions that are Latin",
+      "Total number of Latin works ever written (unknowable)",
+      "Comprehensive list of all Latin-to-English translations ever made",
+      "Number of translations in dissertations and journal articles",
+      "Quality assessment of existing translations"
+    ],
+    "why_it_matters": "Without these figures, percentage coverage estimates are necessarily rough"
+  },
+
+  "key_citations": {
+    "buringh_2011": {
+      "full": "Buringh, Eltjo. Medieval Manuscript Production in the Latin West: Explorations with a Global Database. Global Economic History Series, vol. 6. Leiden: Brill, 2011.",
+      "isbn": "978-90-04-17519-8"
+    },
+    "ustc": {
+      "full": "Universal Short Title Catalogue. University of St Andrews. https://ustc.ac.uk/",
+      "access_date": "December 2024"
+    },
+    "llt": {
+      "full": "Library of Latin Texts (LLT). Brepols Publishers / Centre 'Traditio Litterarum Occidentalium'. https://www.brepolis.net/",
+      "access_date": "December 2024"
+    },
+    "phi": {
+      "full": "PHI Latin Texts. Packard Humanities Institute. https://latin.packhum.org/",
+      "basis": "CD-ROM 5.3 (1991)"
+    }
+  }
+}

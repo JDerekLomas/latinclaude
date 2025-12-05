@@ -2,6 +2,20 @@ import Link from "next/link";
 
 const posts = [
   {
+    slug: "death-of-latin",
+    title: "The Death of Latin? What 1.6 Million Books Tell Us",
+    date: "December 2024",
+    excerpt: "German overtook Latin in the 1670s. We analyzed the complete USTC database to pinpoint exactly when Europe's lingua franca lost its dominance.",
+    tag: "Data",
+  },
+  {
+    slug: "mapping-translations",
+    title: "Mapping the Translation Landscape: A Research Diary",
+    date: "December 2024",
+    excerpt: "How do you count something that's never been counted? Building a comprehensive database of Latin-to-English translations—and discovering how much we don't know.",
+    tag: "Methods",
+  },
+  {
     slug: "methodology",
     title: "Methodology: How We Estimated Digitization Rates",
     date: "December 2024",

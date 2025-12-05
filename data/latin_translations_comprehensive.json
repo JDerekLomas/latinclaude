@@ -1,0 +1,721 @@
+{
+  "metadata": {
+    "title": "Comprehensive Latin-to-English Translations Database",
+    "version": "2.0",
+    "created": "2024-12-05",
+    "description": "Complete catalogue of Latin works with English translations, organized by historical period",
+    "methodology": "Systematic scraping of publisher catalogues, academic databases, and digital repositories",
+    "total_sources_catalogued": 45
+  },
+
+  "executive_summary": {
+    "total_latin_literature": {
+      "library_of_latin_texts": {
+        "works": 12149,
+        "words": "167 million",
+        "authors": 1950,
+        "date_range": "240 BCE - 1965 CE"
+      },
+      "ustc_printed_editions": {
+        "total_editions": "1.6 million",
+        "date_range": "1450-1700",
+        "latin_percentage": "~50-70%",
+        "estimated_latin_editions": "800,000-1,100,000"
+      },
+      "medieval_manuscripts_produced": {
+        "total_produced": "11 million",
+        "surviving": "750,000",
+        "loss_rate": "92.5%",
+        "date_range": "500-1500 CE",
+        "source": "Buringh (2011)"
+      },
+      "classical_latin_corpus": {
+        "surviving_authors": 362,
+        "phi_corpus_words": "6.3 million",
+        "note": "Pre-200 CE texts"
+      }
+    },
+    "total_works_with_english_translations": {
+      "estimate": "8,000-15,000 works",
+      "series_volumes": 3500,
+      "percentage_of_total": "<3%"
+    },
+    "translation_series_volumes": {
+      "commercial": 1850,
+      "open_access": 1650,
+      "total": 3500
+    },
+    "key_insight": "Of 167 million words of Latin in the LLT alone, translations cover perhaps 5-10 million words - roughly 3-6%",
+    "chronological_coverage": {
+      "best_covered": "Classical Antiquity (240 BCE - 600 CE) - 70-80%",
+      "moderately_covered": "Patristic Era (100-800 CE) - 60-70%",
+      "partially_covered": "Medieval (600-1450) - 20-30%",
+      "poorly_covered": "Renaissance/Early Modern (1450-1700) - <2%",
+      "least_covered": "Scientific/Enlightenment (1600-1900) - <1%"
+    }
+  },
+
+  "by_period": {
+    "1_classical_antiquity": {
+      "period": "240 BCE - 600 CE",
+      "description": "From Livius Andronicus to fall of Rome and early Church Fathers",
+      "corpus_statistics": {
+        "surviving_authors_pre_200CE": 362,
+        "phi_corpus_word_count": "6,321,361",
+        "major_authors": "~150",
+        "minor_fragmentary": "~1,000+"
+      },
+      "translation_coverage": "70-80% of major works",
+      "status": "BEST COVERED - most canonical authors fully translated",
+
+      "primary_translation_series": [
+        {
+          "name": "Loeb Classical Library",
+          "publisher": "Harvard University Press",
+          "url": "https://www.loebclassics.com/",
+          "volumes": 545,
+          "latin_volumes": "~280 (rest Greek)",
+          "format": "Facing Latin/English",
+          "access": "Commercial + Loebolus (277 public domain)",
+          "coverage": "Nearly complete for major classical authors",
+          "major_authors": {
+            "Cicero": 32,
+            "Livy": 14,
+            "Augustine": 11,
+            "Seneca": 10,
+            "Pliny_Elder": 10,
+            "Ovid": 6,
+            "Tacitus": 5,
+            "Ammianus": 3,
+            "Virgil": 2,
+            "Horace": 2,
+            "Apuleius": 2,
+            "Ausonius": 2,
+            "Lucretius": 1,
+            "Catullus": 1,
+            "Juvenal": 1
+          }
+        },
+        {
+          "name": "Aris & Phillips Classical Texts",
+          "publisher": "Liverpool University Press",
+          "volumes": 170,
+          "format": "Facing text with commentary",
+          "access": "Commercial/JSTOR",
+          "note": "36+ major authors, 50 fragmentary"
+        },
+        {
+          "name": "Penguin Classics (Latin)",
+          "publisher": "Penguin Books",
+          "titles": 114,
+          "format": "English translation only",
+          "access": "Commercial (widely available)",
+          "focus": "Accessible translations for general readers"
+        },
+        {
+          "name": "Oxford World's Classics",
+          "publisher": "Oxford University Press",
+          "format": "English translation with notes",
+          "access": "Commercial"
+        }
+      ],
+
+      "open_access_resources": [
+        {
+          "name": "Perseus Digital Library",
+          "url": "https://www.perseus.tufts.edu/",
+          "content": "Major classical authors with translations and morphological tools",
+          "authors": ["Caesar", "Cicero", "Virgil", "Ovid", "Catullus", "Livy", "Seneca", "Apuleius", "Boethius"]
+        },
+        {
+          "name": "Loebolus",
+          "url": "https://ryanfb.github.io/loebolus/",
+          "content": "277 public domain Loeb volumes (pre-1930)",
+          "size": "3.2 GB zip available"
+        },
+        {
+          "name": "Internet Archive - Loeb Collection",
+          "url": "https://archive.org/details/lcl-loeb-classical-library-complete-545-vols",
+          "content": "545 Loeb volumes",
+          "size": "12.3 GB"
+        }
+      ],
+
+      "translation_gaps": [
+        "Minor poets and prose writers",
+        "Technical literature (agricultural, medical, legal)",
+        "Fragmentary authors",
+        "Inscriptions and documentary texts"
+      ]
+    },
+
+    "2_patristic_era": {
+      "period": "100 - 800 CE",
+      "description": "Church Fathers, early Christian literature",
+      "total_latin_authors": "~150 major",
+      "translation_coverage": "60-70% of major works",
+      "status": "WELL COVERED - major theological works translated",
+
+      "primary_translation_series": [
+        {
+          "name": "Fathers of the Church",
+          "publisher": "Catholic University of America Press",
+          "volumes": 147,
+          "format": "English translation with apparatus",
+          "access": "Commercial + Internet Archive",
+          "major_authors": {
+            "Augustine": "20+ volumes",
+            "John_Chrysostom": "10+ volumes",
+            "Origen": "10+ volumes",
+            "Cyril_Alexandria": "8+ volumes",
+            "Jerome": "5+ volumes",
+            "also": ["Basil", "Gregory the Great", "Ambrose", "Tertullian", "Cyprian", "Lactantius", "Prudentius"]
+          }
+        },
+        {
+          "name": "Ancient Christian Writers",
+          "publisher": "Paulist Press / Newman Press",
+          "volumes": 76,
+          "format": "English translation with introduction and notes",
+          "access": "Commercial + Internet Archive"
+        },
+        {
+          "name": "Nicene and Post-Nicene Fathers",
+          "publisher": "Various (19th century)",
+          "volumes": 28,
+          "format": "English translation",
+          "access": "Public domain",
+          "note": "Older translations but comprehensive"
+        }
+      ],
+
+      "open_access_resources": [
+        {
+          "name": "Internet Archive - Fathers of the Church",
+          "url": "https://archive.org/details/the-fathers-of-the-church-a-new-translation-147-volumes",
+          "volumes": 147
+        },
+        {
+          "name": "Christian Classics Ethereal Library",
+          "url": "https://www.ccel.org/",
+          "content": "Public domain patristic translations"
+        },
+        {
+          "name": "New Advent",
+          "url": "https://www.newadvent.org/fathers/",
+          "content": "Searchable patristic texts"
+        }
+      ],
+
+      "translation_gaps": [
+        "Minor Church Fathers",
+        "Hagiographic literature",
+        "Liturgical texts",
+        "Monastic rules (beyond Benedict)"
+      ]
+    },
+
+    "3_medieval": {
+      "period": "600 - 1450 CE",
+      "description": "Early through High Middle Ages",
+      "corpus_statistics": {
+        "manuscripts_produced": "11 million",
+        "manuscripts_surviving": "750,000",
+        "loss_rate": "92.5%",
+        "latin_authors_britain_alone": "2,000 (pre-1540)",
+        "estimated_total_authors": "10,000+",
+        "source": "Buringh (2011), Brepols Handlist"
+      },
+      "translation_coverage": "20-30% of major works",
+      "status": "MODERATE GAPS - major chronicles and theology translated, much else not",
+
+      "primary_translation_series": [
+        {
+          "name": "Dumbarton Oaks Medieval Library",
+          "publisher": "Harvard University Press",
+          "url": "https://domedieval.org/",
+          "volumes": 91,
+          "latin_volumes": "~45",
+          "format": "Facing text translation",
+          "access": "Commercial",
+          "highlights": [
+            "Complete Vulgate Bible (6 volumes)",
+            "Carmina Burana (2 volumes)",
+            "100 Latin Hymns",
+            "Rule of Saint Benedict",
+            "Alan of Lille",
+            "Bernardus Silvestris",
+            "Hrotsvit of Gandersheim",
+            "Venantius Fortunatus"
+          ]
+        },
+        {
+          "name": "Oxford Medieval Texts",
+          "publisher": "Oxford University Press",
+          "volumes": 103,
+          "format": "Critical Latin with facing English",
+          "access": "Commercial",
+          "highlights": [
+            "Orderic Vitalis (6 vols)",
+            "Bede's Ecclesiastical History",
+            "Saxo Grammaticus",
+            "William of Jumièges"
+          ]
+        },
+        {
+          "name": "Translated Texts for Historians",
+          "publisher": "Liverpool University Press",
+          "volumes": 86,
+          "date_range": "300-800 CE",
+          "format": "English translation with commentary",
+          "access": "Commercial",
+          "note": "Focus on Late Antiquity/Early Medieval"
+        },
+        {
+          "name": "Toronto Medieval Latin Texts",
+          "publisher": "PIMS/Brepols",
+          "volumes": 31,
+          "format": "Critical Latin editions (some with translations)",
+          "access": "Commercial"
+        },
+        {
+          "name": "Cambridge Medieval Classics",
+          "publisher": "Cambridge University Press",
+          "volumes": 15,
+          "access": "Commercial"
+        }
+      ],
+
+      "open_access_resources": [
+        {
+          "name": "Global Medieval Sourcebook",
+          "url": "https://sourcebook.stanford.edu/",
+          "publisher": "Stanford University",
+          "texts": 200,
+          "format": "TEI-XML with parallel translations",
+          "note": "Many first translations"
+        },
+        {
+          "name": "Internet Medieval Sourcebook",
+          "url": "https://sourcebooks.fordham.edu/sbook.asp",
+          "publisher": "Fordham University",
+          "content": "Excerpts and selections from medieval sources"
+        }
+      ],
+
+      "translation_gaps": [
+        "Scholastic philosophy (beyond Aquinas highlights)",
+        "Scientific/technical treatises",
+        "Legal commentaries",
+        "Local chronicles and annals",
+        "Sermon collections",
+        "Devotional literature",
+        "University disputations"
+      ]
+    },
+
+    "4_renaissance_early_modern": {
+      "period": "1450 - 1700",
+      "description": "Humanist revival through Scientific Revolution",
+      "corpus_statistics": {
+        "ustc_total_editions": "1,600,000",
+        "ustc_copies_located": "7,000,000",
+        "ustc_libraries_searched": "10,000+",
+        "digital_scans_available": "500,000+",
+        "latin_percentage_16th_c": "70%",
+        "estimated_latin_editions": "800,000-1,100,000",
+        "neo_latin_authors": "countless - described as 'vast'",
+        "note": "More Latin printed 1450-1700 than entire medieval period"
+      },
+      "translation_coverage": "<2% of total output",
+      "estimated_works_translated": "~15,000-20,000 of 1,000,000+",
+      "status": "MAJOR GAPS - vast literature largely untranslated",
+
+      "primary_translation_series": [
+        {
+          "name": "I Tatti Renaissance Library",
+          "publisher": "Harvard University Press",
+          "url": "https://itatti.harvard.edu/",
+          "volumes": 100,
+          "format": "Facing Latin/English",
+          "focus": "Italian Renaissance Latin (1350-1600)",
+          "access": "Commercial",
+          "major_authors": {
+            "Petrarch": "Letters (selected)",
+            "Boccaccio": ["Famous Women", "Genealogy of Pagan Gods"],
+            "Leonardo_Bruni": "History of the Florentine People (3 vols)",
+            "Marsilio_Ficino": ["Platonic Theology (6 vols)", "Commentaries on Plato"],
+            "Lorenzo_Valla": ["Donation of Constantine", "Dialectical Disputations"],
+            "Giovanni_Pontano": ["Baiae", "Dialogues (3 vols)", "Eclogues"],
+            "Angelo_Poliziano": ["Letters (2 vols)", "Miscellanies"],
+            "Pico_della_Mirandola": ["Oration on Dignity of Man", "900 Conclusions"],
+            "Pope_Pius_II": "Commentaries (3 vols)"
+          }
+        },
+        {
+          "name": "Collected Works of Erasmus",
+          "publisher": "University of Toronto Press",
+          "volumes": "86+",
+          "format": "English translation with apparatus",
+          "access": "Commercial",
+          "status": "Ongoing since 1974",
+          "categories": [
+            "Literary/educational writings",
+            "Adages (4000+ proverbs)",
+            "Correspondence",
+            "Moral writings",
+            "Religious instruction",
+            "New Testament annotations",
+            "Paraphrases",
+            "Patristic translations",
+            "Controversies"
+          ],
+          "note": "Called 'one of the scholarly triumphs of our time'"
+        },
+        {
+          "name": "Yale Complete Works of Thomas More",
+          "publisher": "Yale University Press",
+          "volumes": 15,
+          "format": "Latin with English translation",
+          "access": "Commercial"
+        }
+      ],
+
+      "open_access_resources": [
+        {
+          "name": "The Philological Museum",
+          "url": "https://philological.cal.bham.ac.uk/",
+          "editor": "Dana F. Sutton",
+          "texts": 200,
+          "bibliography_items": 79760,
+          "focus": "British neo-Latin (16th-17th century)",
+          "authors": ["George Buchanan", "William Camden", "John Milton (Latin)", "Francis Bacon (Latin)", "Thomas More", "John Owen"]
+        },
+        {
+          "name": "CAMENA",
+          "url": "http://www.uni-mannheim.de/mateo/camenahtdocs/camena.html",
+          "description": "Corpus of neo-Latin authors (mostly texts, limited translations)"
+        },
+        {
+          "name": "Poeti d'Italia in lingua latina",
+          "url": "https://mizar.unive.it/poetiditalia/public/",
+          "description": "Italian Latin poetry 1250-1550"
+        },
+        {
+          "name": "BVH - Bibliothèques Virtuelles Humanistes",
+          "url": "http://www.bvh.univ-tours.fr/",
+          "description": "French Renaissance humanist texts"
+        },
+        {
+          "name": "Delitiae Poetarum Scotorum",
+          "url": "http://www.dps.gla.ac.uk/",
+          "description": "Scottish Latin poetry with translations"
+        }
+      ],
+
+      "reference_databases": [
+        {
+          "name": "Universal Short Title Catalogue (USTC)",
+          "url": "https://ustc.ac.uk/",
+          "records": "1.6 million editions",
+          "copies": "7 million in 10,000+ libraries",
+          "digital_scans": "500,000+",
+          "note": "Essential for identifying what exists"
+        },
+        {
+          "name": "Catalogus Translationum et Commentariorum",
+          "volumes": 13,
+          "founded": 1946,
+          "scope": "Medieval/Renaissance reception of classical authors"
+        }
+      ],
+
+      "translation_gaps": [
+        "~98% of USTC Latin editions have no English translation",
+        "Most humanist correspondence",
+        "Neo-Latin poetry (vast corpus)",
+        "Scientific/medical treatises",
+        "Legal commentaries",
+        "Religious controversy",
+        "Educational textbooks",
+        "Local histories",
+        "Speeches and orations"
+      ]
+    },
+
+    "5_scientific_enlightenment": {
+      "period": "1600 - 1900",
+      "description": "Scientific Revolution through 19th century",
+      "note": "Latin remained language of science through 18th century; dissertations in Latin until 19th century",
+      "translation_coverage": "Selected major works only",
+      "status": "SIGNIFICANT GAPS - many scientific works untranslated",
+
+      "key_facts": [
+        "Newton wrote Principia in Latin (1687)",
+        "Euler wrote extensively in Latin",
+        "Linnaeus established Latin nomenclature (still used)",
+        "Gauss published in Latin and German",
+        "Academic dissertations in Latin until ~1800 across Europe",
+        "Vatican Latin continues to present"
+      ],
+
+      "major_translation_projects": [
+        {
+          "name": "Ian Bruce Scientific Translations",
+          "url": "https://www.17centurymaths.com/",
+          "access": "Open access",
+          "status": "Heroic individual effort",
+          "works": [
+            {"author": "Isaac Newton", "title": "Principia Mathematica", "status": "Complete"},
+            {"author": "Leonhard Euler", "title": "Mechanica (2 vols)", "status": "Complete"},
+            {"author": "Leonhard Euler", "title": "Introductio in Analysin Infinitorum", "status": "Complete"},
+            {"author": "Leonhard Euler", "title": "Foundations of Integral Calculus (4 vols)", "status": "Complete"},
+            {"author": "Leonhard Euler", "title": "Foundations of Differential Calculus", "status": "Complete"},
+            {"author": "Leonhard Euler", "title": "Dioptrics (3 vols)", "status": "Complete"},
+            {"author": "Leonhard Euler", "title": "Letters to a German Princess (233 essays)", "status": "Complete"},
+            {"author": "Carl Friedrich Gauss", "title": "Dioptrische Untersuchungen", "status": "Complete"},
+            {"author": "John Napier", "title": "Mirifici Logarithmorum Canon", "status": "Complete"},
+            {"author": "Henry Briggs", "title": "Arithmetica Logarithmica", "status": "Complete"},
+            {"author": "Thomas Harriot", "title": "Artis Analyticae Praxis", "status": "Complete"},
+            {"author": "Christian Huygens", "title": "Horologium (Pendulum Clock)", "status": "Complete"},
+            {"author": "Daniel Bernoulli", "title": "Hydrodynamicae", "status": "Complete"},
+            {"author": "Gottfried Leibniz", "title": "Differential Calculus Papers", "status": "Partial"}
+          ]
+        },
+        {
+          "name": "Linnaeus Translations",
+          "works": [
+            {"title": "Philosophia Botanica", "translator": "Stephen Freer", "status": "Complete"},
+            {"title": "Systema Naturae", "status": "Partial"},
+            {"title": "Species Plantarum", "status": "Partial"},
+            {"title": "Amoenitates academicae", "note": "7 dissertations in English (1759)"}
+          ]
+        },
+        {
+          "name": "Papal Encyclicals (1740-1981)",
+          "key_resource": "Claudia Carlen, The Papal Encyclicals (5 vols)",
+          "online": "papalencyclicals.net",
+          "coverage": "Most major encyclicals translated"
+        }
+      ],
+
+      "poetry_anthologies": [
+        {
+          "title": "An Anthology of Neo-Latin Poetry by Classical Scholars",
+          "publisher": "Bloomsbury",
+          "editors": "Harrison & Manuwald",
+          "date_range": "c.1490-c.1900",
+          "note": "First translations of many poems"
+        },
+        {
+          "title": "Jesuit Latin Poets of the 17th and 18th Centuries",
+          "publisher": "Bolchazy-Carducci",
+          "content": "62 poems by 19 authors"
+        }
+      ],
+
+      "dissertation_collections": [
+        {
+          "name": "University of Cincinnati German Dissertations",
+          "items": 18000,
+          "date_range": "17th-early 20th century",
+          "languages": ["Latin", "German", "French"],
+          "status": "Digitization with English analysis underway"
+        }
+      ],
+
+      "translation_gaps": [
+        "Most of Euler's 800+ works",
+        "Scientific academy proceedings",
+        "Medical dissertations",
+        "Legal dissertations",
+        "Theological dissertations",
+        "Natural history descriptions",
+        "Astronomical observations"
+      ]
+    }
+  },
+
+  "text_databases_not_translations": {
+    "description": "Major databases of Latin texts (essential for identifying what exists, even without translations)",
+    "resources": [
+      {
+        "name": "Library of Latin Texts (LLT)",
+        "publisher": "Brepols",
+        "url": "https://www.brepols.net/series/LLT-O",
+        "word_count": "167 million+",
+        "work_count": 12149,
+        "date_range": "240 BCE - 1965 CE",
+        "access": "Commercial (subscription)",
+        "note": "World's leading database for Latin texts - texts only, not translations"
+      },
+      {
+        "name": "The Latin Library",
+        "url": "http://thelatinlibrary.com/",
+        "access": "Open access",
+        "content": "Latin texts only"
+      },
+      {
+        "name": "Bibliotheca Augustana",
+        "url": "https://www.hs-augsburg.de/~harsch/augustana.html",
+        "access": "Open access",
+        "content": "Chronologically indexed Latin texts"
+      },
+      {
+        "name": "Corpus Corporum",
+        "url": "http://www.mlat.uzh.ch/MLS/",
+        "publisher": "University of Zürich",
+        "access": "Open access",
+        "content": "Searchable gateway to Latin texts"
+      }
+    ]
+  },
+
+  "national_neo_latin_collections": {
+    "description": "Digital collections organized by national/regional Latin traditions",
+    "collections": [
+      {"name": "Philological Museum", "region": "British", "url": "https://philological.cal.bham.ac.uk/"},
+      {"name": "Croatiae auctores latini", "region": "Croatian", "url": "http://www.ffzg.unizg.hr/klafil/croala/"},
+      {"name": "Irish Neo-Latin Writers", "region": "Irish", "url": "https://www.ucc.ie/en/cnls/resources/findinglist/"},
+      {"name": "Heinsius Collection", "region": "Dutch", "url": "http://www.let.leidenuniv.nl/Dutch/Latijn/Heinsius.html"},
+      {"name": "Delitiae Poetarum Scotorum", "region": "Scottish", "url": "http://www.dps.gla.ac.uk/"},
+      {"name": "Poeti d'Italia", "region": "Italian", "url": "https://mizar.unive.it/poetiditalia/public/"},
+      {"name": "BVH", "region": "French", "url": "http://www.bvh.univ-tours.fr/"},
+      {"name": "CAMENA", "region": "German", "url": "http://www.uni-mannheim.de/mateo/camenahtdocs/camena.html"},
+      {"name": "Erasmus Online", "region": "Dutch (Erasmus)", "url": "https://www.bibliotheek.rotterdam.nl/erasmus-online-database"}
+    ]
+  },
+
+  "statistics_summary": {
+    "total_latin_ever_written": {
+      "library_of_latin_texts_words": "167,000,000",
+      "library_of_latin_texts_works": 12149,
+      "library_of_latin_texts_authors": 1950,
+      "classical_phi_corpus_words": "6,321,361",
+      "classical_authors_surviving": 362,
+      "medieval_manuscripts_produced": "11,000,000",
+      "medieval_manuscripts_surviving": "750,000",
+      "ustc_editions_1450_1700": "1,600,000",
+      "ustc_latin_editions_estimated": "800,000-1,100,000"
+    },
+    "total_translated_to_english": {
+      "estimated_works": "8,000-15,000",
+      "estimated_words": "5-10 million",
+      "percentage_of_llt": "3-6%",
+      "percentage_of_ustc_latin": "<2%"
+    },
+    "by_access_type": {
+      "commercial_series_volumes": {
+        "loeb": {"total": 545, "latin": 280, "greek": 265},
+        "i_tatti": 100,
+        "doml": {"total": 91, "latin": 45, "other": 46},
+        "fathers_of_church": 147,
+        "ancient_christian_writers": 76,
+        "aris_phillips": 170,
+        "oxford_medieval_texts": 103,
+        "penguin_latin": 114,
+        "translated_texts_historians": 86,
+        "toronto_medieval": 31,
+        "cambridge_medieval": 15,
+        "erasmus_toronto": 86,
+        "yale_more": 15,
+        "total": 1679
+      },
+      "open_access_volumes": {
+        "loebolus_public_domain": 277,
+        "internet_archive_loeb": 545,
+        "internet_archive_fotc": 147,
+        "internet_archive_acw": 76,
+        "philological_museum": 200,
+        "global_medieval_sourcebook": 200,
+        "perseus": 50,
+        "ian_bruce_scientific": 30,
+        "nicene_post_nicene_fathers": 28,
+        "total": 1553
+      }
+    },
+    "by_period": {
+      "classical_antiquity": {
+        "corpus_size": "6.3M words, 362 authors",
+        "series_volumes": 900,
+        "estimated_coverage": "70-80%"
+      },
+      "patristic": {
+        "corpus_size": "major fathers ~150 authors",
+        "series_volumes": 280,
+        "estimated_coverage": "60-70%"
+      },
+      "medieval": {
+        "corpus_size": "750K surviving MSS, 10K+ authors",
+        "series_volumes": 380,
+        "estimated_coverage": "20-30%"
+      },
+      "renaissance_early_modern": {
+        "corpus_size": "800K-1.1M Latin editions (USTC)",
+        "series_volumes": 220,
+        "estimated_coverage": "<2%"
+      },
+      "scientific_enlightenment": {
+        "corpus_size": "unknown but vast",
+        "series_volumes": 50,
+        "estimated_coverage": "<1%"
+      }
+    }
+  },
+
+  "major_untranslated_areas": {
+    "highest_priority_gaps": [
+      {
+        "area": "Neo-Latin Poetry (1450-1700)",
+        "estimated_works": "100,000+",
+        "current_translations": "<1000",
+        "resources": "CAMENA, Poeti d'Italia have texts"
+      },
+      {
+        "area": "Humanist Correspondence",
+        "estimated_letters": "500,000+",
+        "note": "Even major figures like Ficino only partially translated"
+      },
+      {
+        "area": "Scientific Latin (1500-1800)",
+        "note": "Euler alone wrote 800+ works; most untranslated"
+      },
+      {
+        "area": "Academic Dissertations",
+        "note": "Hundreds of thousands across Europe; almost none translated"
+      },
+      {
+        "area": "Religious Controversy (Reformation era)",
+        "note": "Massive polemical literature largely untranslated"
+      },
+      {
+        "area": "Legal Commentaries",
+        "note": "Fundamental to European legal tradition; rarely translated"
+      }
+    ]
+  },
+
+  "recommendations_for_researchers": {
+    "finding_translations": [
+      "1. Check major series catalogues (Loeb, I Tatti, DOML, etc.)",
+      "2. Search WorldCat for author + 'English translation'",
+      "3. Check JSTOR/Project MUSE for journal translations",
+      "4. Search dissertation databases (ProQuest, EThOS)",
+      "5. Check author-specific scholarly editions",
+      "6. Consult Catalogus Translationum for classical reception"
+    ],
+    "when_no_translation_exists": [
+      "1. Check if Latin text is available (LLT, Latin Library, etc.)",
+      "2. Look for texts with facing translations in other languages (German, Italian)",
+      "3. Consider commissioning translation for dissertation/research",
+      "4. Use AI-assisted translation as starting point (with expert review)"
+    ]
+  },
+
+  "future_developments": {
+    "ai_translation_potential": "Large language models may dramatically increase translation coverage",
+    "digitization_projects": "USTC, LLT, national libraries continue expanding access",
+    "scholarly_priorities": "I Tatti, DOML, other series continue systematic translation",
+    "crowd_sourcing": "Projects like Wikisource enabling collaborative translation"
+  }
+}

@@ -1,0 +1,1320 @@
+{
+  "metadata": {
+    "title": "SourceLibrary.org Translation Roadmap",
+    "description": "Prioritized list of Latin works for translation, based on USTC edition counts, historical significance, translation gaps, and alignment with BPH esoteric traditions",
+    "created": "2025-12",
+    "methodology": "Works scored by: historical impact (USTC editions), translation gap severity, feasibility (length/difficulty), and audience potential. Esoteric/hermetic works scored with additional weight for BPH alignment.",
+    "bph_categories": ["hermetica", "alchemy", "mysticism", "rosicrucianism", "kabbalah", "neoplatonism", "magic", "paracelsianism", "theosophy"]
+  },
+  "scoring_criteria": {
+    "historical_impact": {
+      "weight": 0.3,
+      "description": "USTC edition count as proxy for historical importance/readership",
+      "scale": "1-10 based on percentile of editions"
+    },
+    "translation_gap": {
+      "weight": 0.3,
+      "description": "Severity of gap: completely untranslated vs partially available",
+      "scale": "1-10 (10 = no translation exists, 1 = fully translated)"
+    },
+    "feasibility": {
+      "weight": 0.2,
+      "description": "Length and difficulty for a single translator",
+      "scale": "1-10 (10 = short/accessible, 1 = massive multi-volume)"
+    },
+    "audience": {
+      "weight": 0.2,
+      "description": "Modern scholarly and general interest",
+      "scale": "1-10 based on field activity and crossover appeal"
+    }
+  },
+  "tiers": {
+    "tier_1_highest_priority": {
+      "description": "Major gaps with significant historical impact - ideal starting projects",
+      "works": [
+        {
+          "id": "mantuanus_parthenice",
+          "author": "Baptista Mantuanus",
+          "author_dates": "1447-1516",
+          "title": "Parthenice Mariana",
+          "original_date": "1481",
+          "ustc_editions": 442,
+          "genre": "Religious Epic Poetry",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium (single book)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Eclogues translated (Piepho 1989), but religious epics completely unavailable",
+          "significance": "600+ editions by 1600. Set precedent for religious epic, influenced Sannazaro and Milton. Required grammar school reading across Europe.",
+          "digitization": "Multiple scans available on Google Books, BSB",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 10,
+            "feasibility": 7,
+            "audience": 8
+          },
+          "total_score": 8.6,
+          "notes": "High impact, moderate length, poetry requires care but not technical vocabulary. Good visibility project."
+        },
+        {
+          "id": "conring_origine_juris",
+          "author": "Hermann Conring",
+          "author_dates": "1606-1681",
+          "title": "De Origine Juris Germanici",
+          "original_date": "1643",
+          "ustc_editions": 510,
+          "genre": "Legal History",
+          "language_difficulty": "difficult",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Only 'New Discourse on the Roman-German Emperor' translated (Fasolt)",
+          "significance": "Foundational work that earned him title 'founder of German legal history'. Disproved Lotharian legend, established Germany's legal independence from Rome.",
+          "digitization": "Available via MDZ, HathiTrust",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 10,
+            "feasibility": 5,
+            "audience": 7
+          },
+          "total_score": 7.9,
+          "notes": "Legal Latin is technical but this is THE foundational text for German legal history. Would fill major gap."
+        },
+        {
+          "id": "villa_dei_doctrinale",
+          "author": "Alexander de Villa Dei",
+          "author_dates": "c. 1175-1240",
+          "title": "Doctrinale puerorum",
+          "original_date": "c. 1200",
+          "ustc_editions": 568,
+          "genre": "Grammar/Pedagogy",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium (2,645 verses)",
+          "translation_status": "excerpts_only",
+          "existing_translations": "Excerpts in Copeland & Sluiter (2012) scholarly edition, no accessible complete translation",
+          "significance": "Perhaps THE most important medieval pedagogical text. 12 parts covering all Latin grammar. Fundamental throughout 13th-16th centuries.",
+          "digitization": "Multiple copies digitized",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 9,
+            "feasibility": 7,
+            "audience": 7
+          },
+          "total_score": 8.1,
+          "notes": "Verse format makes it memorable. Would be valuable for medieval education studies."
+        },
+        {
+          "id": "lipsius_collected",
+          "author": "Justus Lipsius",
+          "author_dates": "1547-1606",
+          "title": "Collected Letters and Minor Works",
+          "original_date": "various",
+          "ustc_editions": 558,
+          "genre": "Philosophy/Letters",
+          "language_difficulty": "moderate",
+          "estimated_length": "large (if comprehensive)",
+          "translation_status": "partially_translated",
+          "existing_translations": "De Constantia (multiple), Politica (Waszink). But extensive correspondence and other philosophical works unavailable.",
+          "significance": "80+ editions of De Constantia alone. Foundational for Neostoicism. Network of 4,000+ letters to European intellectuals.",
+          "digitization": "Widely available",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 7,
+            "feasibility": 4,
+            "audience": 9
+          },
+          "total_score": 7.4,
+          "notes": "Letters could be done selectively. High crossover appeal to philosophy, intellectual history audiences."
+        },
+        {
+          "id": "vives_de_anima",
+          "author": "Juan Luis Vives",
+          "author_dates": "1493-1540",
+          "title": "De Anima et Vita (complete)",
+          "original_date": "1538",
+          "ustc_editions": 446,
+          "genre": "Philosophy/Psychology",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium (3 books)",
+          "translation_status": "partially_translated",
+          "existing_translations": "Only Book 3 (Passions of the Soul) translated by Noreña 1990. Books 1-2 on soul and intellect unavailable.",
+          "significance": "Called 'father of modern psychology'. First empirical study of emotions and their bodily relations. Brill series underway but incomplete.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 7,
+            "feasibility": 6,
+            "audience": 9
+          },
+          "total_score": 7.6,
+          "notes": "Completing this would be major contribution. History of psychology audience."
+        }
+      ]
+    },
+    "tier_2_lutheran_theology": {
+      "description": "Major Lutheran Orthodox theologians - specialized but underserved audience",
+      "works": [
+        {
+          "id": "martini_anti_socinian",
+          "author": "Jakob Martini",
+          "author_dates": "1570-1649",
+          "title": "Anti-Socinian Works",
+          "original_date": "1614-1647",
+          "ustc_editions": 836,
+          "genre": "Polemical Theology",
+          "language_difficulty": "difficult",
+          "estimated_length": "large (6 substantial works)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Nothing in English",
+          "significance": "836 editions - among highest in USTC. Established Lutheran structure for Metaphysics. Leading opponent of Socinianism.",
+          "digitization": "Available via PRDL",
+          "scores": {
+            "historical_impact": 10,
+            "translation_gap": 10,
+            "feasibility": 4,
+            "audience": 6
+          },
+          "total_score": 7.6,
+          "notes": "Extremely high edition count but very specialized audience."
+        },
+        {
+          "id": "calov_systema_selections",
+          "author": "Abraham Calov",
+          "author_dates": "1612-1686",
+          "title": "Systema locorum theologicorum (selections)",
+          "original_date": "1655-1677",
+          "ustc_editions": 548,
+          "genre": "Systematic Theology",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "very_large (12 volumes total)",
+          "translation_status": "minimal",
+          "existing_translations": "Only excerpts in 'Atonement in Lutheran Orthodoxy' (2024). Owned by J.S. Bach.",
+          "significance": "Climax of Lutheran scholasticism. The 'Bach Bible' - Bach's personal copy with extensive annotations.",
+          "digitization": "Available via PRDL",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 9,
+            "feasibility": 2,
+            "audience": 6
+          },
+          "total_score": 6.6,
+          "notes": "Full translation impractical. Strategic selections would be valuable. Bach connection provides hook."
+        },
+        {
+          "id": "meisner_meditationes",
+          "author": "Balthasar Meisner",
+          "author_dates": "1587-1626",
+          "title": "Meditationes in Evangelia Dominicalia",
+          "original_date": "1619",
+          "ustc_editions": 451,
+          "genre": "Devotional/Sermons",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium",
+          "translation_status": "minimal",
+          "existing_translations": "Only 'Selected Meditations' available",
+          "significance": "Leading Lutheran theologian 1611-1626. Defined theology as genuinely practical enterprise.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 8,
+            "feasibility": 6,
+            "audience": 6
+          },
+          "total_score": 7.0,
+          "notes": "Devotional genre more accessible. Could appeal beyond academic audience."
+        }
+      ]
+    },
+    "tier_3_reformed_theology": {
+      "description": "Dutch Reformed theologians - gap in anglophone scholarship",
+      "works": [
+        {
+          "id": "hoornbeek_homiletics",
+          "author": "Johannes Hoornbeek",
+          "author_dates": "1617-1666",
+          "title": "De Ratione Concionandi",
+          "original_date": "1645",
+          "ustc_editions": 460,
+          "genre": "Homiletics/Preaching",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Other works translated (Spiritual Desertion, On Conversion of Indians), but first Reformed homiletic textbook unavailable",
+          "significance": "First systematic Reformed treatise on preaching post-Reformation. Voetian Circle member.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 10,
+            "feasibility": 7,
+            "audience": 7
+          },
+          "total_score": 8.0,
+          "notes": "Practical preaching manual. Would serve seminary/pastoral audience."
+        },
+        {
+          "id": "maresius_systema",
+          "author": "Samuel Maresius",
+          "author_dates": "1599-1673",
+          "title": "Systema theologiae",
+          "original_date": "1645/1673",
+          "ustc_editions": 419,
+          "genre": "Systematic Theology",
+          "language_difficulty": "difficult",
+          "estimated_length": "large",
+          "translation_status": "excerpts_only",
+          "existing_translations": "Excerpts on iconbusters.org only",
+          "significance": "Used as textbook in Reformed circles. 'Literary pugilist' against Catholics, Socinians, Arminians.",
+          "digitization": "Available via PRDL",
+          "scores": {
+            "historical_impact": 7,
+            "translation_gap": 9,
+            "feasibility": 4,
+            "audience": 6
+          },
+          "total_score": 6.6,
+          "notes": "Large undertaking. Selections might be more feasible."
+        },
+        {
+          "id": "leusden_philologus",
+          "author": "Johannes Leusden",
+          "author_dates": "1624-1699",
+          "title": "Philologus Hebraeus",
+          "original_date": "1656",
+          "ustc_editions": 372,
+          "genre": "Hebrew Studies/Judaism",
+          "language_difficulty": "difficult",
+          "estimated_length": "medium-large",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Only his English Hebrew grammar (1686) available",
+          "significance": "Goes far beyond philology to comprehensive study of Judaism and Jewish life. His Hebrew Bible (1661) first with numbered verses.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 7,
+            "translation_gap": 10,
+            "feasibility": 4,
+            "audience": 7
+          },
+          "total_score": 7.0,
+          "notes": "Christian Hebraism is growing field. Would serve Jewish-Christian studies."
+        }
+      ]
+    },
+    "tier_4_legal_history": {
+      "description": "Legal texts - specialized audience but foundational works",
+      "works": [
+        {
+          "id": "bartolus_selected",
+          "author": "Bartolus de Saxoferrato",
+          "author_dates": "1313-1357",
+          "title": "Selected Commentaries and Consilia",
+          "original_date": "14th century",
+          "ustc_editions": 707,
+          "genre": "Legal Commentary",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "very_large (complete corpus)",
+          "translation_status": "minimal",
+          "existing_translations": "Only 'Three Tracts on City Government' (Cambridge) - political works. Legal commentaries untranslated.",
+          "significance": "Most prominent continental jurist of Medieval Roman Law. ~400 legal opinions (consilia).",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 10,
+            "translation_gap": 9,
+            "feasibility": 2,
+            "audience": 5
+          },
+          "total_score": 6.6,
+          "notes": "Massive corpus. Strategic selection needed. Legal history specialists only."
+        },
+        {
+          "id": "stryk_usus_modernus",
+          "author": "Samuel Stryk",
+          "author_dates": "1640-1710",
+          "title": "Specimen Usus Moderni Pandectarum",
+          "original_date": "late 17th c",
+          "ustc_editions": 642,
+          "genre": "Legal Theory",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "large",
+          "translation_status": "minimal",
+          "existing_translations": "Only 'De Iure Pontium' (1700) bilingual edition",
+          "significance": "Pioneering work on modern usage of Roman law. Foundational for German legal development.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 9,
+            "feasibility": 3,
+            "audience": 4
+          },
+          "total_score": 6.3,
+          "notes": "Very technical. Legal history specialists only."
+        },
+        {
+          "id": "besold_political",
+          "author": "Christoph Besold",
+          "author_dates": "1577-1638",
+          "title": "Political Works (Synopsis Politicae Doctrinae)",
+          "original_date": "1625-1648",
+          "ustc_editions": 405,
+          "genre": "Political Theory",
+          "language_difficulty": "difficult",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Scholarly articles about his work, no translations",
+          "significance": "Transformed reformers' message into legal claim for natural right to believe. Critique of absolutism.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 7,
+            "translation_gap": 10,
+            "feasibility": 5,
+            "audience": 7
+          },
+          "total_score": 7.2,
+          "notes": "Political theory more accessible than technical legal. Religious freedom angle has modern relevance."
+        }
+      ]
+    },
+    "tier_5_grammar_pedagogy": {
+      "description": "Educational texts - specialized but historically crucial",
+      "works": [
+        {
+          "id": "donatus_ars_major",
+          "author": "Aelius Donatus",
+          "author_dates": "fl. 4th century",
+          "title": "Ars Grammatica (Ars Major)",
+          "original_date": "4th century",
+          "ustc_editions": 901,
+          "genre": "Grammar",
+          "language_difficulty": "moderate",
+          "estimated_length": "short",
+          "translation_status": "partially_translated",
+          "existing_translations": "Ars Minor translated (Johnson). Ars Major (full grammar, figures of speech, tropes) unavailable.",
+          "significance": "Most popular medieval Latin textbook for 1000+ years. Still used in Britain 19th century.",
+          "digitization": "Widely available",
+          "scores": {
+            "historical_impact": 10,
+            "translation_gap": 7,
+            "feasibility": 9,
+            "audience": 6
+          },
+          "total_score": 8.0,
+          "notes": "Short, foundational, high impact. Good quick-win project."
+        },
+        {
+          "id": "nebrija_introductiones",
+          "author": "Antonio de Nebrija",
+          "author_dates": "1444-1522",
+          "title": "Introductiones Latinae",
+          "original_date": "1481",
+          "ustc_editions": 546,
+          "genre": "Grammar",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium",
+          "translation_status": "minimal",
+          "existing_translations": "Spanish grammar prologue translated. Latin grammar itself unavailable.",
+          "significance": "Official Latin textbook in Spanish universities. Reprinted ~100 times in New World.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 9,
+            "feasibility": 7,
+            "audience": 6
+          },
+          "total_score": 7.8,
+          "notes": "Spanish/Latin American studies angle. Colonial education history."
+        },
+        {
+          "id": "despautere_commentarii",
+          "author": "Jean Despautère",
+          "author_dates": "c. 1460-1520",
+          "title": "Commentarii grammatici",
+          "original_date": "1537",
+          "ustc_editions": 517,
+          "genre": "Grammar",
+          "language_difficulty": "moderate",
+          "estimated_length": "large (collected grammars)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None",
+          "significance": "Basis for Latin instruction in Jesuit colleges in France until 18th century.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 10,
+            "feasibility": 4,
+            "audience": 5
+          },
+          "total_score": 6.8,
+          "notes": "Jesuit education history angle. Large undertaking."
+        }
+      ]
+    },
+    "tier_6_philosophy_reference": {
+      "description": "Philosophical works - specialized academic audience",
+      "works": [
+        {
+          "id": "goclenius_lexicon",
+          "author": "Rudolph Goclenius",
+          "author_dates": "1547-1628",
+          "title": "Lexicon Philosophicum",
+          "original_date": "1613",
+          "ustc_editions": 571,
+          "genre": "Philosophy/Reference",
+          "language_difficulty": "difficult",
+          "estimated_length": "large (reference work)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None",
+          "significance": "Credited with coining 'psychology'. First systematic use of 'ontology'. 'Microcosmic library' of early modern philosophy.",
+          "digitization": "Available",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 10,
+            "feasibility": 3,
+            "audience": 7
+          },
+          "total_score": 7.0,
+          "notes": "Reference format could allow partial/selective translation. History of concepts angle."
+        }
+      ]
+    },
+    "tier_7_quick_wins": {
+      "description": "Shorter works that could be completed quickly for momentum",
+      "works": [
+        {
+          "id": "mantuanus_eclogues_notes",
+          "author": "Baptista Mantuanus",
+          "title": "Adulescentia (annotated modern edition)",
+          "estimated_length": "short",
+          "translation_status": "translated_but_outdated",
+          "existing_translations": "Piepho 1989, but could use fresh accessible edition",
+          "scores": {
+            "total_score": 7.5
+          },
+          "notes": "Poetry, engaging, could build audience for later religious epics"
+        },
+        {
+          "id": "selected_neo_latin_poetry",
+          "author": "Various",
+          "title": "Anthology of Untranslated Neo-Latin Poetry",
+          "estimated_length": "varies",
+          "translation_status": "anthology_project",
+          "significance": "24,727 poetry editions in USTC, vast majority untranslated",
+          "scores": {
+            "total_score": 7.0
+          },
+          "notes": "Flexible scope. Could highlight forgotten poets. Good for building readership."
+        }
+      ]
+    },
+    "tier_8_hermetica_prisca_theologia": {
+      "description": "BPH Priority - Hermetic and Prisca Theologia texts",
+      "bph_categories": ["hermetica", "neoplatonism"],
+      "works": [
+        {
+          "id": "patrizi_nova_universis",
+          "author": "Francesco Patrizi",
+          "author_dates": "1529-1597",
+          "title": "Nova de universis philosophia",
+          "original_date": "1591",
+          "ustc_editions": 3,
+          "genre": "Hermetic Philosophy",
+          "language_difficulty": "difficult",
+          "estimated_length": "large (4 parts)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None in English. Italian studies exist.",
+          "significance": "Major Hermetic cosmology integrating Hermes Trismegistus, Zoroaster, Orpheus into unified system. Dedicated to Pope Gregory XIV. Includes first printed edition of Chaldean Oracles and Hermetic fragments not in Ficino.",
+          "digitization": "Available via Google Books, Munich BSB",
+          "bph_relevance": "Core text for understanding Renaissance Hermeticism. Central to prisca theologia tradition.",
+          "scores": {
+            "historical_impact": 7,
+            "translation_gap": 10,
+            "feasibility": 4,
+            "audience": 9
+          },
+          "total_score": 7.6,
+          "notes": "Foundational for BPH collection themes. Would be major scholarly contribution."
+        },
+        {
+          "id": "steuco_perenni_philosophia",
+          "author": "Agostino Steuco",
+          "author_dates": "1497-1548",
+          "title": "De perenni philosophia libri X",
+          "original_date": "1540",
+          "ustc_editions": 5,
+          "genre": "Perennial Philosophy",
+          "language_difficulty": "difficult",
+          "estimated_length": "large (10 books)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None. Only scholarly articles about it.",
+          "significance": "Coined 'philosophia perennis' - the perennial philosophy concept later adopted by Leibniz and Aldous Huxley. Traced ancient wisdom from Moses through Hermes, Orpheus, Pythagoras to Plato.",
+          "digitization": "Available via Google Books",
+          "bph_relevance": "Origin of 'perennial philosophy' concept central to esoteric thought.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 10,
+            "feasibility": 4,
+            "audience": 9
+          },
+          "total_score": 7.8,
+          "notes": "Would be landmark translation. Connects to modern perennialism (Guenon, Schuon)."
+        },
+        {
+          "id": "champier_symphonia_platonis",
+          "author": "Symphorien Champier",
+          "author_dates": "1471-1538",
+          "title": "De quadruplici vita / Symphonia Platonis cum Aristotele",
+          "original_date": "1507",
+          "ustc_editions": 4,
+          "genre": "Hermetic Philosophy",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None",
+          "significance": "Early French humanist attempt to harmonize Ficino's Hermeticism with Aristotelian scholasticism. Included excerpts from Corpus Hermeticum before Casaubon's critique.",
+          "digitization": "Available via Gallica, BnF",
+          "bph_relevance": "French reception of Ficinian Hermeticism.",
+          "scores": {
+            "historical_impact": 6,
+            "translation_gap": 10,
+            "feasibility": 6,
+            "audience": 7
+          },
+          "total_score": 7.2,
+          "notes": "Good entry point to French Hermeticism."
+        }
+      ]
+    },
+    "tier_9_alchemy_chymistry": {
+      "description": "BPH Priority - Alchemical and Chymical texts",
+      "bph_categories": ["alchemy"],
+      "works": [
+        {
+          "id": "theatrum_chemicum_select",
+          "author": "Various (ed. Lazarus Zetzner)",
+          "author_dates": "compilation",
+          "title": "Theatrum Chemicum - Selected Treatises",
+          "original_date": "1602-1661",
+          "ustc_editions": 6,
+          "genre": "Alchemy",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "very_large (6 volumes total - selection needed)",
+          "translation_status": "minimal",
+          "existing_translations": "Only scattered treatises translated individually. No systematic English selection.",
+          "significance": "THE major early modern alchemical anthology. 6 volumes, ~200 treatises. Contains works by Arnald of Villanova, Roger Bacon, Geber, Lull (pseudo), and dozens of others. Jung drew heavily on it.",
+          "digitization": "Multiple scans available",
+          "bph_relevance": "Foundational alchemical compendium. BPH has multiple copies.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 9,
+            "feasibility": 2,
+            "audience": 8
+          },
+          "total_score": 7.0,
+          "notes": "Strategic selection of 10-20 most important treatises could be feasible project."
+        },
+        {
+          "id": "maier_atalanta_fugiens",
+          "author": "Michael Maier",
+          "author_dates": "1568-1622",
+          "title": "Atalanta fugiens",
+          "original_date": "1617",
+          "ustc_editions": 2,
+          "genre": "Alchemical Emblem Book",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium (50 emblems with epigrams)",
+          "translation_status": "partially_translated",
+          "existing_translations": "De Jong 1969 (scholarly, expensive). Godwin 1989 (popular). Latin text with epigrams could use fresh translation.",
+          "significance": "Extraordinary multimedia work: 50 emblems, 50 fugues (musical), 50 epigrams, 50 discourses. Alchemical symbolism at its most sophisticated.",
+          "digitization": "Widely available, including at BPH",
+          "bph_relevance": "Iconic alchemical emblem book. BPH holds early editions.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 6,
+            "feasibility": 7,
+            "audience": 9
+          },
+          "total_score": 7.6,
+          "notes": "Existing translations dated or expensive. Fresh open-access version would serve wide audience."
+        },
+        {
+          "id": "khunrath_amphitheatrum",
+          "author": "Heinrich Khunrath",
+          "author_dates": "1560-1605",
+          "title": "Amphitheatrum Sapientiae Aeternae",
+          "original_date": "1595/1609",
+          "ustc_editions": 3,
+          "genre": "Christian Alchemy/Theosophy",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "medium-large",
+          "translation_status": "minimal",
+          "existing_translations": "Only partial translations in anthologies. No complete scholarly edition.",
+          "significance": "Fusion of Paracelsian alchemy, Kabbalah, and Christian mysticism. Famous engravings (Laboratory-Oratory). Major influence on Rosicrucianism.",
+          "digitization": "Available via Wellcome, BPH digital",
+          "bph_relevance": "Core BPH text. Bridges alchemy and Christian Kabbalah.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 9,
+            "feasibility": 4,
+            "audience": 8
+          },
+          "total_score": 7.4,
+          "notes": "Difficult Latin with neologisms and wordplay. Would require extensive annotation."
+        }
+      ]
+    },
+    "tier_10_paracelsianism": {
+      "description": "BPH Priority - Paracelsian medical-philosophical texts",
+      "bph_categories": ["paracelsianism", "alchemy"],
+      "works": [
+        {
+          "id": "severinus_idea_medicinae",
+          "author": "Petrus Severinus",
+          "author_dates": "1540-1602",
+          "title": "Idea medicinae philosophicae",
+          "original_date": "1571",
+          "ustc_editions": 5,
+          "genre": "Paracelsian Medicine/Philosophy",
+          "language_difficulty": "difficult",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None in any modern language",
+          "significance": "THE foundational systematization of Paracelsus. Made Paracelsian ideas comprehensible to academic medicine. Royal physician to Frederick II of Denmark. Influenced Tycho Brahe.",
+          "digitization": "Available via Google Books, Copenhagen Royal Library",
+          "bph_relevance": "Essential for understanding Paracelsianism's spread. BPH core theme.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 10,
+            "feasibility": 5,
+            "audience": 8
+          },
+          "total_score": 8.1,
+          "notes": "TOP PRIORITY for esoteric/BPH track. Would fill massive gap in Paracelsian studies."
+        },
+        {
+          "id": "duchesne_ad_veritatem",
+          "author": "Joseph Duchesne (Quercetanus)",
+          "author_dates": "1544-1609",
+          "title": "Ad veritatem hermeticae medicinae",
+          "original_date": "1604",
+          "ustc_editions": 4,
+          "genre": "Hermetic Medicine",
+          "language_difficulty": "difficult",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Some vernacular works translated, but major Latin defenses of chemical medicine untranslated",
+          "significance": "Physician to Henri IV. Major defender of Hermetic/chemical medicine against Galenists. Key figure in Paris Faculty of Medicine controversies.",
+          "digitization": "Available via BnF Gallica",
+          "bph_relevance": "Hermetic medicine tradition central to BPH.",
+          "scores": {
+            "historical_impact": 7,
+            "translation_gap": 10,
+            "feasibility": 5,
+            "audience": 7
+          },
+          "total_score": 7.3,
+          "notes": "Important for history of medicine and Hermetic tradition."
+        },
+        {
+          "id": "croll_basilica_chymica",
+          "author": "Oswald Croll",
+          "author_dates": "1563-1609",
+          "title": "Basilica chymica",
+          "original_date": "1609",
+          "ustc_editions": 15,
+          "genre": "Iatrochemistry",
+          "language_difficulty": "difficult",
+          "estimated_length": "large",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Only the prefatory 'Admonitory Preface' translated (published 1657). Main pharmaceutical work unavailable.",
+          "significance": "Most influential iatrochemical textbook of 17th century. 15+ editions and translations. Systematized Paracelsian pharmacy.",
+          "digitization": "Widely available",
+          "bph_relevance": "Major Paracelsian pharmaceutical manual.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 9,
+            "feasibility": 4,
+            "audience": 7
+          },
+          "total_score": 7.3,
+          "notes": "High edition count indicates importance. Technical pharmaceutical content."
+        },
+        {
+          "id": "dorn_speculativa_philosophia",
+          "author": "Gerhard Dorn",
+          "author_dates": "fl. 1565-1584",
+          "title": "Speculativae philosophiae and other works",
+          "original_date": "1567-1584",
+          "ustc_editions": 8,
+          "genre": "Spiritual Alchemy",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "large (collected works)",
+          "translation_status": "minimal",
+          "existing_translations": "Only excerpts in Jung's Alchemical Studies. No complete works.",
+          "significance": "Major Paracelsian philosopher. Translated Paracelsus into Latin. Emphasized spiritual over material alchemy. Jung's primary source for psychological interpretation of alchemy.",
+          "digitization": "In Theatrum Chemicum and individual editions",
+          "bph_relevance": "Spiritual alchemy tradition. Jung connection increases modern interest.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 9,
+            "feasibility": 3,
+            "audience": 8
+          },
+          "total_score": 7.0,
+          "notes": "Very difficult Latin. Strategic selection needed. Jung connection provides audience."
+        }
+      ]
+    },
+    "tier_11_christian_kabbalah": {
+      "description": "BPH Priority - Christian Kabbalistic texts",
+      "bph_categories": ["kabbalah", "magic"],
+      "works": [
+        {
+          "id": "reuchlin_de_arte_cabalistica",
+          "author": "Johannes Reuchlin",
+          "author_dates": "1455-1522",
+          "title": "De arte cabalistica",
+          "original_date": "1517",
+          "ustc_editions": 6,
+          "genre": "Christian Kabbalah",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "medium (3 books)",
+          "translation_status": "translated",
+          "existing_translations": "Goodman & Salaman (2018, Inner Traditions). But earlier work De verbo mirifico (1494) untranslated.",
+          "significance": "Foundational Christian Kabbalist alongside Pico. Defended Jewish books from burning. De verbo mirifico (1494) is actually untranslated.",
+          "digitization": "Available",
+          "bph_relevance": "Core Christian Kabbalah. BPH foundational text.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 5,
+            "feasibility": 5,
+            "audience": 8
+          },
+          "total_score": 6.8,
+          "notes": "De arte cabalistica now translated. De verbo mirifico (1494) remains untranslated - that's the gap."
+        },
+        {
+          "id": "reuchlin_de_verbo_mirifico",
+          "author": "Johannes Reuchlin",
+          "author_dates": "1455-1522",
+          "title": "De verbo mirifico",
+          "original_date": "1494",
+          "ustc_editions": 4,
+          "genre": "Christian Kabbalah",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None in English. French translation exists.",
+          "significance": "Reuchlin's FIRST kabbalistic work. Dialogue on the wonder-working word (Tetragrammaton). Precursor to De arte cabalistica. Introduced Christian Kabbalah to Germany.",
+          "digitization": "Available via BSB, Google Books",
+          "bph_relevance": "Essential early Christian Kabbalah text.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 10,
+            "feasibility": 5,
+            "audience": 8
+          },
+          "total_score": 7.9,
+          "notes": "Should be translated alongside De arte cabalistica for complete picture."
+        },
+        {
+          "id": "postel_clavis_absconditorum",
+          "author": "Guillaume Postel",
+          "author_dates": "1510-1581",
+          "title": "Clavis absconditorum a constitutione mundi",
+          "original_date": "1547",
+          "ustc_editions": 2,
+          "genre": "Christian Kabbalah/Prophetic",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None. Only scholarly studies.",
+          "significance": "Visionary Christian Kabbalist. First European to study Arabic in Middle East. Claimed mystical union with 'Mother Johanna'. Prophesied world unity under French king.",
+          "digitization": "Rare. BnF Gallica",
+          "bph_relevance": "Major figure in Christian Kabbalah and prophetic tradition.",
+          "scores": {
+            "historical_impact": 7,
+            "translation_gap": 10,
+            "feasibility": 4,
+            "audience": 7
+          },
+          "total_score": 7.0,
+          "notes": "Eccentric but fascinating. Difficult Latin with Hebrew terms."
+        },
+        {
+          "id": "giorgi_de_harmonia_mundi",
+          "author": "Francesco Giorgi (Zorzi)",
+          "author_dates": "1466-1540",
+          "title": "De harmonia mundi totius",
+          "original_date": "1525",
+          "ustc_editions": 4,
+          "genre": "Kabbalistic Cosmology",
+          "language_difficulty": "difficult",
+          "estimated_length": "very_large (3 canticles)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None. French translation 1578 exists. Only scholarly articles.",
+          "significance": "Venetian Franciscan's synthesis of Pythagorean harmony, Kabbalah, and Neoplatonism. Influenced Dee, Fludd, Renaissance architecture. Consulted on Henry VIII's divorce.",
+          "digitization": "Available via Google Books",
+          "bph_relevance": "Musical/Kabbalistic cosmology. Central to BPH themes.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 10,
+            "feasibility": 3,
+            "audience": 8
+          },
+          "total_score": 7.2,
+          "notes": "Very large work. Musical/mathematical content requires specialized knowledge."
+        }
+      ]
+    },
+    "tier_12_rosicrucian_theosophy": {
+      "description": "BPH Priority - Rosicrucian and Theosophical texts",
+      "bph_categories": ["rosicrucianism", "theosophy", "mysticism"],
+      "works": [
+        {
+          "id": "fludd_utriusque_cosmi",
+          "author": "Robert Fludd",
+          "author_dates": "1574-1637",
+          "title": "Utriusque Cosmi Historia",
+          "original_date": "1617-1621",
+          "ustc_editions": 4,
+          "genre": "Rosicrucian Cosmology",
+          "language_difficulty": "difficult",
+          "estimated_length": "very_large (2 volumes, many tractates)",
+          "translation_status": "minimal",
+          "existing_translations": "Only excerpts. Godwin selected translations (1979). No complete English version.",
+          "significance": "Massive illustrated cosmological encyclopedia. Macrocosm (universe) and Microcosm (man). Famous engravings by De Bry. Defender of Rosicrucians against Kepler and Mersenne.",
+          "digitization": "Available via Wellcome, BPH",
+          "bph_relevance": "Essential Rosicrucian encyclopedia. BPH holds early editions.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 8,
+            "feasibility": 2,
+            "audience": 9
+          },
+          "total_score": 7.0,
+          "notes": "Massive undertaking. Strategic selection of tractates more feasible."
+        },
+        {
+          "id": "schweighardt_speculum",
+          "author": "Theophilus Schweighardt (Daniel Mögling)",
+          "author_dates": "1596-1635",
+          "title": "Speculum Sophicum Rhodo-Stauroticum",
+          "original_date": "1618",
+          "ustc_editions": 2,
+          "genre": "Rosicrucian",
+          "language_difficulty": "moderate",
+          "estimated_length": "short",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None in English",
+          "significance": "Key early Rosicrucian text with famous 'Collegium Fraternitatis' engraving. Explains Rosicrucian symbolism. Pseudonymous author later identified as mathematician Mögling.",
+          "digitization": "Available via HAB Wolfenbüttel",
+          "bph_relevance": "Core Rosicrucian primary source.",
+          "scores": {
+            "historical_impact": 7,
+            "translation_gap": 10,
+            "feasibility": 8,
+            "audience": 8
+          },
+          "total_score": 8.2,
+          "notes": "Short, accessible, highly relevant. Good quick win for Rosicrucian studies."
+        },
+        {
+          "id": "kircher_oedipus_aegyptiacus",
+          "author": "Athanasius Kircher",
+          "author_dates": "1602-1680",
+          "title": "Oedipus Aegyptiacus",
+          "original_date": "1652-1654",
+          "ustc_editions": 2,
+          "genre": "Egyptology/Hermeticism",
+          "language_difficulty": "difficult",
+          "estimated_length": "very_large (3 volumes, 2000+ pages)",
+          "translation_status": "minimal",
+          "existing_translations": "Only excerpts in Stolzenberg (2013) and other studies.",
+          "significance": "Monumental attempt to decode hieroglyphics through Hermetic lens. Wrong about hieroglyphics but treasure trove of Renaissance Hermeticism, Kabbalah, comparative religion.",
+          "digitization": "Available via Stanford, Internet Archive",
+          "bph_relevance": "Encyclopedic Hermeticism. BPH holds copies.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 9,
+            "feasibility": 1,
+            "audience": 8
+          },
+          "total_score": 6.6,
+          "notes": "Impractical to translate completely. Thematic selections could work."
+        }
+      ]
+    },
+    "tier_13_natural_magic": {
+      "description": "BPH Priority - Natural Magic and Occult Philosophy",
+      "bph_categories": ["magic", "neoplatonism"],
+      "works": [
+        {
+          "id": "bruno_latin_magical",
+          "author": "Giordano Bruno",
+          "author_dates": "1548-1600",
+          "title": "Latin Magical Works (De magia, De vinculis, Theses de magia)",
+          "original_date": "1589-1591",
+          "ustc_editions": 0,
+          "genre": "Natural Magic/Memory",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "medium (collected)",
+          "translation_status": "partially_translated",
+          "existing_translations": "De magia translated by Dillon (2004). De vinculis and Theses less available. Yates excerpts.",
+          "significance": "Bruno's mature magical philosophy. Theory of bonds (vincoli) linking magician to cosmos. Memory systems. Executed for heresy 1600.",
+          "digitization": "Available in Opera Latine Conscripta",
+          "bph_relevance": "Major figure in Renaissance magic. Bruno central to esoteric tradition.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 6,
+            "feasibility": 5,
+            "audience": 9
+          },
+          "total_score": 7.4,
+          "notes": "Some translated but scattered. Collected accessible edition would be valuable."
+        },
+        {
+          "id": "trithemius_steganographia",
+          "author": "Johannes Trithemius",
+          "author_dates": "1462-1516",
+          "title": "Steganographia",
+          "original_date": "1499/1606",
+          "ustc_editions": 4,
+          "genre": "Cryptography/Angel Magic",
+          "language_difficulty": "difficult",
+          "estimated_length": "medium (3 books)",
+          "translation_status": "partially_translated",
+          "existing_translations": "Book 3 decoded as cryptography (1998). Earlier books combining cryptography with angel magic less accessible.",
+          "significance": "Famous grimoire-style text. Circulated in manuscript, printed 1606. Actually sophisticated cryptographic manual disguised as angel summoning. Influenced Dee, Bruno.",
+          "digitization": "Available",
+          "bph_relevance": "Bridges cryptography and angel magic. BPH interest.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 6,
+            "feasibility": 5,
+            "audience": 8
+          },
+          "total_score": 6.8,
+          "notes": "Cryptographic aspects now decoded. Magic-framing historically important."
+        },
+        {
+          "id": "gemma_de_arte_cyclognomica",
+          "author": "Cornelius Gemma",
+          "author_dates": "1535-1578",
+          "title": "De arte cyclognomica",
+          "original_date": "1569",
+          "ustc_editions": 2,
+          "genre": "Cosmobiology/Astral Magic",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "large (3 volumes)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None",
+          "significance": "Louvain professor's synthesis of astrology, Kabbalah, prophecy. 'Cyclognomic art' = reading cosmic cycles. Son of Gemma Frisius. Observed supernova 1572.",
+          "digitization": "Available via Google Books",
+          "bph_relevance": "Astrology, prophecy, cosmic cycles - BPH themes.",
+          "scores": {
+            "historical_impact": 6,
+            "translation_gap": 10,
+            "feasibility": 3,
+            "audience": 7
+          },
+          "total_score": 6.4,
+          "notes": "Obscure but significant for history of astrology and prophecy."
+        }
+      ]
+    },
+    "tier_14_early_science": {
+      "description": "BPH Priority - Early Science and Natural Philosophy (where esoteric meets empirical)",
+      "bph_categories": ["alchemy", "neoplatonism"],
+      "works": [
+        {
+          "id": "cardano_de_subtilitate",
+          "author": "Girolamo Cardano",
+          "author_dates": "1501-1576",
+          "title": "De subtilitate rerum",
+          "original_date": "1550",
+          "ustc_editions": 12,
+          "genre": "Natural Philosophy/Science",
+          "language_difficulty": "difficult",
+          "estimated_length": "large (21 books)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "Only De vita propria (autobiography) translated. Major scientific works unavailable.",
+          "significance": "Renaissance polymath's encyclopedia of nature. Covers physics, metals, animals, plants, man, universe. Influenced scientific revolution. Invented Cardan shaft, pioneered probability theory.",
+          "digitization": "Available via Google Books, ETH Zurich",
+          "bph_relevance": "Bridges Renaissance natural magic and emerging science. Includes occult sympathies alongside empirical observation.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 10,
+            "feasibility": 3,
+            "audience": 8
+          },
+          "total_score": 7.5,
+          "notes": "Major gap. Cardano fundamental to history of science but Latin works largely inaccessible."
+        },
+        {
+          "id": "cardano_de_rerum_varietate",
+          "author": "Girolamo Cardano",
+          "author_dates": "1501-1576",
+          "title": "De rerum varietate",
+          "original_date": "1557",
+          "ustc_editions": 8,
+          "genre": "Natural Philosophy/Science",
+          "language_difficulty": "difficult",
+          "estimated_length": "large (17 books)",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None",
+          "significance": "Sequel to De subtilitate. More on natural wonders, demons, divination, alchemy. Shows intersection of empirical and occult in Renaissance thought.",
+          "digitization": "Available",
+          "bph_relevance": "Contains extensive material on divination, demons, occult phenomena alongside natural philosophy.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 10,
+            "feasibility": 3,
+            "audience": 8
+          },
+          "total_score": 7.2,
+          "notes": "Companion to De subtilitate. Together they form major statement of Renaissance natural philosophy."
+        },
+        {
+          "id": "della_porta_magia_naturalis",
+          "author": "Giambattista della Porta",
+          "author_dates": "1535-1615",
+          "title": "Magiae naturalis libri XX",
+          "original_date": "1558/1589",
+          "ustc_editions": 25,
+          "genre": "Natural Magic/Science",
+          "language_difficulty": "moderate",
+          "estimated_length": "large (20 books in expanded ed.)",
+          "translation_status": "partially_translated",
+          "existing_translations": "1658 English translation exists but archaic. Modern scholarly edition lacking.",
+          "significance": "Most influential natural magic text. 25+ editions. Covers optics, magnetism, alchemy, cryptography, distillation. Founded Accademia dei Segreti (first scientific society?).",
+          "digitization": "Widely available",
+          "bph_relevance": "Definitive natural magic compendium. Shows transition from magic to experimental science.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 6,
+            "feasibility": 4,
+            "audience": 9
+          },
+          "total_score": 7.2,
+          "notes": "1658 translation outdated. Modern annotated edition would be valuable."
+        },
+        {
+          "id": "fracastoro_de_sympathia",
+          "author": "Girolamo Fracastoro",
+          "author_dates": "1478-1553",
+          "title": "De sympathia et antipathia rerum / De contagione",
+          "original_date": "1546/1550",
+          "ustc_editions": 15,
+          "genre": "Medicine/Natural Philosophy",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium",
+          "translation_status": "partially_translated",
+          "existing_translations": "De contagione translated (Wright 1930). De sympathia untranslated.",
+          "significance": "First germ theory of disease (seminaria). De sympathia explores occult qualities, attraction/repulsion in nature. Physician, poet (Syphilis poem), astronomer.",
+          "digitization": "Available",
+          "bph_relevance": "Occult sympathies theory influential on later natural magic and early chemistry.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 7,
+            "feasibility": 6,
+            "audience": 8
+          },
+          "total_score": 7.3,
+          "notes": "De sympathia fills gap between translated medical work and his natural philosophy."
+        },
+        {
+          "id": "dee_monas_hieroglyphica",
+          "author": "John Dee",
+          "author_dates": "1527-1608/9",
+          "title": "Monas Hieroglyphica",
+          "original_date": "1564",
+          "ustc_editions": 3,
+          "genre": "Esoteric Mathematics/Alchemy",
+          "language_difficulty": "very_difficult",
+          "estimated_length": "short",
+          "translation_status": "translated",
+          "existing_translations": "Multiple translations exist (Josten 1964, Hamilton-Jones 1947). But highly obscure text.",
+          "significance": "Dee's mystical mathematics. Single hieroglyphic symbol encoding cosmic truths. Influenced Rosicrucians, alchemy. Notoriously difficult.",
+          "digitization": "Widely available",
+          "bph_relevance": "Core esoteric text. Dee central to BPH tradition.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 3,
+            "feasibility": 7,
+            "audience": 8
+          },
+          "total_score": 6.4,
+          "notes": "Already translated but could use fresh annotated edition explaining the mathematics."
+        },
+        {
+          "id": "libavius_alchemia",
+          "author": "Andreas Libavius",
+          "author_dates": "1555-1616",
+          "title": "Alchemia",
+          "original_date": "1597",
+          "ustc_editions": 4,
+          "genre": "Chemistry/Alchemy",
+          "language_difficulty": "difficult",
+          "estimated_length": "very_large",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None. Only excerpts in secondary literature.",
+          "significance": "First systematic chemistry textbook. Bridge between alchemy and modern chemistry. Attacked Paracelsians but systematized chemical knowledge. Famous laboratory design.",
+          "digitization": "Available via BSB, Google Books",
+          "bph_relevance": "Transition from alchemy to chemistry. Shows rationalization of esoteric tradition.",
+          "scores": {
+            "historical_impact": 9,
+            "translation_gap": 10,
+            "feasibility": 2,
+            "audience": 8
+          },
+          "total_score": 7.2,
+          "notes": "Major gap in history of chemistry. Large but foundational."
+        },
+        {
+          "id": "porta_physiognomonia",
+          "author": "Giambattista della Porta",
+          "author_dates": "1535-1615",
+          "title": "De humana physiognomonia",
+          "original_date": "1586",
+          "ustc_editions": 12,
+          "genre": "Physiognomy/Natural Philosophy",
+          "language_difficulty": "moderate",
+          "estimated_length": "medium (4 books)",
+          "translation_status": "minimal",
+          "existing_translations": "Only 1586 Italian version accessible. Latin original untranslated.",
+          "significance": "Most influential Renaissance physiognomy treatise. Famous woodcuts comparing human and animal faces. Influenced Lavater, Darwin on expression.",
+          "digitization": "Widely available",
+          "bph_relevance": "Correspondence between microcosm and macrocosm. Natural signatures.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 9,
+            "feasibility": 6,
+            "audience": 8
+          },
+          "total_score": 7.8,
+          "notes": "Famous images, accessible Latin. Good crossover appeal to art history, psychology."
+        },
+        {
+          "id": "wilkins_mercury",
+          "author": "John Wilkins",
+          "author_dates": "1614-1672",
+          "title": "Mercury, or the Secret and Swift Messenger",
+          "original_date": "1641",
+          "ustc_editions": 3,
+          "genre": "Cryptography/Communication",
+          "language_difficulty": "moderate",
+          "estimated_length": "short",
+          "translation_status": "available_in_english",
+          "existing_translations": "Originally in English - but his other works in Latin",
+          "significance": "Early work on cryptography and secret communication. Later founded Royal Society. Shows transition from occult to scientific.",
+          "notes": "Originally English. Include here for completeness of early science theme."
+        },
+        {
+          "id": "sennert_de_chymicorum",
+          "author": "Daniel Sennert",
+          "author_dates": "1572-1637",
+          "title": "De chymicorum cum Aristotelicis et Galenicis consensu ac dissensu",
+          "original_date": "1619",
+          "ustc_editions": 6,
+          "genre": "Chemistry/Medicine",
+          "language_difficulty": "difficult",
+          "estimated_length": "medium",
+          "translation_status": "completely_untranslated",
+          "existing_translations": "None",
+          "significance": "Key work reconciling Paracelsian chemistry with Aristotelian/Galenic medicine. Atomist. Influenced Boyle. Professor at Wittenberg.",
+          "digitization": "Available via VD17",
+          "bph_relevance": "Integration of chemical philosophy into academic medicine.",
+          "scores": {
+            "historical_impact": 8,
+            "translation_gap": 10,
+            "feasibility": 5,
+            "audience": 7
+          },
+          "total_score": 7.5,
+          "notes": "Important for understanding how alchemy became chemistry."
+        }
+      ]
+    }
+  },
+  "recommended_sequence": {
+    "track_a_general": {
+      "description": "General Renaissance/Reformation Track",
+      "phase_1_foundation": {
+        "works": [
+          "donatus_ars_major",
+          "mantuanus_parthenice"
+        ],
+        "rationale": "Short foundational grammar + high-impact poetry. Builds credibility and audience."
+      },
+      "phase_2_expansion": {
+        "works": [
+          "villa_dei_doctrinale",
+          "vives_de_anima",
+          "hoornbeek_homiletics"
+        ],
+        "rationale": "Mix of pedagogy, philosophy, practical theology. Different audiences."
+      },
+      "phase_3_major_projects": {
+        "works": [
+          "conring_origine_juris",
+          "lipsius_collected",
+          "nebrija_introductiones"
+        ],
+        "rationale": "Larger foundational works that establish SourceLibrary as serious resource."
+      }
+    },
+    "track_b_bph_esoteric": {
+      "description": "BPH/Esoteric Track - Hermetic, Alchemical, Kabbalistic traditions",
+      "phase_1_quick_wins": {
+        "works": [
+          "schweighardt_speculum",
+          "maier_atalanta_fugiens"
+        ],
+        "rationale": "Short Rosicrucian text (high score 8.2) + fresh Atalanta translation. Immediate BPH relevance, builds esoteric audience."
+      },
+      "phase_2_foundational_esoteric": {
+        "works": [
+          "severinus_idea_medicinae",
+          "reuchlin_de_verbo_mirifico",
+          "steuco_perenni_philosophia"
+        ],
+        "rationale": "Foundational Paracelsianism (8.1), first Christian Kabbalah (7.9), origin of 'perennial philosophy' (7.8). Core BPH themes."
+      },
+      "phase_3_major_esoteric": {
+        "works": [
+          "patrizi_nova_universis",
+          "khunrath_amphitheatrum",
+          "giorgi_de_harmonia_mundi"
+        ],
+        "rationale": "Major Hermetic cosmology, Christian alchemy/Kabbalah synthesis, musical-Kabbalistic cosmology. Landmark translations."
+      },
+      "phase_4_long_term": {
+        "works": [
+          "theatrum_chemicum_select",
+          "fludd_utriusque_cosmi",
+          "kircher_oedipus_aegyptiacus"
+        ],
+        "rationale": "Strategic selections from massive encyclopedic works. Collaborative or long-term projects."
+      }
+    }
+  },
+  "excluded_from_roadmap": {
+    "already_well_served": [
+      "Cicero (Loeb complete)",
+      "Ovid (Loeb complete)",
+      "Virgil (Loeb complete)",
+      "Horace (Loeb complete)",
+      "Seneca (Loeb complete)",
+      "Augustine (multiple series)",
+      "Erasmus major works (CWE series ongoing)",
+      "William Ames (Marrow of Theology)",
+      "Dionysius Cato (multiple)"
+    ],
+    "ongoing_projects_elsewhere": [
+      "Johann Gerhard - Loci Theologici (Concordia, 17 vols ongoing)",
+      "Philipp Melanchthon - Complete Works (Newcomb 2022+)",
+      "Juan Luis Vives - Selected Works (Brill series)"
+    ],
+    "impractical_for_solo_translator": [
+      "Bartolus complete commentaries",
+      "Calov complete Systema (12 vols)",
+      "Full Lutheran/Reformed systematics"
+    ]
+  }
+}

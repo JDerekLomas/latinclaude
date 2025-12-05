@@ -1,0 +1,462 @@
+{
+  "source": "The Philological Museum",
+  "url": "https://philological.cal.bham.ac.uk/",
+  "description": "Critical editions of British neo-Latin texts with English translations",
+  "editor": "Dana F. Sutton (General Editor)",
+  "institution": "Shakespeare Institute, University of Birmingham",
+  "note": "This is a PARTIAL extraction - full library has ~200+ texts",
+  "extraction_date": "2024-12",
+  "statistics": {
+    "texts_extracted": 89,
+    "unique_authors": 54,
+    "date_range": "1459-1808 (mainly 16th-17th century)",
+    "focus": "British neo-Latin literature"
+  },
+  "texts": [
+    {
+      "author": "Joseph Addison",
+      "title": "Latin Prose and Poetry",
+      "date": null
+    },
+    {
+      "author": "William Alabaster",
+      "title": "Alabaster's Conversion",
+      "date": "1599"
+    },
+    {
+      "author": "William Alabaster",
+      "title": "Carmina",
+      "date": null
+    },
+    {
+      "author": "William Alabaster",
+      "title": "Intelligence Report",
+      "date": "1599"
+    },
+    {
+      "author": "William Alabaster",
+      "title": "Six Responses",
+      "date": "1598"
+    },
+    {
+      "author": "William Alabaster",
+      "title": "Roxana",
+      "date": "ca. 1595"
+    },
+    {
+      "author": "Andrea Ammonio",
+      "title": "Carmina",
+      "date": "1511"
+    },
+    {
+      "author": "Bernard Andr\u00e9",
+      "title": "Annales regni Henri Septimi",
+      "date": "1504/5 and 1507/8"
+    },
+    {
+      "author": "Bernard Andr\u00e9",
+      "title": "De Vita atque Gestis Henrici Septimi Historia",
+      "date": null
+    },
+    {
+      "author": "Christopher Anstey",
+      "title": "Epistola Poetica Familiaris",
+      "date": "1777"
+    },
+    {
+      "author": "Christopher Anstey",
+      "title": "Two Translations and an Ode",
+      "date": "1808"
+    },
+    {
+      "author": "Roger Ascham",
+      "title": "Carmina",
+      "date": "1576"
+    },
+    {
+      "author": "Nicholaus Avancini",
+      "title": "Alexius Comnenus",
+      "date": null
+    },
+    {
+      "author": "Nicholaus Avancini",
+      "title": "Semiramis",
+      "date": "1625"
+    },
+    {
+      "author": "Sir Francis Bacon",
+      "title": "Historia Regni Henrici Septimi Regis Angliae",
+      "date": "1638"
+    },
+    {
+      "author": "Sir Francis Bacon",
+      "title": "Sermones Fideles sive Interiora Rerum",
+      "date": "1638"
+    },
+    {
+      "author": "John Barclay",
+      "title": "Poematum Libri Duo",
+      "date": "1625"
+    },
+    {
+      "author": "Henry Bellamy",
+      "title": "Iphis",
+      "date": "ca. 1625"
+    },
+    {
+      "author": "Edward Benlowes",
+      "title": "A Glance at the Glories of Sacred Friendship",
+      "date": "1657"
+    },
+    {
+      "author": "Richard Bentley",
+      "title": "A Dissertation upon the Epistles of Phalaris",
+      "date": "1697"
+    },
+    {
+      "author": "Theodore Beza",
+      "title": "Three Poems",
+      "date": "1588"
+    },
+    {
+      "author": "Walter Bigges",
+      "title": "Expeditio Francisci Draki Equitis Angli in Indias Occidentales",
+      "date": "1588"
+    },
+    {
+      "author": "John Blencowe (?)",
+      "title": "Mercurius sive Literarum Luctus",
+      "date": null
+    },
+    {
+      "author": "Hector Boece",
+      "title": "Scotorum Historia",
+      "date": "1575"
+    },
+    {
+      "author": "Vincent Bourne",
+      "title": "Poemata Latine Partim Reddita, Partim Scripta",
+      "date": "1743"
+    },
+    {
+      "author": "Andrew Boyd",
+      "title": "Carmina",
+      "date": null
+    },
+    {
+      "author": "Poggio Bracciolini",
+      "title": "Oratio in Laudem Reipublicae Venetorum",
+      "date": "1459"
+    },
+    {
+      "author": "John Brownswerd",
+      "title": "Progymnasmata Quaedam Poetica",
+      "date": "1589"
+    },
+    {
+      "author": "Nicolas Bourbon",
+      "title": "Six Poems for Anne Boleyn",
+      "date": "1540"
+    },
+    {
+      "author": "Samuel Brooke",
+      "title": "Adelphe",
+      "date": "1612"
+    },
+    {
+      "author": "Martin Bucer",
+      "title": "De honestis ludis",
+      "date": "1557"
+    },
+    {
+      "author": "George Buchanan",
+      "title": "Ane Admonition Direct to the Trew Lordis",
+      "date": "1571"
+    },
+    {
+      "author": "George Buchanan",
+      "title": "Baptistes",
+      "date": "1577"
+    },
+    {
+      "author": "George Buchanan",
+      "title": "De Caleto Nuper Recepta Carmen",
+      "date": "1558"
+    },
+    {
+      "author": "George Buchanan",
+      "title": "De Iure Regni Apud Scotos Dialogus",
+      "date": "1579"
+    },
+    {
+      "author": "George Buchanan",
+      "title": "De Maria Scotorum Regina",
+      "date": "1571"
+    },
+    {
+      "author": "George Buchanan & Alexander Yule",
+      "title": "Ecphrasis Paraphraseos Psalmorum",
+      "date": "1620"
+    },
+    {
+      "author": "George Buchanan",
+      "title": "Five Masques",
+      "date": null
+    },
+    {
+      "author": "George Buchanan",
+      "title": "Psalmorum Davidis Paraphrasis Poetica",
+      "date": "1580"
+    },
+    {
+      "author": "George Buchanan",
+      "title": "Rerum Scotarum Historia",
+      "date": "1582"
+    },
+    {
+      "author": "George Buchanan",
+      "title": "Vita ab Ipso Scripta",
+      "date": "1580"
+    },
+    {
+      "author": "Robert Burton",
+      "title": "Poemata",
+      "date": null
+    },
+    {
+      "author": "William Camden",
+      "title": "Actio in Henricum Garnetum",
+      "date": "1607"
+    },
+    {
+      "author": "William Camden",
+      "title": "Annales Rerum Anglicarum et Hibernicarum Regnante Elizabetha",
+      "date": "1615, 1625"
+    },
+    {
+      "author": "William Camden",
+      "title": "Britannia",
+      "date": "1607"
+    },
+    {
+      "author": "William Camden",
+      "title": "Diary",
+      "date": "1603-1623"
+    },
+    {
+      "author": "William Camden",
+      "title": "Poems and Epitaphs",
+      "date": null
+    },
+    {
+      "author": "Edmund Campion S.J.",
+      "title": "Doctor Ironicus and Dialogus Mutus",
+      "date": null
+    },
+    {
+      "author": "Thomas Campion",
+      "title": "Latin Poetry",
+      "date": null
+    },
+    {
+      "author": "George Canning",
+      "title": "Iter ad Meccam Religionis Causa Susceptum",
+      "date": "1789"
+    },
+    {
+      "author": "Thomas Compton Carleton S.J.",
+      "title": "Fatum Vortigerni",
+      "date": "1619"
+    },
+    {
+      "author": "Nicholas Carr",
+      "title": "De Scriptorum Britannicorum Paucitate",
+      "date": "1576"
+    },
+    {
+      "author": "Isaac Casaubon",
+      "title": "Corona Regia",
+      "date": "1615"
+    },
+    {
+      "author": "John Case",
+      "title": "Adeste, tyrunculi",
+      "date": "1589"
+    },
+    {
+      "author": "John Case",
+      "title": "Apologia Musices",
+      "date": "1588"
+    },
+    {
+      "author": "John Case",
+      "title": "The Praise of Musicke",
+      "date": "1586"
+    },
+    {
+      "author": "John Case",
+      "title": "Reflexus Speculi Moralis",
+      "date": "1596"
+    },
+    {
+      "author": "John Case",
+      "title": "Speculum Moralium Quaestionum",
+      "date": "1585"
+    },
+    {
+      "author": "John Case",
+      "title": "Sphaera Civitatis",
+      "date": "1588"
+    },
+    {
+      "author": "Sir Thomas Chaloner",
+      "title": "De Republica Anglorum Instauranda",
+      "date": "1564"
+    },
+    {
+      "author": "John Cheke",
+      "title": "A Remedy for Sedition",
+      "date": "1536"
+    },
+    {
+      "author": "John Cheke",
+      "title": "The True Subject to the Rebell",
+      "date": "1549"
+    },
+    {
+      "author": "Abraham Cowley",
+      "title": "Carmina",
+      "date": null
+    },
+    {
+      "author": "Abraham Cowley",
+      "title": "Davideos Liber I",
+      "date": "1656"
+    },
+    {
+      "author": "Abraham Cowley",
+      "title": "De Plantis Libri VI",
+      "date": "1668"
+    },
+    {
+      "author": "Abraham Cowley",
+      "title": "Naufragium Ioculare",
+      "date": "1638"
+    },
+    {
+      "author": "Desiderius Erasmus",
+      "title": "Festina Lente (Adagia II.1.1)",
+      "date": "1525"
+    },
+    {
+      "author": "Desiderius Erasmus",
+      "title": "Herculei Labores (Adagia III.1.1)",
+      "date": "1525"
+    },
+    {
+      "author": "Charles Fitzgeoffrey",
+      "title": "Affaniae and Cenotaphia",
+      "date": "1601"
+    },
+    {
+      "author": "Phineas Fletcher",
+      "title": "Sylva Poetica",
+      "date": "1633"
+    },
+    {
+      "author": "William Gager",
+      "title": "Complete Works",
+      "date": null
+    },
+    {
+      "author": "Alberico Gentili",
+      "title": "Observations on Machiavelli",
+      "date": "1585"
+    },
+    {
+      "author": "Matthew Gwinne",
+      "title": "Nero",
+      "date": "1603"
+    },
+    {
+      "author": "Arthur Johnston",
+      "title": "De Loco Suo Natali",
+      "date": null
+    },
+    {
+      "author": "John Leland",
+      "title": "Antiphilarchia",
+      "date": "1541"
+    },
+    {
+      "author": "John Leland",
+      "title": "Epigrammata",
+      "date": "1589"
+    },
+    {
+      "author": "Thomas Legge",
+      "title": "Richardus Tertius",
+      "date": "1579"
+    },
+    {
+      "author": "John Milton",
+      "title": "In Quintum Novembris",
+      "date": "1626"
+    },
+    {
+      "author": "John Owen",
+      "title": "Epigrammata",
+      "date": "1606-1613"
+    },
+    {
+      "author": "George Ruggle",
+      "title": "Ignoramus",
+      "date": "1615"
+    },
+    {
+      "author": "Joseph Simons S.J.",
+      "title": "Leo Armenus",
+      "date": "1656"
+    },
+    {
+      "author": "Joseph Simons S.J.",
+      "title": "Mercia, sive Pietas Coronata",
+      "date": "1648"
+    },
+    {
+      "author": "Joseph Simons S.J.",
+      "title": "Sanctus Pelagius Martyr",
+      "date": "1623"
+    },
+    {
+      "author": "Francisco Suarez S.J.",
+      "title": "Defensio Fidei Catholicae",
+      "date": "1613"
+    },
+    {
+      "author": "Polydore Vergil",
+      "title": "Adagiorum Libellus",
+      "date": "1521"
+    },
+    {
+      "author": "Polydore Vergil",
+      "title": "Anglica Historia",
+      "date": "1555"
+    },
+    {
+      "author": "Polydore Vergil",
+      "title": "Dialogus de Prodigiis",
+      "date": "1526"
+    },
+    {
+      "author": "Thomas Watson",
+      "title": "Complete Works",
+      "date": null
+    },
+    {
+      "author": "Florence Wilson",
+      "title": "De Animi Tranquillitate Dialogus",
+      "date": "1543"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USTC Language Distribution 1450-1700</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .chart-container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #8B0000;
+        }
+        .stat-box h3 {
+            margin: 0 0 5px 0;
+            color: #333;
+            font-size: 14px;
+        }
+        .stat-box .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8B0000;
+        }
+        .source {
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Language Distribution in European Printing, 1450-1700</h1>
+    <p class="subtitle">Based on 1,628,578 editions from the Universal Short Title Catalogue</p>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h3>Total Latin Editions</h3>
+            <div class="value">503,486</div>
+        </div>
+        <div class="stat-box">
+            <h3>Latin Share</h3>
+            <div class="value">30.9%</div>
+        </div>
+        <div class="stat-box">
+            <h3>Peak Latin Decade</h3>
+            <div class="value">1660s</div>
+        </div>
+        <div class="stat-box">
+            <h3>Latin Overtaken By</h3>
+            <div class="value">German (1670s)</div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="stackedChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="percentChart"></canvas>
+    </div>
+
+    <p class="source">
+        <strong>Source:</strong> Direct analysis of USTC Editions July 2025.accdb database export.<br>
+        Universal Short Title Catalogue, University of St Andrews. <a href="https://ustc.ac.uk">ustc.ac.uk</a>
+    </p>
+
+    <script>
+        const decades = ['1450s', '1460s', '1470s', '1480s', '1490s', '1500s', '1510s', '1520s', '1530s', '1540s', '1550s', '1560s', '1570s', '1580s', '1590s', '1600s', '1610s', '1620s', '1630s', '1640s', '1650s', '1660s', '1670s', '1680s', '1690s'];
+
+        const data = {
+            "1450": {"Latin": 43, "German": 6, "French": 0, "English": 2, "Dutch": 0, "Italian": 1, "Spanish": 0, "Other": 0},
+            "1460": {"Latin": 348, "German": 23, "French": 2, "English": 11, "Dutch": 1, "Italian": 1, "Spanish": 0, "Other": 3},
+            "1470": {"Latin": 3972, "German": 408, "French": 181, "English": 19, "Dutch": 53, "Italian": 347, "Spanish": 16, "Other": 18},
+            "1480": {"Latin": 6315, "German": 1082, "French": 791, "English": 72, "Dutch": 237, "Italian": 508, "Spanish": 198, "Other": 148},
+            "1490": {"Latin": 8812, "German": 1433, "French": 1706, "English": 158, "Dutch": 245, "Italian": 1025, "Spanish": 559, "Other": 253},
+            "1500": {"Latin": 10629, "German": 1216, "French": 1514, "English": 198, "Dutch": 356, "Italian": 1139, "Spanish": 396, "Other": 418},
+            "1510": {"Latin": 12725, "German": 1870, "French": 1257, "English": 242, "Dutch": 386, "Italian": 1490, "Spanish": 491, "Other": 616},
+            "1520": {"Latin": 10925, "German": 8343, "French": 1659, "English": 385, "Dutch": 416, "Italian": 1492, "Spanish": 610, "Other": 943},
+            "1530": {"Latin": 11455, "German": 4976, "French": 2836, "English": 789, "Dutch": 485, "Italian": 1906, "Spanish": 642, "Other": 1260},
+            "1540": {"Latin": 13530, "German": 5201, "French": 3840, "English": 1191, "Dutch": 775, "Italian": 2671, "Spanish": 1104, "Other": 1651},
+            "1550": {"Latin": 15357, "German": 5503, "French": 5338, "English": 1477, "Dutch": 1056, "Italian": 3874, "Spanish": 1329, "Other": 1820},
+            "1560": {"Latin": 15910, "German": 6729, "French": 7747, "English": 2313, "Dutch": 1584, "Italian": 4912, "Spanish": 1084, "Other": 1995},
+            "1570": {"Latin": 16201, "German": 5848, "French": 6957, "English": 2048, "Dutch": 1616, "Italian": 5954, "Spanish": 1266, "Other": 1823},
+            "1580": {"Latin": 20902, "German": 6783, "French": 9147, "English": 2995, "Dutch": 2862, "Italian": 7737, "Spanish": 1726, "Other": 2312},
+            "1590": {"Latin": 24829, "German": 8235, "French": 7630, "English": 3294, "Dutch": 2680, "Italian": 7898, "Spanish": 2221, "Other": 2696},
+            "1600": {"Latin": 30939, "German": 9596, "French": 7254, "English": 4370, "Dutch": 3570, "Italian": 6611, "Spanish": 4245, "Other": 3254},
+            "1610": {"Latin": 34290, "German": 14802, "French": 10950, "English": 5047, "Dutch": 4970, "Italian": 6404, "Spanish": 5411, "Other": 3662},
+            "1620": {"Latin": 30862, "German": 19517, "French": 12838, "English": 5890, "Dutch": 7250, "Italian": 6992, "Spanish": 7782, "Other": 3091},
+            "1630": {"Latin": 24712, "German": 21531, "French": 11764, "English": 6767, "Dutch": 6715, "Italian": 5097, "Spanish": 6694, "Other": 2807},
+            "1640": {"Latin": 30143, "German": 20521, "French": 15068, "English": 24112, "Dutch": 10582, "Italian": 5482, "Spanish": 6456, "Other": 4794},
+            "1650": {"Latin": 34133, "German": 23852, "French": 20196, "English": 16717, "Dutch": 11402, "Italian": 6026, "Spanish": 7293, "Other": 3169},
+            "1660": {"Latin": 37292, "German": 32716, "French": 23502, "English": 13427, "Dutch": 13350, "Italian": 6971, "Spanish": 7441, "Other": 3322},
+            "1670": {"Latin": 36483, "German": 41446, "French": 23260, "English": 13833, "Dutch": 14235, "Italian": 8537, "Spanish": 7849, "Other": 3701},
+            "1680": {"Latin": 33325, "German": 45893, "French": 25305, "English": 26445, "Dutch": 13959, "Italian": 8419, "Spanish": 8527, "Other": 3935},
+            "1690": {"Latin": 33090, "German": 49233, "French": 30686, "English": 28507, "Dutch": 13613, "Italian": 8234, "Spanish": 8150, "Other": 4150}
+        };
+
+        const languages = ['Latin', 'German', 'French', 'English', 'Dutch', 'Italian', 'Spanish', 'Other'];
+        const colors = {
+            'Latin': '#8B0000',
+            'German': '#1E3A5F',
+            'French': '#2E5A88',
+            'English': '#4A7FB0',
+            'Dutch': '#F4A460',
+            'Italian': '#228B22',
+            'Spanish': '#DAA520',
+            'Other': '#999999'
+        };
+
+        // Prepare datasets
+        const datasets = languages.map(lang => ({
+            label: lang,
+            data: decades.map((_, i) => {
+                const year = 1450 + i * 10;
+                return data[year.toString()] ? data[year.toString()][lang] || 0 : 0;
+            }),
+            backgroundColor: colors[lang],
+            borderColor: colors[lang],
+            borderWidth: 0
+        }));
+
+        // Stacked absolute chart
+        new Chart(document.getElementById('stackedChart'), {
+            type: 'bar',
+            data: {
+                labels: decades,
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Editions by Language (Absolute Numbers)',
+                        font: { size: 16 }
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                },
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: { display: true, text: 'Decade' }
+                    },
+                    y: {
+                        stacked: true,
+                        title: { display: true, text: 'Number of Editions' },
+                        ticks: {
+                            callback: value => value.toLocaleString()
+                        }
+                    }
+                }
+            }
+        });
+
+        // Percentage chart
+        const percentDatasets = languages.map(lang => ({
+            label: lang,
+            data: decades.map((_, i) => {
+                const year = 1450 + i * 10;
+                if (!data[year.toString()]) return 0;
+                const total = Object.values(data[year.toString()]).reduce((a, b) => a + b, 0);
+                return total > 0 ? ((data[year.toString()][lang] || 0) / total * 100).toFixed(1) : 0;
+            }),
+            backgroundColor: colors[lang],
+            borderColor: colors[lang],
+            borderWidth: 0
+        }));
+
+        new Chart(document.getElementById('percentChart'), {
+            type: 'bar',
+            data: {
+                labels: decades,
+                datasets: percentDatasets
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Editions by Language (Percentage)',
+                        font: { size: 16 }
+                    },
+                    legend: {
+                        position: 'bottom'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: ctx => `${ctx.dataset.label}: ${ctx.raw}%`
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: { display: true, text: 'Decade' }
+                    },
+                    y: {
+                        stacked: true,
+                        max: 100,
+                        title: { display: true, text: 'Percentage' },
+                        ticks: {
+                            callback: value => value + '%'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
