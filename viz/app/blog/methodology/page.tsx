@@ -283,7 +283,35 @@ export default function Methodology() {
               </table>
             </div>
 
-            <h3 className="text-xl font-medium text-violet-400 mt-6 mb-3">Total Estimate</h3>
+            <h3 className="text-xl font-medium text-violet-400 mt-6 mb-3">The Missing Database</h3>
+
+            <div className="bg-red-900/20 border border-red-700/50 rounded-lg p-4 my-6">
+              <h4 className="text-red-400 font-semibold mb-2">A Gap in Research Infrastructure</h4>
+              <p className="text-slate-300 text-sm mb-3">
+                <strong>No comprehensive database exists</strong> of which Latin works have been translated into English. The series counts above are our best effort to estimate coverage, but they represent a patchwork, not a systematic catalogue.
+              </p>
+              <p className="text-slate-400 text-sm mb-3">
+                Existing resources fall short:
+              </p>
+              <ul className="text-slate-400 text-sm space-y-1 list-disc list-inside mb-3">
+                <li>
+                  <a href="https://catalogustranslationum.org/" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">Catalogus Translationum et Commentariorum</a>
+                  {" "}&mdash; tracks Latin translations of Greek classics, not translations <em>from</em> Latin
+                </li>
+                <li>
+                  <a href="https://www.unesco.org/xtrans/bsform.aspx" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">UNESCO Index Translationum</a>
+                  {" "}&mdash; only covers 1979&ndash;present, not historical translations
+                </li>
+                <li>
+                  Publisher series catalogues &mdash; scattered across dozens of presses with no aggregation
+                </li>
+              </ul>
+              <p className="text-slate-300 text-sm">
+                <strong>Building this database is a potential output of this project.</strong> Cross-referencing USTC records with translation series catalogues would produce the first comprehensive map of what&apos;s accessible.
+              </p>
+            </div>
+
+            <h3 className="text-xl font-medium text-violet-400 mt-6 mb-3">Our Estimate (Rough)</h3>
             <div className="bg-slate-900 border border-slate-700 rounded-lg p-4 my-6">
               <table className="w-full text-sm">
                 <tbody className="text-slate-300">
@@ -302,23 +330,20 @@ export default function Methodology() {
                 </tbody>
                 <tfoot>
                   <tr className="border-t border-slate-600 font-semibold">
-                    <td className="pt-3 text-white">Conservative Total</td>
+                    <td className="pt-3 text-white">Very Rough Total</td>
                     <td className="pt-3 font-mono text-white text-right">~1,500&ndash;2,000</td>
                   </tr>
                 </tfoot>
               </table>
+              <p className="text-slate-500 text-xs mt-3">
+                This estimate has significant uncertainty. Without a systematic catalogue, we cannot know the true number.
+              </p>
             </div>
 
-            <div className="bg-emerald-900/20 border border-emerald-700/50 rounded-lg p-4 my-6">
-              <h4 className="text-emerald-400 font-semibold mb-2">The Translation Gap</h4>
-              <p className="text-slate-300 text-sm mb-2">
-                With approximately <strong>1,500&ndash;2,000</strong> Latin works translated into English out of <strong>533,320</strong> Latin editions in the USTC:
-              </p>
-              <p className="text-2xl font-bold text-emerald-400">
-                ~0.3% of USTC Latin editions have English translations
-              </p>
-              <p className="text-slate-400 text-sm mt-3">
-                <strong>Important caveat:</strong> The USTC counts <em>editions</em> (printings), not unique works. A single work like Erasmus&apos;s <em>Adagia</em> may have 100+ editions. The number of unique Latin <em>works</em> is perhaps 50,000&ndash;100,000, meaning translation coverage of unique works could be 2&ndash;4%. Still, the vast majority of Renaissance Latin literature remains untranslated.
+            <div className="bg-amber-900/20 border border-amber-700/50 rounded-lg p-4 my-6">
+              <h4 className="text-amber-400 font-semibold mb-2">Editions vs. Works</h4>
+              <p className="text-slate-300 text-sm">
+                The USTC counts <em>editions</em> (printings), not unique works. A single work like Erasmus&apos;s <em>Adagia</em> may have 100+ editions. The number of unique Latin <em>works</em> is perhaps 50,000&ndash;100,000, meaning translation coverage of unique works could be 2&ndash;4%. Still, the vast majority of Renaissance Latin literature remains untranslated.
               </p>
             </div>
           </section>
