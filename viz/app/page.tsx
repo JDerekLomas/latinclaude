@@ -76,7 +76,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero: The Number */}
+      {/* Hero: The Thesis */}
       <section style={{
         minHeight: '100vh',
         display: 'flex',
@@ -86,64 +86,92 @@ export default function Home() {
         padding: '120px 24px 80px',
         textAlign: 'center',
       }}>
-        <p style={{
-          fontFamily: 'Inter, sans-serif',
-          fontSize: '13px',
-          letterSpacing: '0.15em',
-          color: '#888',
-          marginBottom: '24px',
-        }}>
-          PRINTED IN EUROPE, 1450–1700
-        </p>
         <h1 style={{
           fontFamily: 'Cormorant Garamond, Georgia, serif',
-          fontSize: 'clamp(72px, 15vw, 180px)',
+          fontSize: 'clamp(32px, 6vw, 56px)',
           fontWeight: 400,
           color: '#1a1612',
-          lineHeight: 0.9,
-          marginBottom: '24px',
+          lineHeight: 1.15,
+          marginBottom: '32px',
+          maxWidth: '900px',
         }}>
-          503,486
+          To create a second Renaissance,<br />
+          <span style={{ color: '#9e4a3a' }}>translate the first.</span>
         </h1>
         <p style={{
-          fontFamily: 'Cormorant Garamond, Georgia, serif',
-          fontSize: 'clamp(24px, 4vw, 42px)',
-          fontWeight: 400,
-          color: '#333',
-          maxWidth: '800px',
-          lineHeight: 1.3,
+          fontFamily: 'Newsreader, Georgia, serif',
+          fontSize: '19px',
+          color: '#666',
           marginBottom: '48px',
+          maxWidth: '600px',
+          lineHeight: 1.6,
         }}>
-          Latin books. Theology, philosophy, law, medicine, alchemy, poetry.
+          The Renaissance itself was written in Latin. We never translated it out.
         </p>
+
+        {/* The Numbers */}
         <div style={{
-          background: '#f5f0e8',
-          border: '1px solid #e0d8c8',
-          borderRadius: '8px',
-          padding: '24px 48px',
+          display: 'flex',
+          gap: '48px',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          marginBottom: '32px',
         }}>
-          <p style={{
-            fontFamily: 'Inter, sans-serif',
-            fontSize: '14px',
-            color: '#666',
-            marginBottom: '8px',
-          }}>
-            Translated into English
-          </p>
-          <p style={{
-            fontFamily: 'Cormorant Garamond, Georgia, serif',
-            fontSize: '48px',
-            fontWeight: 500,
-            color: '#9e4a3a',
-          }}>
-            Less than 2%
-          </p>
+          <div style={{ textAlign: 'center' }}>
+            <p style={{
+              fontFamily: 'Cormorant Garamond, Georgia, serif',
+              fontSize: 'clamp(48px, 10vw, 72px)',
+              fontWeight: 400,
+              color: '#1a1612',
+              lineHeight: 1,
+            }}>
+              503,486
+            </p>
+            <p style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '13px',
+              color: '#888',
+              marginTop: '8px',
+            }}>
+              Latin works, 1450–1700
+            </p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <p style={{
+              fontFamily: 'Cormorant Garamond, Georgia, serif',
+              fontSize: 'clamp(48px, 10vw, 72px)',
+              fontWeight: 400,
+              color: '#9e4a3a',
+              lineHeight: 1,
+            }}>
+              &lt;3%
+            </p>
+            <p style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '13px',
+              color: '#888',
+              marginTop: '8px',
+            }}>
+              translated into English
+            </p>
+          </div>
         </div>
+
+        <p style={{
+          fontFamily: 'Newsreader, Georgia, serif',
+          fontSize: '17px',
+          fontStyle: 'italic',
+          color: '#888',
+          maxWidth: '500px',
+        }}>
+          The Renaissance is waiting to be discovered.
+        </p>
+
         <p style={{
           fontFamily: 'Inter, sans-serif',
           fontSize: '13px',
           color: '#999',
-          marginTop: '80px',
+          marginTop: '64px',
         }}>
           ↓ Scroll to explore the gap
         </p>
