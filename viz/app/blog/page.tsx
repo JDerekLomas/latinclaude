@@ -58,6 +58,20 @@ const posts = [
     tag: "Research",
   },
   {
+    slug: "forgotten-1400s",
+    title: "The Forgotten Quattrocento: Thinkers of the 1400s You Can't Read",
+    date: "December 2025",
+    excerpt: "Giorgio Valla, Giovanni Pontano, Paul of Venice. The 15th century gave us the Renaissance—and hundreds of Latin thinkers whose works remain untranslated.",
+    tag: "Research",
+  },
+  {
+    slug: "forgotten-1500s",
+    title: "The Forgotten Cinquecento: Thinkers of the 1500s You Can't Read",
+    date: "December 2025",
+    excerpt: "Zabarella, Cardano, della Porta, Telesio. The century of the Scientific Revolution—and the Latin authors who shaped it but remain inaccessible.",
+    tag: "Research",
+  },
+  {
     slug: "renaissance-bestsellers",
     title: "Renaissance Bestsellers Nobody Reads",
     date: "December 2025",

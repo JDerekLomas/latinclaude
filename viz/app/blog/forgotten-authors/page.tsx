@@ -6,7 +6,7 @@ export default function ForgottenAuthors() {
       title="The Forgotten Giants: Prolific Authors You've Never Heard Of"
       tag="Research"
       prevPost={{ href: "/blog/why-latin-matters", title: "Why Latin Matters" }}
-      nextPost={{ href: "/blog/renaissance-bestsellers", title: "Renaissance Bestsellers" }}
+      nextPost={{ href: "/blog/forgotten-1400s", title: "Forgotten Authors of the 1400s" }}
     >
       <p style={{
         fontFamily: 'Newsreader, Georgia, serif',
