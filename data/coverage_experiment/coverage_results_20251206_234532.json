@@ -1,0 +1,4142 @@
+{
+  "metadata": {
+    "timestamp": "20251206_234532",
+    "sample_size": 100,
+    "random_seed": 42,
+    "source": "/Users/dereklomas/latinclaude/data/istc/istc_core_imprints.csv"
+  },
+  "summary": {
+    "internet_archive": {
+      "found": 20,
+      "pct": 20.0
+    },
+    "hathitrust": {
+      "found": 0,
+      "pct": 0.0
+    },
+    "google_books": {
+      "found": 81,
+      "pct": 81.0
+    },
+    "any_source": {
+      "found": 82,
+      "pct": 82.0
+    }
+  },
+  "results": [
+    {
+      "istc_id": "ir00317500",
+      "author": "Rombus, Petrus",
+      "title": "Materiarum editio ex baculo caecorum breviter collecta",
+      "date": "1497",
+      "place": "Lisbon",
+      "printer": "Valentim Fernandes",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Materiarum editio ex baculo caecorum breviter collecta",
+            "authors": [
+              "Petrus Rombus"
+            ],
+            "link": "http://books.google.nl/books?id=tYlp0AEACAAJ&dq=intitle:Materiarum+editio+ex+baculo+caecorum+breviter+collecta%2Binauthor:Rombus,+Petrus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib00209600",
+      "author": "Bartolus de Saxoferrato",
+      "title": "Super tribus ultimis libris Codicis cum additionibus Angeli de Ubaldis et Alexandri Tartagni",
+      "date": "1490",
+      "place": "[Lyons",
+      "printer": "Johannes Siber",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Super tribus ultimis libris Codicis. Add. Angelus de Ubaldis et Alexander de Tartagnis",
+            "authors": [
+              "Bartolus de Saxoferrato"
+            ],
+            "link": "https://play.google.com/store/books/details?id=xOgDJtNuvY8C&source=gbs_api"
+          },
+          {
+            "title": "Lectura super tribus ultimis libris Codicis",
+            "authors": [
+              "Bartolus (de Saxoferrato)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=veBKurYdmsgC&source=gbs_api"
+          },
+          {
+            "title": "Super tribus ultimis libris Codicis, cum additionibus Angeli de Ubaldis et Alexandri de Imola",
+            "authors": [
+              "Bartolus (de Saxoferrato)",
+              "Alexander (de Imola)",
+              "Angelus (de Ubaldis)"
+            ],
+            "link": "http://books.google.nl/books?id=3XkjtwAACAAJ&dq=intitle:Super+tribus+ultimis+libris+Codicis+cum+additionibus+Angeli+de+Ubaldis+et+Alexan%2Binauthor:Bartolus+de+Saxoferrato&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia00376600",
+      "author": "Alexander VI, Pont. Max. (formerly Rodrigo Borgia)",
+      "title": "Literae ad pastores seu plebanos de indulgentiis plenissimae remissionis Iubilaei publicandis",
+      "date": "1500",
+      "place": "",
+      "printer": "[Johann (Reinhard) Gr\u00fcninger]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "iv00135400",
+      "author": "Vergerius, Petrus Paulus",
+      "title": "De ingenuis moribus ac liberalibus studiis. Add: Basilius Magnus: De legendis antiquorum libris (Tr: Leonardus Brunus Aretinus). Xenophon: Hiero de tyrannide (Tr: Leonardus Brunus Aretinus). Plutarchus: De liberis educandis (Tr: Guarinus Veronensis). S. Hieronymus: De officiis liberorum erga parentes admonitio",
+      "date": "1490",
+      "place": "Florence",
+      "printer": "Francesco di Dino",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De ingenuis moribus ac liberalibus studiis. Add: Basilius Magnus: De legendis antiquorum libris (Tr: Leonardus Brunus Aretinus). Plutarchus: De liberis educandis (Tr: Guarinus Veronensis). S. Hieronymus: De officiis liberorum erga parentes admonitio",
+            "authors": [
+              "Petrus Paulus Vergerius"
+            ],
+            "link": "http://books.google.nl/books?id=lkbIzwEACAAJ&dq=intitle:De+ingenuis+moribus+ac+liberalibus+studiis.+Add:+Basilius+Magnus:+De+legendis+an%2Binauthor:Vergerius,+Petrus+Paulus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De ingenius moribus ac liberalibus studiis. Add: Basilius Magnus: De legendis antiquorum libris (Tr: Leonardus Brunus Aretinus). Xenophon: De tyrannide (Tr: Leonardus Brunus Aretinus).",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=tCZw0AEACAAJ&dq=intitle:De+ingenuis+moribus+ac+liberalibus+studiis.+Add:+Basilius+Magnus:+De+legendis+an%2Binauthor:Vergerius,+Petrus+Paulus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De ingenuis moribus ac liberalibus studiis",
+            "authors": [
+              "Petrus Paulus Vergerius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=plw8fv8PusQC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "id00425000",
+      "author": "Duranti, Guillelmus",
+      "title": "Rationale divinorum officiorum",
+      "date": "1481",
+      "place": "Nuremberg",
+      "printer": "Anton Koberger",
+      "internet_archive": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "creator": "Duranti, Guillelmus",
+            "date": "1478-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in2-00000124-001",
+            "mediatype": "texts",
+            "title": "Rationale divinorum officiorum. Ed: Johannes Aloisius Tuscanus"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Rationale divinorum officiorum",
+            "authors": [
+              "Guilelmus Durantis"
+            ],
+            "link": "http://books.google.nl/books?id=9JJkygEACAAJ&dq=intitle:Rationale+divinorum+officiorum%2Binauthor:Duranti,+Guillelmus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Rationale divinorum officiorum",
+            "authors": [
+              "Guillelmus Duranti"
+            ],
+            "link": "http://books.google.nl/books?id=urtw0QEACAAJ&dq=intitle:Rationale+divinorum+officiorum%2Binauthor:Duranti,+Guillelmus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Rationale divinorum officiorum guilhelmi minatensis",
+            "authors": [
+              "Guillelmus Duranti",
+              "Husner, Georg (Offizin, Strasbourg)",
+              "St. Ursenstift (Solothurn)",
+              "Kantonsbibliothek (Solothurn)"
+            ],
+            "link": "http://books.google.nl/books?id=BR0UMwEACAAJ&dq=intitle:Rationale+divinorum+officiorum%2Binauthor:Duranti,+Guillelmus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "id00183500",
+      "author": "",
+      "title": "Dicta puerorum super Donatum minorem [Latin with German notes]",
+      "date": "1495",
+      "place": "[Leipzig",
+      "printer": "Martin Landsberg",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ic00830000",
+      "author": "",
+      "title": "Coniuratio malignorum spirituum",
+      "date": "1495",
+      "place": "[Venice",
+      "printer": "Manfredus de Bonellis, de Monteferrato",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "creator": "CONIURATIO malignorum spirituum.",
+            "date": "1495-01-01T00:00:00Z",
+            "identifier": "per_witchcraft-in-europe-and-america_coniuratio-malignorum-sp_coniuratio-malignorum-sp_1495_221",
+            "mediatype": "texts",
+            "title": "Coniuratio malignorum spirituum. ... 1495: Iss 221"
+          },
+          {
+            "creator": "Anonymous",
+            "date": "1478-01-01T00:00:00Z",
+            "identifier": "gw-07378",
+            "mediatype": "texts",
+            "title": "Coniuratio malignorum spirituum (GW 07378)"
+          },
+          {
+            "date": "1510-01-01T00:00:00Z",
+            "identifier": "bub_gb_CLbRzKXRZSMC",
+            "mediatype": "texts",
+            "title": "Coniuratio malignorum spirituum in corporibus hominum existentium prout sit in sancto Petro"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Coniuratio malignorum spirituum in corporibus hominu[n] existentium ...",
+            "authors": [
+              "Philippus Oliverius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=pqLB-K1gpjoC&source=gbs_api"
+          },
+          {
+            "title": "Coniuratio malignorum spirituum in corporibus hominum existentium prout sit in sancto Petro",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=CLbRzKXRZSMC&source=gbs_api"
+          },
+          {
+            "title": "Coniuratio malignorum spirituum in corporibus hominum existentium prout in sancto Petro",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=49SV1eeLRvgC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib00770300",
+      "author": "Boethius",
+      "title": "De consolatione philosophiae",
+      "date": "",
+      "place": "[Deventer]",
+      "printer": "Jacobus de Breda",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "creator": "Boethius, -524",
+            "date": "1486-01-01T00:00:00Z",
+            "identifier": "deconsolationeph00boet_0",
+            "mediatype": "texts",
+            "title": "De consolatione philosophiae (with commentary ascribed in the text to Thomas Aquinas). Add: Pseudo- Boethius: De disciplina scholarium (Comm: pseudo- Thomas Aquinas)"
+          },
+          {
+            "creator": "Boethius, Anicius Manlius Torquatus Severinus.",
+            "date": "1663-01-01T00:00:00Z",
+            "identifier": "bim_early-english-books-1641-1700_anicii-manlii-torquati-s_boethius-anicius-manliu_1663",
+            "mediatype": "texts",
+            "title": "Anicii Manlii Torquati Severini Boethii de consolatione philosophiae libri v. 1663"
+          },
+          {
+            "creator": "Boethius",
+            "date": "1400-01-01T00:00:00Z",
+            "identifier": "MSLat178_2",
+            "mediatype": "texts",
+            "title": "MS Lat 178, De consolatione philosophiae"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De Middelnederlandse vertalingen van Boethius' De consolatione philosophiae",
+            "authors": [
+              "Anicius Manlius Severinus Boethius",
+              "Jacobus Martinus Hoek"
+            ],
+            "link": "http://books.google.nl/books?id=lijkzAEACAAJ&dq=intitle:De+consolatione+philosophiae%2Binauthor:Boethius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Boethius: De Consolatione Philosophiae",
+            "authors": [
+              "Early English Text Society"
+            ],
+            "link": "http://books.google.nl/books?id=9yoI0QEACAAJ&dq=intitle:De+consolatione+philosophiae%2Binauthor:Boethius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Boethius",
+            "authors": [
+              "Anicius Manlius Severinus Boethius"
+            ],
+            "link": "http://books.google.nl/books?id=30G20AEACAAJ&dq=intitle:De+consolatione+philosophiae%2Binauthor:Boethius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "iv00034000",
+      "author": "Valerius Maximus, Gaius",
+      "title": "Facta et dicta memorabilia. Comm: Omnibonus Leonicenus",
+      "date": "1485",
+      "place": "Venice",
+      "printer": "Peregrinus de Pasqualibus, Bononiensis and Dionysius Bertochus",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Facta et dicta memorabilia. Comm",
+            "authors": [
+              "Gaius Valerius Maximus"
+            ],
+            "link": "http://books.google.nl/books?id=0ilu0AEACAAJ&dq=intitle:Facta+et+dicta+memorabilia.+Comm:+Omnibonus+Leonicenus%2Binauthor:Valerius+Maximus,+Gaius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Facta et dicta memorabilia",
+            "authors": [
+              "Maximus Valerius (ca. Ende 1. Jh. v. Chr.-1. H. 1. Jh)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=x4eJJEGfJAkC&source=gbs_api"
+          },
+          {
+            "title": "Facta et dicta memorabilia. Comm: Omnibonus Leonicenus",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=EyYCDQEACAAJ&dq=intitle:Facta+et+dicta+memorabilia.+Comm:+Omnibonus+Leonicenus%2Binauthor:Valerius+Maximus,+Gaius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib00065000",
+      "author": "Baptista Mantuanus",
+      "title": "Parthenice prima sive Mariana. Comm: Jodocus Badius Ascensius. Commendatio Parthenices. Apologeticon. Ad beatam Virginem votum post febrim acerrimam",
+      "date": "1505",
+      "place": "[Paris]",
+      "printer": "for Jean Petit",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Parthenice prima sive Mariana",
+            "authors": [
+              "Baptista Mantuanus"
+            ],
+            "link": "http://books.google.nl/books?id=SkuazwEACAAJ&dq=intitle:Parthenice+prima+sive+Mariana.+Comm:+Jodocus+Badius+Ascensius.+Commendatio+Parth%2Binauthor:Baptista+Mantuanus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Parthenice Prima, Sive Mariana",
+            "authors": [
+              "Baptista (Mantuanus)",
+              "Josse Badius"
+            ],
+            "link": "http://books.google.nl/books?id=4bAzGwAACAAJ&dq=intitle:Parthenice+prima+sive+Mariana.+Comm:+Jodocus+Badius+Ascensius.+Commendatio+Parth%2Binauthor:Baptista+Mantuanus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Baptista Mantuanus vatis parthenice prima sive Mariana, contitens vitam actusque sacros beatissimae virginis Mariae dei genitricis, nuper a multis elimata mendis",
+            "authors": [
+              "Baptista (Mantuanus)"
+            ],
+            "link": "http://books.google.nl/books?id=WYkUPwAACAAJ&dq=intitle:Parthenice+prima+sive+Mariana.+Comm:+Jodocus+Badius+Ascensius.+Commendatio+Parth%2Binauthor:Baptista+Mantuanus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "is00599300",
+      "author": "Socinus, Bartholomaeus",
+      "title": "Repetitio legis \"De vulgari et pupillari substitutione\". [Prelim:] Raphael Cancellarius, Epistola Johanni Kistlier",
+      "date": "1497",
+      "place": "Bologna",
+      "printer": "Benedictus Hectoris",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "iv00125500",
+      "author": "Verardus, Carolus",
+      "title": "Historia Baetica",
+      "date": "",
+      "place": "[Deventer",
+      "printer": "Richardus Pafraet",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Historia Baetica",
+            "authors": [
+              "Carolus Verardus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=sJc7bmwvAo8C&source=gbs_api"
+          },
+          {
+            "title": "Historia Baetica. Add: Marcellinus Verardus: Fernandus Servatus. Ed: Carolus Verardus",
+            "authors": [
+              "Carolus Verardus"
+            ],
+            "link": "http://books.google.nl/books?id=CJhm0AEACAAJ&dq=intitle:Historia+Baetica%2Binauthor:Verardus,+Carolus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "La 'Historia Baetica' [lat. u. span.] de Carlo Verardi (Carolus Verardus).",
+            "authors": [
+              "Carolus Verardus",
+              "Roberto Bravo Villarroel"
+            ],
+            "link": "http://books.google.nl/books?id=4p_AtgAACAAJ&dq=intitle:Historia+Baetica%2Binauthor:Verardus,+Carolus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ip00041000",
+      "author": "Panormitanus de Tudeschis, Nicolaus",
+      "title": "Glossae Clementinae",
+      "date": "1477",
+      "place": "Cologne",
+      "printer": "Johann Koelhoff, The Elder",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Glossae Clementinae",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=YWz6jwEACAAJ&dq=intitle:Glossae+Clementinae%2Binauthor:Panormitanus+de+Tudeschis,+Nicolaus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Glossae Clementinae. Ed: Franciscus Brevius",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=aF-_DAEACAAJ&dq=intitle:Glossae+Clementinae%2Binauthor:Panormitanus+de+Tudeschis,+Nicolaus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Nicolaus Abbas Siculus Panormitanus de Tudeschis in libros Decretalium",
+            "authors": [
+              "Nicolaus Panormitanus de Tudeschis"
+            ],
+            "link": "http://books.google.nl/books?id=JrB4QwAACAAJ&dq=intitle:Glossae+Clementinae%2Binauthor:Panormitanus+de+Tudeschis,+Nicolaus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia01183900",
+      "author": "",
+      "title": "Auctores octo seu Libros menores. Con: Andreas Guterrius: Sudores in laudem nostrae Dominae; Quinque claves sapientiae; Hymni et lectiones. Cato: Disticha. Pseudo-Bernardus: De contemptu mundi. Aesopus: Fabulae. Pseudo-Bernardus: Floretus",
+      "date": "1494",
+      "place": "[Valladolid",
+      "printer": "Pedro Giraldi and Miguel de Planes",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ip00736000",
+      "author": "Pius II, Pont. Max. (formerly Aeneas Sylvius Piccolomini)",
+      "title": "Proverbia et De divinis et humanis",
+      "date": "1495",
+      "place": "[Memmingen",
+      "printer": "Albrecht Kunne",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ij00467500",
+      "author": "Johannes de Verdena",
+      "title": "Sermones \"Dormi secure\" de tempore et de sanctis",
+      "date": "1497",
+      "place": "Lyons",
+      "printer": "Jean de Vingle",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Sermones 'Dormi secure' de tempore et de sanctis",
+            "authors": [
+              "Johannes (de Werdena.)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=KuhTwbZPbMsC&source=gbs_api"
+          },
+          {
+            "title": "Sermones Dormi secure. vel Dormi sine cura De Tempore",
+            "authors": [
+              "Johannes de Verdena"
+            ],
+            "link": "https://play.google.com/store/books/details?id=OntlAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Sermones \"Dormi secure\" de tempore et de sanctis",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=WtXhjwEACAAJ&dq=intitle:Sermones+Dormi+secure+de+tempore+et+de+sanctis%2Binauthor:Johannes+de+Verdena&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia00421655",
+      "author": "Alexander de Villa Dei",
+      "title": "Doctrinale (Partes I-IV)",
+      "date": "1482",
+      "place": "[Audenarde",
+      "printer": "Arend de Keysere",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "creator": "Alexander, de Villa Dei",
+            "date": "1497-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in1-00000485-001",
+            "mediatype": "texts",
+            "title": "Doctrinale (Partes I-IV) (Comm: Ludovicus de Guaschis)"
+          },
+          {
+            "creator": "Alexander, de Villa Dei",
+            "date": "1483-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in1-00000474-001",
+            "mediatype": "texts",
+            "title": "Doctrinale (Partes I-IV) (Comm: Ludovicus de Guaschis)"
+          },
+          {
+            "creator": "Alexander, de Villa Dei",
+            "date": "1465-01-01T00:00:00Z",
+            "identifier": "ned-kbn-all-00001839-001",
+            "mediatype": "texts",
+            "title": "[Doctrinale (Partes I-IV)]"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0
+      }
+    },
+    {
+      "istc_id": "ia00415700",
+      "author": "Alexander de Villa Dei",
+      "title": "Doctrinale (Partes I-IV)",
+      "date": "",
+      "place": "",
+      "printer": "[Printer of the 'Speculum humanae salvationis']",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "creator": "Alexander, de Villa Dei",
+            "date": "1497-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in1-00000485-001",
+            "mediatype": "texts",
+            "title": "Doctrinale (Partes I-IV) (Comm: Ludovicus de Guaschis)"
+          },
+          {
+            "creator": "Alexander, de Villa Dei",
+            "date": "1483-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in1-00000474-001",
+            "mediatype": "texts",
+            "title": "Doctrinale (Partes I-IV) (Comm: Ludovicus de Guaschis)"
+          },
+          {
+            "creator": "Alexander, de Villa Dei",
+            "date": "1465-01-01T00:00:00Z",
+            "identifier": "ned-kbn-all-00001839-001",
+            "mediatype": "texts",
+            "title": "[Doctrinale (Partes I-IV)]"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Doctrinale [partes III & IV]. By Alexander de Villa Dei",
+            "authors": [
+              "de Villa Dei Alexander"
+            ],
+            "link": "http://books.google.nl/books?id=vlS4zQEACAAJ&dq=intitle:Doctrinale+(Partes+I-IV)%2Binauthor:Alexander+de+Villa+Dei&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Das Doctrinale des Alexander de Villa-Dei",
+            "authors": [
+              "Alexander (de Villa Dei)",
+              "Alexander (de Villa Dei.)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=4-ZNAAAAMAAJ&source=gbs_api"
+          },
+          {
+            "title": "Doctrinale [partes III & IV]. By Alexander de Villa Dei",
+            "authors": [
+              "de Villa Dei Alexander"
+            ],
+            "link": "http://books.google.nl/books?id=Bym4zQEACAAJ&dq=intitle:Doctrinale+(Partes+I-IV)%2Binauthor:Alexander+de+Villa+Dei&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia01336000",
+      "author": "Augustinus, Aurelius",
+      "title": "Soliloquium de arrha animae",
+      "date": "1492",
+      "place": "[Paris",
+      "printer": "Johannes Higman and Wolfgang Hopyl",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Soliloquium de arrha animae",
+            "authors": [
+              "Hugo (von Sankt Victor)"
+            ],
+            "link": "http://books.google.nl/books?id=2TJB0AEACAAJ&dq=intitle:Soliloquium+de+arrha+animae%2Binauthor:Augustinus,+Aurelius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De immortalitate animae van Aurelius Augustinus",
+            "authors": [
+              "Augustinus Hipponensis (Sanctus)"
+            ],
+            "link": "http://books.google.nl/books?id=_2vO0AEACAAJ&dq=intitle:Soliloquium+de+arrha+animae%2Binauthor:Augustinus,+Aurelius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Monologon tes Psyches pros ton Theon. (Soliloquium animae ad Deum Rhodino Neophyto monacho S. Basilii interprete, liber singularis) -",
+            "authors": [
+              "Aurelius Augustinus (Heiliger)",
+              "Augustinus Aurelius S."
+            ],
+            "link": "https://play.google.com/store/books/details?id=6ENhAAAAcAAJ&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ic00792500",
+      "author": "",
+      "title": "Compendium octo partium orationis",
+      "date": "1488",
+      "place": "Strassburg",
+      "printer": "[Martin Schott",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Compendium octo partium orationis",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=JhGwYgEACAAJ&dq=intitle:Compendium+octo+partium+orationis&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Compendium Octo Partium Orationis. [With a Woodcut.] G.L.",
+            "authors": [
+              "COMPENDIUM."
+            ],
+            "link": "http://books.google.nl/books?id=PzvwMgEACAAJ&dq=intitle:Compendium+octo+partium+orationis&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Compendium Syntaxis Erasian\u00e6 [i.e. of \u201cDe octo orationis partium constructione\u201d written by William Lily and revised by Erasmus] ... With an English explication and resolution of the rules ... The fifth edition ... corrected",
+            "authors": [
+              "Desiderius Erasmus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=woo__9GyeqoC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ic01014000",
+      "author": "Cyprianus",
+      "title": "Opera",
+      "date": "1486",
+      "place": "[Stuttgart",
+      "printer": "Printer of the 'Erw\u00e4hlung Maximilians'",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "creator": "Cyprianus : de Maroja",
+            "date": "1674-01-01T00:00:00Z",
+            "identifier": "bub_gb_KZZ2k3ZG4UsC",
+            "mediatype": "texts",
+            "title": "D. D. Cypriani De Maroja ... Opera omnia medica tribus absoluta partibus .."
+          },
+          {
+            "creator": "Caecilius Thascius santo Cyprianus (santo)",
+            "date": "1589-01-01T00:00:00Z",
+            "identifier": "bub_gb_qlDTXzGrEw8C",
+            "mediatype": "texts",
+            "title": "D. Caecilij Cypriani Carthaginiensis episcopi, ... Opera. Iam denuo quam accuratissim\u00e8 recognita, collatione facta editionum Pauli Manutij & Guilielmi Morelij ... in tres tomos nunc primum distincta. Adnotationes Iacobi Pamelij ... toti operi sparsim interiect\u00e6, ... Ab eodem recens adiecta D. Cypriani Vita \u00e8 scriptis ipsius c"
+          },
+          {
+            "creator": "Caecilius Thascius santo Cyprianus (santo)",
+            "date": "1563-01-01T00:00:00Z",
+            "identifier": "bub_gb_fqnObQHBQB4C",
+            "mediatype": "texts",
+            "title": "Diui Caecilii Cypriani ... Opera, ad ueritatem uetustissimorum exemplarium summa fide emendata, addito etiam quinto epistolarum libro, antea nunquam edito. Alia eidem Cypriano adscripta. Cum duplici rerum ac uerborum memorabilium indice, maxima diligentia collecto"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Opera",
+            "authors": [
+              "Thascius Caecilius Cyprianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=ZqhJAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "D. Cypriani de Maroja ... opera omnia medica tribus absoluta partibus ... Editio altera, etc. [Edited by J. L. Gutierrez.]",
+            "authors": [
+              "Cyprianus de MAROJA"
+            ],
+            "link": "https://play.google.com/store/books/details?id=nAFmAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Opera",
+            "authors": [
+              "Thascius Caecilius Cyprianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=0QdKAAAAcAAJ&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "im00751830",
+      "author": "",
+      "title": "Modus legendi abbreviaturas. Add: Ars notariatus. Bartolus Saxoferrato, Processus Satanae contra genus humanum. Ordo iudicii. De renuntiationibus beneficiorum in publicis instrumentis",
+      "date": "1505",
+      "place": "[Cologne",
+      "printer": "Martin von Werden",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Modus legendi abbreviaturas. Add: Ars notariatus. Bartolus Saxoferrato, Processus Satanae contra genus humanum. Ordo iudicii. De renuntiationibus beneficiorum in publicis instrumentis. Johannes Andreae, Summa super quarto et secundo decretalium",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=k6vSzwEACAAJ&dq=intitle:Modus+legendi+abbreviaturas.+Add:+Ars+notariatus.+Bartolus+Saxoferrato,+Processu&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ip00954000",
+      "author": "Praepositus, Nicolaus",
+      "title": "Dispensarium ad aromatarios",
+      "date": "",
+      "place": "",
+      "printer": "[Mathias Huss",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Dispensarium ad aromatorios",
+            "authors": [
+              "Nicolaus (Praepositus)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=jIc8AAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Dispensarium ad aromaticos",
+            "authors": [
+              "Nicolaus Praepositus Nicolaus Salernitanus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=ZTrcXJCKzBUC&source=gbs_api"
+          },
+          {
+            "title": "Dispensarium Magistri Nicolai Prepositi ad aromatarios",
+            "authors": [
+              "Nicolaus (Praepositus)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=dt6zvjMZeVwC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia00410300",
+      "author": "Alexander de Roes",
+      "title": "Memoriale de praerogativa Romani imperii. Add: Jordanus Osnaburgensis: De imperio romano",
+      "date": "1476",
+      "place": "[Rome",
+      "printer": "Wolf Han (Lupus Gallus)",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0
+      }
+    },
+    {
+      "istc_id": "ip00261586",
+      "author": "Peraudi, Raimundus, commissary",
+      "title": "Indulgentia 1489. For promoting the war against the Turks",
+      "date": "1489",
+      "place": "[Leipzig",
+      "printer": "Conrad Kachelofen",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "title": "Indulgentia 1489. For promoting the war against the Turks",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=qx3VjwEACAAJ&dq=intitle:Indulgentia+1489.+For+promoting+the+war+against+the+Turks%2Binauthor:Peraudi,+Raimundus,+commissary&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Indulgentia 1490. For promoting the war against the Turks",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=s-O5DAEACAAJ&dq=intitle:Indulgentia+1489.+For+promoting+the+war+against+the+Turks%2Binauthor:Peraudi,+Raimundus,+commissary&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Indulgentia 1488. For promoting the war against the Turks",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=jfbpjwEACAAJ&dq=intitle:Indulgentia+1489.+For+promoting+the+war+against+the+Turks%2Binauthor:Peraudi,+Raimundus,+commissary&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ic00390000",
+      "author": "Cepolla, Bartholomaeus",
+      "title": "De servitutibus urbanorum et rusticorum praediorum",
+      "date": "1475",
+      "place": "Rome",
+      "printer": "Johannes Reinhardi and Paulus Leenen",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "D.D. Bartholomaei Caepollae, Tractatus de servitutibus, tam urbanorum, quam rusticorum praediorum",
+            "authors": [
+              "Bartholomaeus (Caepolla)",
+              "Bartolommeo Cepolla"
+            ],
+            "link": "https://play.google.com/store/books/details?id=7Q1bAAAAQAAJ&source=gbs_api"
+          },
+          {
+            "title": "D.D. Bartholomaei Caepollae, Tractatus de servitutibus, tam urbanorum, quam rusticorum praediorum",
+            "authors": [
+              "Bartholomaeus (Caepolla)",
+              "Bartolommeo Cepolla"
+            ],
+            "link": "https://play.google.com/store/books/details?id=7Q1bAAAAQAAJ&source=gbs_api"
+          },
+          {
+            "title": "De servitutibus urbanorum et rusticorum praediorum",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=SvbmjwEACAAJ&dq=intitle:De+servitutibus+urbanorum+et+rusticorum+praediorum%2Binauthor:Cepolla,+Bartholomaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "it00326000",
+      "author": "Thomas Aquinas",
+      "title": "Quaestiones circa confessionem seu Sacramentum poenitentiae",
+      "date": "1495",
+      "place": "[Rome",
+      "printer": "Stephan Plannck",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Quaestiones circa confessionem seu Sacramentum poenitentiae",
+            "authors": [
+              "Saint Thomas (Aquinas)"
+            ],
+            "link": "http://books.google.nl/books?id=0_vANAAACAAJ&dq=intitle:Quaestiones+circa+confessionem+seu+Sacramentum+poenitentiae%2Binauthor:Thomas+Aquinas&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Quaestiones circa confessionem seu Sacramentum poenitentiae",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=OY_4jwEACAAJ&dq=intitle:Quaestiones+circa+confessionem+seu+Sacramentum+poenitentiae%2Binauthor:Thomas+Aquinas&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Quaestiones circa confessionem seu Sacramentum poenitentiae",
+            "authors": [
+              "Thomas d'Aquin (saint).)"
+            ],
+            "link": "http://books.google.nl/books?id=jCYj0AEACAAJ&dq=intitle:Quaestiones+circa+confessionem+seu+Sacramentum+poenitentiae%2Binauthor:Thomas+Aquinas&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "is00104800",
+      "author": "Samuel, Rabbi",
+      "title": "Epistola contra Judaeorum errores (Tr: Alphonsus Boni Hominis)",
+      "date": "",
+      "place": "[Naples",
+      "printer": "Francesco di Dino",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Scrutinium Scripturarum",
+            "authors": [
+              "Pablo de Santa Maria (Bishop of Burgos)",
+              "Samuel (Marochitanus.)",
+              "Alfonsus Bonihominis (Bishop of Marrakech)",
+              "Johann Schall"
+            ],
+            "link": "http://books.google.nl/books?id=fOvLoAEACAAJ&dq=intitle:Epistola+contra+Judaeorum+errores+(Tr:+Alphonsus+Boni+Hominis)%2Binauthor:Samuel,+Rabbi&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Epistola contra Judaeorum errores (Tr: Alphonsus Boni Hominis)",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=Ut1l0AEACAAJ&dq=intitle:Epistola+contra+Judaeorum+errores+(Tr:+Alphonsus+Boni+Hominis)%2Binauthor:Samuel,+Rabbi&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Epistola contra Judaeorum errores (Tr: Alphonsus Boni Hominis). Add: Prophetiae de venturo Christo Patriarcharum, Sibyllae, Prophetarum. Pseudo- Pontius Pilatus: Epistola ad Tiberium",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=N1GaDAEACAAJ&dq=intitle:Epistola+contra+Judaeorum+errores+(Tr:+Alphonsus+Boni+Hominis)%2Binauthor:Samuel,+Rabbi&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "it00050250",
+      "author": "",
+      "title": "Taxae cancellariae apostolicae",
+      "date": "",
+      "place": "[Rome",
+      "printer": "Johann Besicken and Sigismundus Mayer",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "creator": "Santa Sede : Cancelleria apostolica",
+            "date": "1664-01-01T00:00:00Z",
+            "identifier": "bub_gb_5bgixpWcu6wC",
+            "mediatype": "texts",
+            "title": "Taxae cancellariae apostolicae et taxae sacrae poenitentiariae apostolicae. Dat is, Schattinge vande Cancellarie en Penitentiekamer vanden Paus van Romen, gecollationeert, gedruckt ende geautentizeert p. 131. nae't exemplaer van Leo 10. tot Romen anno 1514"
+          },
+          {
+            "identifier": "roman-catholicism-taxae-cancellariae-apostolicae",
+            "mediatype": "texts",
+            "title": "Roman Catholicism - Taxae Cancellariae Apostolicae"
+          },
+          {
+            "creator": "Mendham, Joseph, 1769-1856",
+            "date": "1836-01-01T00:00:00Z",
+            "identifier": "bub_gb_F_YrAAAAYAAJ",
+            "mediatype": "texts",
+            "title": "The spiritual venality of Rome : Taxe sacre penitentiarie apostolice; preceded by a historical and critical account of the taxae cancellariae apostolicae and taxae sacrae poenitentiariae apostolicae of the United Church and Court of modern Rome"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Taxae cancellariae apostolicae et taxae sacrae poenitentiariae apostolicae. Dat is, Schattinge vande Cancellarie en Penitentie-kamer vanden Paus van Romen, gecollationeert, gedruckt ende geautentizeert (p. 131.) nae't exemplaer van Leo 10. tot Romen anno 1514",
+            "authors": [
+              "Chiesa cattolica : Cancelleria apostolica"
+            ],
+            "link": "https://play.google.com/store/books/details?id=lh4SJy9VEJUC&source=gbs_api"
+          },
+          {
+            "title": "Taxae cancellariae apostolicae et taxae s. poenitentiariae apostolicae",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=U7RWXaeCdxUC&source=gbs_api"
+          },
+          {
+            "title": "Taxae cancellariae apostolicae et taxae sacrae poenitentiariae apostolicae: dat is, schattingen van de apostolische cancellarie ende-der h. apostolische poenitentie-kamer; : door Leo den 10. paus van Romen in train gebragt, ter verkryging van aflaten, en absolutie, als ook dispenzatien van d'onderhouding der geboden Godts ... : in twee boeken in 't latyn en neder-duitsch nevens den anderen ... uitgegeven van Petrus Godefridus Josselin",
+            "authors": [
+              "Chiesa cattolica. Cancelleria apostolica"
+            ],
+            "link": "http://books.google.nl/books?id=6P1E0AEACAAJ&dq=intitle:Taxae+cancellariae+apostolicae&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ip00032000",
+      "author": "Panormitanus de Tudeschis, Nicolaus",
+      "title": "Consilia (Secundum volumen)",
+      "date": "1488",
+      "place": "Pescia",
+      "printer": "Sigismundus Rodt, for Bastianus and Raphael de Orlandis",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Consilia (Secundum volumen).",
+            "authors": [
+              "Nicolaus Panormitanus de Tudeschis"
+            ],
+            "link": "http://books.google.nl/books?id=Z6hs0AEACAAJ&dq=intitle:Consilia+(Secundum+volumen)%2Binauthor:Panormitanus+de+Tudeschis,+Nicolaus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ij00411200",
+      "author": "Johannes de Sacro Bosco",
+      "title": "Sphaera mundi",
+      "date": "1493",
+      "place": "[Paris]",
+      "printer": "Antoine Caillaut",
+      "internet_archive": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "creator": [
+              "Johannes de Sacro Bosco (....-1256?)",
+              "Regiomontanus, Johannes (1436-1476)",
+              "Peurbach, Georg von (1423-1461)"
+            ],
+            "date": "1482-07-06T00:00:00Z",
+            "identifier": "OEXV330_P2",
+            "mediatype": "texts",
+            "title": "Sphaera mundi - Contra Cremonensia in planetarum theoricas deliramenta - Theoricae novae planetarum"
+          },
+          {
+            "creator": [
+              "Johannes de Sacro Bosco (....-1256?)",
+              "Peurbach, Georg von (1423-1461)",
+              "Regiomontanus, Johannes (1436-1476)"
+            ],
+            "date": "1485-01-01T00:00:00Z",
+            "identifier": "OEXV762_2_P2",
+            "mediatype": "texts",
+            "title": "Sphaera mundi / Theoricae novae planetarum / Disputationes contra Cremonensia in planetarum theoricas deliramenta praefatio"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Joannis de Sacro Bosco Sphaera mundi, cum figuris novis",
+            "authors": [
+              "Johannes de Sacro Bosco"
+            ],
+            "link": "http://books.google.nl/books?id=qR88QwAACAAJ&dq=intitle:Sphaera+mundi%2Binauthor:Johannes+de+Sacro+Bosco&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Joannis de Sacro Bosco Sphaera mundi, una cum additionibus insertis ac familiarissima textus expositione Petri de Alliaco",
+            "authors": [
+              "Johannes de Sacro Bosco"
+            ],
+            "link": "http://books.google.nl/books?id=TMmiQwAACAAJ&dq=intitle:Sphaera+mundi%2Binauthor:Johannes+de+Sacro+Bosco&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sphaera Ioannis de Sacro Bosco... Praemissa Philippi Melanchthonis doctiss. praefatione...",
+            "authors": [
+              "Johannes de Sacro Bosco"
+            ],
+            "link": "https://play.google.com/store/books/details?id=FSP-Okl4zAUC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ic00805900",
+      "author": "",
+      "title": "Interrogationes et doctrinae",
+      "date": "",
+      "place": "[Rome",
+      "printer": "Johannes Gensberg",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "creator": "Escobar, Andr\u00e8s de (1348-1439)",
+            "date": "1494-01-01T00:00:00Z",
+            "identifier": "OEXV855_4_P3",
+            "mediatype": "texts",
+            "title": "[Confessionale :] Interrogationes et doctrinae quibus quilibet sacerdos debet interrogare suum confitentem"
+          },
+          {
+            "creator": "Escobar, Andr\u00e8s de (1348-1439)",
+            "date": "1494-01-01T00:00:00Z",
+            "identifier": "OEXV391RES_P11",
+            "mediatype": "texts",
+            "title": "[Confessionale :] Interrogationes et doctrinae quibus quilibet sacerdos debet interrogare suum confitentem"
+          },
+          {
+            "creator": "Confessionale [in italiano]",
+            "date": "1473-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in2-00001233-006",
+            "mediatype": "texts",
+            "title": "Interrogationes et doctrinae"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Compendium theologiae dogmaticae per interrogationes et responsa",
+            "authors": [
+              "Thomas ex Charmes (O.F.M. Cap.)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=h1-rawJ5HiQC&source=gbs_api"
+          },
+          {
+            "title": "Interrogationes et doctrinae",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=jOruyaLmyhAC&source=gbs_api"
+          },
+          {
+            "title": "Interrogationes et doctrinae quibus sacerdos debet interrogare",
+            "authors": [
+              "Andr\u00e9s de Escobar"
+            ],
+            "link": "http://books.google.nl/books?id=8zYpHAAACAAJ&dq=intitle:Interrogationes+et+doctrinae&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "il00313500",
+      "author": "Lucanus de Parma, Franciscus",
+      "title": "De privilegio fisci",
+      "date": "1496",
+      "place": "Venice",
+      "printer": "Reynaldus de Novimagio",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Tractatus de privilegio fisci",
+            "authors": [
+              "Franciscus Lucanus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=CdF4n7VfLgIC&source=gbs_api"
+          },
+          {
+            "title": "De privilegio fisci",
+            "authors": [
+              "Franciscus Lucanus (de Parma.)"
+            ],
+            "link": "http://books.google.nl/books?id=UJnpMwEACAAJ&dq=intitle:De+privilegio+fisci%2Binauthor:Lucanus+de+Parma,+Franciscus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Tractatus de privilegio fisci",
+            "authors": [
+              "Franciscus Lucanus (de Parma.)",
+              "Rainaldus (de Novimagio)"
+            ],
+            "link": "http://books.google.nl/books?id=O-v6HAAACAAJ&dq=intitle:De+privilegio+fisci%2Binauthor:Lucanus+de+Parma,+Franciscus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ip00709400",
+      "author": "Pius II, Pont. Max. (formerly Aeneas Sylvius Piccolomini)",
+      "title": "Epistola ad Procopium de fortuna",
+      "date": "1489",
+      "place": "Deventer",
+      "printer": "Jacobus de Breda",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "title": "Epistola ad Procopium de fortuna",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=DFf0jwEACAAJ&dq=intitle:Epistola+ad+Procopium+de+fortuna%2Binauthor:Pius+II,+Pont.+Max.+(formerly+Aeneas+Syl&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Epistola de fortuna ad dominum Procopium militem Aeneas Sylvius Piccolomini",
+            "authors": [
+              "Pope Pius II"
+            ],
+            "link": "http://books.google.nl/books?id=XFCzzQEACAAJ&dq=intitle:Epistola+ad+Procopium+de+fortuna%2Binauthor:Pius+II,+Pont.+Max.+(formerly+Aeneas+Syl&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ie00030500",
+      "author": "",
+      "title": "Elegantiarum viginti praecepta",
+      "date": "",
+      "place": "",
+      "printer": "",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "date": "1496-01-01T00:00:00Z",
+            "identifier": "ned-kbn-all-00001877-001",
+            "mediatype": "texts",
+            "title": "[Elegantiarum viginti praecepta]"
+          },
+          {
+            "creator": "Aegidius",
+            "date": "1498-01-01T00:00:00Z",
+            "identifier": "bim_early-english-books-1475-1640_elegantiarum-viginti-pra_aegidius_1498",
+            "mediatype": "texts",
+            "title": "Elegantiarum Viginti Praecepta ... 1498"
+          },
+          {
+            "date": "1480-01-01T00:00:00Z",
+            "identifier": "ned-kbn-all-00003023-001",
+            "mediatype": "texts",
+            "title": "[Elegantiarum viginti praecepta]"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Elegantiarum viginti praecepta",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=B7Kpj5eRW2QC&source=gbs_api"
+          },
+          {
+            "title": "Elegantiarum viginti praecepta",
+            "authors": [
+              "Breda, Jacobus de (Deventer)"
+            ],
+            "link": "http://books.google.nl/books?id=bDXFoAEACAAJ&dq=intitle:Elegantiarum+viginti+praecepta&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Elegantiarum viginti praecepta",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=_mKD2Ujr-fUC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia00103000",
+      "author": "Aesopus",
+      "title": "Vita et Fabulae [Latin] (Tr: Rinucius)",
+      "date": "1487",
+      "place": "Rome",
+      "printer": "Eucharius Silber",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "title": "Vita et Fabulae [Greek]. Vita et Fabulae [Latin] Tr: Rinucius. Fabulae selectae [Greek and Latin]. Ed: Bonus Accursius",
+            "authors": [
+              "Aesopus Phrygius"
+            ],
+            "link": "http://books.google.nl/books?id=abNt0AEACAAJ&dq=intitle:Vita+et+Fabulae+%5BLatin%5D+(Tr:+Rinucius)%2Binauthor:Aesopus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Vita, after Rinucius, et Fabulae, Lib. I-IV, prose version of Romulus [Dutch]. Add: Fabulae extravagantes. Fabulae novae (Tr: Rinucius). Fabulae Aviani. Fabulae collectae [Dutch]",
+            "authors": [
+              "Aesopus"
+            ],
+            "link": "http://books.google.nl/books?id=nl_OzwEACAAJ&dq=intitle:Vita+et+Fabulae+%5BLatin%5D+(Tr:+Rinucius)%2Binauthor:Aesopus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "iw00041400",
+      "author": "Wimpheling, Jacobus",
+      "title": "Officium de compassione Mariae virginis. Ed: (with additions) Ludwig von Helmstedt, Bishop of Speyer",
+      "date": "1491",
+      "place": "[Speyer",
+      "printer": "Peter Drach",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Officium de compassione Mariae virginis. Ed: (with additions) Ludwig von Helmstedt, Bishop of Speyer",
+            "authors": [
+              "Jacobus Wimpheling"
+            ],
+            "link": "http://books.google.nl/books?id=y0_TzwEACAAJ&dq=intitle:Officium+de+compassione+Mariae+virginis.+Ed:+(with+additions)+Ludwig+von+Helmste%2Binauthor:Wimpheling,+Jacobus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib01144200",
+      "author": "",
+      "title": "Breviarium dominorum Teutonicorum",
+      "date": "1500",
+      "place": "Basel",
+      "printer": "Jacobus Wolff, de Pforzheim",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Breviarium Dominorum Teutonicorum",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=a3sowlt8bj8C&source=gbs_api"
+          },
+          {
+            "title": "Breviarium dominorum Teutonicorum",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=omPEjwEACAAJ&dq=intitle:Breviarium+dominorum+Teutonicorum&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Breviarium Dominorum Teutonicorum",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=a3sowlt8bj8C&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "it00020100",
+      "author": "Tartagnus, Alexander",
+      "title": "Super prima et secunda parte Codicis, cum apostillis",
+      "date": "",
+      "place": "Venice [i.e. Milan",
+      "printer": "Leonardus Pachel]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Alexander de imola super prima et secunda infortiati cum apostillis noviter editis",
+            "authors": [
+              "Alexander Tartagnus"
+            ],
+            "link": "http://books.google.nl/books?id=kdfIPgAACAAJ&dq=intitle:Super+prima+et+secunda+parte+Codicis,+cum+apostillis%2Binauthor:Tartagnus,+Alexander&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ij00477000",
+      "author": "Jordanus de Quedlinburg",
+      "title": "Postillae de tempore et sermones",
+      "date": "1483",
+      "place": "Strassburg",
+      "printer": "[Printer of the 1483 Jordanus de Quedlinburg (Georg Husner)]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "title": "Postillae de tempore et sermones",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=227cDAEACAAJ&dq=intitle:Postillae+de+tempore+et+sermones%2Binauthor:Jordanus+de+Quedlinburg&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Postillae et sermones de tempore",
+            "authors": [
+              "Jordanus de Quedlinburg",
+              "Jodocus (Buchbinderei, Z\u00fcrich)",
+              "Husner (Offizin, Strassburg)"
+            ],
+            "link": "http://books.google.nl/books?id=nWjAoQEACAAJ&dq=intitle:Postillae+de+tempore+et+sermones%2Binauthor:Jordanus+de+Quedlinburg&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sermones et postillae de tempore",
+            "authors": [
+              "Jordanus de Quedlinburg"
+            ],
+            "link": "http://books.google.nl/books?id=96P1OQAACAAJ&dq=intitle:Postillae+de+tempore+et+sermones%2Binauthor:Jordanus+de+Quedlinburg&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ig00553700",
+      "author": "Guido",
+      "title": "Casus longi super Institutis",
+      "date": "1480",
+      "place": "[Paris or Rouen",
+      "printer": "Printer of the 'Breviarium Rothomagense' (GW 5437)",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Casus longi super institutis [Guido Papa].",
+            "authors": [
+              "Guido",
+              "Guido de (Cumis.)"
+            ],
+            "link": "http://books.google.nl/books?id=47BWkgAACAAJ&dq=intitle:Casus+longi+super+Institutis%2Binauthor:Guido&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Casus longi super Institutis",
+            "authors": [
+              "Guido (de Cumis)",
+              "Guilielmus Accursius",
+              "'Casus longi' Printer of Guido"
+            ],
+            "link": "http://books.google.nl/books?id=EeiVnQEACAAJ&dq=intitle:Casus+longi+super+Institutis%2Binauthor:Guido&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Casus longi super institutis",
+            "authors": [
+              "Guido de Cumis (Jurist)"
+            ],
+            "link": "http://books.google.nl/books?id=4t13kgAACAAJ&dq=intitle:Casus+longi+super+Institutis%2Binauthor:Guido&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ie00029500",
+      "author": "",
+      "title": "Elegantiarum praecepta de Latinis orationibus; Elegantiae terminorum ex Laurentio Valla et aliis collectae",
+      "date": "1488",
+      "place": "Antwerp",
+      "printer": "Gerard Leeu",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Elegantiarum praecepta de Latinis orationibus ; Elegantiae terminorum ex Laurentio Valla et aliis collectae",
+            "authors": [
+              "Laurentius Valla"
+            ],
+            "link": "http://books.google.nl/books?id=seNo0AEACAAJ&dq=intitle:Elegantiarum+praecepta+de+Latinis+orationibus%3B+Elegantiae+terminorum+ex+Laurenti&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib01112850",
+      "author": "",
+      "title": "Breviarium Romanum",
+      "date": "1487",
+      "place": "Venice",
+      "printer": "Andreas Torresanus, de Asula",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "date": "1854-01-01T00:00:00Z",
+            "identifier": "bub_gb_KZ6Czx8nW5oC",
+            "mediatype": "texts",
+            "title": "Breviarium Romanum, ex decreto SS. Concilii Tridentini restitutum, S. Pii 5., pontificis maximi, jussu editum, Clementis 8. et Urbani 8. auctoritate recognitum, cum officiis sanctorum novissime per summos pontifices usque ad hanc diem concessis Pars hiemalis"
+          },
+          {
+            "identifier": "BreviariumRomanumBilingual",
+            "mediatype": "texts",
+            "title": "Latin-English Bilingual Roman Breviary - Breviarium Romanum"
+          },
+          {
+            "creator": "Catholic Church",
+            "date": "1909-01-01T00:00:00Z",
+            "identifier": "breviariumromanu21909cath",
+            "mediatype": "texts",
+            "title": "Breviarium Romanum ex decreto SS. Concilii Tridentini restitutum, S. Pii V. Pontificis Maximi, jussu editum, Clementis VIII., Urbani VIII. et Leonis XIII. auctoritate recognitum"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De terugkeer van een Breviarium Romanum",
+            "authors": [
+              "Jef Van den Bergh"
+            ],
+            "link": "http://books.google.nl/books?id=ffp7zwEACAAJ&dq=intitle:Breviarium+Romanum&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Breviarium Romanum ... Pars \u00e6stiva",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=hq1NWL5SxqAC&source=gbs_api"
+          },
+          {
+            "title": "Breviarium Romanum ...",
+            "authors": [
+              "Catholic Church"
+            ],
+            "link": "http://books.google.nl/books?id=0cWHswEACAAJ&dq=intitle:Breviarium+Romanum&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ic00738000",
+      "author": "Clemens V, Pont. Max. (formerly Raimundus Bertrandi del Goth)",
+      "title": "Constitutiones (cum apparatu Joannis Andreae) (with XXIX Extravagantes)",
+      "date": "1486",
+      "place": "Venice",
+      "printer": "Andreas de Bonetis",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Constitutiones (cum apparatu Joannis Andreae).",
+            "authors": [
+              "Pont. Max. (formerly Raimundus Bertrandi del Goth) Clemens V",
+              "Wenssler, Michael (Basel)"
+            ],
+            "link": "http://books.google.nl/books?id=mRXCYgEACAAJ&dq=intitle:Constitutiones+(cum+apparatu+Joannis+Andreae)+(with+XXIX+Extravagantes)%2Binauthor:Clemens+V,+Pont.+Max.+(formerly+Raimundu&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Constitutiones (cum apparatu Joannis Andreae) (with XXIX Extravagantes).",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=_aaYDAEACAAJ&dq=intitle:Constitutiones+(cum+apparatu+Joannis+Andreae)+(with+XXIX+Extravagantes)%2Binauthor:Clemens+V,+Pont.+Max.+(formerly+Raimundu&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Constitutiones (cum apparatu Joannis Andreae) (with XX Extravagantes)",
+            "authors": [
+              "Pont. Max Clemens V"
+            ],
+            "link": "http://books.google.nl/books?id=KjDOzwEACAAJ&dq=intitle:Constitutiones+(cum+apparatu+Joannis+Andreae)+(with+XXIX+Extravagantes)%2Binauthor:Clemens+V,+Pont.+Max.+(formerly+Raimundu&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ig00528000",
+      "author": "Guarinus, Baptista",
+      "title": "De ordine docendi ac studendi",
+      "date": "1475",
+      "place": "",
+      "printer": "",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Baptista Guarinus De modo et ordine docendi et studendi",
+            "authors": [
+              "Baptista Guarinus"
+            ],
+            "link": "http://books.google.nl/books?id=YM1xswEACAAJ&dq=intitle:De+ordine+docendi+ac+studendi%2Binauthor:Guarinus,+Baptista&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "B.G. Ad Maffeum Gambarum Brixianum Adolescentem Generosum Discipulum Suum de Ordine Docendi Ac Studendi. Few MS. Notes",
+            "authors": [
+              "Baptista GUARINUS (the Elder.)"
+            ],
+            "link": "http://books.google.nl/books?id=myUDMwEACAAJ&dq=intitle:De+ordine+docendi+ac+studendi%2Binauthor:Guarinus,+Baptista&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De ordine docendi ac studendi",
+            "authors": [
+              "Baptista Guarinus"
+            ],
+            "link": "http://books.google.nl/books?id=9_MangEACAAJ&dq=intitle:De+ordine+docendi+ac+studendi%2Binauthor:Guarinus,+Baptista&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib00061200",
+      "author": "Baptista Mantuanus",
+      "title": "Parthenice prima sive Mariana. Add: Ad beatam Virginem votum post febrim acerrimam",
+      "date": "1497",
+      "place": "Deventer",
+      "printer": "Jacobus de Breda",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Parthenice prima sive Mariana. Add: Ad beatam Virginem votum post febrim acerrimam",
+            "authors": [
+              "Baptista Mantuanus"
+            ],
+            "link": "http://books.google.nl/books?id=spbHzwEACAAJ&dq=intitle:Parthenice+prima+sive+Mariana.+Add:+Ad+beatam+Virginem+votum+post+febrim+acerrim%2Binauthor:Baptista+Mantuanus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Ad beatam Virginem votum post febrim acerrimam",
+            "authors": [
+              "Baptista (Mantuanus)",
+              "Breda, Jacobus de (Deventer)"
+            ],
+            "link": "http://books.google.nl/books?id=UdL9SAAACAAJ&dq=intitle:Parthenice+prima+sive+Mariana.+Add:+Ad+beatam+Virginem+votum+post+febrim+acerrim%2Binauthor:Baptista+Mantuanus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Parthenice prima, sive Mariana. Add: Commendatio Parthenices. Apologeticon. Ad beatam Virginem votum post febrim acerrimam",
+            "authors": [
+              "Mantuanus Baptista"
+            ],
+            "link": "http://books.google.nl/books?id=CK-3zQEACAAJ&dq=intitle:Parthenice+prima+sive+Mariana.+Add:+Ad+beatam+Virginem+votum+post+febrim+acerrim%2Binauthor:Baptista+Mantuanus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia01302000",
+      "author": "Augustinus, Aurelius",
+      "title": "Sermo super orationem dominicam. Expositio super symbolum. De ebrietate",
+      "date": "1467",
+      "place": "[Cologne",
+      "printer": "Ulrich Zel",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Vollziehungverordnung zu den Bundesgesetzen \u00fcber polizeil. Massregeln gegen Viehseuchen v. 8. Febr. 1872, 19. Juli 1873 und 1. Juli 1886 (v. 17. Dez. 1886)",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=U_XKjwEACAAJ&dq=intitle:Sermo+super+orationem+dominicam.+Expositio+super+symbolum.+De+ebrietate%2Binauthor:Augustinus,+Aurelius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sermo super orationem dominicam",
+            "authors": [
+              "Augustinus (Pseudo-)"
+            ],
+            "link": "http://books.google.nl/books?id=2duFtAEACAAJ&dq=intitle:Sermo+super+orationem+dominicam.+Expositio+super+symbolum.+De+ebrietate%2Binauthor:Augustinus,+Aurelius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sermo super orationem dominicam. Expositio super symbolum. De ebrietate",
+            "authors": [
+              "Aurelius Augustinus"
+            ],
+            "link": "http://books.google.nl/books?id=LfQ4zgEACAAJ&dq=intitle:Sermo+super+orationem+dominicam.+Expositio+super+symbolum.+De+ebrietate%2Binauthor:Augustinus,+Aurelius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ih00491000",
+      "author": "",
+      "title": "Hortus vocabulorum",
+      "date": "1500",
+      "place": "Westminster",
+      "printer": "Wynkyn de Worde",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Hortus Vocabulorum, 1500",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=zf1U0QEACAAJ&dq=intitle:Hortus+vocabulorum&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Hortus Vocabulorum",
+            "authors": [
+              "Alan George Cannon",
+              "King's College London. Department of English"
+            ],
+            "link": "http://books.google.nl/books?id=KXHVXwAACAAJ&dq=intitle:Hortus+vocabulorum&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Hortus Vocabulorum, 1500",
+            "authors": [
+              "Wynkyn de Worde"
+            ],
+            "link": "http://books.google.nl/books?id=92RGAQAAMAAJ&dq=intitle:Hortus+vocabulorum&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia01389000",
+      "author": "Aurelius Victor, Sextus",
+      "title": "De viris illustribus",
+      "date": "1486",
+      "place": "Venice",
+      "printer": "[Johannes and Gregorius de Gregoriis, de Forlivio?]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Sextus Aurelius Victor de viris illustribus urbis Romae",
+            "authors": [
+              "Sextus Aurelius Victor"
+            ],
+            "link": "https://play.google.com/store/books/details?id=1z-byUbMb5AC&source=gbs_api"
+          },
+          {
+            "title": "Sextus Aurelius Victor de viris illustribus urbis Romae",
+            "authors": [
+              "Sextus Aurelius Victor",
+              "Karl Friedrich August Brohm"
+            ],
+            "link": "http://books.google.nl/books?id=bEZxngEACAAJ&dq=intitle:De+viris+illustribus%2Binauthor:Aurelius+Victor,+Sextus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sextus Aurelius Victor De Viris illustribus urbis Romae et De Caesaribus",
+            "authors": [
+              "Sextus Aurelius Victor",
+              "Jacob Bernhard Frise"
+            ],
+            "link": "http://books.google.nl/books?id=E8ffPgAACAAJ&dq=intitle:De+viris+illustribus%2Binauthor:Aurelius+Victor,+Sextus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ih00092000",
+      "author": "Herolt, Johannes",
+      "title": "Liber Discipuli de eruditione Christifidelium",
+      "date": "",
+      "place": "",
+      "printer": "[Johann Otmar]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Liber discipuli de eruditione Christi fidelium",
+            "authors": [
+              "Johannes Herolt"
+            ],
+            "link": "https://play.google.com/store/books/details?id=f3lSAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Liber discipuli de eruditione christifidelium incipit",
+            "authors": [
+              "Johannes Herolt"
+            ],
+            "link": "http://books.google.nl/books?id=4X0TywAACAAJ&dq=intitle:Liber+Discipuli+de+eruditione+Christifidelium%2Binauthor:Herolt,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Liber Discipuli de eruditione Christifidelium",
+            "authors": [
+              "Johannes Herolt",
+              "Johannes Amerbach"
+            ],
+            "link": "http://books.google.nl/books?id=tL8BoQEACAAJ&dq=intitle:Liber+Discipuli+de+eruditione+Christifidelium%2Binauthor:Herolt,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ig00604600",
+      "author": "Guido de Monte Rochen",
+      "title": "Manipulus curatorum",
+      "date": "1495",
+      "place": "[Poitiers",
+      "printer": "Jean Bouyer and Guillaume Bouchet]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Guido de Monte Rochen. Manipulus curatorum",
+            "authors": [
+              "Guido de Monterocherio"
+            ],
+            "link": "http://books.google.nl/books?id=IuleAQAACAAJ&dq=intitle:Manipulus+curatorum%2Binauthor:Guido+de+Monte+Rochen&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Manipulus curatorum Guido de Monte Rochen [ Guidonis de Monte Rocherio].",
+            "authors": [
+              "Guido de Monterocherio"
+            ],
+            "link": "http://books.google.nl/books?id=6zeRzgEACAAJ&dq=intitle:Manipulus+curatorum%2Binauthor:Guido+de+Monte+Rochen&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Curatorum manipulus a Guidone de Monte Rochen sacre theologie professore compositus ad communem omnium fidelium vtilitatem",
+            "authors": [
+              "Guido : de Monte Rocherii"
+            ],
+            "link": "https://play.google.com/store/books/details?id=LB5h3mfAZqcC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ip00983570",
+      "author": "",
+      "title": "Privilegia, libertates et indulgentiae benefactorum Ordinis Sancti Antonii",
+      "date": "1497",
+      "place": "[Leipzig",
+      "printer": "Martin Landsberg",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Privilegia, libertates et indulgentiae benefactorum Ordinis Sancti Antonii",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=l9U9HAAACAAJ&dq=intitle:Privilegia,+libertates+et+indulgentiae+benefactorum+Ordinis+Sancti+Antonii&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Privilegia, libertates et indulgentiae benefactorum confratrum et consororum ordinis Sancti Antonii (niederdt.)",
+            "authors": [
+              "Anonymus"
+            ],
+            "link": "http://books.google.nl/books?id=hkVC0AEACAAJ&dq=intitle:Privilegia,+libertates+et+indulgentiae+benefactorum+Ordinis+Sancti+Antonii&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Indulgentiae et certa privilegia ordinis sancti Antonii",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=BdSXv5kNWNoC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "id00327775",
+      "author": "Donatus, Aelius",
+      "title": "Ars minor",
+      "date": "",
+      "place": "[Antwerp",
+      "printer": "Mathias van der Goes",
+      "internet_archive": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "creator": "Donatus, Aelius.",
+            "date": "1490-01-01T00:00:00Z",
+            "identifier": "bim_early-english-books-1475-1640_ars-minor-folw-de-ma_donatus-aelius_1490",
+            "mediatype": "texts",
+            "title": "Ars. minor. fol.W. de Machlinia ... 1490"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Fragments of three works: Ars minor by Aelius Donatus (ca. 1465-1480), Paradoxen etc. by Franciscus Lambertus Avenionensis (ca. 1528?), and Ars minor by Aelius Donatus (15th century).",
+            "authors": [
+              "Aelius Donatus"
+            ],
+            "link": "http://books.google.nl/books?id=PkMizgEACAAJ&dq=intitle:Ars+minor%2Binauthor:Donatus,+Aelius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Ars minor",
+            "authors": [
+              "Aelius Donatus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=aM9UaHjSRbkC&source=gbs_api"
+          },
+          {
+            "title": "The Ars Minor of Donatus",
+            "authors": [
+              "Aelius Donatus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=O2Km6uzxubcC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia00479300",
+      "author": "Alliaco, Petrus de",
+      "title": "Meditationes circa psalmos poenitentiales",
+      "date": "",
+      "place": "[Paris",
+      "printer": "Antoine Caillaut",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Meditationes circa psalmos poenitentiales",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=qsT9jwEACAAJ&dq=intitle:Meditationes+circa+psalmos+poenitentiales%2Binauthor:Alliaco,+Petrus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Meditationes circa psalmos poenitentiales",
+            "authors": [
+              "Petrus de Alliaco Vallarensis Episcopus Cardinalis"
+            ],
+            "link": "http://books.google.nl/books?id=LlvZ0AEACAAJ&dq=intitle:Meditationes+circa+psalmos+poenitentiales%2Binauthor:Alliaco,+Petrus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Meditationes circa psalmos poenitentiales [French]. Les sept degr\u00e9s de l'\u00e9chelle",
+            "authors": [
+              "Petrus de Alliaco Vallarensis Episcopus Cardinalis"
+            ],
+            "link": "http://books.google.nl/books?id=SMZu0AEACAAJ&dq=intitle:Meditationes+circa+psalmos+poenitentiales%2Binauthor:Alliaco,+Petrus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "iu00003500",
+      "author": "Ubaldis, Angelus de",
+      "title": "Consilia et responsa",
+      "date": "1478",
+      "place": "[Pavia]",
+      "printer": "Antonius de Carcano with Zaninus Ripa",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Consilia seu Responsa eximii Legum Professoris domini Ang. de Ubaldis Perusini Decisiones no[n] paucas admodu[m] vtiles contine[n]tia ...",
+            "authors": [
+              "Angelus (de Ubaldis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=v9pGAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Consilia et responsa",
+            "authors": [
+              "Angelus (de Ubaldis.)",
+              "Johannes Baptista de Sancto Blasio"
+            ],
+            "link": "http://books.google.nl/books?id=BwAeQwAACAAJ&dq=intitle:Consilia+et+responsa%2Binauthor:Ubaldis,+Angelus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Consilia et responsa",
+            "authors": [
+              "Angelus de Ubaldis (Ital. Rechtsgelehrter)"
+            ],
+            "link": "http://books.google.nl/books?id=fjLFzgEACAAJ&dq=intitle:Consilia+et+responsa%2Binauthor:Ubaldis,+Angelus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "im00094500",
+      "author": "Maioranis, Franciscus de",
+      "title": "Sermones de tempore",
+      "date": "",
+      "place": "[Brussels",
+      "printer": "Fratres Vitae Communis",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Sermones de tempore",
+            "authors": [
+              "Franciscus de Maioranis"
+            ],
+            "link": "http://books.google.nl/books?id=-I9k0AEACAAJ&dq=intitle:Sermones+de+tempore%2Binauthor:Maioranis,+Franciscus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "io00097500",
+      "author": "Orosius, Paulus",
+      "title": "Historiae adversos paganos. Ed: Aeneas Vulpes",
+      "date": "1482",
+      "place": "[Vicenza]",
+      "printer": "Leonardus Achates de Basilea",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Historiae adversos paganos. Ed: Aeneas Vulpes",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=4XcKkAEACAAJ&dq=intitle:Historiae+adversos+paganos.+Ed:+Aeneas+Vulpes%2Binauthor:Orosius,+Paulus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Historiae adversus paganos. Ed. Aeneas Vulpes",
+            "authors": [
+              "Paulus Orosius"
+            ],
+            "link": "http://books.google.nl/books?id=zVVGmgEACAAJ&dq=intitle:Historiae+adversos+paganos.+Ed:+Aeneas+Vulpes%2Binauthor:Orosius,+Paulus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Historiae adversus paganos. Ed. Aeneas Vulpes",
+            "authors": [
+              "Paulus Orosius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=bJShj3j2oDgC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib00392000",
+      "author": "Bernardus Claravallensis",
+      "title": "Floretus (cum commento)",
+      "date": "1490",
+      "place": "",
+      "printer": "",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Floretus cum commento Jersonis. Liber nomine floretus a Sancto Bernardo Clareuallis abbate metrice accumulatus cum commento magistri Joannis Jersonis ... tractans de virtutibus et vitijs secundum precepta dei & ecclesie ad fugam peccatorum et electionem illorum operum: que hominem perducunt ad Deum finaliter cum maxima diligentia de nouo emendatus & correctus",
+            "authors": [
+              "Bernardus : Claraevallensis santo (santo)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=dxGrOZmdoIYC&source=gbs_api"
+          },
+          {
+            "title": "Pseudo-Bernardus, Floretus cum commento",
+            "authors": [
+              "Bernardus Claraevallensis"
+            ],
+            "link": "http://books.google.nl/books?id=Qw2gHAAACAAJ&dq=intitle:Floretus+(cum+commento)%2Binauthor:Bernardus+Claravallensis&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Floretus (cum commento)",
+            "authors": [
+              "Bernardus (Claraevallensis.)"
+            ],
+            "link": "http://books.google.nl/books?id=6T0ppwAACAAJ&dq=intitle:Floretus+(cum+commento)%2Binauthor:Bernardus+Claravallensis&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ih00473300",
+      "author": "Horatius Flaccus, Quintus",
+      "title": "Epistolae",
+      "date": "1492",
+      "place": "[Leipzig",
+      "printer": "Martin Landsberg",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Brieven van Q. Horatius Flaccus uit het Latin vertaald en met ... Aanmerkingen verijkt",
+            "authors": [
+              "Quintus Horatius Flaccus",
+              "M. S. Polak"
+            ],
+            "link": "http://books.google.nl/books?id=SiK2PgAACAAJ&dq=intitle:Epistolae%2Binauthor:Horatius+Flaccus,+Quintus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Brieven van Q. Horatius Flaccus",
+            "authors": [
+              "Quintus Horatius Flaccus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=puxNAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Q. HORATIUS FLACCUS",
+            "authors": [
+              "Quintus Horatius Flaccus",
+              "Joseph-Juste Scaliger"
+            ],
+            "link": "https://play.google.com/store/books/details?id=DPQJxIWmqH8C&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia01063950",
+      "author": "Arnoldus a Lude de Tungris",
+      "title": "Epitomata sive reparationes logicae veteris et novae Aristotelis",
+      "date": "1496",
+      "place": "Cologne",
+      "printer": "Heinrich Quentell",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "History of the Reign of Ferdinand and Isabella, the Catholic",
+            "authors": [
+              "William Hickling Prescott"
+            ],
+            "link": "http://books.google.nl/books?id=TwLUjwEACAAJ&dq=intitle:Epitomata+sive+reparationes+logicae+veteris+et+novae+Aristotelis%2Binauthor:Arnoldus+a+Lude+de+Tungris&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Epitomata sive reparationes logicae veteris et novae Aristotelis iuxta viam et expositionem Alberti Magni",
+            "authors": [
+              "Arnoldus (de Tongern)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=muXb5WRIAokC&source=gbs_api"
+          },
+          {
+            "title": "Epitomata, sive Reparationes logicae veteris et novae Aristotelis",
+            "authors": [
+              "Arnoldus (de Tongern)",
+              "Aristotle",
+              "Heinrich Quentell",
+              "Incunable Collection (University of Pennsylvania)"
+            ],
+            "link": "http://books.google.nl/books?id=gjpnPwAACAAJ&dq=intitle:Epitomata+sive+reparationes+logicae+veteris+et+novae+Aristotelis%2Binauthor:Arnoldus+a+Lude+de+Tungris&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ip00164000",
+      "author": "Paulus de Castro",
+      "title": "Super primo, secundo et tertio libro Codicis. Super quarto libro Codicis. Super sexto libro Codicis. Super septimo libro Codicis",
+      "date": "1495",
+      "place": "Venice",
+      "printer": "Andreas Torresanus, de Asula",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Super primo, secundo et tertio libro Codicis; Super quarto libro Codicis; Super sexto libro Codicis; Super septimo libro Codicis",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=HS2IDAEACAAJ&dq=intitle:Super+primo,+secundo+et+tertio+libro+Codicis.+Super+quarto+libro+Codicis.+Super+%2Binauthor:Paulus+de+Castro&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Paulus de Castro super primo secundo et tertio Codicis",
+            "authors": [
+              "Paulus (de Castro)"
+            ],
+            "link": "http://books.google.nl/books?id=9_8h0AEACAAJ&dq=intitle:Super+primo,+secundo+et+tertio+libro+Codicis.+Super+quarto+libro+Codicis.+Super+%2Binauthor:Paulus+de+Castro&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Paulus de Castro ... super primo secundo tertio quarto sexto & septimo Codicis",
+            "authors": [
+              "Paulus de Castro",
+              "Francesco Corti"
+            ],
+            "link": "http://books.google.nl/books?id=f9XrZwEACAAJ&dq=intitle:Super+primo,+secundo+et+tertio+libro+Codicis.+Super+quarto+libro+Codicis.+Super+%2Binauthor:Paulus+de+Castro&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "if00051000",
+      "author": "Farenus, Antonius",
+      "title": "Confessionale",
+      "date": "1490",
+      "place": "[Paris]",
+      "printer": "Guy Marchant",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Confessionale",
+            "authors": [
+              "Antonius Farenus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=EKbbu8hlVtEC&source=gbs_api"
+          },
+          {
+            "title": "Confessionale",
+            "authors": [
+              "Antonius Farenus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=EKbbu8hlVtEC&source=gbs_api"
+          },
+          {
+            "title": "Confessionale",
+            "authors": [
+              "Antonius Farenus"
+            ],
+            "link": "http://books.google.nl/books?id=8KoQzgEACAAJ&dq=intitle:Confessionale%2Binauthor:Farenus,+Antonius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ir00141000",
+      "author": "Remigius",
+      "title": "Fundamentum scholarium. Ed: Johannes Kerckmester",
+      "date": "1499",
+      "place": "Basel",
+      "printer": "Michael Furter",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Fundamentum scholarium. Ed: Johannes Kerckmester",
+            "authors": [
+              "Remigius Autissiodorensis Monachus"
+            ],
+            "link": "http://books.google.nl/books?id=SJ3U0AEACAAJ&dq=intitle:Fundamentum+scholarium.+Ed:+Johannes+Kerckmester%2Binauthor:Remigius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "iq00028000",
+      "author": "Quintilianus, Marcus Fabius",
+      "title": "Institutiones oratoriae. Ed: Omnibonus Leonicenus",
+      "date": "1480",
+      "place": "[Venice",
+      "printer": "Printer of the 1480 Valla (H 15809) (Johannes Rubeus Vercellensis?)",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "M. Fabii Quintiliani Institutionis oratoriae liber 1. Ausz",
+            "authors": [
+              "Marcus Fabius Quintilianus",
+              "Francis Henry Colson"
+            ],
+            "link": "http://books.google.nl/books?id=tCbSPgAACAAJ&dq=intitle:Institutiones+oratoriae.+Ed:+Omnibonus+Leonicenus%2Binauthor:Quintilianus,+Marcus+Fabius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Institutiones oratoriae. Ed: Omnibonus Leonicenus",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=C3i9DAEACAAJ&dq=intitle:Institutiones+oratoriae.+Ed:+Omnibonus+Leonicenus%2Binauthor:Quintilianus,+Marcus+Fabius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Institutiones oratoriae",
+            "authors": [
+              "Marcus Fabius Quintilianus"
+            ],
+            "link": "http://books.google.nl/books?id=yQ_ltAEACAAJ&dq=intitle:Institutiones+oratoriae.+Ed:+Omnibonus+Leonicenus%2Binauthor:Quintilianus,+Marcus+Fabius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ih00136500",
+      "author": "Hesiodus",
+      "title": "Opera et dies (Tr: Nicolaus de Valle). Add: Nicolaus de Valle: Disticha ad Pium II",
+      "date": "1483",
+      "place": "[Milan",
+      "printer": "Simon Magniagus?",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ip00487000",
+      "author": "Petrus Lombardus",
+      "title": "Sententiarum libri IV (Comm: Bonaventura). Add: Johannes Beckenhaub: Tabula, Articuli in Anglia et Parisiis condemnati",
+      "date": "1493",
+      "place": "Freiburg im Breisgau",
+      "printer": "Kilianus Piscator (Fischer)",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Sententiarum libri IV (Comm: Bonaventura). Add: Johannes Beckenhaub: Tabula",
+            "authors": [
+              "Petrus Lombardus"
+            ],
+            "link": "http://books.google.nl/books?id=D1tEmgEACAAJ&dq=intitle:Sententiarum+libri+IV+(Comm:+Bonaventura).+Add:+Johannes+Beckenhaub:+Tabula,+Art%2Binauthor:Petrus+Lombardus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sententiarum libri IV",
+            "authors": [
+              "Petrus Lombardus",
+              "Benediktinerkloster (Zwiefalten, W\u00fcrttemburg)"
+            ],
+            "link": "http://books.google.nl/books?id=yQv4oAEACAAJ&dq=intitle:Sententiarum+libri+IV+(Comm:+Bonaventura).+Add:+Johannes+Beckenhaub:+Tabula,+Art%2Binauthor:Petrus+Lombardus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sententiarum libri IV",
+            "authors": [
+              "Petrus (Lombardus.)",
+              "Koberger (Offizin, N\u00fcrnberg)"
+            ],
+            "link": "http://books.google.nl/books?id=vDFdngEACAAJ&dq=intitle:Sententiarum+libri+IV+(Comm:+Bonaventura).+Add:+Johannes+Beckenhaub:+Tabula,+Art%2Binauthor:Petrus+Lombardus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ic00269800",
+      "author": "",
+      "title": "Casus papales, episcopales et abbatiales",
+      "date": "1501",
+      "place": "[Rome",
+      "printer": "Johann Besicken",
+      "internet_archive": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "date": "1506-01-01T00:00:00Z",
+            "identifier": "bub_gb_9X7Ju_1DR5MC",
+            "mediatype": "texts",
+            "title": "Casus papales episcopales et abbatiales"
+          },
+          {
+            "date": "1495-01-01T00:00:00Z",
+            "identifier": "OEXV391_P9",
+            "mediatype": "texts",
+            "title": "Casus papales, episcopales et abbatiales"
+          },
+          {
+            "date": "1495-01-01T00:00:00Z",
+            "identifier": "OEXV749_P9",
+            "mediatype": "texts",
+            "title": "Casus papales, episcopales et abbatiales."
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Casus papales, episcopales et abbatiales",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=OOK_m_9R_IMC&source=gbs_api"
+          },
+          {
+            "title": "Casus papales episcopales et abbatiales",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=aEUkNPyKSzoC&dq=intitle:Casus+papales,+episcopales+et+abbatiales&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Casus Papales Episcopales et Abbatiales. G.L.",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=Rk4rvwEACAAJ&dq=intitle:Casus+papales,+episcopales+et+abbatiales&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "it00086500",
+      "author": "Terentius Afer, Publius",
+      "title": "Comoediae. Comm: Aelius Donatus. Add: Vita Terentii",
+      "date": "",
+      "place": "",
+      "printer": "",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Comoediae, Comm: Aelius Donatus, Prelim: Donatus: Vita Terentii",
+            "authors": [
+              "Publius Terentius Afer"
+            ],
+            "link": "http://books.google.nl/books?id=SZfxPgAACAAJ&dq=intitle:Comoediae.+Comm:+Aelius+Donatus.+Add:+Vita+Terentii%2Binauthor:Terentius+Afer,+Publius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Comoediae. Comm",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=Qz1r0AEACAAJ&dq=intitle:Comoediae.+Comm:+Aelius+Donatus.+Add:+Vita+Terentii%2Binauthor:Terentius+Afer,+Publius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Comoediae. Comm: Aelius Donatus and Johannes Calphurnius. Prelim: Donatus: Vita Terentii",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=ks0MkAEACAAJ&dq=intitle:Comoediae.+Comm:+Aelius+Donatus.+Add:+Vita+Terentii%2Binauthor:Terentius+Afer,+Publius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia00906200",
+      "author": "Antonius Nebrissensis, Aelius",
+      "title": "Introductiones latinae (cum commento)",
+      "date": "",
+      "place": "[Barcelona",
+      "printer": "Johann Luschner",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "title": "Introductiones latinae. (With additions by Julianus Garces).",
+            "authors": [
+              "Antonio de Nebrija"
+            ],
+            "link": "http://books.google.nl/books?id=B9JjHAAACAAJ&dq=intitle:Introductiones+latinae+(cum+commento)%2Binauthor:Antonius+Nebrissensis,+Aelius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Introductiones latinae",
+            "authors": [
+              "Aelius Antonius Nebrissensis"
+            ],
+            "link": "http://books.google.nl/books?id=B7tn0AEACAAJ&dq=intitle:Introductiones+latinae+(cum+commento)%2Binauthor:Antonius+Nebrissensis,+Aelius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia00512500",
+      "author": "",
+      "title": "Almanac, 1487, for Nuremberg [Latin]",
+      "date": "1486",
+      "place": "[Nuremberg",
+      "printer": "Friedrich Creussner",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Almanac. Nuremberg. 1487 [Latin].",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=BFRhNQEACAAJ&dq=intitle:Almanac,+1487,+for+Nuremberg+%5BLatin%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Almanac for 1487",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=FTQOzQEACAAJ&dq=intitle:Almanac,+1487,+for+Nuremberg+%5BLatin%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Anno Domini milesimoquadringentesimooctuagesimoseptimo",
+            "authors": [
+              "Friedrich Creussner"
+            ],
+            "link": "http://books.google.nl/books?id=pT2ntgAACAAJ&dq=intitle:Almanac,+1487,+for+Nuremberg+%5BLatin%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "is00419000",
+      "author": "Seneca, Lucius Annaeus",
+      "title": "De quattuor virtutibus cardinalibus, sive De formula honestae vitae Add: Epistolae ad Paulum ...",
+      "date": "1499",
+      "place": "Cologne",
+      "printer": "Heinrich Quentell",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De quattuor virtutibus cardinalibus, sive De formula honestae vitae, cum commento [Latin and German verse translation]. Preceded by: Vita Senecae",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=BgAVDAEACAAJ&dq=intitle:De+quattuor+virtutibus+cardinalibus,+sive+De+formula+honestae+vitae+Add:+Epistol%2Binauthor:Seneca,+Lucius+Annaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De quattuor virtutibus cardinalibus, sive De formula honestae vitae. Add: De remediis fortuitorum",
+            "authors": [
+              "Lucius Annaeus Seneca"
+            ],
+            "link": "http://books.google.nl/books?id=DMvZ0AEACAAJ&dq=intitle:De+quattuor+virtutibus+cardinalibus,+sive+De+formula+honestae+vitae+Add:+Epistol%2Binauthor:Seneca,+Lucius+Annaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De moribus. Add: De quattuor virtutibus cardinalibus, sive De formula honestae vitae",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=6cy8DAEACAAJ&dq=intitle:De+quattuor+virtutibus+cardinalibus,+sive+De+formula+honestae+vitae+Add:+Epistol%2Binauthor:Seneca,+Lucius+Annaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ic00914750",
+      "author": "",
+      "title": "Penitencia beati Cornelii",
+      "date": "",
+      "place": "[Cologne",
+      "printer": "Conrad Winters, de Homborch",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Der kranck is van der penitencien Sint Cornelijs paes und mertellers Zo dem eyrsten sal he bidden tzo der eren des almechtigen goedes",
+            "authors": [
+              "Bungart, Hermann (Keulen)"
+            ],
+            "link": "http://books.google.nl/books?id=EY4-GwAACAAJ&dq=intitle:Penitencia+beati+Cornelii&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "if00005475",
+      "author": "Faber de Budweis, Wenceslaus",
+      "title": "Prognosticon f\u00fcr Leipzig, 1491 [Latin]",
+      "date": "",
+      "place": "[Leipzig",
+      "printer": "Martin Landsberg",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0
+      }
+    },
+    {
+      "istc_id": "ia01082300",
+      "author": "Arquatus, Antonius",
+      "title": "Prognosticatio pro anno 1493",
+      "date": "1492",
+      "place": "[Italy",
+      "printer": "n.pr.",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ic01018000",
+      "author": "Cyrillus, Pseudo-",
+      "title": "Speculum sapientiae",
+      "date": "",
+      "place": "[Cologne",
+      "printer": "Johann Koelhoff, the Elder",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "\u02dcDes Bischofs Cyrillus\u0153 Speculum sapientiae",
+            "authors": [
+              "Cyrillus (Quidenon)"
+            ],
+            "link": "http://books.google.nl/books?id=SdJLvwEACAAJ&dq=intitle:Speculum+sapientiae%2Binauthor:Cyrillus,+Pseudo-&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Speculum sapientiae",
+            "authors": [
+              "Pseudo-Cyrillus"
+            ],
+            "link": "http://books.google.nl/books?id=OCChwgEACAAJ&dq=intitle:Speculum+sapientiae%2Binauthor:Cyrillus,+Pseudo-&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Speculum sapientiae",
+            "authors": [
+              "(Pseudo- ) Cyrillus Alexandrinus"
+            ],
+            "link": "http://books.google.nl/books?id=qbbgGwAACAAJ&dq=intitle:Speculum+sapientiae%2Binauthor:Cyrillus,+Pseudo-&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib00042500",
+      "author": "Balthasar de Porta",
+      "title": "Expositio mysteriorum Missae. Add: Hieronymus de Vallibus: Jesuida (extract)",
+      "date": "1494",
+      "place": "Leipzig",
+      "printer": "[Gregorius B\u00f6ttiger (Werman)]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ih00499800",
+      "author": "Hubertus, S",
+      "title": "Historia cum legenda sancti Huberti episcopi",
+      "date": "1489",
+      "place": "Ulm",
+      "printer": "Conrad Dinckmut",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ie00030000",
+      "author": "",
+      "title": "Elegantiarum viginti praecepta",
+      "date": "",
+      "place": "[Deventer",
+      "printer": "Richardus Pafraet",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "date": "1496-01-01T00:00:00Z",
+            "identifier": "ned-kbn-all-00001877-001",
+            "mediatype": "texts",
+            "title": "[Elegantiarum viginti praecepta]"
+          },
+          {
+            "creator": "Aegidius",
+            "date": "1498-01-01T00:00:00Z",
+            "identifier": "bim_early-english-books-1475-1640_elegantiarum-viginti-pra_aegidius_1498",
+            "mediatype": "texts",
+            "title": "Elegantiarum Viginti Praecepta ... 1498"
+          },
+          {
+            "date": "1480-01-01T00:00:00Z",
+            "identifier": "ned-kbn-all-00003023-001",
+            "mediatype": "texts",
+            "title": "[Elegantiarum viginti praecepta]"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Elegantiarum viginti praecepta",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=B7Kpj5eRW2QC&source=gbs_api"
+          },
+          {
+            "title": "Elegantiarum viginti praecepta ad pulchras conficiendas epistolas",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=44rZaHVdILIC&source=gbs_api"
+          },
+          {
+            "title": "Elegantiarum viginti praecepta",
+            "authors": [
+              "Breda, Jacobus de (Deventer)"
+            ],
+            "link": "http://books.google.nl/books?id=bDXFoAEACAAJ&dq=intitle:Elegantiarum+viginti+praecepta&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "il00389000",
+      "author": "Lullus, Raymundus",
+      "title": "De conceptione B. V. Mariae",
+      "date": "1491",
+      "place": "Seville",
+      "printer": "Compa\u00f1eros alemanes (Paulus de Colonia, Johann Pegnitzer, Magnus Herbst and Thomas Glockner), for Martinus Almodovar",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ir00220000",
+      "author": "Rodericus Zamorensis",
+      "title": "Speculum vitae humanae",
+      "date": "1473",
+      "place": "Rome",
+      "printer": "Johannes Philippus de Lignamine",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Speculum vitae humanae",
+            "authors": [
+              "Rodericus (Sancius De Arevalo)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=yoVRAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Speculum humanae vitae (etc.)",
+            "authors": [
+              "Rodericus episcopus Zamorensis Sanchez de Arevalo",
+              "Rodrigo S\u00e1nchez de Ar\u00e9valo"
+            ],
+            "link": "https://play.google.com/store/books/details?id=9opQAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Speculum vitae humanae",
+            "authors": [
+              "Rodericus Zamorensis"
+            ],
+            "link": "http://books.google.nl/books?id=SgdcmgEACAAJ&dq=intitle:Speculum+vitae+humanae%2Binauthor:Rodericus+Zamorensis&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ih00199500",
+      "author": "Hieronymus",
+      "title": "Vitae sanctorum patrum, sive Vitas patrum",
+      "date": "1478",
+      "place": "[Treviso",
+      "printer": "Hermannus Liechtenstein",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "creator": "Amaseus, Hieronymus",
+            "date": "1484-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in1-00000781-001",
+            "mediatype": "texts",
+            "title": "Vitae sanctorum patrum, sive Vitas patrum. Add: Opuscula de laude et effectu virtutum"
+          },
+          {
+            "creator": "Amaseus, Hieronymus",
+            "date": "1474-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in2-00001958-001",
+            "mediatype": "texts",
+            "title": "Vitae sanctorum patrum, sive Vitas patrum [in italiano] Tr: Domenico Cavalca. Add: Johannes Moschus: Pratum [in italiano] Tr: Feo Belcari"
+          },
+          {
+            "creator": "Amaseus, Hieronymus",
+            "date": "1475-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in2-00001957-001",
+            "mediatype": "texts",
+            "title": "Vitae sanctorum patrum, sive Vitas patrum [in italiano] Vite de sancti padri. Tr: Domenico Cavalca. Add: Johannes Moschus: Pratum [in italiano]. Tr: Feo Belcari"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Vaderboeck",
+            "authors": [
+              "Sophronius Eusebius Hieronymus",
+              "Os, Pieter van (Zwolle)"
+            ],
+            "link": "http://books.google.nl/books?id=vp2moAEACAAJ&dq=intitle:Vitae+sanctorum+patrum,+sive+Vitas+patrum%2Binauthor:Hieronymus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Vitae sanctorum patrum, sive Vitas patrum [Dutch] Van den leven der heiligen vaderen",
+            "authors": [
+              "Hieronymus Stridonius (Sanctus)"
+            ],
+            "link": "http://books.google.nl/books?id=kXJn0AEACAAJ&dq=intitle:Vitae+sanctorum+patrum,+sive+Vitas+patrum%2Binauthor:Hieronymus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Vitae sanctorum patrum, sive Vitas patrum [Dutch] Van den leven der heiligen vaderen",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=5rEKkAEACAAJ&dq=intitle:Vitae+sanctorum+patrum,+sive+Vitas+patrum%2Binauthor:Hieronymus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ib01150950",
+      "author": "",
+      "title": "Breviarium Compostellanum (Santiago de Compostela). Commissioned by the Chapter of the Cathedral of Santiago",
+      "date": "1497",
+      "place": "Lisbon",
+      "printer": "Nicolaus de Saxonia",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ih00357270",
+      "author": "",
+      "title": "Horae: ad usum Romanum (Rome)",
+      "date": "1475",
+      "place": "[Venice]",
+      "printer": "Nicolaus Jenson",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Horae",
+            "authors": [
+              "Catholic Church"
+            ],
+            "link": "http://books.google.nl/books?id=nU5htgEACAAJ&dq=intitle:Horae:+ad+usum+Romanum+(Rome)&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Horae: ad usum Romanum (Rome).",
+            "authors": [
+              "Catholic Church",
+              "Printer of Officium B. V. Mariae",
+              "Alfonso Fern\u00e1ndez de C\u00f3rdoba",
+              "Gabriel Luis de Arinyo",
+              "Lope de la Roca"
+            ],
+            "link": "http://books.google.nl/books?id=3RxdPwAACAAJ&dq=intitle:Horae:+ad+usum+Romanum+(Rome)&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Horae: ad usum Romanum (Rome) [French and Latin].",
+            "authors": [
+              "Catholic Church",
+              "Thielmann Kerver"
+            ],
+            "link": "http://books.google.nl/books?id=kaQ7PwAACAAJ&dq=intitle:Horae:+ad+usum+Romanum+(Rome)&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ih00029500",
+      "author": "Henricus de Hassia",
+      "title": "Secreta sacerdotum (Corr & Ed: Michael Lochmaier)",
+      "date": "1491",
+      "place": "[Passau",
+      "printer": "Johann Petri",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Secreta sacerdotum, corr. et ed. Michael Lochmaier",
+            "authors": [
+              "Henricus de Hassia"
+            ],
+            "link": "http://books.google.nl/books?id=OqL_xAEACAAJ&dq=intitle:Secreta+sacerdotum+(Corr+%26+Ed:+Michael+Lochmaier)%2Binauthor:Henricus+de+Hassia&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Le remerc\u00eement des beurri\u00e8res de Paris au sieur de Courbouzon Montgommery",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=OnzWjwEACAAJ&dq=intitle:Secreta+sacerdotum+(Corr+%26+Ed:+Michael+Lochmaier)%2Binauthor:Henricus+de+Hassia&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Secreta sacerdotum",
+            "authors": [
+              "HENRICUS (de Hassia.)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=TE5oAAAAcAAJ&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ic00624000",
+      "author": "Cicero, Marcus Tullius",
+      "title": "Cato maior, sive de senectute",
+      "date": "1489",
+      "place": "Deventer",
+      "printer": "[Richardus Pafraet]",
+      "internet_archive": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "creator": "Cicero, Marcus Tullius",
+            "date": "1488-01-01T00:00:00Z",
+            "identifier": "ned-kbn-all-00001963-001",
+            "mediatype": "texts",
+            "title": "[Cato maior, sive de senectute]"
+          },
+          {
+            "creator": "Cicero, Marcus Tullius",
+            "date": "1480-01-01T00:00:00Z",
+            "identifier": "ned-kbn-all-00001941-001",
+            "mediatype": "texts",
+            "title": "De officiis. Cato maior, sive de senectute. Laelius, sive de amicitia. Somnium Scipionis. Paradoxa Stoicorum. Hexasticha XII Sapientum"
+          },
+          {
+            "creator": "Cicero, Marcus Tullius",
+            "date": "1480-01-01T00:00:00Z",
+            "identifier": "ita-bnc-in1-00001036-001",
+            "mediatype": "texts",
+            "title": "De officiis. Add: Paradoxa Stoicorum; Laelius, sive de amicitia; Cato maior, sive de senectute; Somnium Scipionis; Timaeus"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Cato maior, sive de Senectute",
+            "authors": [
+              "Marcus Tullius Cicero"
+            ],
+            "link": "https://play.google.com/store/books/details?id=fki0OXaQ498C&source=gbs_api"
+          },
+          {
+            "title": "Cato Maior De Senectute",
+            "authors": [
+              "Marcus Tullius Cicero",
+              "Julius Sommerbrodt"
+            ],
+            "link": "http://books.google.nl/books?id=gRWTzwEACAAJ&dq=intitle:Cato+maior,+sive+de+senectute%2Binauthor:Cicero,+Marcus+Tullius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Cicero: Cato Maior de Senectute",
+            "authors": [
+              "Marcus Tullius Cicero"
+            ],
+            "link": "http://books.google.nl/books?id=mHZ9PwAACAAJ&dq=intitle:Cato+maior,+sive+de+senectute%2Binauthor:Cicero,+Marcus+Tullius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "is00546000",
+      "author": "Sixtus IV, Pont. Max. (formerly Franciscus, Cardinalis de Rovere)",
+      "title": "Bulla 18 Dec. 1478 \"Etsi quandoque negotiorum magnitudine\". Add: Bulla 23 Jan. 1479 \"Quoniam experimento didicimus\" revocatoriae circa beneficia",
+      "date": "1479",
+      "place": "[Deventer",
+      "printer": "Richardus Pafraet",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Bulla 18. Dez. 1478 \"Etsi quandoque negotiorum magnitudine\"",
+            "authors": [
+              "Sixtus IV. (Papst)"
+            ],
+            "link": "http://books.google.nl/books?id=sdpN0AEACAAJ&dq=intitle:Bulla+18+Dec.+1478+Etsi+quandoque+negotiorum+magnitudine.+Add:+Bulla+23+Jan.+147%2Binauthor:Sixtus+IV,+Pont.+Max.+(formerly+Francisc&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Bulla 18. Dez. 1478 \"Etsi quandoque negotiorum magnitudine\"",
+            "authors": [
+              "Sixtus IV (Papst)"
+            ],
+            "link": "http://books.google.nl/books?id=Orr1SAAACAAJ&dq=intitle:Bulla+18+Dec.+1478+Etsi+quandoque+negotiorum+magnitudine.+Add:+Bulla+23+Jan.+147%2Binauthor:Sixtus+IV,+Pont.+Max.+(formerly+Francisc&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Bulla 24 June 1478 \"Pia decet consideratione\" renewing the indulgences for the Kollegiatskirche in Baden-Baden. With a summary",
+            "authors": [
+              "Pont. Max Sixtus IV"
+            ],
+            "link": "http://books.google.nl/books?id=0PzIzwEACAAJ&dq=intitle:Bulla+18+Dec.+1478+Etsi+quandoque+negotiorum+magnitudine.+Add:+Bulla+23+Jan.+147%2Binauthor:Sixtus+IV,+Pont.+Max.+(formerly+Francisc&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "id00332815",
+      "author": "Donatus, Aelius",
+      "title": "Ars minor",
+      "date": "1492",
+      "place": "[Leipzig",
+      "printer": "Martin Landsberg",
+      "internet_archive": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "creator": "Donatus, Aelius.",
+            "date": "1490-01-01T00:00:00Z",
+            "identifier": "bim_early-english-books-1475-1640_ars-minor-folw-de-ma_donatus-aelius_1490",
+            "mediatype": "texts",
+            "title": "Ars. minor. fol.W. de Machlinia ... 1490"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Fragments of three works: Ars minor by Aelius Donatus (ca. 1465-1480), Paradoxen etc. by Franciscus Lambertus Avenionensis (ca. 1528?), and Ars minor by Aelius Donatus (15th century).",
+            "authors": [
+              "Aelius Donatus"
+            ],
+            "link": "http://books.google.nl/books?id=PkMizgEACAAJ&dq=intitle:Ars+minor%2Binauthor:Donatus,+Aelius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Ars minor",
+            "authors": [
+              "Aelius Donatus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=PBwWWxDuwtUC&source=gbs_api"
+          },
+          {
+            "title": "The Ars Minor of Donatus",
+            "authors": [
+              "Aelius Donatus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=O2Km6uzxubcC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "it00054000",
+      "author": "",
+      "title": "Taxae poenitentiariae apostolicae",
+      "date": "",
+      "place": "",
+      "printer": "",
+      "internet_archive": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "date": "1493-01-01T00:00:00Z",
+            "identifier": "OEXV749_P7",
+            "mediatype": "texts",
+            "title": "Taxae poenitentiariae apostolicae."
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Taxae cancellariae apostolicae et taxae sacrae poenitentiariae apostolicae. Dat is, Schattinge vande Cancellarie en Penitentie-kamer vanden Paus van Romen, gecollationeert, gedruckt ende geautentizeert (p. 131.) nae't exemplaer van Leo 10. tot Romen anno 1514",
+            "authors": [
+              "Chiesa cattolica : Cancelleria apostolica"
+            ],
+            "link": "https://play.google.com/store/books/details?id=lh4SJy9VEJUC&source=gbs_api"
+          },
+          {
+            "title": "Taxae Cancellariae apostolicae et taxae sacrae poenitentiariae apostolicae ...",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=nbM8AAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Taxae cancellariae apostolicae et taxae s. poenitentiariae apostolicae",
+            "authors": [],
+            "link": "https://play.google.com/store/books/details?id=U7RWXaeCdxUC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "is00727170",
+      "author": "",
+      "title": "Statuta synodalia",
+      "date": "1494",
+      "place": "Paris",
+      "printer": "[n.pr.], for Guillaume Prevost",
+      "internet_archive": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "date": "1733-01-01T00:00:00Z",
+            "identifier": "bub_gb_YzIXpXjW0WkC",
+            "mediatype": "texts",
+            "title": "Veterum scriptorum et monumentorum historicorum, dogmaticorum, moralium, amplissima collectio. Tomus 1. 9. ... Prodiit nunc primum studio & opera Domni Edmundi Martene, & Domni Ursini Durand, presbyterorum & monachorum benedictinorum e Congregatione S. Mauri Tomus 8. complectens varia concilia, episcoporum statuta synodalia, cum"
+          },
+          {
+            "date": "1482-01-31T00:00:00Z",
+            "identifier": "jbc.bj.uj.edu.pl.NDIGSTDR004816",
+            "mediatype": "texts",
+            "title": "Statuta synodalia Strigoniensia"
+          },
+          {
+            "creator": "Johannes Gropper",
+            "date": "1543-01-01T00:00:00Z",
+            "identifier": "bub_gb_oRIi_v0JFmkC",
+            "mediatype": "texts",
+            "title": "Concilium prouinciale Coloniense. anno 1536. celebratum. Cui, haec sunt addita. Formula ad quam visitatio intra Dioecesim Coloniensem exigitur. Reformatio cleri ad correctionem vitae & morum. Statuta synodalia D. Valentini episcopi Hildesemensis. Formula viuendi canonicorum, vicariorum, & aliorum presbyterorum secularium Enchiri"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Statuta Synodalia Pro Di\u0153cesi Corcagiensi",
+            "authors": [
+              "R. C. Diocese of CORK"
+            ],
+            "link": "http://books.google.nl/books?id=tUG9zQEACAAJ&dq=intitle:Statuta+synodalia&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Statuta Synodalia.",
+            "authors": [
+              "Valentin TEUTLEBEN (Bishop of Hildesheim.)"
+            ],
+            "link": "http://books.google.nl/books?id=Yk0XMwEACAAJ&dq=intitle:Statuta+synodalia&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Statuta Synodalia Pro Di\u0153cesi Corcagiensi",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=8IY3zAEACAAJ&dq=intitle:Statuta+synodalia&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "is00089000",
+      "author": "Sallustius Crispus, Gaius",
+      "title": "De coniuratione Catilinae",
+      "date": "1497",
+      "place": "Zwolle",
+      "printer": "Peter van Os",
+      "internet_archive": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "creator": [
+              "Sallustius Crispus, Gaius",
+              "Jacobs, Rudolf",
+              "Sallusti Crispi, C"
+            ],
+            "date": "1864-01-01T00:00:00Z",
+            "identifier": "deconiurationeca00sall",
+            "mediatype": "texts",
+            "title": "De coniuratione Catilinae et de bello Iugurthino : libri ex historiarum libris quinque deperditis ; orationes et epistolae"
+          }
+        ]
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Gaius Sallustius Crispus: De coniuratione Catilinae et De bello Jugurthino",
+            "authors": [
+              "Gaius Sallustius Crispus"
+            ],
+            "link": "http://books.google.nl/books?id=nG9HzgEACAAJ&dq=intitle:De+coniuratione+Catilinae%2Binauthor:Sallustius+Crispus,+Gaius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De coniuratione Catilinae. Sallustius Crispus, Gaius: Bellum Jugurthinum",
+            "authors": [
+              "Gaius Sallustius Crispus"
+            ],
+            "link": "http://books.google.nl/books?id=OB78uQEACAAJ&dq=intitle:De+coniuratione+Catilinae%2Binauthor:Sallustius+Crispus,+Gaius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "C. Sallusti Crispi De coniuratione Catilinae liber, De bello Iugurthino liber, ed. with intr. and notes by W.W. Capes",
+            "authors": [
+              "Gaius Sallustius Crispus",
+              "Sallust"
+            ],
+            "link": "https://play.google.com/store/books/details?id=YGQ94F9KoSUC&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ia00939700",
+      "author": "Aragazonius, Jacobus",
+      "title": "Oratio ad Nicolaum Tronum",
+      "date": "1471",
+      "place": "[Florence]",
+      "printer": "",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "title": "Oratio ad Nicolaum Tronum",
+            "authors": [
+              "Jacobus Aragazonius"
+            ],
+            "link": "http://books.google.nl/books?id=Ictt0AEACAAJ&dq=intitle:Oratio+ad+Nicolaum+Tronum%2Binauthor:Aragazonius,+Jacobus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Oratio ad Nicolaum Tronum, cum ad Venetae rei publicae principatum accessisset",
+            "authors": [
+              "Jacobus Aragazonius"
+            ],
+            "link": "http://books.google.nl/books?id=bGqiAQAACAAJ&dq=intitle:Oratio+ad+Nicolaum+Tronum%2Binauthor:Aragazonius,+Jacobus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ip01043155",
+      "author": "",
+      "title": "Psalterium cum hymnis et canticis",
+      "date": "1497",
+      "place": "[Lyons",
+      "printer": "Pierre Mareschal and Barnab\u00e9 Chaussard]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Psalterium cum hymnis et canticis",
+            "authors": [
+              "Quentel (Offizin, K\u00f6ln)",
+              "Pr\u00fcss (Offizin, Strasbourg)"
+            ],
+            "link": "http://books.google.nl/books?id=fI5eoAEACAAJ&dq=intitle:Psalterium+cum+hymnis+et+canticis&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Psalterium palaeoslovenicum croatico-glagoliticum",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=LWg4AAAAYAAJ&dq=intitle:Psalterium+cum+hymnis+et+canticis&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Novum beatae Mariae virginis psalterium",
+            "authors": [
+              "Hermannus Nitzschewitz"
+            ],
+            "link": "https://play.google.com/store/books/details?id=9_HmCfNNl20C&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ir00203600",
+      "author": "Robertus Castellensis, commissary",
+      "title": "Indulgentia, 2 Feb. 1499. For promoting war against the Turks. Plural issue",
+      "date": "1499",
+      "place": "[London",
+      "printer": "Richard Pynson",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ib01203000",
+      "author": "Bricot, Thomas",
+      "title": "Textus abbreviatus in cursum totius physices et metaphysicorum Aristotelis. Add: Georgius Bruxellensis: Quaestiones super naturalem philosophiam Aristotelis. Quaestiones sex librorum Metaphysices pro ritu Parisiorum Academiae",
+      "date": "1494",
+      "place": "Paris",
+      "printer": "Johannes Higman and Wolfgang Hopyl",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Textus abbreviatus in cursum totius physices et metaphysicorum Aristotelis. Add: Georgius Bruxellensis: Quaestiones",
+            "authors": [
+              "Thomas Bricot"
+            ],
+            "link": "http://books.google.nl/books?id=WlRUyQEACAAJ&dq=intitle:Textus+abbreviatus+in+cursum+totius+physices+et+metaphysicorum+Aristotelis.+Add:%2Binauthor:Bricot,+Thomas&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Textus abbreviatus in cursum totius physices et metaphysicorum Aristotelis",
+            "authors": [
+              "Thomas Bricot",
+              "Georgius (Bruxellensis.)"
+            ],
+            "link": "http://books.google.nl/books?id=kovgnQEACAAJ&dq=intitle:Textus+abbreviatus+in+cursum+totius+physices+et+metaphysicorum+Aristotelis.+Add:%2Binauthor:Bricot,+Thomas&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Textus abbreviatus in cursum totius Physices et Metaphysicorum Aristotelis",
+            "authors": [
+              "Thomas Bricot"
+            ],
+            "link": "http://books.google.nl/books?id=Z4jBzQEACAAJ&dq=intitle:Textus+abbreviatus+in+cursum+totius+physices+et+metaphysicorum+Aristotelis.+Add:%2Binauthor:Bricot,+Thomas&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "io00069700",
+      "author": "",
+      "title": "Orationes tres contra Turcos. Con: Franciscus Philelphus: Ad Carolum VIII, regem Francorum atque ad Pium II papam; Pius II: Oratio habita in conventu Mantuano, anno 1459, 6 cal. octobris",
+      "date": "1497",
+      "place": "[Strassburg",
+      "printer": "Johann (Reinhard) Gr\u00fcninger",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "it00565550",
+      "author": "Tygrinus, Nicolaus",
+      "title": "Oratio habita Pisis coram Maximiliano Rege",
+      "date": "",
+      "place": "[Florence",
+      "printer": "n.pr.",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "id00183200",
+      "author": "",
+      "title": "Dicta puerorum super Donatum minorem. Add: Regulae grammaticales. Collatio de bibulis. Octo terminationes nominum verbalium. Duodecim sunt verba exemptae actionis",
+      "date": "",
+      "place": "",
+      "printer": "Conrad Stahel [and Mathias Preunlein]",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "ib01158400",
+      "author": "",
+      "title": "Breviarium Cracoviense, Gnesnense et Posnaniense (Cracow, Gniezno and Pozna\u0144)",
+      "date": "1494",
+      "place": "[Nuremberg",
+      "printer": "Caspar Hochfeder",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      }
+    },
+    {
+      "istc_id": "im00144000",
+      "author": "Mancinellus, Antonius",
+      "title": "Spica. Versilogus sive De componendis versibus opusculum",
+      "date": "1500",
+      "place": "Milan",
+      "printer": "Johannes Angelus Scinzenzeler",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Spica. Versilogus sive De componendis versibus opusculum",
+            "authors": [
+              "Antonius Mancinellus"
+            ],
+            "link": "http://books.google.nl/books?id=1Ek_HQAACAAJ&dq=intitle:Spica.+Versilogus+sive+De+componendis+versibus+opusculum%2Binauthor:Mancinellus,+Antonius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    },
+    {
+      "istc_id": "ih00484290",
+      "author": "Horneck, Burchardus de",
+      "title": "Carmen de ingenio sanitatis",
+      "date": "1500",
+      "place": "Memmingen",
+      "printer": "[Albrecht Kunne",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "hathitrust": {
+        "found": false,
+        "num_results": 0
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "title": "Carmen de ingenio sanitatis",
+            "authors": [
+              "Burchardus de Horneck"
+            ],
+            "link": "http://books.google.nl/books?id=4BxLAAAAcAAJ&dq=intitle:Carmen+de+ingenio+sanitatis%2Binauthor:Horneck,+Burchardus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Carmen de ingenio sanitatis",
+            "authors": [
+              "Burckhard von Horneck"
+            ],
+            "link": "http://books.google.nl/books?id=LteU0QEACAAJ&dq=intitle:Carmen+de+ingenio+sanitatis%2Binauthor:Horneck,+Burchardus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Carmen de ingenio sanitatis",
+            "authors": [
+              "Burckhard von Horneck (Arzt, Humanist, Theologe)"
+            ],
+            "link": "http://books.google.nl/books?id=A6sxcgAACAAJ&dq=intitle:Carmen+de+ingenio+sanitatis%2Binauthor:Horneck,+Burchardus+de&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      }
+    }
+  ]
+}
