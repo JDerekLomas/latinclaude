@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
+import { createServerClient } from "@/lib/supabase-server";
 
 export const runtime = "nodejs";
+
+const UPLOAD_BUCKET = process.env.SUPABASE_DIGITIZER_BUCKET || "digitizer-uploads";
 
 function sanitizeFileName(name: string) {
   return name.replace(/[^a-zA-Z0-9._-]/g, "_");
@@ -41,25 +42,46 @@ export async function POST(request: Request) {
       }
     }
 
-    const uploadDir = path.join(process.cwd(), "uploads");
-    await fs.mkdir(uploadDir, { recursive: true });
+    const supabase = createServerClient();
 
     const file = pdf as File;
     const originalName = sanitizeFileName(file.name || "upload.pdf");
     const timestamp = Date.now();
-    const storedName = `${timestamp}_${originalName}`;
+    const storagePath = `jobs/${timestamp}/${originalName}`;
     const fileBuffer = Buffer.from(await file.arrayBuffer());
-    const storedPath = path.join(uploadDir, storedName);
-    await fs.writeFile(storedPath, fileBuffer);
 
-    const jobId = `job_${timestamp}`;
+    const { error: uploadError } = await supabase.storage
+      .from(UPLOAD_BUCKET)
+      .upload(storagePath, fileBuffer, { contentType: "application/pdf" });
+
+    if (uploadError) {
+      console.error("Upload error", uploadError);
+      return NextResponse.json({ error: "Unable to store PDF in Supabase." }, { status: 500 });
+    }
+
+    const { data: jobRecord, error: insertError } = await supabase
+      .from("digitizer_jobs")
+      .insert({
+        original_name: originalName,
+        storage_path: storagePath,
+        script_command: scriptPath,
+        notes,
+        prompts,
+        status: "queued",
+      })
+      .select()
+      .single();
+
+    if (insertError || !jobRecord) {
+      console.error("Insert error", insertError);
+      return NextResponse.json({ error: "Unable to create job record." }, { status: 500 });
+    }
 
     return NextResponse.json({
-      message:
-        "Upload captured. Connect this endpoint to your processing worker to launch rendering/OCR/translation.",
-      jobId,
+      message: "Upload captured. Worker can poll Supabase to continue processing.",
+      jobId: jobRecord.id,
       originalName,
-      storedPath: storedPath.replace(process.cwd(), ""),
+      storedPath: storagePath,
       scriptPath,
       notes,
       prompts,

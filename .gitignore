@@ -31,3 +31,16 @@ node_modules/
 data/ustc/ustc_editions.csv
 .vercel
 viz/uploads/
+
+# Generated data folders (too large for git)
+data/agent_matching/
+data/embedding_cache/
+data/embedding_matching/
+data/fuzzy_matching/
+data/hathitrust/
+data/human_review/
+data/internet_archive/
+data/marsilio_ficino_de_mysteriis/
+data/search_matching/
+data/translations/
+data/*.json
