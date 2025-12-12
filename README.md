@@ -1,10 +1,10 @@
-# The Hidden Renaissance: Latin Works in Print (1450-1700)
+# Second Renaissance: Unlocking Latin Literature (1450-1700)
 
-Exploring the vast corpus of Latin literature from the Renaissance and early modern period—over 500,000 works, 97% of which have never been translated into English.
+Exploring the vast corpus of Latin literature from the Renaissance and early modern period—over 500,000 works, 97% of which have never been translated into English. Building tools to translate and make these texts accessible.
 
 ## Live Site
 
-**[latinclaude.vercel.app](https://latinclaude.vercel.app)**
+**[secondrenaissance.vercel.app](https://secondrenaissance.vercel.app)**
 
 ## The Problem
 
@@ -28,24 +28,41 @@ Most of this heritage is locked away, accessible only to the small number of sch
 - 2,700+ works digitized
 - Core holdings: Hermetica, alchemy, Kabbalah, Rosicrucianism, mysticism
 
+## Features
+
+### Catalogs
+- **Hermetic Library (BPH)**: 28,000 esoteric works with Internet Archive links
+- **USTC Data Explorer**: 500,000 Latin works from 1450-1700
+
+### Tools
+- **Translation Dashboard**: Upload PDFs or select from IA catalog for AI-assisted OCR and translation
+- **Digitizer**: Single-page Latin OCR and translation
+- **Validation Interface**: Review and validate matched records
+
+### Research
+- Blog posts exploring the translation gap, forgotten authors, and Renaissance bestsellers
+- Geographic and temporal visualizations of Latin publishing
+
 ## Project Structure
 
 ```
-latinclaude/
-├── data/
-│   ├── raw/
-│   │   ├── ustc/           # USTC exports (not in git - too large)
-│   │   └── bph/            # BPH catalog (not in git)
-│   ├── viz_data.json       # Aggregated data for visualization
-│   └── bph_rivers_of_life.json
-├── viz/                    # Next.js visualization app
-│   ├── app/
-│   │   ├── page.tsx        # Main dashboard
-│   │   └── blog/           # Research notes
-│   └── public/
-│       └── viz_data.json
+secondrenaissance/
+├── data/                   # Data files (large files in .gitignore)
 ├── docs/                   # Methodology documentation
-└── scripts/                # Data processing (Python)
+├── scripts/                # Data processing & matching (Python)
+│   ├── translate_book.py   # Book translation pipeline
+│   ├── bph_ia_*.py         # BPH-IA matching algorithms
+│   └── supabase_*.sql      # Database schemas
+├── viz/                    # Next.js webapp
+│   ├── app/
+│   │   ├── page.tsx        # Landing page
+│   │   ├── bph/            # Hermetic catalog browser
+│   │   ├── translate/      # Translation dashboard
+│   │   ├── digitizer/      # Single-page digitizer
+│   │   └── blog/           # Research posts
+│   └── components/
+└── .claude/
+    └── commands/           # Latin translation CLI commands
 ```
 
 ## Research Questions Explored
@@ -77,18 +94,20 @@ Contact for access to raw data exports.
 
 ## Tech Stack
 
+- **Frontend**: Next.js 14, Recharts, Tailwind CSS
+- **Backend**: Supabase (PostgreSQL, Auth, RLS)
 - **Data processing**: Python, pandas
-- **Visualization**: Next.js 14, Recharts, Tailwind CSS
+- **AI/ML**: OpenAI GPT-4o, Anthropic Claude for OCR and translation
 - **Hosting**: Vercel
 
 ## Future Work
 
 - [ ] Interactive timeline of esoteric publishing ("Rivers of Life")
 - [ ] Animated map of European printing centers
-- [ ] Timeline of major publishers
-- [ ] Timeline of major authors
-- [ ] Cross-reference with Internet Archive/Google Books digitization
-- [ ] AI-assisted translation pipeline exploration
+- [ ] Background worker for batch translation processing
+- [ ] Expert review workflow for translation refinement
+- [x] AI-assisted translation pipeline (in progress)
+- [x] Cross-reference with Internet Archive digitization
 
 ## Acknowledgments
 
