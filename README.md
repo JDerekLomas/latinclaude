@@ -47,13 +47,7 @@ Most of this heritage is locked away, accessible only to the small number of sch
 
 ```
 secondrenaissance/
-├── data/                   # Data files (large files in .gitignore)
-├── docs/                   # Methodology documentation
-├── scripts/                # Data processing & matching (Python)
-│   ├── translate_book.py   # Book translation pipeline
-│   ├── bph_ia_*.py         # BPH-IA matching algorithms
-│   └── supabase_*.sql      # Database schemas
-├── viz/                    # Next.js webapp
+├── viz/                    # Next.js webapp (Vercel deployment)
 │   ├── app/
 │   │   ├── page.tsx        # Landing page
 │   │   ├── bph/            # Hermetic catalog browser
@@ -61,8 +55,18 @@ secondrenaissance/
 │   │   ├── digitizer/      # Single-page digitizer
 │   │   └── blog/           # Research posts
 │   └── components/
-└── .claude/
-    └── commands/           # Latin translation CLI commands
+├── scripts/
+│   ├── matching/           # BPH-IA matching algorithms
+│   ├── loaders/            # Supabase data loaders
+│   ├── translation/        # Translation pipeline & workers
+│   ├── scrapers/           # Data collectors
+│   ├── analysis/           # Coverage analysis
+│   ├── pipeline/           # Core pipeline scripts
+│   └── utils/              # Utilities (dedup, validation)
+├── db/                     # Database schemas (SQL)
+├── docs/                   # Methodology documentation
+├── .claude/commands/       # Latin translation CLI commands
+└── data/                   # Local data (gitignored)
 ```
 
 ## Research Questions Explored

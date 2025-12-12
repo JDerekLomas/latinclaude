@@ -1,22 +1,12 @@
 # Python
 venv/
+.venv/
 __pycache__/
 *.py[cod]
 .env
 
-# Data files (too large for git)
-data/raw/ustc/*.csv
-data/raw/bph/*.csv
-data/raw/internetarchive/
-data/raw/generated/
-*.accdb
-
-# Large data exports
-data/*.csv
-data/internet_archive_*.csv
-data/massive_*.csv
-data/untranslated_*.csv
-data/comprehensive_*.csv
+# Data folder (local only - too large for git)
+data/
 
 # OS
 .DS_Store
@@ -28,19 +18,5 @@ data/comprehensive_*.csv
 # Node (for viz app)
 node_modules/
 .next/
-data/ustc/ustc_editions.csv
 .vercel
 viz/uploads/
-
-# Generated data folders (too large for git)
-data/agent_matching/
-data/embedding_cache/
-data/embedding_matching/
-data/fuzzy_matching/
-data/hathitrust/
-data/human_review/
-data/internet_archive/
-data/marsilio_ficino_de_mysteriis/
-data/search_matching/
-data/translations/
-data/*.json
