@@ -1,0 +1,196 @@
+{
+  "events": [
+    {
+      "year": 1463,
+      "title": "Ficino translates Corpus Hermeticum",
+      "traditions": ["hermetica"],
+      "description": "Cosimo de' Medici commissions Marsilio Ficino to translate the newly discovered Greek manuscripts"
+    },
+    {
+      "year": 1471,
+      "title": "First printed Ficino translations",
+      "traditions": ["hermetica", "neoplatonism"],
+      "description": "Ficino's translations of Plato and Hermes begin circulating in print"
+    },
+    {
+      "year": 1486,
+      "title": "Pico's 900 Theses",
+      "traditions": ["kabbalah", "neoplatonism", "hermetica"],
+      "description": "Giovanni Pico della Mirandola proposes a grand synthesis including Christian Kabbalah"
+    },
+    {
+      "year": 1494,
+      "title": "Reuchlin studies Kabbalah",
+      "traditions": ["kabbalah"],
+      "description": "Johannes Reuchlin begins his pioneering work on Christian Kabbalah"
+    },
+    {
+      "year": 1510,
+      "title": "Reuchlin's De Arte Cabalistica",
+      "traditions": ["kabbalah"],
+      "description": "First systematic Christian Kabbalistic text published"
+    },
+    {
+      "year": 1516,
+      "title": "Erasmus's Greek New Testament",
+      "traditions": ["mysticism"],
+      "description": "Humanist textual scholarship meets religious reform"
+    },
+    {
+      "year": 1517,
+      "title": "Luther's 95 Theses",
+      "traditions": ["mysticism"],
+      "description": "The Reformation begins, reshaping religious publishing"
+    },
+    {
+      "year": 1531,
+      "title": "Agrippa's De Occulta Philosophia",
+      "traditions": ["magic", "kabbalah", "hermetica"],
+      "description": "Heinrich Cornelius Agrippa publishes the encyclopedia of Renaissance magic"
+    },
+    {
+      "year": 1536,
+      "title": "Paracelsus's major works appear",
+      "traditions": ["paracelsianism", "alchemy"],
+      "description": "Theophrastus Paracelsus challenges Galenic medicine"
+    },
+    {
+      "year": 1541,
+      "title": "Death of Paracelsus",
+      "traditions": ["paracelsianism"],
+      "description": "Paracelsus dies; posthumous publications flood the market"
+    },
+    {
+      "year": 1555,
+      "title": "Plantin Press established",
+      "traditions": [],
+      "description": "Christopher Plantin founds his press in Antwerp, major publisher of esoterica"
+    },
+    {
+      "year": 1564,
+      "title": "John Dee's Monas Hieroglyphica",
+      "traditions": ["hermetica", "kabbalah", "alchemy"],
+      "description": "English magus publishes his hieroglyphic synthesis"
+    },
+    {
+      "year": 1570,
+      "title": "Paracelsianism spreads",
+      "traditions": ["paracelsianism", "alchemy"],
+      "description": "Peak decade for Paracelsian medical publishing"
+    },
+    {
+      "year": 1583,
+      "title": "Giordano Bruno in England",
+      "traditions": ["hermetica", "neoplatonism"],
+      "description": "Bruno lectures at Oxford, promotes Hermetic cosmology"
+    },
+    {
+      "year": 1600,
+      "title": "Bruno burned at the stake",
+      "traditions": ["hermetica"],
+      "description": "Giordano Bruno executed in Rome for heresy"
+    },
+    {
+      "year": 1614,
+      "title": "Fama Fraternitatis published",
+      "traditions": ["rosicrucianism"],
+      "description": "First Rosicrucian manifesto appears anonymously in Kassel"
+    },
+    {
+      "year": 1615,
+      "title": "Confessio Fraternitatis",
+      "traditions": ["rosicrucianism"],
+      "description": "Second Rosicrucian manifesto; Europe debates the Brotherhood's existence"
+    },
+    {
+      "year": 1616,
+      "title": "Chemical Wedding of Christian Rosenkreutz",
+      "traditions": ["rosicrucianism", "alchemy"],
+      "description": "Johann Valentin Andreae publishes the allegorical romance"
+    },
+    {
+      "year": 1617,
+      "title": "Rosicrucian furor peaks",
+      "traditions": ["rosicrucianism", "alchemy", "hermetica"],
+      "description": "28 Rosicrucian-related publications this year alone"
+    },
+    {
+      "year": 1618,
+      "title": "Thirty Years War begins",
+      "traditions": [],
+      "description": "Religious conflict engulfs Europe; intellectual networks disrupted"
+    },
+    {
+      "year": 1619,
+      "title": "Robert Fludd's defense of Rosicrucianism",
+      "traditions": ["rosicrucianism", "hermetica"],
+      "description": "English physician publishes elaborate Hermetic cosmology"
+    },
+    {
+      "year": 1624,
+      "title": "Boehme's Aurora published",
+      "traditions": ["theosophy", "mysticism"],
+      "description": "Jacob Boehme's visionary writings begin circulating"
+    },
+    {
+      "year": 1642,
+      "title": "Boehme's works spread",
+      "traditions": ["theosophy"],
+      "description": "English translations of Boehme appear; theosophy gains momentum"
+    },
+    {
+      "year": 1648,
+      "title": "Peace of Westphalia",
+      "traditions": [],
+      "description": "End of Thirty Years War; esoteric publishing recovers"
+    },
+    {
+      "year": 1650,
+      "title": "English Hermetica translations",
+      "traditions": ["hermetica", "alchemy"],
+      "description": "Thomas Vaughan and others translate Hermetic texts into English"
+    },
+    {
+      "year": 1651,
+      "title": "Vaughan's Anthroposophia Theomagica",
+      "traditions": ["hermetica", "theosophy"],
+      "description": "Thomas Vaughan publishes his Hermetic synthesis"
+    },
+    {
+      "year": 1661,
+      "title": "Boehme peak in Dutch",
+      "traditions": ["theosophy", "mysticism"],
+      "description": "Major Dutch editions of Jacob Boehme appear"
+    },
+    {
+      "year": 1677,
+      "title": "Alchemy publishing peak",
+      "traditions": ["alchemy"],
+      "description": "Highest single-year output for alchemical texts"
+    },
+    {
+      "year": 1680,
+      "title": "Alchemy reaches 22 works",
+      "traditions": ["alchemy"],
+      "description": "Peak year for alchemical publishing in the BPH catalog"
+    },
+    {
+      "year": 1682,
+      "title": "Peak Boehme/mysticism year",
+      "traditions": ["theosophy", "mysticism"],
+      "description": "32 mysticism and 28 theosophy publications - highest convergence"
+    },
+    {
+      "year": 1700,
+      "title": "Mysticism dominates",
+      "traditions": ["mysticism"],
+      "description": "37 mysticism publications - genre reaches its apex"
+    },
+    {
+      "year": 1730,
+      "title": "Late mysticism/theosophy surge",
+      "traditions": ["mysticism", "theosophy"],
+      "description": "34 mysticism and 27 theosophy works - final major convergence"
+    }
+  ]
+}

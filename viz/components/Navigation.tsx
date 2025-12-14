@@ -25,6 +25,7 @@ const NAV_SECTIONS = {
     label: 'Research',
     items: [
       { href: '/blog', label: 'Essays', description: 'Research articles and findings' },
+      { href: '/rivers', label: 'Rivers of Life', description: 'Animated flow of esoteric traditions' },
       { href: '/timelines', label: 'Timelines', description: 'Charts of Latin printing history' },
       { href: '/map', label: 'Printing Map', description: 'Animated map of printing centers' },
       { href: '/data', label: 'Data Dashboard', description: 'Statistics and coverage' },
