@@ -153,7 +153,6 @@ export default function GalleryPage() {
         <div
           className="masonry-grid"
           style={{
-            columnCount: 7,
             columnGap: "12px",
           }}
         >
@@ -216,33 +215,28 @@ export default function GalleryPage() {
         </div>
 
         {/* Responsive Masonry Styles */}
-        <style jsx>{`
+        <style jsx global>{`
           .masonry-grid {
-            column-count: 7;
-          }
-          @media (max-width: 1500px) {
-            .masonry-grid {
-              column-count: 6;
-            }
+            column-count: 6 !important;
           }
           @media (max-width: 1200px) {
             .masonry-grid {
-              column-count: 5;
+              column-count: 5 !important;
             }
           }
-          @media (max-width: 900px) {
+          @media (max-width: 1000px) {
             .masonry-grid {
-              column-count: 4;
+              column-count: 4 !important;
             }
           }
-          @media (max-width: 700px) {
+          @media (max-width: 768px) {
             .masonry-grid {
-              column-count: 3;
+              column-count: 3 !important;
             }
           }
-          @media (max-width: 500px) {
+          @media (max-width: 480px) {
             .masonry-grid {
-              column-count: 2;
+              column-count: 2 !important;
             }
           }
         `}</style>
