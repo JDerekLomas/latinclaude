@@ -339,10 +339,62 @@ export default function PrintingMap() {
           />
         </DeckGL>
 
-        {/* Year display overlay */}
-        <div className="absolute top-4 left-4 bg-slate-900/90 rounded-xl p-4 backdrop-blur">
-          <div className="text-5xl font-bold text-violet-400">{year}</div>
-          <div className="text-slate-400 text-sm mt-2">
+        {/* Controls - top of map */}
+        <div className="absolute top-4 left-4 right-4 bg-slate-900/95 rounded-xl px-4 py-3 backdrop-blur z-10">
+          <div className="flex flex-wrap items-center gap-4">
+            {/* Year display */}
+            <div className="text-3xl font-bold text-violet-400 min-w-[80px]">{year}</div>
+
+            {/* Play/Pause */}
+            <button
+              onClick={() => setIsPlaying(!isPlaying)}
+              className="px-5 py-2 bg-violet-600 hover:bg-violet-500 rounded-lg font-semibold transition-colors"
+            >
+              {isPlaying ? "⏸ Pause" : "▶ Play"}
+            </button>
+
+            {/* Year slider */}
+            <div className="flex-1 min-w-[200px]">
+              <input
+                type="range"
+                min={1450}
+                max={1700}
+                value={year}
+                onChange={(e) => setYear(parseInt(e.target.value))}
+                className="w-full accent-violet-500"
+              />
+            </div>
+
+            {/* Speed control */}
+            <div className="flex items-center gap-2">
+              <select
+                value={speed}
+                onChange={(e) => setSpeed(parseInt(e.target.value))}
+                className="bg-slate-800 text-white rounded px-2 py-1 text-sm"
+              >
+                <option value={500}>Slow</option>
+                <option value={200}>Normal</option>
+                <option value={100}>Fast</option>
+                <option value={50}>Very Fast</option>
+              </select>
+            </div>
+
+            {/* Reset */}
+            <button
+              onClick={() => {
+                setYear(1450);
+                setIsPlaying(false);
+              }}
+              className="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm transition-colors"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+
+        {/* Stats overlay - below controls */}
+        <div className="absolute top-20 left-4 bg-slate-900/90 rounded-xl p-3 backdrop-blur">
+          <div className="text-slate-400 text-sm">
             <div>{totalWorksThisYear.toLocaleString()} works this year</div>
             <div className="text-slate-500">{activeCitiesThisYear} active cities</div>
           </div>
@@ -353,7 +405,7 @@ export default function PrintingMap() {
         </div>
 
         {/* Top cities panels */}
-        <div className="absolute top-4 right-4 bg-slate-900/90 rounded-xl p-4 backdrop-blur min-w-[220px]">
+        <div className="absolute top-20 right-4 bg-slate-900/90 rounded-xl p-4 backdrop-blur min-w-[220px]">
           <div className="text-sm font-semibold text-violet-400 mb-2">
             Top This Year ({year})
           </div>
@@ -412,62 +464,6 @@ export default function PrintingMap() {
           </div>
         </div>
 
-        {/* Controls - overlaid on map */}
-        <div className="absolute bottom-4 left-4 right-4 bg-slate-900/95 rounded-xl px-6 py-4 backdrop-blur">
-          <div className="flex flex-wrap items-center gap-4">
-            {/* Play/Pause */}
-            <button
-              onClick={() => setIsPlaying(!isPlaying)}
-              className="px-6 py-2 bg-violet-600 hover:bg-violet-500 rounded-lg font-semibold transition-colors"
-            >
-              {isPlaying ? "⏸ Pause" : "▶ Play"}
-            </button>
-
-            {/* Year slider */}
-            <div className="flex-1 min-w-[200px]">
-              <input
-                type="range"
-                min={1450}
-                max={1700}
-                value={year}
-                onChange={(e) => setYear(parseInt(e.target.value))}
-                className="w-full accent-violet-500"
-              />
-              <div className="flex justify-between text-xs text-slate-500 mt-1">
-                <span>1450</span>
-                <span>1550</span>
-                <span>1650</span>
-                <span>1700</span>
-              </div>
-            </div>
-
-            {/* Speed control */}
-            <div className="flex items-center gap-2">
-              <span className="text-slate-400 text-sm">Speed:</span>
-              <select
-                value={speed}
-                onChange={(e) => setSpeed(parseInt(e.target.value))}
-                className="bg-slate-800 text-white rounded px-2 py-1 text-sm"
-              >
-                <option value={500}>Slow</option>
-                <option value={200}>Normal</option>
-                <option value={100}>Fast</option>
-                <option value={50}>Very Fast</option>
-              </select>
-            </div>
-
-            {/* Reset */}
-            <button
-              onClick={() => {
-                setYear(1450);
-                setIsPlaying(false);
-              }}
-              className="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm transition-colors"
-            >
-              Reset
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
