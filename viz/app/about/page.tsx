@@ -459,8 +459,85 @@ export default function AboutPage() {
           </a>
         </section>
 
-        {/* Contact */}
+        {/* Licensing */}
         <section style={{ marginTop: '60px', paddingTop: '40px', borderTop: '1px solid #e8e4dc' }}>
+          <h2 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '24px',
+            fontWeight: 400,
+            color: '#1a1612',
+            marginBottom: '16px',
+          }}>
+            Open Access & Licensing
+          </h2>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '17px',
+            lineHeight: 1.7,
+            color: '#444',
+            marginBottom: '20px',
+          }}>
+            We believe knowledge should be freely accessible. All our work is released under open licenses compatible with the Internet Archive and academic use:
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '24px' }}>
+            <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <span style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '11px',
+                fontWeight: 600,
+                padding: '4px 10px',
+                borderRadius: '4px',
+                background: '#2ecc71',
+                color: '#fff',
+                whiteSpace: 'nowrap',
+              }}>CC-BY 4.0</span>
+              <span style={{ fontFamily: 'Newsreader, serif', fontSize: '16px', color: '#555' }}>
+                Site content, essays, and visualizations — free to share and adapt with attribution
+              </span>
+            </div>
+            <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <span style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '11px',
+                fontWeight: 600,
+                padding: '4px 10px',
+                borderRadius: '4px',
+                background: '#3498db',
+                color: '#fff',
+                whiteSpace: 'nowrap',
+              }}>ODbL</span>
+              <span style={{ fontFamily: 'Newsreader, serif', fontSize: '16px', color: '#555' }}>
+                Datasets (USTC, BPH catalog, printing map) — <a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>Open Database License</a>
+              </span>
+            </div>
+            <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <span style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '11px',
+                fontWeight: 600,
+                padding: '4px 10px',
+                borderRadius: '4px',
+                background: '#9b59b6',
+                color: '#fff',
+                whiteSpace: 'nowrap',
+              }}>MIT</span>
+              <span style={{ fontFamily: 'Newsreader, serif', fontSize: '16px', color: '#555' }}>
+                Source code — <a href="https://github.com/JDerekLomas/secondrenaissance" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>GitHub repository</a>
+              </span>
+            </div>
+          </div>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '17px',
+            lineHeight: 1.7,
+            color: '#444',
+          }}>
+            <Link href="/data/download" style={{ color: '#9e4a3a' }}>Download our open datasets →</Link>
+          </p>
+        </section>
+
+        {/* Contact */}
+        <section style={{ marginTop: '40px', paddingTop: '40px', borderTop: '1px solid #e8e4dc' }}>
           <h2 style={{
             fontFamily: 'Cormorant Garamond, Georgia, serif',
             fontSize: '24px',
@@ -492,8 +569,16 @@ export default function AboutPage() {
           fontFamily: 'Inter, sans-serif',
           fontSize: '12px',
           color: '#888',
+          marginBottom: '8px',
         }}>
           Data from the <a href="https://ustc.ac.uk" style={{ color: '#666' }}>Universal Short Title Catalogue</a>, University of St Andrews
+        </p>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '11px',
+          color: '#aaa',
+        }}>
+          Content: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" style={{ color: '#888' }}>CC-BY 4.0</a> · Data: <a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener noreferrer" style={{ color: '#888' }}>ODbL</a> · Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" style={{ color: '#888' }}>MIT</a>
         </p>
       </footer>
     </main>
