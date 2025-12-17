@@ -96,7 +96,8 @@
       "license": "Public Domain",
       "categories": [
         "magic",
-        "alchemy"
+        "alchemy",
+        "death"
       ],
       "description": "Dürer's enigmatic engraving filled with alchemical and magical symbolism"
     },
@@ -252,7 +253,8 @@
       "license": "Public Domain",
       "categories": [
         "alchemy",
-        "hermetica"
+        "hermetica",
+        "emblems"
       ],
       "description": "Alchemical emblem book combining images, text, and music"
     },
@@ -890,7 +892,8 @@
       "image_url": "/gallery/full/trithemius-steganographia.jpg",
       "license": "Public Domain",
       "categories": [
-        "magic"
+        "magic",
+        "witchcraft"
       ],
       "description": "Trithemius's treatise on cryptography disguised as angel magic"
     },
@@ -905,7 +908,8 @@
       "image_url": "/gallery/full/medieval-bestiary.jpg",
       "license": "Public Domain",
       "categories": [
-        "mysticism"
+        "mysticism",
+        "monsters"
       ],
       "description": "Illuminated bestiary with symbolic animal representations"
     },
@@ -996,7 +1000,8 @@
       "image_url": "/gallery/full/kircher-magnetic-clock.jpg",
       "license": "Public Domain",
       "categories": [
-        "natural philosophy"
+        "natural philosophy",
+        "machines"
       ],
       "description": "Intricate mechanical clock using hidden magnets, demonstrating Kircher's fascination with magnetism"
     },
@@ -1184,7 +1189,8 @@
       "image_url": "/gallery/full/galileo-sidereus.png",
       "license": "Public Domain",
       "categories": [
-        "astronomy"
+        "astronomy",
+        "optics"
       ],
       "description": "Galileo's revolutionary telescopic drawings of the Moon's surface"
     },
@@ -1199,7 +1205,8 @@
       "image_url": "/gallery/full/hooke-micrographia-flea.jpg",
       "license": "Public Domain",
       "categories": [
-        "natural philosophy"
+        "natural philosophy",
+        "optics"
       ],
       "description": "Famous fold-out engraving of a flea - first scientific best-seller"
     },
@@ -1246,7 +1253,8 @@
       "image_url": "/gallery/full/gesner-rhinoceros.jpg",
       "license": "Public Domain",
       "categories": [
-        "natural philosophy"
+        "natural philosophy",
+        "monsters"
       ],
       "description": "From the first modern zoological encyclopedia - based on Dürer's famous woodcut"
     },
@@ -1262,7 +1270,8 @@
       "license": "Public Domain",
       "categories": [
         "natural philosophy",
-        "printing"
+        "printing",
+        "monsters"
       ],
       "description": "Dürer's iconic rhinoceros - made without seeing the animal, yet widely copied for centuries"
     },
@@ -1323,7 +1332,8 @@
       "image_url": "/gallery/full/porta-camera-obscura.jpg",
       "license": "Public Domain",
       "categories": [
-        "natural philosophy"
+        "natural philosophy",
+        "optics"
       ],
       "description": "Della Porta's camera obscura - natural magic becomes optical science"
     },
@@ -1433,7 +1443,8 @@
       "image_url": "/gallery/full/kircher-pneumatica.gif",
       "license": "Public Domain",
       "categories": [
-        "music"
+        "music",
+        "machines"
       ],
       "description": "Comprehensive diagram of wind-powered musical instruments and automatic organs"
     },
@@ -1674,6 +1685,22 @@
         "printing"
       ],
       "description": "Death claims the Empress - no crown protects against mortality"
+    },
+    {
+      "id": "ramelli-bookwheel",
+      "title": "The Book Wheel",
+      "artist": "Agostino Ramelli",
+      "year": 1588,
+      "source": "Le Diverse et Artificiose Machine",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Le_diverse_et_artificiose_machine_del_Capitano_Agostino_Ramelli_Figure_CLXXXVIII.jpg",
+      "thumb_url": "/gallery/thumbs/ramelli-bookwheel.jpg",
+      "image_url": "/gallery/full/ramelli-bookwheel.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "machines",
+        "printing"
+      ],
+      "description": "The rotating book wheel - Renaissance information retrieval device for scholars 'tormented by gout'"
     }
   ],
   "categories": [
