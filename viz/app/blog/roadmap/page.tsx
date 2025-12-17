@@ -254,6 +254,12 @@ const lists: Record<string, ListSection> = {
 
       { author: "Salomon de Caus", title: "Les raisons des forces mouvantes", date: "1615", publisher: "Frankfurt: Jan Norton", note: "Garden automata, mechanical birds, grottoes with moving figures. Influenced European court gardens.", link: "https://archive.org/details/ldpd_6429555_000" },
       { author: "Caspar Schott", title: "Magia universalis naturae et artis", date: "1657-59", publisher: "Würzburg: Heinrich Pigrin", note: "Kircher's student. 4 vols on optics, acoustics, mathematics, physics. Automata and mechanical devices.", link: "https://archive.org/details/bub_gb_tI0oTeeUzg0C" },
+
+      // FEEDBACK & SELF-REGULATION - PROTO-CYBERNETICS
+      { author: "Drebbel", title: "Tractatus von Natur der Elementen", date: "1608 (in 1624 ed.)", publisher: "Frankfurt: Lucas Jennis", note: "Dutch inventor. Built FIRST FEEDBACK CONTROL SYSTEM - thermostat for incubator. Also submarine, perpetual motion clock. Proto-cybernetics.", link: "https://archive.org/details/frbasilivalentin00basi" },
+      { author: "Huygens", title: "Horologium oscillatorium", date: "1673", publisher: "Paris: F. Muguet", note: "PENDULUM CLOCK theory. Isochronous oscillation. Foundation of precision timekeeping and CONTROL THEORY.", link: "https://archive.org/details/bub_gb_SOjZR1P1eE8C" },
+      { author: "Wiener", title: "Cybernetics", date: "1948", publisher: "New York: Wiley", note: "CYBERNETICS founded. 'Control and communication in the animal and the machine.' Feedback loops, homeostasis, information.", link: "https://archive.org/details/NorbertWienerCybernetics" },
+
       { author: "Descartes", title: "De homine (Traité de l'homme)", date: "1662", publisher: "Leiden: Moyardus & Leffen (posthumous)", note: "The body as machine. Mechanistic physiology - nerves as pipes, brain as hydraulic system.", link: "https://archive.org/details/descartesrenetr00desc" },
       { author: "Pomponazzi", title: "De immortalitate animae", date: "1516", publisher: "Bologna: Giustiniano da Rubiera", note: "Denied immortality of soul on Aristotelian grounds. Caused scandal. Proto-materialist.", link: "https://archive.org/details/bub_gb_lmgme9cnK6AC" },
       { author: "Telesio", title: "De rerum natura iuxta propria principia", date: "1586", publisher: "Naples: Horatius Salvianus", note: "Anti-Aristotelian naturalism. Nature explained by heat/cold, not forms. Influenced Bacon.", link: "https://archive.org/details/bub_gb_zRYhb55j_LoC" },
