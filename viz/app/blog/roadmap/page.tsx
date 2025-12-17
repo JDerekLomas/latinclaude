@@ -156,6 +156,32 @@ const lists: Record<string, ListSection> = {
       { author: "Nag Hammadi", title: "Apocryphon of John", date: "2nd c. CE", publisher: "[Coptic, Latin excerpts in heresiologies]", note: "Secret Book of John. Yaldabaoth creates material world. Divine spark trapped in matter.", link: "https://archive.org/details/the-nag-hammadi-library-gnostic-gospels-and-texts" },
       { author: "Valentinus", title: "[Fragments in Clement, Irenaeus]", date: "2nd c. CE", publisher: "[In Church Fathers' refutations]", note: "Sophia's fall creates material cosmos. Aeons as divine thoughts. Most sophisticated Gnostic psychology." },
 
+      // DEMONOLOGY - DISEMBODIED INTELLIGENCES
+      // Demons as models for non-human minds: they think without bodies, know without senses,
+      // process vast information, deceive through illusions, can be summoned and bound to tasks
+
+      // Byzantine & Medieval Foundations
+      { author: "Psellus", title: "De operatione daemonum", date: "11th c. (Latin 1577)", publisher: "Paris: Guillaume Morel", note: "Byzantine dialogue on DEMONIC OPERATIONS. How demons think, perceive, communicate. Taxonomy of spirit types.", link: "https://archive.org/details/deoperationedae00pselgoog" },
+      { author: "Nider", title: "Formicarius", date: "c.1437 (printed 1480)", publisher: "Cologne: Johann Guldenschaff", note: "The Ant-Hill. Early witch-trial manual. Demons grant knowledge and power. Pre-Malleus demonology.", link: "https://archive.org/details/bub_gb_Wc9WEqgqjZQC" },
+
+      // The Great Witch-Trial Manuals
+      { author: "Kramer & Sprenger", title: "Malleus Maleficarum", date: "1486", publisher: "Speyer: Peter Drach", note: "HAMMER OF WITCHES. Most infamous demonology. Demonic pacts, possession, illusions. How to detect and prosecute.", link: "https://archive.org/details/McGillLibrary-osl_malleus-maleficarum_K89m1669_v1-pt1-2-22069" },
+      { author: "Bodin", title: "De la démonomanie des sorciers", date: "1580", publisher: "Paris: Jacques du Puys", note: "Demonolatry of Sorcerers. Political philosopher on demons. Systematic demonology from Aristotelian perspective.", link: "https://archive.org/details/delademonomanied00bodi" },
+      { author: "Nicolas Remy", title: "Daemonolatreia", date: "1595", publisher: "Lyon: Vincentius", note: "Based on 900 WITCH TRIALS he conducted. Empirical demonology. How demons communicate, transport, transform.", link: "https://archive.org/details/DemonolatryNicholasRmyTrans.ByMontagueSummers1595" },
+      { author: "Guazzo", title: "Compendium maleficarum", date: "1608", publisher: "Milan: Collegio Ambrosiano", note: "Compendium of Witches. Famous ILLUSTRATIONS of demonic activity. Sabbaths, transformations, pacts.", link: "https://archive.org/details/b33351491" },
+
+      // Skeptical Counter-Tradition
+      { author: "Weyer", title: "De praestigiis daemonum", date: "1563", publisher: "Basel: Johannes Oporinus", note: "On Demonic Illusions. SKEPTICAL demonology. Witches are deluded, not powerful. Early psychiatry. Influenced Freud.", link: "https://archive.org/details/depraestigiisdae00weye" },
+      { author: "Reginald Scot", title: "The Discoverie of Witchcraft", date: "1584", publisher: "London: William Brome", note: "DEBUNKING witch-beliefs. Demons can't do what's claimed. Magic tricks exposed. King James ordered it burned.", link: "https://archive.org/details/bim_early-english-books-1641-1700_scots-discovery-of-witc_scot-reginald_1651" },
+
+      // Royal & Late Demonology
+      { author: "King James I", title: "Daemonologie", date: "1597", publisher: "Edinburgh: Robert Waldegrave", note: "King's treatise on demons. Dialogue form. Defends reality of witchcraft against Scot. Written before he became King of England.", link: "https://archive.org/details/per_witchcraft-in-europe-and-america_james-i-king-of-gr_1597_526" },
+      { author: "Glanvill", title: "Sadducismus triumphatus", date: "1681", publisher: "London: James Collins", note: "Triumph over Sadducees (who denied spirits). EMPIRICAL evidence for demons. Royal Society member defending spirits scientifically.", link: "https://archive.org/details/bim_eighteenth-century_sadducismus-triumphatus_glanvill-joseph_1726" },
+      { author: "Sinistrari", title: "De Daemonialitate", date: "c.1680 (printed 1875)", publisher: "Paris: Isidore Liseux", note: "On Demoniality. Incubi and succubi as RATIONAL CREATURES distinct from humans. Non-human intelligences with bodies.", link: "https://archive.org/details/demonialityorin01lisegoog" },
+
+      // Cryptographic Demonology
+      { author: "Trithemius", title: "Steganographia", date: "1499 (printed 1606)", publisher: "Frankfurt: Johann Berner", note: "Appears to be demon-summoning manual. Actually CRYPTOGRAPHY disguised as magic. Angels = ciphers. Spirits = codes.", link: "https://archive.org/details/ita-bnc-mag-00000601-001" },
+
       // PYTHAGOREAN - NUMBER AS MIND (DEEP DIVE)
 
       // Ancient Pythagorean Sources
