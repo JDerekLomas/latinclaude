@@ -156,11 +156,46 @@ const lists: Record<string, ListSection> = {
       { author: "Nag Hammadi", title: "Apocryphon of John", date: "2nd c. CE", publisher: "[Coptic, Latin excerpts in heresiologies]", note: "Secret Book of John. Yaldabaoth creates material world. Divine spark trapped in matter.", link: "https://archive.org/details/the-nag-hammadi-library-gnostic-gospels-and-texts" },
       { author: "Valentinus", title: "[Fragments in Clement, Irenaeus]", date: "2nd c. CE", publisher: "[In Church Fathers' refutations]", note: "Sophia's fall creates material cosmos. Aeons as divine thoughts. Most sophisticated Gnostic psychology." },
 
-      // PYTHAGOREAN - NUMBER AS MIND
+      // PYTHAGOREAN - NUMBER AS MIND (DEEP DIVE)
+
+      // Ancient Pythagorean Sources
+      { author: "Philolaus", title: "Fragments (in Stobaeus, Diogenes)", date: "5th c. BCE", publisher: "[Collected in Diels-Kranz]", note: "First written Pythagorean doctrines. HARMONY holds cosmos together. Number is the bond of eternal being. Central fire cosmology." },
+      { author: "Archytas of Tarentum", title: "Fragments", date: "4th c. BCE", publisher: "[In Porphyry, Iamblichus]", note: "Pythagorean mathematician-philosopher. Built MECHANICAL DOVE (first recorded automaton). Mathematics of music, ratios, means.", link: "https://archive.org/details/ArquitasDeTarentoFragmentaEtTestimonia-ArchytasOfTarentum" },
+      { author: "Pythagorean Golden Verses", title: "Chrysa Epe", date: "c.300 BCE (Latin medieval)", publisher: "[Various Renaissance eds.]", note: "Ethical catechism of Pythagoreanism. Daily self-examination. 'What have I done? What left undone?' Foundation of examined life.", link: "https://archive.org/details/lifepythagorasw00hiergoog" },
+      { author: "Diogenes Laertius", title: "Lives of Philosophers (Book VIII)", date: "3rd c. CE (Latin 1472)", publisher: "Rome: Giorgio Lauer", note: "Most complete ancient biography of PYTHAGORAS. Metempsychosis, mathematical discoveries, secret doctrines, vegetarianism.", link: "https://archive.org/details/diogenislaertii00casagoog" },
+
+      // Pythagorean Biographies
+      { author: "Iamblichus", title: "De vita Pythagorica", date: "c.300 CE (Latin 1598)", publisher: "Heidelberg: Commelinus", note: "Most elaborate ancient Life of Pythagoras. Secret teachings, miracles, mathematical mysticism, political theory.", link: "https://archive.org/details/devitapythagoric00iamb" },
+      { author: "Porphyry", title: "Vita Pythagorae", date: "c.270 CE", publisher: "[In Opera, 1580]", note: "Neoplatonist biography. Pythagoras as divine sage. Soul's descent and ascent. Vegetarianism as spiritual practice.", link: "https://archive.org/details/porphyriiphilos03naucgoog" },
+      { author: "Hierocles", title: "Commentary on Golden Verses", date: "5th c. CE (Latin 1583)", publisher: "London: John Wolfe", note: "Late Neoplatonist ethics. Daily practice, self-examination, cosmic harmony. Virtue as attunement.", link: "https://archive.org/details/b3335179x" },
+
+      // Number Mysticism
+      { author: "Pseudo-Iamblichus", title: "Theologoumena arithmeticae", date: "c.300 CE (printed 1543)", publisher: "Paris: Christian Wechel", note: "THEOLOGY OF NUMBER. Sacred meanings of 1-10. Monad, Dyad, Triad... Decade. Each number a divine principle.", link: "https://archive.org/details/iamblichitheolog0000unse" },
       { author: "Nicomachus", title: "Introductio arithmetica", date: "c.100 CE (Boethius Latin)", publisher: "Augsburg: Erhard Ratdolt, 1488", note: "NUMBER as basis of reality and mind. Pythagorean mathematics. 'All is number' - precursor to digital ontology.", link: "https://archive.org/details/greatbooksofwest0010eulc" },
+      { author: "Theon of Smyrna", title: "Mathematics Useful for Understanding Plato", date: "c.130 CE (Latin 1644)", publisher: "Paris: Adrian Turnèbe", note: "Arithmetic, music, astronomy, geometry - all for philosophy. NUMBER ratios explain reality. Platonic-Pythagorean synthesis.", link: "https://archive.org/details/theonofsmyrnamathematics4platolawlor" },
+
+      // Medieval Transmission
       { author: "Boethius", title: "De institutione arithmetica", date: "c.500 CE (printed 1488)", publisher: "Augsburg: Erhard Ratdolt", note: "Transmitted Pythagorean number theory to Middle Ages. Quadrivium foundation. Mathematics as mental discipline.", link: "https://archive.org/details/chepfl-lipr-axc-16" },
+      { author: "Boethius", title: "De institutione musica", date: "c.500 CE (printed 1491)", publisher: "Venice: Giovanni & Gregorio de' Gregorii", note: "MUSIC OF THE SPHERES codified. Three kinds: cosmic, human, instrumental. Ratios govern all harmony.", link: "https://archive.org/details/fundamentalsofmu0000boet" },
       { author: "Calcidius", title: "Timaeus (Latin trans. + Commentary)", date: "4th c. CE", publisher: "[Medieval MSS, printed 1520]", note: "Only Plato available in medieval West. DEMIURGE as cosmic craftsman. World Soul. Foundation of cosmological psychology.", link: "https://archive.org/details/BeineckeMS870_47" },
       { author: "Macrobius", title: "Commentarii in Somnium Scipionis", date: "c.400 CE (printed 1472)", publisher: "Venice: Nicolas Jenson", note: "Dream of Scipio commentary. WORLD SOUL, cosmic music, descent of souls. Neoplatonist psychology transmitted to Middle Ages.", link: "https://archive.org/details/macrobiiambrosi01jangoog" },
+      { author: "Martianus Capella", title: "De nuptiis Philologiae et Mercurii", date: "5th c. CE (printed 1499)", publisher: "Vicenza: Henricus de Sancto Ursio", note: "Wedding of Mercury and Philology. Seven liberal arts personified. QUADRIVIUM curriculum established.", link: "https://archive.org/details/MartianusCapella" },
+
+      // Pythagorean Music Theory
+      { author: "Ptolemy", title: "Harmonica", date: "2nd c. CE (Latin 1562)", publisher: "Venice: [in Opera]", note: "Mathematical music theory. Tuning systems, ratios, scales. COSMIC HARMONY demonstrated in sound.", link: "https://archive.org/details/solomon-1999-ptolemy-harmonics" },
+      { author: "Gaffurio", title: "Theorica musice", date: "1492", publisher: "Milan: Filippo Mantegazza", note: "Renaissance music theory. Pythagorean proportions. Famous woodcuts of cosmic harmony, Orpheus, Pythagoras." },
+      { author: "Zarlino", title: "Le istitutioni harmoniche", date: "1558", publisher: "Venice: [Author]", note: "Foundation of modern music theory. Extended Pythagorean ratios. Major/minor triads. Harmony as mathematics.", link: "https://archive.org/details/leistitutionihar0000zarl" },
+
+      // Mathematics as Divine
+      { author: "Euclid", title: "Elementa (Campanus ed.)", date: "1482", publisher: "Venice: Erhard Ratdolt", note: "FIRST PRINTED MATHEMATICS BOOK. Books VII-IX on number theory are Pythagorean. Perfect numbers, primes, ratios.", link: "https://archive.org/details/preclarissimusli00eucl" },
+      { author: "Proclus", title: "In primum Euclidis Elementorum", date: "5th c. CE (Latin 1533)", publisher: "Basel: Johann Hervagius", note: "Philosophy of mathematics. Numbers as divine thoughts. Geometry as access to eternal forms. MATHEMATICS = THEOLOGY.", link: "https://archive.org/details/proclidiadochii00friegoog" },
+
+      // Renaissance Pythagorean Revival
+      { author: "Francesco Giorgi", title: "De harmonia mundi totius", date: "1525", publisher: "Venice: Bernardino de Vitali", note: "COSMIC HARMONY synthesized. Kabbalistic Pythagoreanism. Musical proportions in architecture (influenced Palladio).", link: "https://archive.org/details/FranciscusGeorgiusVenetusDeHarmoniaMundiTotiusParis1545" },
+      { author: "John Dee", title: "Monas Hieroglyphica", date: "1564", publisher: "Antwerp: Willem Silvius", note: "Mathematical GLYPH containing all knowledge. Point, line, circle, cross = cosmos encoded. Pythagorean-Hermetic synthesis.", link: "https://archive.org/details/b33350838" },
+      { author: "Robert Fludd", title: "Utriusque cosmi historia", date: "1617-21", publisher: "Oppenheim: Johann Theodore de Bry", note: "Macrocosm and Microcosm. MUSIC OF SPHERES illustrated. Divine monochord. Most elaborate Pythagorean cosmology since antiquity.", link: "https://archive.org/details/utriusquecosmima01flud" },
+      { author: "Kepler", title: "Mysterium cosmographicum", date: "1596", publisher: "Tübingen: Georg Gruppenbach", note: "PLATONIC SOLIDS nested in planetary orbits. Pythagorean geometry = cosmic structure. Divine mathematics in astronomy.", link: "https://archive.org/details/prodromusdissert00kepl" },
+      { author: "Kepler", title: "Harmonices mundi", date: "1619", publisher: "Linz: Johann Planck", note: "HARMONY OF THE WORLD. Planetary motions produce music. Third law of motion discovered here. Climax of Pythagorean astronomy.", link: "https://archive.org/details/den-kbd-pil-210090002470-001" },
 
       { author: "Salomon de Caus", title: "Les raisons des forces mouvantes", date: "1615", publisher: "Frankfurt: Jan Norton", note: "Garden automata, mechanical birds, grottoes with moving figures. Influenced European court gardens.", link: "https://archive.org/details/ldpd_6429555_000" },
       { author: "Caspar Schott", title: "Magia universalis naturae et artis", date: "1657-59", publisher: "Würzburg: Heinrich Pigrin", note: "Kircher's student. 4 vols on optics, acoustics, mathematics, physics. Automata and mechanical devices.", link: "https://archive.org/details/bub_gb_tI0oTeeUzg0C" },
