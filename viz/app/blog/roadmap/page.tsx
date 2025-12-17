@@ -2,7 +2,22 @@
 
 import Link from "next/link";
 
-const lists = {
+interface Work {
+  author: string;
+  title: string;
+  date?: string;
+  note?: string;
+  illustrations?: string;
+  length?: string;
+}
+
+interface ListSection {
+  title: string;
+  description: string;
+  works: Work[];
+}
+
+const lists: Record<string, ListSection> = {
   foundation: {
     title: "The Foundation: Ficino",
     description: "Marsilio Ficino (1433-1499) translated the Renaissance into being. His Plato translations shaped European thought for centuries - but his own commentaries remain largely untranslated.",
