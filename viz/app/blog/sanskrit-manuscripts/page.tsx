@@ -128,33 +128,60 @@ export default function SanskritManuscripts() {
         padding: '24px',
         margin: '32px 0',
       }}>
-        <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', color: '#1a1612' }}>Sample Manuscripts (Downloaded)</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
+        <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', color: '#1a1612' }}>Sample Manuscripts (10 Downloaded)</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '16px' }}>
+          <div style={{ textAlign: 'center' }}>
+            <a href="https://archive.org/details/raswhish101-100" target="_blank" rel="noopener noreferrer">
+              <img src="/manuscripts/nyaya_philosophy_p1.jpg" alt="Nyaya philosophy palm leaf manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
+            </a>
+            <p style={{ fontSize: '11px', color: '#666', marginTop: '8px' }}>
+              <strong>Ny&#257;ya Philosophy</strong><br/>
+              Logic treatise, Grantha script
+            </p>
+          </div>
           <div style={{ textAlign: 'center' }}>
             <a href="https://archive.org/details/raswhish145-147" target="_blank" rel="noopener noreferrer">
               <img src="/manuscripts/tarkasangraha_p1.jpg" alt="Tarkasangraha palm leaf manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
             </a>
-            <p style={{ fontSize: '12px', color: '#666', marginTop: '8px' }}>
-              <strong>Tarkasa&#7749;graha</strong> (Logic primer)<br/>
-              Palm leaf, Malayalam script, 1822 CE
+            <p style={{ fontSize: '11px', color: '#666', marginTop: '8px' }}>
+              <strong>Tarkasa&#7749;graha</strong><br/>
+              Logic primer, Malayalam, 1822
             </p>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <a href="https://archive.org/details/raswhish87-86" target="_blank" rel="noopener noreferrer">
-              <img src="/manuscripts/mahabharata_p1.jpg" alt="Mahabharata palm leaf manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
+            <a href="https://archive.org/details/raswhish193-167" target="_blank" rel="noopener noreferrer">
+              <img src="/manuscripts/brahmasutra_p1.jpg" alt="Brahmasutra commentary manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
             </a>
-            <p style={{ fontSize: '12px', color: '#666', marginTop: '8px' }}>
-              <strong>Mah&#257;bh&#257;rata</strong> (Dro&#7751;a Parvan)<br/>
+            <p style={{ fontSize: '11px', color: '#666', marginTop: '8px' }}>
+              <strong>Brahmas&#363;tracandrik&#257;</strong><br/>
+              Ved&#257;nta commentary
+            </p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <a href="https://archive.org/details/raswhish113-111" target="_blank" rel="noopener noreferrer">
+              <img src="/manuscripts/vedantasara_p1.jpg" alt="Vedantasara manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
+            </a>
+            <p style={{ fontSize: '11px', color: '#666', marginTop: '8px' }}>
+              <strong>Ved&#257;ntas&#257;ra</strong><br/>
+              Essence of Ved&#257;nta
+            </p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <a href="https://archive.org/details/raswhish150-152" target="_blank" rel="noopener noreferrer">
+              <img src="/manuscripts/tantrasamuccaya_p1.jpg" alt="Tantrasamuccaya manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
+            </a>
+            <p style={{ fontSize: '11px', color: '#666', marginTop: '8px' }}>
+              <strong>Tantrasamuccaya</strong><br/>
+              Ritual manual, Kerala
+            </p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <a href="https://archive.org/details/raswhish88-87" target="_blank" rel="noopener noreferrer">
+              <img src="/manuscripts/skanda_purana_p1.jpg" alt="Skanda Purana manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
+            </a>
+            <p style={{ fontSize: '11px', color: '#666', marginTop: '8px' }}>
+              <strong>Skanda Pur&#257;&#7751;a</strong><br/>
               Palm leaf, Grantha script
-            </p>
-          </div>
-          <div style={{ textAlign: 'center' }}>
-            <a href="https://archive.org/details/raswhish105-104" target="_blank" rel="noopener noreferrer">
-              <img src="/manuscripts/vedanta_p1.jpg" alt="Vedanta palm leaf manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
-            </a>
-            <p style={{ fontSize: '12px', color: '#666', marginTop: '8px' }}>
-              <strong>Siddh&#257;ntale&#347;asa&#7747;graha</strong><br/>
-              Ved&#257;nta philosophy, Grantha script
             </p>
           </div>
         </div>
