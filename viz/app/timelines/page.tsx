@@ -149,7 +149,7 @@ export default function Timelines() {
         {/* Stats */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '16px', marginTop: '32px' }}>
           <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px', textAlign: 'center' }}>
-            <div style={{ fontSize: '28px', fontWeight: 600, color: '#9e4a3a', fontFamily: 'Inter, sans-serif' }}>45</div>
+            <div style={{ fontSize: '28px', fontWeight: 600, color: '#9e4a3a', fontFamily: 'Inter, sans-serif' }}>55</div>
             <div style={{ color: '#888', fontSize: '13px', fontFamily: 'Inter, sans-serif', marginTop: '4px' }}>Key Thinkers</div>
           </div>
           <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px', textAlign: 'center' }}>
