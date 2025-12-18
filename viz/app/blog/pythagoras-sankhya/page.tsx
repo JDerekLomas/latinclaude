@@ -300,12 +300,12 @@ export default function PythagorasSankhya() {
         lineHeight: 1.8,
         overflowX: 'auto',
       }}>
-        <p style={{ margin: '0 0 16px 0', color: '#9e8a7a' }}>// Invocation</p>
+        <p style={{ margin: '0 0 16px 0', color: '#9e8a7a' }}>{/* Invocation */}Invocation</p>
         <p style={{ margin: '0 0 8px 0' }}>ഹരിഃ ശ്രീ ഗണപതയേ നമഃ അവിഘ്നമസ്തു</p>
         <p style={{ margin: '0 0 16px 0', color: '#aaa', fontStyle: 'italic' }}>
           Hariḥ Śrī Gaṇapataye namaḥ avighnam astu
         </p>
-        <p style={{ margin: '0 0 16px 0', color: '#9e8a7a' }}>// Verse 1</p>
+        <p style={{ margin: '0 0 16px 0', color: '#9e8a7a' }}>Verse 1</p>
         <p style={{ margin: '0 0 8px 0' }}>ദുഃഖത്രയാഭിഘാതാജിജ്ഞാസാ തദപഘാതകേ ഹേതൗ</p>
         <p style={{ margin: '0 0 8px 0', color: '#aaa', fontStyle: 'italic' }}>
           duḥkhatrayābhighātājjijñāsā tadapaghātake hetau
