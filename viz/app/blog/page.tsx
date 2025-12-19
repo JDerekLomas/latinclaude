@@ -28,6 +28,30 @@ const pinnedPosts = [
 // All posts in reverse chronological order (newest first)
 const posts = [
   {
+    slug: "pythagoras-sankhya",
+    title: "The Golden Verses of Pythagoras: A 19th-Century Manuscript Mystery",
+    date: "Dec 18, 2025",
+    excerpt: "A palm-leaf manuscript labeled 'golden verses of Pythagoras' reveals how British scholars tried to connect Indian Sāṃkhya philosophy with Greek antiquity. Complete transcription and translation included.",
+    tag: "Research",
+    category: "Sanskrit",
+  },
+  {
+    slug: "sanskrit-manuscripts",
+    title: "30 Million Manuscripts: India's NAMAMI Database and the Future of Sanskrit",
+    date: "Dec 18, 2025",
+    excerpt: "Sanskrit manuscripts outnumber Greek and Latin combined by 100 to 1. Here's how to access India's National Mission for Manuscripts database—and download actual palm-leaf manuscripts from Archive.org.",
+    tag: "Research",
+    category: "Sanskrit",
+  },
+  {
+    slug: "printing-revolution",
+    title: "The Printing Revolution: 1.6 Million Books Visualized",
+    date: "Dec 17, 2025",
+    excerpt: "From Gutenberg to Newton: an interactive visualization of European book production 1450-1700, with historical events mapped to publishing patterns.",
+    tag: "Data",
+    category: "Data",
+  },
+  {
     slug: "sourcelibrary-vision",
     title: "SourceLibrary: A Vision for AI-Assisted Translation",
     date: "Dec 12, 2025",
