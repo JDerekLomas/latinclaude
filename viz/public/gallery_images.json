@@ -89,10 +89,10 @@
     {
       "id": "durer-melencolia",
       "title": "Melencolia I",
-      "artist": "Albrecht Dürer",
+      "artist": "Albrecht D\u00fcrer",
       "year": 1514,
       "source": "Metropolitan Museum of Art",
-      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Dürer_Melancholia_I.jpg",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:D\u00fcrer_Melancholia_I.jpg",
       "thumb_url": "/gallery/thumbs/durer-melencolia.jpg",
       "image_url": "/gallery/full/durer-melencolia.jpg",
       "license": "Public Domain",
@@ -101,7 +101,7 @@
         "alchemy",
         "death"
       ],
-      "description": "Dürer's enigmatic engraving filled with alchemical and magical symbolism"
+      "description": "D\u00fcrer's enigmatic engraving filled with alchemical and magical symbolism"
     },
     {
       "id": "bosch-garden",
@@ -123,7 +123,7 @@
       "title": "Flammarion Engraving",
       "artist": "Unknown",
       "year": 1888,
-      "source": "L'atmosphère: météorologie populaire",
+      "source": "L'atmosph\u00e8re: m\u00e9t\u00e9orologie populaire",
       "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Flammarion.jpg",
       "thumb_url": "/gallery/thumbs/flammarion.jpg",
       "image_url": "/gallery/full/flammarion.jpg",
@@ -591,7 +591,7 @@
         "magic",
         "medicine"
       ],
-      "description": "French astrologer and prophet, author of Les Prophéties"
+      "description": "French astrologer and prophet, author of Les Proph\u00e9ties"
     },
     {
       "id": "creation-adam",
@@ -1223,7 +1223,7 @@
       "title": "Principia Mathematica",
       "artist": "Isaac Newton",
       "year": 1687,
-      "source": "Philosophiæ Naturalis Principia Mathematica",
+      "source": "Philosophi\u00e6 Naturalis Principia Mathematica",
       "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Prinicipia-title.png",
       "thumb_url": "/gallery/thumbs/newton-principia.png",
       "image_url": "/gallery/full/newton-principia.png",
@@ -1265,12 +1265,12 @@
         "natural philosophy",
         "monsters"
       ],
-      "description": "From the first modern zoological encyclopedia - based on Dürer's famous woodcut"
+      "description": "From the first modern zoological encyclopedia - based on D\u00fcrer's famous woodcut"
     },
     {
       "id": "durer-rhinoceros",
       "title": "Rhinoceros",
-      "artist": "Albrecht Dürer",
+      "artist": "Albrecht D\u00fcrer",
       "year": 1515,
       "source": "Woodcut",
       "wikimedia_url": "https://commons.wikimedia.org/wiki/File:D%C3%BCrer%27s_Rhinoceros,_1515.jpg",
@@ -1282,7 +1282,7 @@
         "printing",
         "monsters"
       ],
-      "description": "Dürer's iconic rhinoceros - made without seeing the animal, yet widely copied for centuries"
+      "description": "D\u00fcrer's iconic rhinoceros - made without seeing the animal, yet widely copied for centuries"
     },
     {
       "id": "maier-emblem21",
@@ -2359,7 +2359,7 @@
     {
       "id": "boehme-theosophia",
       "title": "Theosophia Revelata",
-      "artist": "Jakob Böhme",
+      "artist": "Jakob B\u00f6hme",
       "year": 1730,
       "source": "Internet Archive (McGill Library)",
       "wikimedia_url": "https://archive.org/details/McGillLibrary-rbsc_theosophia-revelata_BV5080B71730_v1-21804",
@@ -2370,7 +2370,7 @@
         "mysticism",
         "alchemy"
       ],
-      "description": "Revealed Theosophy - Böhme's mystical visions of divine nature"
+      "description": "Revealed Theosophy - B\u00f6hme's mystical visions of divine nature"
     },
     {
       "id": "fludd-utriusque-vol2",
@@ -2509,7 +2509,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-14.jpg",
       "image_url": "/gallery/full/davinci-machines-14.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Leonardo's designs for flying machines and ornithopters"
     },
     {
@@ -2522,7 +2524,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-16.jpg",
       "image_url": "/gallery/full/davinci-machines-16.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Helicopter-like aerial screw design"
     },
     {
@@ -2535,7 +2539,10 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-18.jpg",
       "image_url": "/gallery/full/davinci-machines-18.jpg",
       "license": "Public Domain",
-      "categories": ["machines", "anatomy"],
+      "categories": [
+        "machines",
+        "anatomy"
+      ],
       "description": "Studies of bird wings and human-powered flight"
     },
     {
@@ -2548,7 +2555,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-20.jpg",
       "image_url": "/gallery/full/davinci-machines-20.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Early parachute design"
     },
     {
@@ -2561,7 +2570,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-22.jpg",
       "image_url": "/gallery/full/davinci-machines-22.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Military machine and fortification designs"
     },
     {
@@ -2574,7 +2585,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-24.jpg",
       "image_url": "/gallery/full/davinci-machines-24.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Tank-like armored vehicle design"
     },
     {
@@ -2587,7 +2600,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-26.jpg",
       "image_url": "/gallery/full/davinci-machines-26.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Siege weapon and projectile launcher designs"
     },
     {
@@ -2600,7 +2615,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-30.jpg",
       "image_url": "/gallery/full/davinci-machines-30.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Giant crossbow mechanical design"
     },
     {
@@ -2613,7 +2630,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-32.jpg",
       "image_url": "/gallery/full/davinci-machines-32.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Artillery and cannon designs"
     },
     {
@@ -2626,7 +2645,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-34.jpg",
       "image_url": "/gallery/full/davinci-machines-34.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Gear mechanisms and power transmission"
     },
     {
@@ -2639,7 +2660,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-36.jpg",
       "image_url": "/gallery/full/davinci-machines-36.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Hydraulic machines and water engineering"
     },
     {
@@ -2652,7 +2675,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-38.jpg",
       "image_url": "/gallery/full/davinci-machines-38.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Water pumping and lifting devices"
     },
     {
@@ -2665,7 +2690,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-40.jpg",
       "image_url": "/gallery/full/davinci-machines-40.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Drilling and boring machinery"
     },
     {
@@ -2678,7 +2705,10 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-42.jpg",
       "image_url": "/gallery/full/davinci-machines-42.jpg",
       "license": "Public Domain",
-      "categories": ["machines", "architecture"],
+      "categories": [
+        "machines",
+        "architecture"
+      ],
       "description": "Construction cranes and lifting mechanisms"
     },
     {
@@ -2691,7 +2721,10 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-44.jpg",
       "image_url": "/gallery/full/davinci-machines-44.jpg",
       "license": "Public Domain",
-      "categories": ["machines", "architecture"],
+      "categories": [
+        "machines",
+        "architecture"
+      ],
       "description": "Rotating crane and pulley systems"
     },
     {
@@ -2704,7 +2737,10 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-46.jpg",
       "image_url": "/gallery/full/davinci-machines-46.jpg",
       "license": "Public Domain",
-      "categories": ["machines", "architecture"],
+      "categories": [
+        "machines",
+        "architecture"
+      ],
       "description": "Self-supporting bridge design"
     },
     {
@@ -2717,7 +2753,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-48.jpg",
       "image_url": "/gallery/full/davinci-machines-48.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Canal excavating machine"
     },
     {
@@ -2730,7 +2768,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-50.jpg",
       "image_url": "/gallery/full/davinci-machines-50.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Textile machinery and loom designs"
     },
     {
@@ -2743,7 +2783,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-52.jpg",
       "image_url": "/gallery/full/davinci-machines-52.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Automatic spindle and bobbin winder"
     },
     {
@@ -2756,7 +2798,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-54.jpg",
       "image_url": "/gallery/full/davinci-machines-54.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Clock and timekeeping mechanisms"
     },
     {
@@ -2769,7 +2813,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-56.jpg",
       "image_url": "/gallery/full/davinci-machines-56.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Spring-powered mechanisms"
     },
     {
@@ -2782,7 +2828,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-58.jpg",
       "image_url": "/gallery/full/davinci-machines-58.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Self-propelled cart and automata"
     },
     {
@@ -2795,7 +2843,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-60.jpg",
       "image_url": "/gallery/full/davinci-machines-60.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Ball bearing and friction reduction studies"
     },
     {
@@ -2808,7 +2858,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-62.jpg",
       "image_url": "/gallery/full/davinci-machines-62.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Chain drive and link mechanisms"
     },
     {
@@ -2821,7 +2873,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-64.jpg",
       "image_url": "/gallery/full/davinci-machines-64.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Screw-cutting and threading machines"
     },
     {
@@ -2834,7 +2888,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-66.jpg",
       "image_url": "/gallery/full/davinci-machines-66.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Lathe and metalworking machinery"
     },
     {
@@ -2847,7 +2903,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-68.jpg",
       "image_url": "/gallery/full/davinci-machines-68.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Grinding and polishing devices"
     },
     {
@@ -2860,7 +2918,10 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-70.jpg",
       "image_url": "/gallery/full/davinci-machines-70.jpg",
       "license": "Public Domain",
-      "categories": ["machines", "printing"],
+      "categories": [
+        "machines",
+        "printing"
+      ],
       "description": "Printing press improvements"
     },
     {
@@ -2873,7 +2934,10 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-72.jpg",
       "image_url": "/gallery/full/davinci-machines-72.jpg",
       "license": "Public Domain",
-      "categories": ["machines", "optics"],
+      "categories": [
+        "machines",
+        "optics"
+      ],
       "description": "Mirror grinding and optical instruments"
     },
     {
@@ -2886,7 +2950,10 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-74.jpg",
       "image_url": "/gallery/full/davinci-machines-74.jpg",
       "license": "Public Domain",
-      "categories": ["machines", "music"],
+      "categories": [
+        "machines",
+        "music"
+      ],
       "description": "Musical instruments and drums"
     },
     {
@@ -2899,7 +2966,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-76.jpg",
       "image_url": "/gallery/full/davinci-machines-76.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Underwater breathing apparatus and diving equipment"
     },
     {
@@ -2912,7 +2981,9 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-78.jpg",
       "image_url": "/gallery/full/davinci-machines-78.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Boat and naval designs"
     },
     {
@@ -2925,450 +2996,10 @@
       "thumb_url": "/gallery/thumbs/davinci-machines-80.jpg",
       "image_url": "/gallery/full/davinci-machines-80.jpg",
       "license": "Public Domain",
-      "categories": ["machines"],
+      "categories": [
+        "machines"
+      ],
       "description": "Paddle boat and propulsion systems"
-    },
-    {
-      "id": "inigo-jones-10",
-      "title": "Inigo Jones - Architectural Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-10.jpg",
-      "image_url": "/gallery/full/inigo-jones-10.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Architectural designs by the father of English Palladianism"
-    },
-    {
-      "id": "inigo-jones-14",
-      "title": "Inigo Jones - Classical Orders",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-14.jpg",
-      "image_url": "/gallery/full/inigo-jones-14.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Classical architectural order studies"
-    },
-    {
-      "id": "inigo-jones-18",
-      "title": "Inigo Jones - Palace Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-18.jpg",
-      "image_url": "/gallery/full/inigo-jones-18.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Palace and grand house designs"
-    },
-    {
-      "id": "inigo-jones-22",
-      "title": "Inigo Jones - Elevation Drawing",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-22.jpg",
-      "image_url": "/gallery/full/inigo-jones-22.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Architectural elevation drawings"
-    },
-    {
-      "id": "inigo-jones-26",
-      "title": "Inigo Jones - Church Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-26.jpg",
-      "image_url": "/gallery/full/inigo-jones-26.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Church and religious building designs"
-    },
-    {
-      "id": "inigo-jones-30",
-      "title": "Inigo Jones - Portico Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-30.jpg",
-      "image_url": "/gallery/full/inigo-jones-30.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Portico and colonnade designs"
-    },
-    {
-      "id": "inigo-jones-34",
-      "title": "Inigo Jones - Facade Study",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-34.jpg",
-      "image_url": "/gallery/full/inigo-jones-34.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Building facade studies"
-    },
-    {
-      "id": "inigo-jones-38",
-      "title": "Inigo Jones - Window Details",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-38.jpg",
-      "image_url": "/gallery/full/inigo-jones-38.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Window and door architectural details"
-    },
-    {
-      "id": "inigo-jones-42",
-      "title": "Inigo Jones - Column Studies",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-42.jpg",
-      "image_url": "/gallery/full/inigo-jones-42.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Column and capital studies"
-    },
-    {
-      "id": "inigo-jones-46",
-      "title": "Inigo Jones - Banqueting House",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-46.jpg",
-      "image_url": "/gallery/full/inigo-jones-46.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Designs related to the Banqueting House, Whitehall"
-    },
-    {
-      "id": "inigo-jones-50",
-      "title": "Inigo Jones - Interior Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-50.jpg",
-      "image_url": "/gallery/full/inigo-jones-50.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Interior architectural designs"
-    },
-    {
-      "id": "inigo-jones-54",
-      "title": "Inigo Jones - Gateway Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-54.jpg",
-      "image_url": "/gallery/full/inigo-jones-54.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Gateway and entrance designs"
-    },
-    {
-      "id": "inigo-jones-58",
-      "title": "Inigo Jones - Arch Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-58.jpg",
-      "image_url": "/gallery/full/inigo-jones-58.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Triumphal arch designs"
-    },
-    {
-      "id": "inigo-jones-62",
-      "title": "Inigo Jones - Ornamental Details",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-62.jpg",
-      "image_url": "/gallery/full/inigo-jones-62.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Ornamental architectural details"
-    },
-    {
-      "id": "inigo-jones-66",
-      "title": "Inigo Jones - Ceiling Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-66.jpg",
-      "image_url": "/gallery/full/inigo-jones-66.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Ceiling and roof designs"
-    },
-    {
-      "id": "inigo-jones-70",
-      "title": "Inigo Jones - Doorway Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-70.jpg",
-      "image_url": "/gallery/full/inigo-jones-70.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Doorway and portal designs"
-    },
-    {
-      "id": "inigo-jones-74",
-      "title": "Inigo Jones - Plan Drawing",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-74.jpg",
-      "image_url": "/gallery/full/inigo-jones-74.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Architectural floor plans"
-    },
-    {
-      "id": "inigo-jones-78",
-      "title": "Inigo Jones - Section Drawing",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-78.jpg",
-      "image_url": "/gallery/full/inigo-jones-78.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Cross-section architectural drawings"
-    },
-    {
-      "id": "inigo-jones-82",
-      "title": "Inigo Jones - Temple Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-82.jpg",
-      "image_url": "/gallery/full/inigo-jones-82.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Temple-form building designs"
-    },
-    {
-      "id": "inigo-jones-86",
-      "title": "Inigo Jones - Pavilion Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-86.jpg",
-      "image_url": "/gallery/full/inigo-jones-86.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Garden pavilion designs"
-    },
-    {
-      "id": "inigo-jones-90",
-      "title": "Inigo Jones - Villa Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-90.jpg",
-      "image_url": "/gallery/full/inigo-jones-90.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Palladian villa designs"
-    },
-    {
-      "id": "inigo-jones-94",
-      "title": "Inigo Jones - Rustication Details",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-94.jpg",
-      "image_url": "/gallery/full/inigo-jones-94.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Rusticated stonework details"
-    },
-    {
-      "id": "inigo-jones-98",
-      "title": "Inigo Jones - Capital Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-98.jpg",
-      "image_url": "/gallery/full/inigo-jones-98.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Column capital designs"
-    },
-    {
-      "id": "inigo-jones-102",
-      "title": "Inigo Jones - Cornice Details",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-102.jpg",
-      "image_url": "/gallery/full/inigo-jones-102.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Cornice and entablature designs"
-    },
-    {
-      "id": "inigo-jones-106",
-      "title": "Inigo Jones - Fireplace Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-106.jpg",
-      "image_url": "/gallery/full/inigo-jones-106.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Fireplace and chimney piece designs"
-    },
-    {
-      "id": "inigo-jones-110",
-      "title": "Inigo Jones - Monument Design",
-      "artist": "Inigo Jones",
-      "year": 1620,
-      "source": "The Designs of Inigo Jones - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/designsInigoJon1Jone",
-      "thumb_url": "/gallery/thumbs/inigo-jones-110.jpg",
-      "image_url": "/gallery/full/inigo-jones-110.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Monument and memorial designs"
-    },
-    {
-      "id": "jones-stonehenge-10",
-      "title": "Stone-Heng Restored - Title",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-10.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-10.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Inigo Jones's treatise arguing Stonehenge was a Roman temple"
-    },
-    {
-      "id": "jones-stonehenge-20",
-      "title": "Stone-Heng - Ground Plan",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-20.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-20.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Geometric ground plan of Stonehenge as Roman temple"
-    },
-    {
-      "id": "jones-stonehenge-30",
-      "title": "Stone-Heng - Elevation",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-30.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-30.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Elevation drawing of Stonehenge reconstruction"
-    },
-    {
-      "id": "jones-stonehenge-40",
-      "title": "Stone-Heng - Reconstruction",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-40.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-40.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Conjectural reconstruction of Stonehenge"
-    },
-    {
-      "id": "jones-stonehenge-50",
-      "title": "Stone-Heng - Geometric Analysis",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-50.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-50.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Geometric analysis of Stonehenge proportions"
-    },
-    {
-      "id": "jones-stonehenge-60",
-      "title": "Stone-Heng - Roman Orders",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-60.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-60.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Comparison with Roman architectural orders"
-    },
-    {
-      "id": "jones-stonehenge-70",
-      "title": "Stone-Heng - Stone Details",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-70.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-70.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Detailed studies of individual stones"
-    },
-    {
-      "id": "jones-stonehenge-80",
-      "title": "Stone-Heng - Temple Plan",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-80.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-80.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Temple plan comparison"
     },
     {
       "id": "jones-stonehenge-90",
@@ -3380,60 +3011,10 @@
       "thumb_url": "/gallery/thumbs/jones-stonehenge-90.jpg",
       "image_url": "/gallery/full/jones-stonehenge-90.jpg",
       "license": "Public Domain",
-      "categories": ["architecture"],
+      "categories": [
+        "architecture"
+      ],
       "description": "Perspective view of reconstructed Stonehenge"
-    },
-    {
-      "id": "jones-stonehenge-100",
-      "title": "Stone-Heng - Trilithon Studies",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-100.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-100.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Studies of the trilithon structures"
-    },
-    {
-      "id": "jones-stonehenge-110",
-      "title": "Stone-Heng - Circle Diagrams",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-110.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-110.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Geometric circle diagrams"
-    },
-    {
-      "id": "jones-stonehenge-120",
-      "title": "Stone-Heng - Full Reconstruction",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-120.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-120.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Full reconstruction as Roman Tuscan temple"
-    },
-    {
-      "id": "jones-stonehenge-130",
-      "title": "Stone-Heng - Final Plates",
-      "artist": "Inigo Jones",
-      "year": 1655,
-      "source": "The Most Notable Antiquity of Great Britain - Internet Archive",
-      "wikimedia_url": "https://archive.org/details/mostnotableantiq00jone",
-      "thumb_url": "/gallery/thumbs/jones-stonehenge-130.jpg",
-      "image_url": "/gallery/full/jones-stonehenge-130.jpg",
-      "license": "Public Domain",
-      "categories": ["architecture"],
-      "description": "Final architectural plates"
     }
   ],
   "categories": [
