@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Internet Explorer use the highest version available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- try to improve performance of typekit fonts noted as perf hit
+        https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/ -->
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+
+    <!-- and preconnect our derivatives cloudfront if we've got it, thumbnails will
+      come from here -->
+      <link rel="preconnect" href="https://d3dkjx001zrum8.cloudfront.net" crossorigin>
+
+      <script async src=https://www.googletagmanager.com/gtag/js?id=G-8S7JS8XGK7 ></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8S7JS8XGK7');
+  </script>
+
+
+    <title>Science History Institute Digital Collections</title>
+    <link href="https://digital.sciencehistory.org/catalog/opensearch.xml" title="Science History Institute Digital Collections" type="application/opensearchdescription+xml" rel="search" />
+
+    
+    <script src="https://d33oem48upkxwi.cloudfront.net/vite/assets/application-BokF1L5N.js" crossorigin="anonymous" type="module" defer="defer"></script><link rel="modulepreload" href="https://d33oem48upkxwi.cloudfront.net/vite/assets/jquery-D4rT8hJp.js" as="script" crossorigin="anonymous" defer="defer">
+<link rel="modulepreload" href="https://d33oem48upkxwi.cloudfront.net/vite/assets/video.js-0Q6pPgOF.js" as="script" crossorigin="anonymous" defer="defer">
+    <link rel="stylesheet" href="https://d33oem48upkxwi.cloudfront.net/vite/assets/application-CsA8bYOm.css" media="all" />
+
+    
+<link rel="stylesheet" href="https://use.typekit.net/dlz1uwu.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://d33oem48upkxwi.cloudfront.net/assets/favicons/apple-touch-icon-f10205ea.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://d33oem48upkxwi.cloudfront.net/assets/favicons/favicon-32x32-8015dc32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://d33oem48upkxwi.cloudfront.net/assets/favicons/favicon-16x16-1b309a6e.png">
+<link rel="manifest" href="https://d33oem48upkxwi.cloudfront.net/assets/favicons/manifest-7d61b31c.json">
+<link rel="mask-icon" href="https://d33oem48upkxwi.cloudfront.net/assets/favicons/safari-pinned-tab-4d96f29c.svg" color="#4bb0c7">
+<link rel="shortcut icon" href="https://d33oem48upkxwi.cloudfront.net/assets/favicons/favicon-1841f056.ico">
+<meta name="msapplication-config" content="https://d33oem48upkxwi.cloudfront.net/assets/favicons/browserconfig-79da0392.xml">
+
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="A6iCTXi0H2TvMEXBY0R2ugFu77wTYcHODZUZtL1H11k6-SnWQkPFdwYaWwpFFel2fDUhr3aB6URspOlBlGvhtw" />
+    
+    <!--
+      If using a TypeScript entrypoint file:
+        vite_typescript_tag 'application'
+
+      If using a .jsx or .tsx entrypoint, add the extension:
+        vite_javascript_tag 'application.jsx'
+
+      Visit the guide for more information: https://vite-ruby.netlify.app/guide/rails
+    -->
+  </head>
+
+  <body class="blacklight-errors blacklight-errors-not_found scihist-main-layout ">
+
+
+    <header id="shi-masthead-from-main-website" class="masthead">
+
+    <div class="shi-top-bar noprint">
+        <div class="shi-top-bar__container">
+
+            <div class="shi-top-bar-nav">
+                <a class="shi-top-bar-nav__item shi-hover" href="https://sciencehistory.org/about" target="_self">
+                    About
+                </a>
+                <a class="shi-top-bar-nav__item shi-hover" href="https://sciencehistory.org/stories/magazine"  target="_self">
+                    Magazine
+                </a>
+                <a class="shi-top-bar-nav__item shi-hover" href="https://sciencehistory.org/stories#podcasts" target="_self">
+                    Podcasts
+                </a>
+                <a class="shi-top-bar-nav__item shi-hover" href="https://sciencehistory.org/visit/events" target="_self">
+                    Events
+                </a>
+            </div>
+
+            <div class="shi-top-bar__hours">
+                  <span class="shi-top-bar__bold"><a href="https://sciencehistory.org/visit/hours-admission" style="text-decoration: none">Museum Hours</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header noprint js-header">
+        <div class="wrapper header__wrapper">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="custom-logo-link img-middle shi-hover" href="https://sciencehistory.org" rel="home">
+                        <img width="575" height="122" class="img-autosize custom-logo" alt="Science History Institute: Museum &amp; Library" decoding="async" loading="lazy" srcset="https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/shi-logo-e8eea7f0.png 575w, https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/shi-logo-300x64-8f554f6a.png 300w" sizes="(max-width: 575px) 100vw, 575px" src="https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/shi-logo-e8eea7f0.png" />
+                    </a>
+                </div>
+
+
+                <div class="header__right-side">
+                    <div class="header__menu-container">
+                        <button class="header__nav-sandwich js-header-sandwich-btn" aria-expanded="false" aria-label="Menu"><span>X</span></button>
+                        <nav class="header__nav flex fwrap" aria-label="Site Top Navigation">
+                            <button class="header__nav-close js-shi-nav-close" aria-label="Close menu">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L18.0022 17.1909M18.0022 1L1 17.1909" stroke="black" stroke-width="2"></path>
+                                </svg>
+                            </button>
+
+                            <ul id="menu-header" class="flex fwrap">
+                                <li id="menu-item-19029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19029">
+                                      <a href="https://sciencehistory.org/visit">Visit</a>
+                                </li>
+
+                                <li id="menu-item-19260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19260">
+                                    <a href="https://sciencehistory.org/collections">Collections</a>
+                                </li>
+
+                                <li id="menu-item-19032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19032">
+                                    <a href="https://sciencehistory.org/stories">Stories</a>
+                                </li>
+
+                                <li id="menu-item-19261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19261">
+                                    <a href="https://sciencehistory.org/research">Research</a>
+                                </li>
+
+                                <li id="menu-item-19044" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19044">
+                                    <a href="https://sciencehistory.org/education">Education</a>
+                                </li>
+
+                                <li id="menu-item-19061" class="menu-item menu-item-type-post_type menu-item-object-page shi-item-bordered menu-item-19061">
+                                    <a href="https://sciencehistory.org/support">Support</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- <div class="shi-search-menu header__search-container js-shi-search-menu">
+                    srch
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="dig-col-product-masthead shi-full-width-inner">
+            <h1 class="masthead-title small-masthead-only">
+                <a href="https://digital.sciencehistory.org/">Digital Collections</a>
+            </h1>
+
+            
+<form class="search-form" role="search" action="https://digital.sciencehistory.org/catalog" accept-charset="UTF-8" method="get">
+  <div class="input-group nav-search-text">
+    <input type="text" name="q" id="q" value="" class="q form-control" autocomplete="off" aria-label="Search" />
+
+    <label class="visually-hidden" for="q">Search</label>
+
+    <button type="submit" class="btn btn-brand-dark" title="Search" id="search-submit-header">
+      Search
+    </button>
+  </div>
+
+  <div class="search-options">
+    <div role="group" aria-labelledby="limit-dates-heading" class="limit-dates form-group">
+      <div class="limit-dates-heading" id="limit-dates-heading">
+        Limit Dates
+      </div>
+      <div class="limit-dates-body">
+        <label class="visually-hidden" for="search-option-date-from">From start year</label>
+        <input type="text" inputmode="numeric" name="range[year_facet_isim][begin]" class="form-control search-option-year" autocomplete="off" placeholder="from" id="search-option-date-from" pattern="[0-9]{3,4}" title="start year (yyyy)" aria-label="From start year">
+        <span class="text">&nbsp;&ndash;&nbsp;</span>
+        <label class="visually-hidden" for="search-option-date-to">To end year</label>
+        <input type="text" inputmode="numeric" name="range[year_facet_isim][end]" class="form-control search-option-year"  autocomplete="off" placeholder="to" id="search-option-date-to" pattern="[0-9]{3,4}" title="end year (yyyy)" aria-label="To end year">
+      </div>
+    </div>
+
+    <div class="form-group checkbox">
+      <label for="filter_copyright_free"><input type="checkbox" name="f[rights_facet][]" id="filter_copyright_free" value="Copyright Free" /> Copyright Free Only </label>
+    </div>
+  </div>
+</form>
+        </div>
+</header>
+
+
+
+    <main id="mainContainer" class="container-fluid">
+      
+      
+        <div class="row">
+            <section class="col-md-12">
+              <div class="error-page">
+  <div class="error-body">
+    <div class="image-column column">
+      <a href="/works/w3763731m" class="image-link-wrapper">
+        <img class="hero-image" src="https://d33oem48upkxwi.cloudfront.net/assets/404image-47dac009.jpg" />
+        <div class="caption">
+          Adapted from <i>The Alchemist's Experiment Takes Fire</i>.
+        </div>
+      </a>
+    </div>
+    <div class="text-column column">
+      <h1 class="h2 error-headline"><i class="fa fa-warning" aria-hidden="true"></i> Sorry, that page doesn't exist.</h1>
+      <p class="h3 error-subheadline sans-serif">But neither does the Philosopher's Stone. Probably.</p>
+
+
+
+      <div class="error-section">
+        <h2 class="h4 dark-blue">Try searching our Digital Collections for something else?</h2>
+
+        <form class="search-form" role="search" action="/catalog" accept-charset="UTF-8" method="get">
+
+          <div class="input-group nav-search-text mt-3">
+            <input type="text" name="q" id="q" value="" class="q form-control" autocomplete="off" placeholder="Search..." aria-label="Search in">
+
+            <label class="visually-hidden" for="q">Search in</label>
+
+            <button type="submit" class="btn btn-brand-main" title="Search">
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="error-section">
+        <h2 class="h4">Or go somewhere else?</h2>
+        <ul class="list-unstyled">
+          <li><a href="/">Digital Collections Home</a></li>
+          <li><a href="https://www.sciencehistory.org">The Science History Institute</a></li>
+        </ul>
+      </div>
+
+
+      <div class="error-section">
+        <h2 class="h4">For more help, email...</h2>
+        <a href="mailto:digital@sciencehistory.org">digital@sciencehistory.org</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+            </section>
+        </div>
+    </main>
+
+    <dialog id="blacklight-modal" class="modal" data-turbo="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    </div>
+  </div>
+</dialog>
+
+
+    <footer class="footer noprint" id="footer" role="contentinfo" aria-labelledby="footerTitle">
+    <div class="dig-col-links">
+        <div class="dig-col-links-inner shi-full-width-inner">
+            <h1 class="h4">Digital Collections</h1>
+
+            <ul class="buttons">
+                <li><a class="btn btn-brand-main" href="https://digital.sciencehistory.org/about">About</a></li>
+                <li><a class="btn btn-brand-main" href="https://digital.sciencehistory.org/faq">FAQ</a></li>
+                <li><a class="btn btn-brand-main" href="https://digital.sciencehistory.org/contact">Contact</a></li>
+                    <li>
+                            <a class="btn btn-brand-main" rel="nofollow" data-method="post" href="/users/auth/entra_id">Log in</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="shi-footer-from-main-website">
+
+        <div class="wrapper footer__wrapper">
+            <div class="footer__inner footer__inner_top flex fwrap jcspb aifs">
+                <div class="footer__logo">
+                    <a id="footerTitle" class="custom-logo-link img-middle shi-hover" href="https://sciencehistory.org" rel="home">
+                        <img width="335" height="195" class="img-autosize custom-logo" alt="Science History Institute" decoding="async" loading="lazy" srcset="https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/shi-footer-logo-b37d92df.png 335w, https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/shi-footer-logo-300x175-5f14d9df.png 300w" sizes="(max-width: 335px) 100vw, 335px" src="https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/shi-footer-logo-b37d92df.png" />
+                    </a>
+                    <div class="footer__address">
+                        <p>315 Chestnut Street<br>
+                            Philadelphia, PA 19106<br>
+                            215.925.2222<br>
+                            info@sciencehistory.org
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <nav class="footer__nav" aria-labelledby="footerAbout">
+                        <ul id="menu-footer" class="menu-footer-ul flex fdc"><li id="menu-item-19111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19111"><a id="footerAbout" href="https://sciencehistory.org/about-us">About</a></li>
+                            <li id="menu-item-19113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19113">
+                                <a href="https://sciencehistory.org/leadership">Leadership</a>
+                            </li>
+                            <li id="menu-item-19110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19110">
+                                <a href="https://sciencehistory.org/about/staff-fellows">Staff &amp; Fellows</a>
+                            </li>
+                            <li id="menu-item-21314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21314">
+                                <a href="https://sciencehistory.org/projects-initiatives">Projects &amp; Initiatives</a>
+                            </li>
+                            <li id="menu-item-19131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19131">
+                                <a href="https://sciencehistory.org/about/awards-program">Awards Program</a>
+                            </li>
+                            <li id="menu-item-19114" class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-19114">
+                                <a href="https://sciencehistory.org/news">News</a>
+                            </li>
+                            <li id="menu-item-19115" class="menu-item menu-item-type-post_type_archive menu-item-object-press menu-item-19115"><a href="https://sciencehistory.org/press">Pressroom</a></li>
+                            <li id="menu-item-19132" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19132">
+                                <a href="https://sciencehistory.org/about/join-our-team">Careers</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <nav class="footer__nav" aria-labelledby="footerMuseumHours">
+                        <ul id="menu-footer-2" class="menu-footer-ul flex fdc"><li id="menu-item-19116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19116"><a id="footerMuseumHours" href="https://sciencehistory.org/visit/hours-admission">MUSEUM HOURS</a></li>
+                            <li id="menu-item-19123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19123"><a target="_blank" href="https://www.explorableplaces.com/places/science-history-institute">Virtual Tour</a></li>
+                            <li id="menu-item-19124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19124"><a href="https://sciencehistory.org/visit/exhibitions/sensational-science-a-century-of-microbe-hunters/">Outdoor Exhibition</a></li>
+                            <li id="menu-item-19125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19125"><a href="https://sciencehistory.org/visit/exhibitions/#digital-exhibitions">Digital Exhibitions</a></li>
+                            <li id="menu-item-19126" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19126"><a href="https://sciencehistory.org/stories/magazine/">Magazine</a></li>
+                            <li id="menu-item-19127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19127"><a href="https://sciencehistory.org/stories/#podcasts">Podcasts</a></li>
+                            <li id="menu-item-19128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19128"><a href="https://sciencehistory.org/collections/blog/">Blog</a></li>
+                            <li id="menu-item-19129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19129"><a href="https://sciencehistory.org/collections">Collections</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <nav class="footer__nav" aria-label="Connect">
+                        <ul id="menu-footer-3" class="menu-footer-ul flex fdc">
+                            <li id="menu-item-19117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19117">
+                                <a href="https://sciencehistory.org/exhibitions">See an Exhibition</a>
+                            </li>
+                            <li id="menu-item-19118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19118">
+                                <a href="https://sciencehistory.org/research/othmer-library/schedule-a-visit">Schedule a Library Visit</a>
+                            </li>
+                            <li id="menu-item-19133" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19133">
+                                <a href="https://sciencehistory.org/conference-center">Host An Event</a></li>
+                            <li id="menu-item-19120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19120">
+                                <a href="https://sciencehistory.org/contact-us">Contact Us</a>
+                            </li>
+                            <li id="menu-item-19119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19119">
+                                <a href="https://sciencehistory.org/support">Support Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="shi-social">
+                        <a href="https://www.instagram.com/scihistoryorg/" class="shi-social__link" target="_blank">
+                            <img width="19" height="19" class="shi-social__icon" alt="Instagram" loading="lazy" src="https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/instagram-icon-d264857c.svg" />
+                        </a>
+                        <a href="https://facebook.com/scihistoryorg" class="shi-social__link" target="_blank">
+                            <img width="13" height="24" class="shi-social__icon" alt="Facebook" loading="lazy" src="https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/facebook-icon-31a404dc.svg" />
+                        </a>
+                        <a href="https://twitter.com/scihistoryorg" class="shi-social__link" target="_blank">
+                            <img width="22" height="18" class="shi-social__icon" alt="Twitter" loading="lazy" src="https://d33oem48upkxwi.cloudfront.net/assets/from_main_website/twitter-icon-41c8e762.svg" />
+                        </a>
+                        <a href="https://www.youtube.com/c/ScienceHistoryInstitute" class="shi-social__link" target="_blank">
+                            <img class="shi-social__icon" alt="YouTube" loading="lazy" src="https://d33oem48upkxwi.cloudfront.net/assets/YouTube_light_icon_(2017)-b448a779.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__inner footer__inner_bottom flex">
+                <ul id="menu-footer-copyright" class="flex fwrap">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a>© 2025 Science History Institute</a></li>
+                    <li id="menu-item-19135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19135"><a>Registered 501(c)(3)</a></li>
+                    <li id="menu-item-19136" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19136"><a>EIN: 22-2817365</a></li>
+                    <li id="menu-item-19121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19121"><a href="https://sciencehistory.org/privacy-policy">Privacy Policy</a></li>
+                    <li id="menu-item-19134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19134"><a href="https://sciencehistory.org/terms-of-use">Terms of Use</a></li>
+                    <li id="menu-item-19122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19122"><a href="https://sciencehistory.org/visit/accessibility">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
