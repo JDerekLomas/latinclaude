@@ -3,6 +3,13 @@ import Link from "next/link";
 // Pinned posts - featured at the top
 const pinnedPosts = [
   {
+    slug: "cornelis-drebbel",
+    title: "Cornelis Drebbel: The Dutch Alchemist Who Invented the Future",
+    date: "Dec 21, 2025",
+    excerpt: "He built the first cybernetic system, the first submarine, the first air conditioning—and inspired Shakespeare's Prospero and Francis Bacon's Salomon's House. No one knows about him.",
+    tag: "Research",
+  },
+  {
     slug: "sourcelibrary-vision",
     title: "SourceLibrary: A Vision for AI-Assisted Translation",
     date: "Dec 12, 2025",
@@ -27,6 +34,14 @@ const pinnedPosts = [
 
 // All posts in reverse chronological order (newest first)
 const posts = [
+  {
+    slug: "cornelis-drebbel",
+    title: "Cornelis Drebbel: The Dutch Alchemist Who Invented the Future",
+    date: "Dec 21, 2025",
+    excerpt: "He built the first cybernetic system, the first submarine, the first air conditioning—and inspired Shakespeare's Prospero and Francis Bacon's Salomon's House. No one knows about him.",
+    tag: "Research",
+    category: "Inventors",
+  },
   {
     slug: "sourcelibrary-vision",
     title: "SourceLibrary: A Vision for AI-Assisted Translation",
@@ -183,6 +198,7 @@ const posts = [
 
 const tagColors: Record<string, { bg: string; text: string }> = {
   // Primary tags
+  Research: { bg: '#f5f0e8', text: '#9e4a3a' },
   Vision: { bg: '#e8eef5', text: '#3a5a8a' },
   Mission: { bg: '#f5e8e8', text: '#9e4a3a' },
   Data: { bg: '#e8f0f5', text: '#546b8a' },
@@ -200,6 +216,7 @@ const categoryColors: Record<string, { bg: string; text: string }> = {
   Translations: { bg: '#e8f5e8', text: '#3a8a5a' },
   Esoterica: { bg: '#f5e8f0', text: '#8a3a6b' },
   Subjects: { bg: '#f5f5e8', text: '#6b6b3a' },
+  Inventors: { bg: '#e8f0e8', text: '#3a6b5a' },
 };
 
 export default function BlogIndex() {
