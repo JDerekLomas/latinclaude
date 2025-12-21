@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renaissance Idea Diffusion Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: #1a1612; color: #f5f0e8; }
+
+        #container { display: flex; height: 100vh; }
+
+        #sidebar {
+            width: 360px;
+            background: #2a2420;
+            padding: 24px;
+            overflow-y: auto;
+            border-right: 1px solid #3a3430;
+        }
+
+        h1 { font-size: 20px; margin-bottom: 8px; color: #f5f0e8; }
+        .subtitle { font-size: 13px; color: #999; margin-bottom: 24px; }
+
+        .section { margin-bottom: 24px; }
+        .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 12px; }
+
+        .work-card {
+            background: #3a3430;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+        .work-card:hover { background: #4a4440; }
+        .work-card.active { border-color: #c17f59; background: #4a4440; }
+        .work-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+        .work-meta { font-size: 12px; color: #999; }
+
+        #map-container { flex: 1; position: relative; }
+        #map { height: 100%; width: 100%; }
+
+        #timeline {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(42, 36, 32, 0.95);
+            padding: 16px 24px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        #year-display {
+            font-size: 32px;
+            font-weight: 700;
+            color: #c17f59;
+            min-width: 80px;
+        }
+
+        #play-btn {
+            background: #c17f59;
+            border: none;
+            color: #1a1612;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #play-btn:hover { background: #d49570; }
+
+        #slider {
+            width: 300px;
+            accent-color: #c17f59;
+        }
+
+        #speed-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: #999;
+        }
+        #speed-control select {
+            background: #3a3430;
+            border: 1px solid #4a4440;
+            color: #f5f0e8;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        #stats {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            background: rgba(42, 36, 32, 0.95);
+            padding: 16px;
+            border-radius: 8px;
+            z-index: 1000;
+            min-width: 180px;
+        }
+        .stat { margin-bottom: 8px; }
+        .stat-label { font-size: 11px; color: #999; text-transform: uppercase; }
+        .stat-value { font-size: 20px; font-weight: 600; color: #c17f59; }
+
+        .city-marker {
+            transition: all 0.3s ease-out;
+        }
+
+        .pulse {
+            animation: pulse 1.5s ease-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(3); opacity: 0; }
+        }
+
+        .leaflet-container { background: #1a1612; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <h1>Idea Diffusion</h1>
+            <p class="subtitle">Watch how Renaissance bestsellers spread across Europe</p>
+
+            <div class="section">
+                <div class="section-title">Select a Work</div>
+                <div id="work-list"></div>
+            </div>
+        </div>
+
+        <div id="map-container">
+            <div id="map"></div>
+
+            <div id="stats">
+                <div class="stat">
+                    <div class="stat-label">Cities Reached</div>
+                    <div class="stat-value" id="cities-count">0</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Years Since Origin</div>
+                    <div class="stat-value" id="years-elapsed">0</div>
+                </div>
+            </div>
+
+            <div id="timeline">
+                <button id="play-btn">▶</button>
+                <div id="year-display">1453</div>
+                <input type="range" id="slider" min="1450" max="1550" value="1453">
+                <div id="speed-control">
+                    <span>Speed:</span>
+                    <select id="speed">
+                        <option value="500">Slow</option>
+                        <option value="200" selected>Normal</option>
+                        <option value="50">Fast</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // City coordinates (major Renaissance printing centers)
+        const cityCoords = {
+            'mainz': [50.0, 8.27],
+            'strasbourg': [48.58, 7.75],
+            'augsburg': [48.37, 10.90],
+            'cologne': [50.94, 6.96],
+            'nuremberg': [49.45, 11.08],
+            'venice': [45.44, 12.32],
+            'rome': [41.90, 12.50],
+            'paris': [48.86, 2.35],
+            'lyon': [45.76, 4.84],
+            'basel': [47.56, 7.59],
+            'frankfurt': [50.11, 8.68],
+            'leipzig': [51.34, 12.38],
+            'antwerpen': [51.22, 4.40],
+            'antwerp': [51.22, 4.40],
+            'london': [51.51, -0.13],
+            'florence': [43.77, 11.25],
+            'milan': [45.46, 9.19],
+            'vienna': [48.21, 16.37],
+            'wittenberg': [51.87, 12.65],
+            'geneva': [46.20, 6.14],
+            'amsterdam': [52.37, 4.90],
+            'leiden': [52.16, 4.49],
+            'bologna': [44.49, 11.34],
+            'padua': [45.41, 11.88],
+            'treviso': [45.67, 12.24],
+            'deventer': [52.25, 6.16],
+            'gouda': [52.01, 4.71],
+            'rostock': [54.09, 12.10],
+            'lübeck': [53.87, 10.69],
+            'ulm': [48.40, 9.99],
+            'delft': [52.01, 4.36],
+            'gent': [51.05, 3.72],
+            'blaubeuren': [48.41, 9.78],
+            'eichstätt': [48.89, 11.18],
+            'brno': [49.20, 16.61],
+            'barcelona': [41.39, 2.17],
+            'seville': [37.39, -5.99],
+            'madrid': [40.42, -3.70],
+            'lisbon': [38.72, -9.14],
+            'prague': [50.08, 14.44],
+            'cracow': [50.06, 19.94],
+            'krakow': [50.06, 19.94],
+            'budapest': [47.50, 19.04],
+            'zürich': [47.37, 8.54],
+            'zurich': [47.37, 8.54],
+            'louvain': [50.88, 4.70],
+            'leuven': [50.88, 4.70],
+            'heidelberg': [49.40, 8.69],
+            'tübingen': [48.52, 9.06],
+            'erfurt': [50.98, 11.03],
+            'ingolstadt': [48.76, 11.42],
+            'würzburg': [49.79, 9.95],
+            'münster': [51.96, 7.63],
+            'brugge': [51.21, 3.22],
+            'bruges': [51.21, 3.22],
+            'naples': [40.85, 14.27],
+            'palermo': [38.12, 13.36],
+            'salamanca': [40.97, -5.66],
+            'alcalá de henares': [40.48, -3.36],
+            'coimbra': [40.21, -8.43],
+            'copenhagen': [55.68, 12.57],
+            'stockholm': [59.33, 18.07],
+            'edinburgh': [55.95, -3.19],
+            'dublin': [53.35, -6.26],
+            'oxford': [51.75, -1.25],
+            'cambridge': [52.21, 0.12],
+            's.l.': [48.0, 10.0], // Unknown location - center of Germany
+        };
+
+        // Sample diffusion data
+        const works = [
+            {
+                id: 'ars-minor',
+                title: 'Ars Minor',
+                author: 'Donatus',
+                origin: 'mainz',
+                firstYear: 1453,
+                spread: [
+                    ['mainz', 1453], ['strasbourg', 1470], ['augsburg', 1475], ['treviso', 1475],
+                    ['cologne', 1478], ['lübeck', 1478], ['ulm', 1478], ['deventer', 1479],
+                    ['gouda', 1479], ['basel', 1480], ['rostock', 1480], ['delft', 1482],
+                    ['nuremberg', 1482], ['antwerpen', 1483], ['gent', 1483], ['london', 1483],
+                    ['leipzig', 1485], ['brno', 1486], ['paris', 1489], ['barcelona', 1500],
+                    ['venice', 1502], ['rome', 1510], ['florence', 1515], ['vienna', 1520]
+                ]
+            },
+            {
+                id: 'doctrinale',
+                title: 'Doctrinale',
+                author: 'Alexander de Villa Dei',
+                origin: 'venice',
+                firstYear: 1470,
+                spread: [
+                    ['venice', 1470], ['rome', 1472], ['paris', 1473], ['strasbourg', 1474],
+                    ['nuremberg', 1475], ['cologne', 1476], ['basel', 1478], ['lyon', 1480],
+                    ['deventer', 1482], ['leipzig', 1485], ['antwerpen', 1488], ['london', 1490],
+                    ['florence', 1492], ['vienna', 1495], ['cracow', 1498], ['barcelona', 1500]
+                ]
+            },
+            {
+                id: 'aesop',
+                title: 'Fabulae (Fables)',
+                author: 'Aesop',
+                origin: 'augsburg',
+                firstYear: 1476,
+                spread: [
+                    ['augsburg', 1476], ['ulm', 1477], ['strasbourg', 1479], ['nuremberg', 1480],
+                    ['cologne', 1481], ['venice', 1483], ['paris', 1485], ['basel', 1486],
+                    ['antwerpen', 1488], ['florence', 1490], ['london', 1492], ['lyon', 1495],
+                    ['rome', 1498], ['leipzig', 1500], ['vienna', 1505], ['cracow', 1510]
+                ]
+            },
+            {
+                id: 'imitation',
+                title: 'De Imitatione Christi',
+                author: 'Thomas à Kempis',
+                origin: 'augsburg',
+                firstYear: 1471,
+                spread: [
+                    ['augsburg', 1471], ['nuremberg', 1473], ['venice', 1474], ['strasbourg', 1476],
+                    ['paris', 1478], ['cologne', 1480], ['basel', 1482], ['florence', 1484],
+                    ['rome', 1486], ['lyon', 1488], ['antwerpen', 1490], ['london', 1492],
+                    ['vienna', 1495], ['cracow', 1498], ['barcelona', 1500], ['lisbon', 1505]
+                ]
+            },
+            {
+                id: 'legenda-aurea',
+                title: 'Legenda Aurea',
+                author: 'Jacobus de Voragine',
+                origin: 'strasbourg',
+                firstYear: 1470,
+                spread: [
+                    ['strasbourg', 1470], ['cologne', 1472], ['augsburg', 1473], ['nuremberg', 1475],
+                    ['venice', 1477], ['paris', 1479], ['basel', 1480], ['lyon', 1482],
+                    ['rome', 1484], ['florence', 1486], ['london', 1488], ['antwerpen', 1490],
+                    ['vienna', 1493], ['cracow', 1496], ['barcelona', 1499], ['lisbon', 1502]
+                ]
+            }
+        ];
+
+        // Initialize map
+        const map = L.map('map', {
+            center: [48, 10],
+            zoom: 5,
+            zoomControl: false,
+            attributionControl: false
+        });
+
+        // Dark map tiles
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 10,
+            minZoom: 4
+        }).addTo(map);
+
+        // State
+        let currentWork = works[0];
+        let currentYear = 1453;
+        let isPlaying = false;
+        let playInterval = null;
+        let markers = {};
+        let connections = [];
+
+        // Create work list
+        const workList = document.getElementById('work-list');
+        works.forEach(work => {
+            const card = document.createElement('div');
+            card.className = 'work-card' + (work.id === currentWork.id ? ' active' : '');
+            card.innerHTML = `
+                <div class="work-title">${work.title}</div>
+                <div class="work-meta">${work.author} · ${work.firstYear} · ${work.spread.length} cities</div>
+            `;
+            card.onclick = () => selectWork(work);
+            workList.appendChild(card);
+        });
+
+        function selectWork(work) {
+            currentWork = work;
+            currentYear = work.firstYear;
+
+            // Update UI
+            document.querySelectorAll('.work-card').forEach(c => c.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+
+            // Update slider
+            const slider = document.getElementById('slider');
+            slider.min = work.firstYear;
+            slider.max = work.spread[work.spread.length - 1][1] + 10;
+            slider.value = work.firstYear;
+
+            // Reset map
+            clearMap();
+            updateMap();
+        }
+
+        function clearMap() {
+            Object.values(markers).forEach(m => map.removeLayer(m));
+            markers = {};
+            connections.forEach(c => map.removeLayer(c));
+            connections = [];
+        }
+
+        function updateMap() {
+            const citiesReached = currentWork.spread.filter(([city, year]) => year <= currentYear);
+
+            // Update stats
+            document.getElementById('year-display').textContent = currentYear;
+            document.getElementById('cities-count').textContent = citiesReached.length;
+            document.getElementById('years-elapsed').textContent = currentYear - currentWork.firstYear;
+
+            // Add/update markers
+            citiesReached.forEach(([city, year], index) => {
+                const coords = cityCoords[city.toLowerCase()];
+                if (!coords) return;
+
+                if (!markers[city]) {
+                    const isOrigin = index === 0;
+                    const size = isOrigin ? 16 : 10;
+                    const color = isOrigin ? '#c17f59' : '#7a9e7a';
+
+                    const marker = L.circleMarker(coords, {
+                        radius: size,
+                        fillColor: color,
+                        color: '#f5f0e8',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(map);
+
+                    marker.bindTooltip(`<strong>${city.charAt(0).toUpperCase() + city.slice(1)}</strong><br>${year}`, {
+                        permanent: false,
+                        direction: 'top'
+                    });
+
+                    markers[city] = marker;
+
+                    // Draw connection from origin
+                    if (index > 0) {
+                        const originCoords = cityCoords[currentWork.origin.toLowerCase()];
+                        if (originCoords) {
+                            const line = L.polyline([originCoords, coords], {
+                                color: '#c17f5950',
+                                weight: 1,
+                                dashArray: '4, 4'
+                            }).addTo(map);
+                            connections.push(line);
+                        }
+                    }
+                }
+            });
+
+            // Update slider
+            document.getElementById('slider').value = currentYear;
+        }
+
+        // Controls
+        document.getElementById('play-btn').onclick = function() {
+            isPlaying = !isPlaying;
+            this.textContent = isPlaying ? '⏸' : '▶';
+
+            if (isPlaying) {
+                const speed = parseInt(document.getElementById('speed').value);
+                playInterval = setInterval(() => {
+                    const maxYear = currentWork.spread[currentWork.spread.length - 1][1];
+                    if (currentYear >= maxYear) {
+                        isPlaying = false;
+                        document.getElementById('play-btn').textContent = '▶';
+                        clearInterval(playInterval);
+                        return;
+                    }
+                    currentYear++;
+                    updateMap();
+                }, speed);
+            } else {
+                clearInterval(playInterval);
+            }
+        };
+
+        document.getElementById('slider').oninput = function() {
+            currentYear = parseInt(this.value);
+            updateMap();
+        };
+
+        document.getElementById('speed').onchange = function() {
+            if (isPlaying) {
+                clearInterval(playInterval);
+                const speed = parseInt(this.value);
+                playInterval = setInterval(() => {
+                    const maxYear = currentWork.spread[currentWork.spread.length - 1][1];
+                    if (currentYear >= maxYear) {
+                        isPlaying = false;
+                        document.getElementById('play-btn').textContent = '▶';
+                        clearInterval(playInterval);
+                        return;
+                    }
+                    currentYear++;
+                    updateMap();
+                }, speed);
+            }
+        };
+
+        // Initial render
+        updateMap();
+    </script>
+</body>
+</html>
