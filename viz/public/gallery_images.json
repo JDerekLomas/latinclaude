@@ -3015,6 +3015,99 @@
         "architecture"
       ],
       "description": "Perspective view of reconstructed Stonehenge"
+    },
+    {
+      "id": "jones-masque-blackness",
+      "title": "Design for Masque of Blackness",
+      "artist": "Inigo Jones",
+      "year": 1605,
+      "source": "Wikimedia Commons",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Inigo_Jones,_design_for_Masque_of_Blackness_1605.jpg",
+      "thumb_url": "/gallery/thumbs/jones-masque-blackness.jpg",
+      "image_url": "/gallery/full/jones-masque-blackness.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "architecture",
+        "portraits"
+      ],
+      "description": "Costume design for Ben Jonson's Masque of Blackness"
+    },
+    {
+      "id": "jones-britannia-triumphans",
+      "title": "Characters for Britannia Triumphans",
+      "artist": "Inigo Jones",
+      "year": 1638,
+      "source": "Wikimedia Commons",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Jones_Characters_for_Britannia_triumphans_1638.jpg",
+      "thumb_url": "/gallery/thumbs/jones-britannia-triumphans.jpg",
+      "image_url": "/gallery/full/jones-britannia-triumphans.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "architecture",
+        "portraits"
+      ],
+      "description": "Character designs for the masque Britannia Triumphans"
+    },
+    {
+      "id": "jones-fiery-spirit",
+      "title": "Page like a Fiery Spirit",
+      "artist": "Inigo Jones",
+      "year": 1613,
+      "source": "Wikimedia Commons",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Jones_Page_like_a_fiery_spirit_1613.jpg",
+      "thumb_url": "/gallery/thumbs/jones-fiery-spirit.jpg",
+      "image_url": "/gallery/full/jones-fiery-spirit.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "architecture"
+      ],
+      "description": "Masque costume design - Page as fiery spirit"
+    },
+    {
+      "id": "jones-tethys-nymph",
+      "title": "Tethys Festival Nymph",
+      "artist": "Inigo Jones",
+      "year": 1610,
+      "source": "Wikimedia Commons",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Jones_Tethys_Festival_nymph_1610.jpg",
+      "thumb_url": "/gallery/thumbs/jones-tethys-nymph.jpg",
+      "image_url": "/gallery/full/jones-tethys-nymph.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "architecture"
+      ],
+      "description": "Costume design for Tethys' Festival nymph"
+    },
+    {
+      "id": "jones-mouse-trap-dealer",
+      "title": "Mouse Trap Dealer",
+      "artist": "Inigo Jones",
+      "year": 1620,
+      "source": "Wikimedia Commons",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Inigo_Jones_masque_mouse_trap_dealer.jpg",
+      "thumb_url": "/gallery/thumbs/jones-mouse-trap-dealer.jpg",
+      "image_url": "/gallery/full/jones-mouse-trap-dealer.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "architecture"
+      ],
+      "description": "Character costume design - Mouse trap dealer"
+    },
+    {
+      "id": "khunrath-laboratory",
+      "title": "Alchemist's Laboratory (Oratory-Laboratory)",
+      "artist": "Heinrich Khunrath / Hans Vredeman de Vries",
+      "year": 1595,
+      "source": "Wikimedia Commons",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Alchemist%27s_Laboratory,_Heinrich_Khunrath,_Amphitheatrum_sapientiae_aeternae,_1595.jpg",
+      "thumb_url": "/gallery/thumbs/khunrath-laboratory.jpg",
+      "image_url": "/gallery/full/khunrath-laboratory.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "alchemy",
+        "hermetica"
+      ],
+      "description": "The famous Oratory-Laboratory plate showing prayer and alchemical work united"
     }
   ],
   "categories": [
