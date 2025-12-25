@@ -392,6 +392,49 @@
             left: 0;
             color: var(--text-muted);
         }
+        #detail-panel .editions-list {
+            list-style: none;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            padding-right: 8px;
+        }
+        #detail-panel .editions-list::-webkit-scrollbar {
+            width: 4px;
+        }
+        #detail-panel .editions-list::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 2px;
+        }
+        #detail-panel .editions-list li {
+            margin: 6px 0;
+            padding: 6px 8px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 4px;
+            border-left: 2px solid var(--gold);
+        }
+        #detail-panel .editions-list .edition-year {
+            color: var(--gold);
+            font-weight: 500;
+            margin-right: 8px;
+        }
+        #detail-panel .editions-list .edition-title {
+            color: var(--text);
+            display: block;
+            margin-top: 2px;
+        }
+        #detail-panel .editions-list .edition-place {
+            color: var(--text-muted);
+            font-size: 11px;
+        }
+        #detail-panel .editions-list a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #detail-panel .editions-list a:hover {
+            color: var(--gold);
+        }
         #detail-panel .ustc-link {
             display: inline-block;
             background: rgba(201, 162, 39, 0.15);
@@ -542,8 +585,9 @@
             </div>
 
             <div class="section" id="ustc-section">
-                <div class="section-title">USTC Editions</div>
-                <a class="ustc-link" id="detail-ustc" href="#" target="_blank"></a>
+                <div class="section-title">USTC Editions (<span id="edition-count">0</span>)</div>
+                <ul class="editions-list" id="detail-editions"></ul>
+                <a class="ustc-link" id="detail-ustc" href="#" target="_blank">→ Search all on USTC</a>
             </div>
 
             <div class="section">
@@ -578,12 +622,104 @@ const graphData = {
       "death": 1499,
       "place": "Florence",
       "group": "florentine",
-      "ustc_editions": 45,
+      "ustc_editions": 147,
       "role": "Philosopher, translator, priest",
       "key_works": [
         "Theologia Platonica (1482)",
         "De triplici vita (1489)",
         "Corpus Hermeticum translation (1463)"
+      ],
+      "editions": [
+        {
+          "id": 462190,
+          "year": "1471",
+          "title": "De potestate et sapientia Dei",
+          "place": "Treviso"
+        },
+        {
+          "id": 470626,
+          "year": "1472",
+          "title": "De potestate et sapientia Dei",
+          "place": "Ferrara"
+        },
+        {
+          "id": 492543,
+          "year": "1476",
+          "title": "De christiana religione",
+          "place": "Firenze"
+        },
+        {
+          "id": 685351,
+          "year": "1481",
+          "title": "Consiglio contro la pestilenza",
+          "place": "Firenze"
+        },
+        {
+          "id": 735099,
+          "year": "1482",
+          "title": "Platonica theologia de immortalitate animorum",
+          "place": "Firenze"
+        },
+        {
+          "id": 755955,
+          "year": "1484",
+          "title": "De Christiana religione [Italian]",
+          "place": "Pisa"
+        },
+        {
+          "id": 367510,
+          "year": "1489",
+          "title": "De vita libri tres (De triplici vita); Apologia; Quod necessaria sit ad vitam se",
+          "place": "Firenze"
+        },
+        {
+          "id": 231059,
+          "year": "1490",
+          "title": "De vita libri tres (De triplici vita); Apologia; Quod necessaria sit ad vitam se",
+          "place": "Bologna"
+        },
+        {
+          "id": 236435,
+          "year": "1493",
+          "title": "Liber de sole et lumine",
+          "place": "Firenze"
+        },
+        {
+          "id": 414042,
+          "year": "1494",
+          "title": "De potestate et sapientia Dei",
+          "place": "Paris"
+        },
+        {
+          "id": 199518,
+          "year": "1495",
+          "title": "Epistolae",
+          "place": "Venezia"
+        },
+        {
+          "id": 148477,
+          "year": "1496",
+          "title": "De Mystica theologia; De divinis nominibus.",
+          "place": "Firenze"
+        },
+        {
+          "id": 604275,
+          "year": "1496",
+          "title": "De vita libri tres, apologia; Quod necessaria sit ad vitam securitas",
+          "place": "Paris"
+        },
+        {
+          "id": 618664,
+          "year": "1496",
+          "title": "Commentaria V perpetua in Platonem",
+          "place": "Firenze"
+        },
+        {
+          "id": 220481,
+          "year": "1497",
+          "title": "Epistolae",
+          "place": "N\u00fcrnberg"
+        }
       ]
     },
     {
@@ -593,12 +729,104 @@ const graphData = {
       "death": 1494,
       "place": "Florence",
       "group": "florentine",
-      "ustc_editions": 81,
+      "ustc_editions": 151,
       "role": "Philosopher, Cabalist",
       "key_works": [
         "900 Conclusions (1486)",
         "Oration on Dignity (1486)",
         "Heptaplus (1489)"
+      ],
+      "editions": [
+        {
+          "id": 193307,
+          "year": "1486",
+          "title": "Conclusiones DCCCC publice disputandae",
+          "place": "Roma"
+        },
+        {
+          "id": 87187,
+          "year": "1487",
+          "title": "Conclusiones DCCCC publice disputandae",
+          "place": "Ingolstadt"
+        },
+        {
+          "id": 235362,
+          "year": "1487",
+          "title": "Apologia conclusionum suorum",
+          "place": "Napoli"
+        },
+        {
+          "id": 359376,
+          "year": "1489",
+          "title": "Heptaplus de septiformi sex dierum Geneseos enarratione.",
+          "place": "Firenze"
+        },
+        {
+          "id": 19649,
+          "year": "1495",
+          "title": "Aureae epistolae.",
+          "place": "Speyer"
+        },
+        {
+          "id": 551147,
+          "year": "1496",
+          "title": "Opera.",
+          "place": "Bologna"
+        },
+        {
+          "id": 393336,
+          "year": "1497",
+          "title": "De morte Christi. De studio divinae et humanae philosophiae",
+          "place": "Bologna"
+        },
+        {
+          "id": 622745,
+          "year": "1497",
+          "title": "Defensio Hieronymi Savonarolae adversus Samuelem Cassinensem",
+          "place": "Firenze"
+        },
+        {
+          "id": 111860,
+          "year": "1498",
+          "title": "De iniusta excommunicatione pro Hieronymi Savonarolae innocentia",
+          "place": "Firenze"
+        },
+        {
+          "id": 276850,
+          "year": "1498",
+          "title": "Epistola in favore di Girolamo Savonarola",
+          "place": "Modena"
+        },
+        {
+          "id": 400014,
+          "year": "1498",
+          "title": "Opera.",
+          "place": "Venezia"
+        },
+        {
+          "id": 548744,
+          "year": "1498",
+          "title": "Epistola ad Johannem Franciscum Picum [French] Conseil profitable contre les enn",
+          "place": "Paris"
+        },
+        {
+          "id": 726261,
+          "year": "1498",
+          "title": "Disputationes contra astrologos",
+          "place": "Venezia"
+        },
+        {
+          "id": 405933,
+          "year": "1499",
+          "title": "Aureae epistolae. Deprecatoria ad Deum elegiaco carmine. Testimonia eius vitae e",
+          "place": "Paris"
+        },
+        {
+          "id": 668810,
+          "year": "1500",
+          "title": "Compendium sententiarum praeclarissimarum adversus astrologiam",
+          "place": "Modena"
+        }
       ]
     },
     {
@@ -608,8 +836,100 @@ const graphData = {
       "death": 1494,
       "place": "Florence",
       "group": "florentine",
-      "ustc_editions": 107,
-      "role": "Poet, philologist"
+      "ustc_editions": 258,
+      "role": "Poet, philologist",
+      "editions": [
+        {
+          "id": 344107,
+          "year": "1478",
+          "title": "Pactianae coniurationis commentarium",
+          "place": "Firenze"
+        },
+        {
+          "id": 623405,
+          "year": "1478",
+          "title": "Narrationes amatoriae",
+          "place": "Venezia"
+        },
+        {
+          "id": 628679,
+          "year": "1478",
+          "title": "Pactianae coniurationis commentarium",
+          "place": "Roma"
+        },
+        {
+          "id": 679528,
+          "year": "1478",
+          "title": "Pactianae coniurationis commentarium",
+          "place": "Roma"
+        },
+        {
+          "id": 452515,
+          "year": "1482",
+          "title": "Silva cui titulus Manto",
+          "place": "Firenze"
+        },
+        {
+          "id": 600936,
+          "year": "1483",
+          "title": "Silva cui titulus Rusticus",
+          "place": "Firenze"
+        },
+        {
+          "id": 467663,
+          "year": "1485",
+          "title": "Silva cui titulus Ambra",
+          "place": "Firenze"
+        },
+        {
+          "id": 45012,
+          "year": "1489",
+          "title": "Miscellaneorum centuria prima",
+          "place": "Firenze"
+        },
+        {
+          "id": 254148,
+          "year": "1491",
+          "title": "Praelectio cui titulus Panepistemon",
+          "place": "Firenze"
+        },
+        {
+          "id": 335316,
+          "year": "1491",
+          "title": "Silva cui titulus Nutricia",
+          "place": "Bologna"
+        },
+        {
+          "id": 600182,
+          "year": "1491",
+          "title": "Silva cui titulus Nutricia",
+          "place": "Firenze"
+        },
+        {
+          "id": 315167,
+          "year": "1492",
+          "title": "Epistolae ad familiares. Georgius Merula: In epistulam ad Lentulum Spintherem (F",
+          "place": "Venezia"
+        },
+        {
+          "id": 357812,
+          "year": "1492",
+          "title": "Silva cui titulus Manto Rusticus Ambra",
+          "place": "Bologna"
+        },
+        {
+          "id": 562624,
+          "year": "1492",
+          "title": "Praelectio in Priora Aristotelis Analytica cui titulus Lamia",
+          "place": "Firenze"
+        },
+        {
+          "id": 773787,
+          "year": "1492",
+          "title": "Epistola de obitu Laurentii Medicis",
+          "place": "Bologna"
+        }
+      ]
     },
     {
       "id": "landino",
@@ -618,8 +938,100 @@ const graphData = {
       "death": 1498,
       "place": "Florence",
       "group": "florentine",
-      "ustc_editions": 31,
-      "role": "Humanist, commentator"
+      "ustc_editions": 99,
+      "role": "Humanist, commentator",
+      "editions": [
+        {
+          "id": 233899,
+          "year": "1480",
+          "title": "Disputationum Camaldulensium libri IV [I. De vita activa et contemplativa. II. D",
+          "place": "Firenze"
+        },
+        {
+          "id": 726644,
+          "year": "1483",
+          "title": "Oratio in funere Jordani Ursini",
+          "place": "Firenze"
+        },
+        {
+          "id": 75811,
+          "year": "1485",
+          "title": "Formulario di lettere e di orazioni in volgare",
+          "place": "Bologna"
+        },
+        {
+          "id": 348630,
+          "year": "1485",
+          "title": "Orazione quando fu dato el bastone della fiorentina militia al conte Nicola Orsi",
+          "place": "Firenze"
+        },
+        {
+          "id": 423298,
+          "year": "1487",
+          "title": "Formulario di epistole missive e responsive",
+          "place": "Bologna"
+        },
+        {
+          "id": 714156,
+          "year": "1487",
+          "title": "Formulario di lettere e di orazioni in volgare",
+          "place": "Gaeta"
+        },
+        {
+          "id": 263138,
+          "year": "1488",
+          "title": "Formulario di epistole",
+          "place": "Firenze"
+        },
+        {
+          "id": 199987,
+          "year": "1489",
+          "title": "Opera [Bucolica and Georgica, with argumenta (comm. Servius and Landinus); Aenei",
+          "place": "Venezia"
+        },
+        {
+          "id": 335813,
+          "year": "1489",
+          "title": "Formulario di lettere e di orazioni in volgare",
+          "place": "Gaeta"
+        },
+        {
+          "id": 36258,
+          "year": "1490",
+          "title": "Formulario di epistole",
+          "place": "Firenze"
+        },
+        {
+          "id": 112640,
+          "year": "1490",
+          "title": "Formulario di lettere e di orazioni in volgare",
+          "place": "Bologna"
+        },
+        {
+          "id": 326208,
+          "year": "1490",
+          "title": "Formulario di lettere e di orazioni in volgare",
+          "place": "Napoli"
+        },
+        {
+          "id": 384238,
+          "year": "1490",
+          "title": "Formulario di lettere e di orazioni in volgare",
+          "place": "Roma"
+        },
+        {
+          "id": 157676,
+          "year": "1492",
+          "title": "Opera [Bucolica and Georgica, with argumenta (comm. Servius and Landinus); Aenei",
+          "place": "Venezia"
+        },
+        {
+          "id": 488681,
+          "year": "1492",
+          "title": "Formulario di epistole",
+          "place": "Firenze"
+        }
+      ]
     },
     {
       "id": "lorenzo",
@@ -628,7 +1040,100 @@ const graphData = {
       "death": 1492,
       "place": "Florence",
       "group": "patron",
-      "role": "Ruler, poet, patron"
+      "role": "Ruler, poet, patron",
+      "ustc_editions": 223,
+      "editions": [
+        {
+          "id": 608455,
+          "year": "1483",
+          "title": "De justitia commutativa. Ed: Franciscus de Medicis",
+          "place": "Paris"
+        },
+        {
+          "id": 496708,
+          "year": "1484",
+          "title": "Super I sententiarum",
+          "place": "Paris"
+        },
+        {
+          "id": 153992,
+          "year": "1485",
+          "title": "Rappresentatione dei Santi Giovanni et Paulo",
+          "place": "Firenze"
+        },
+        {
+          "id": 510568,
+          "year": "1490",
+          "title": "Ballatette di Lorenzo de Medici e Angelo Poliziano [Politianus]",
+          "place": "Firenze"
+        },
+        {
+          "id": 575731,
+          "year": "1491",
+          "title": "Ballatette di Lorenzo de' Medici, Angelo Poliziano [Politianus], Bernardo Giambu",
+          "place": "Firenze"
+        },
+        {
+          "id": 322068,
+          "year": "1495",
+          "title": "Rappresentazione dei Santi Giovanni e Paolo",
+          "place": "Firenze"
+        },
+        {
+          "id": 73749,
+          "year": "1498",
+          "title": "Rappresentazione dei Santi Giovanni e Paolo",
+          "place": "Firenze"
+        },
+        {
+          "id": 213342,
+          "year": "1498",
+          "title": "Rappresentazione dei Santi Giovanni e Paolo",
+          "place": "Firenze"
+        },
+        {
+          "id": 64992,
+          "year": "1507",
+          "title": "La rappresentatione di sancto Giovanni & Paulo",
+          "place": "Firenze"
+        },
+        {
+          "id": 489259,
+          "year": "1507",
+          "title": "Habes in hoc volumine: Summulas magistri Pauli Veneti. Cum expositionibus ac que",
+          "place": "Venezia"
+        },
+        {
+          "id": 303870,
+          "year": "1510",
+          "title": "Habes in hoc volumine Summulas magistri Pauli Veneti. Cum expositionibus ac ques",
+          "place": "Venezia"
+        },
+        {
+          "id": 383076,
+          "year": "1511",
+          "title": "Stanze bellissime et ornatissime intitulate le selue d'amore composte dal Magnif",
+          "place": "Siena"
+        },
+        {
+          "id": 195962,
+          "year": "1513",
+          "title": "Stanze bellissime et ornatissime intitulate le selve d'amore composte dal magnif",
+          "place": "Pesaro"
+        },
+        {
+          "id": 323330,
+          "year": "1514",
+          "title": "De justitia commutativa",
+          "place": "Paris"
+        },
+        {
+          "id": 677352,
+          "year": "1514",
+          "title": "La rappresentatione di sancto Giovanni & Paulo",
+          "place": "Firenze"
+        }
+      ]
     },
     {
       "id": "cosimo",
@@ -637,7 +1142,100 @@ const graphData = {
       "death": 1464,
       "place": "Florence",
       "group": "patron",
-      "role": "Banker, patron"
+      "role": "Banker, patron",
+      "ustc_editions": 223,
+      "editions": [
+        {
+          "id": 608455,
+          "year": "1483",
+          "title": "De justitia commutativa. Ed: Franciscus de Medicis",
+          "place": "Paris"
+        },
+        {
+          "id": 496708,
+          "year": "1484",
+          "title": "Super I sententiarum",
+          "place": "Paris"
+        },
+        {
+          "id": 153992,
+          "year": "1485",
+          "title": "Rappresentatione dei Santi Giovanni et Paulo",
+          "place": "Firenze"
+        },
+        {
+          "id": 510568,
+          "year": "1490",
+          "title": "Ballatette di Lorenzo de Medici e Angelo Poliziano [Politianus]",
+          "place": "Firenze"
+        },
+        {
+          "id": 575731,
+          "year": "1491",
+          "title": "Ballatette di Lorenzo de' Medici, Angelo Poliziano [Politianus], Bernardo Giambu",
+          "place": "Firenze"
+        },
+        {
+          "id": 322068,
+          "year": "1495",
+          "title": "Rappresentazione dei Santi Giovanni e Paolo",
+          "place": "Firenze"
+        },
+        {
+          "id": 73749,
+          "year": "1498",
+          "title": "Rappresentazione dei Santi Giovanni e Paolo",
+          "place": "Firenze"
+        },
+        {
+          "id": 213342,
+          "year": "1498",
+          "title": "Rappresentazione dei Santi Giovanni e Paolo",
+          "place": "Firenze"
+        },
+        {
+          "id": 64992,
+          "year": "1507",
+          "title": "La rappresentatione di sancto Giovanni & Paulo",
+          "place": "Firenze"
+        },
+        {
+          "id": 489259,
+          "year": "1507",
+          "title": "Habes in hoc volumine: Summulas magistri Pauli Veneti. Cum expositionibus ac que",
+          "place": "Venezia"
+        },
+        {
+          "id": 303870,
+          "year": "1510",
+          "title": "Habes in hoc volumine Summulas magistri Pauli Veneti. Cum expositionibus ac ques",
+          "place": "Venezia"
+        },
+        {
+          "id": 383076,
+          "year": "1511",
+          "title": "Stanze bellissime et ornatissime intitulate le selue d'amore composte dal Magnif",
+          "place": "Siena"
+        },
+        {
+          "id": 195962,
+          "year": "1513",
+          "title": "Stanze bellissime et ornatissime intitulate le selve d'amore composte dal magnif",
+          "place": "Pesaro"
+        },
+        {
+          "id": 323330,
+          "year": "1514",
+          "title": "De justitia commutativa",
+          "place": "Paris"
+        },
+        {
+          "id": 677352,
+          "year": "1514",
+          "title": "La rappresentatione di sancto Giovanni & Paulo",
+          "place": "Firenze"
+        }
+      ]
     },
     {
       "id": "plethon",
@@ -645,7 +1243,28 @@ const graphData = {
       "birth": 1355,
       "death": 1452,
       "place": "Byzantium",
-      "group": "greek"
+      "group": "greek",
+      "ustc_editions": 3,
+      "editions": [
+        {
+          "id": 121314,
+          "year": "1577",
+          "title": "General and rare memorials pertayning to the perfect arte of navigation annexed ",
+          "place": "London"
+        },
+        {
+          "id": 272984,
+          "year": "1604",
+          "title": "La postrera historia de la monarchia de los persas hasta Alexandro Magno",
+          "place": "Valladolid"
+        },
+        {
+          "id": 1610838,
+          "year": "1625",
+          "title": "Ple\u0304tho\u0304nos pros to\u0304n Basilea emanoue\u0304lon peri to\u0304n en peloponne\u0304so\u0304 pragmato\u0304n.",
+          "place": "Antwerpen"
+        }
+      ]
     },
     {
       "id": "bessarion",
@@ -654,11 +1273,103 @@ const graphData = {
       "death": 1472,
       "place": "Rome",
       "group": "greek",
-      "ustc_editions": 44,
+      "ustc_editions": 50,
       "role": "Cardinal, Greek scholar, Platonist",
       "key_works": [
         "In Calumniatorem Platonis (1469)",
         "Donated library to Venice"
+      ],
+      "editions": [
+        {
+          "id": 636573,
+          "year": "1469",
+          "title": "Adversus calumniatorem Platonis. Correctio librorum Platonis de legibus Georgio ",
+          "place": "Roma"
+        },
+        {
+          "id": 537253,
+          "year": "1471",
+          "title": "Epistolae et orationes [Italian]. Demosthenes: Olynthiaca prima",
+          "place": "Venezia"
+        },
+        {
+          "id": 658330,
+          "year": "1471",
+          "title": "Epistolae et orationes. Olynthiaca prima",
+          "place": "Paris"
+        },
+        {
+          "id": 596944,
+          "year": "1500",
+          "title": "Epistolae et orationes",
+          "place": "Paris"
+        },
+        {
+          "id": 712277,
+          "year": "1503",
+          "title": "Quae hoc in volumine tractantur. Bessarionis cardinalis Niceni, e patriarchae Co",
+          "place": "Venezia"
+        },
+        {
+          "id": 405710,
+          "year": "1513",
+          "title": "Oratio de Sacramento Eucharistiae",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 167313,
+          "year": "1516",
+          "title": "Quae hoc in volumine tractantur Bessarionis cardinalis Niceni, & patriarchae Con",
+          "place": "Venezia"
+        },
+        {
+          "id": 331805,
+          "year": "1519",
+          "title": "Ta meta ta physika tu Aristotelus. Methaphysicorum Aristotelis opus. Re ipsa div",
+          "place": "Leipzig"
+        },
+        {
+          "id": 767851,
+          "year": "1521",
+          "title": "De factis et dictis Socratis memoratu dignis Bessarione cardinale Niceno interpr",
+          "place": "Roma"
+        },
+        {
+          "id": 700120,
+          "year": "1527",
+          "title": "De sacramento eucharistiae, et quibus verbis Christi corpus perficiatur, bessari",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 383786,
+          "year": "1531",
+          "title": "Eruditissima opera",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 568640,
+          "year": "1532",
+          "title": "Ad veranium fratrem dialogus, in quo ecclesiasten interpretatur de ea parte evan",
+          "place": "Hagenau"
+        },
+        {
+          "id": 4029,
+          "year": "1534",
+          "title": "Opera",
+          "place": "Basel"
+        },
+        {
+          "id": 36301,
+          "year": "1537",
+          "title": "Ad illustrissimos, inclitosque Italiae principes contra Turcas exhortatio",
+          "place": "Roma"
+        },
+        {
+          "id": 145704,
+          "year": "1539",
+          "title": "Metaphysicorum libri duodecim quibus adduntur duo",
+          "place": "Paris"
+        }
       ]
     },
     {
@@ -668,11 +1379,103 @@ const graphData = {
       "death": 1487,
       "place": "Florence",
       "group": "greek",
-      "ustc_editions": 120,
+      "ustc_editions": 118,
       "role": "Greek scholar, Aristotle translator",
       "key_works": [
         "Aristotle translations",
         "Ethics, Physics lectures"
+      ],
+      "editions": [
+        {
+          "id": 274675,
+          "year": "1501",
+          "title": "Opus de moribus alias ethicorum ex Greco adeo eleganter in Latinum traductum ut ",
+          "place": "Leipzig"
+        },
+        {
+          "id": 404002,
+          "year": "1503",
+          "title": "Commentaria doctoris subtilis Ioannis Scoti in XII libros Metaphisicae Aristotel",
+          "place": "Venezia"
+        },
+        {
+          "id": 703555,
+          "year": "1503",
+          "title": "Ethica Aristotelica. Ioanne Argyropylo interprete",
+          "place": "Venezia"
+        },
+        {
+          "id": 493654,
+          "year": "1504",
+          "title": "Opus de moribus alias ethicorum ex Greco eleganter in Latinum traductum",
+          "place": "Leipzig"
+        },
+        {
+          "id": 18213,
+          "year": "1506",
+          "title": "Ethica Ioanne Argyropylo interprete",
+          "place": "Venezia"
+        },
+        {
+          "id": 335742,
+          "year": "1506",
+          "title": "Habes in hoc volumine libros octo physicorum Aristotelis cum duplici translation",
+          "place": "Venezia"
+        },
+        {
+          "id": 355999,
+          "year": "1506",
+          "title": "Collecta & exercitata Friderici Sunczel Mosellani liberalium studiorum magistri ",
+          "place": "Venezia"
+        },
+        {
+          "id": 492316,
+          "year": "1506",
+          "title": "Haec, volumine hoc continentur. Interpretamenta sanctissimi doctoris Thomae Aqui",
+          "place": "Venezia"
+        },
+        {
+          "id": 115634,
+          "year": "1507",
+          "title": "In libros De Anima Aristotelis Expositio, et cum texto Jo. Argyropyli primo loco",
+          "place": "Venezia"
+        },
+        {
+          "id": 460442,
+          "year": "1507",
+          "title": "Vitae Aristotelis ex Plutarcho et ex Diogene Laertio. Praedicabilia Porphyrii. P",
+          "place": "Venezia"
+        },
+        {
+          "id": 715629,
+          "year": "1507",
+          "title": "Expositio di. Tho Aquinatis in libros Posteriorum et Perihermenias Aristotelis c",
+          "place": "Venezia"
+        },
+        {
+          "id": 413991,
+          "year": "1508",
+          "title": "Libri octo physicorum, Aristotilis e Graeco in Latinu traducti.",
+          "place": "Wien"
+        },
+        {
+          "id": 435863,
+          "year": "1508",
+          "title": "Questiones perutiles librorum de anima cum adiectione textus nove translationis ",
+          "place": "Venezia"
+        },
+        {
+          "id": 701722,
+          "year": "1508",
+          "title": "In Aristotelicorum ethicorum commendationem. Eulogium ad scholasticum studiosum",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 798591,
+          "year": "1508",
+          "title": "Tres De anima libri per Ioannem Argyropylum e Graeco in Latinum traducti",
+          "place": "Venezia"
+        }
       ]
     },
     {
@@ -682,11 +1485,103 @@ const graphData = {
       "death": 1522,
       "place": "Germany",
       "group": "german",
-      "ustc_editions": 103,
+      "ustc_editions": 139,
       "role": "Hebraist, Cabalist, jurist",
       "key_works": [
         "De verbo mirifico (1494)",
         "De arte cabalistica (1517)"
+      ],
+      "editions": [
+        {
+          "id": 402474,
+          "year": "1478",
+          "title": "Vocabularius breviloquus. Guarinus: Ars diphthongandi. Johannes de Lapide: De ar",
+          "place": "Basel"
+        },
+        {
+          "id": 241486,
+          "year": "1479",
+          "title": "Vocabularius breviloquus",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 86493,
+          "year": "1480",
+          "title": "Vocabularius breviloquus. Guarinus: Ars diphthongandi. Johannes de Lapide: De ar",
+          "place": "Basel"
+        },
+        {
+          "id": 614890,
+          "year": "1481",
+          "title": "Vocabularius breviloquus. Guarinus Veronensis: Ars diphthongandi.; Johannes de L",
+          "place": "Basel"
+        },
+        {
+          "id": 259806,
+          "year": "1482",
+          "title": "Vocabularius breviloquus. Ars diphthongandi. De arte punctandi. De accentu",
+          "place": "Lyon"
+        },
+        {
+          "id": 369878,
+          "year": "1482",
+          "title": "Vocabularius breviloquus. Guarinus Veronensis: Ars diphthongandi; Johannes de La",
+          "place": "Basel"
+        },
+        {
+          "id": 590922,
+          "year": "1483",
+          "title": "Vocabularius breviloquus. Guarinus: Ars diphthongandi. Johannes de Lapide: De ar",
+          "place": "Reutlingen"
+        },
+        {
+          "id": 30995,
+          "year": "1486",
+          "title": "Vocabularius breviloquus. Guarinus: Ars diphthongandi. Johannes de Lapide: De ar",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 407886,
+          "year": "1486",
+          "title": "Vocabularius breviloquus. Ars diphthongandi. De arte punctandi; de accentu",
+          "place": "Lyon"
+        },
+        {
+          "id": 537382,
+          "year": "1486",
+          "title": "Vocabularius breviloquus. Guarinus Veronensis: Ars diphthongandi; Johannes de La",
+          "place": "Basel"
+        },
+        {
+          "id": 500590,
+          "year": "1487",
+          "title": "Vocabularius breviloquus. Guarinus: Ars diphthongandi. Johannes de Lapide: De ar",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 753501,
+          "year": "1487",
+          "title": "Vocabularius breviloquus. Add: Guarinus: Ars diphthongandi. Johannes de Lapide: ",
+          "place": "Lyon"
+        },
+        {
+          "id": 527174,
+          "year": "1488",
+          "title": "Vocabularius breviloquus. Guarinus Veronensis: Ars diphthongandi; Johannes de La",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 597378,
+          "year": "1489",
+          "title": "Vocabularius breviloquus. Guarinus Veronensis: Ars diphthongandi; Johannes de La",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 234757,
+          "year": "1491",
+          "title": "Vocabularius breviloquus. Guarinus: Ars diphthongandi. Johannes de Lapide: De ar",
+          "place": "Strasbourg"
+        }
       ]
     },
     {
@@ -696,8 +1591,100 @@ const graphData = {
       "death": 1516,
       "place": "Germany",
       "group": "german",
-      "ustc_editions": 43,
-      "role": "Abbot, cryptographer, occultist"
+      "ustc_editions": 284,
+      "role": "Abbot, cryptographer, occultist",
+      "editions": [
+        {
+          "id": 164110,
+          "year": "1493",
+          "title": "De statu et ruina monastici ordinis",
+          "place": "Leipzig"
+        },
+        {
+          "id": 405964,
+          "year": "1493",
+          "title": "Collatio de republica ecclesiae",
+          "place": "Mainz"
+        },
+        {
+          "id": 458337,
+          "year": "1493",
+          "title": "De statu et ruina monastici ordinis",
+          "place": "Mainz"
+        },
+        {
+          "id": 581109,
+          "year": "1493",
+          "title": "De statu et ruina monastici ordinis",
+          "place": "Mainz"
+        },
+        {
+          "id": 612200,
+          "year": "1493",
+          "title": "Abbreviatura recessuum capitularium patrum ordinis divi Benedicti",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 668881,
+          "year": "1493",
+          "title": "Collatio de republica ecclesiae",
+          "place": "Mainz"
+        },
+        {
+          "id": 58522,
+          "year": "1494",
+          "title": "De laudibus sanctissimae Annae",
+          "place": "Mainz"
+        },
+        {
+          "id": 87512,
+          "year": "1494",
+          "title": "Institutio vitae sacerdotalis",
+          "place": "Mainz"
+        },
+        {
+          "id": 205062,
+          "year": "1494",
+          "title": "Institutio vitae sacerdotalis",
+          "place": "Augsburg"
+        },
+        {
+          "id": 222192,
+          "year": "1494",
+          "title": "Institutio vitae sacerdotalis",
+          "place": "Mainz"
+        },
+        {
+          "id": 309167,
+          "year": "1494",
+          "title": "De laudibus sanctissimae Annae",
+          "place": "Mainz"
+        },
+        {
+          "id": 544732,
+          "year": "1494",
+          "title": "De laudibus ordinis fratrum Carmelitarum",
+          "place": "Mainz"
+        },
+        {
+          "id": 665121,
+          "year": "1494",
+          "title": "De laude scriptorum",
+          "place": "Mainz"
+        },
+        {
+          "id": 703944,
+          "year": "1494",
+          "title": "De scriptoribus ecclesiasticis.",
+          "place": "Basel"
+        },
+        {
+          "id": 75951,
+          "year": "1495",
+          "title": "De proprietate monachorum",
+          "place": "Mainz"
+        }
+      ]
     },
     {
       "id": "agrippa",
@@ -706,10 +1693,102 @@ const graphData = {
       "death": 1535,
       "place": "Germany",
       "group": "german",
-      "ustc_editions": 65,
+      "ustc_editions": 180,
       "role": "Occult philosopher, physician",
       "key_works": [
         "De occulta philosophia (1531)"
+      ],
+      "editions": [
+        {
+          "id": 614828,
+          "year": "1526",
+          "title": "Dehortatione de la gentile theologia per Henrico Cornelio Agrippa, nella quale s",
+          "place": "Venezia"
+        },
+        {
+          "id": 25475,
+          "year": "1529",
+          "title": "De nobilitate et preaecellentia foeminei sexus. Expostulatio cum Joanne Catiline",
+          "place": "Antwerpen"
+        },
+        {
+          "id": 130293,
+          "year": "1530",
+          "title": "De incertitudine & vanitate scientiarum & artium, atque excellentia verbi Dei, d",
+          "place": "Antwerpen"
+        },
+        {
+          "id": 223042,
+          "year": "1530",
+          "title": "Traictier intitule de la noblesse et preexcellence du sexe feminin",
+          "place": "Antwerpen"
+        },
+        {
+          "id": 303389,
+          "year": "1530",
+          "title": "De la nobilt\u00e0, e preeccellentia del feminile sesso",
+          "place": "Venezia"
+        },
+        {
+          "id": 374776,
+          "year": "1530",
+          "title": "De la noblesse et preexcellence du sexe feminin ",
+          "place": "Paris"
+        },
+        {
+          "id": 583707,
+          "year": "1530",
+          "title": "Les deux coronnementz cest ascavoir de Lombardie du sainct empire de Rome",
+          "place": "Antwerpen"
+        },
+        {
+          "id": 717159,
+          "year": "1530",
+          "title": "Caroli quinti cum Hispaniarum tum duplicis Germaniae et Romanorum archiregis, ut",
+          "place": "Antwerpen"
+        },
+        {
+          "id": 119547,
+          "year": "1531",
+          "title": "De occulta philosophia libri tres",
+          "place": "Antwerpen"
+        },
+        {
+          "id": 134124,
+          "year": "1531",
+          "title": "De incertitudine et vanitate scientiarum declamatio invectiua, qua vuiuersa illa",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 150986,
+          "year": "1531",
+          "title": "Opera quaecumque hactenus vel in lucem prodierunt vel inveniri potuerunt omnia i",
+          "place": "Lyon"
+        },
+        {
+          "id": 286873,
+          "year": "1531",
+          "title": "De Occulta Philosophia",
+          "place": "Mechelen"
+        },
+        {
+          "id": 299487,
+          "year": "1531",
+          "title": "De incertitudine & vanitate scientarium & artium, atque excellentia verbi Dei de",
+          "place": "Paris"
+        },
+        {
+          "id": 318528,
+          "year": "1531",
+          "title": "De incertitudine et vanitate scientiarum declamatio invectiva, qua universa illa",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 324957,
+          "year": "1531",
+          "title": "De incertitudine et vanitate scientiarum et artium, atque excellentia Verbi Dei ",
+          "place": "Paris"
+        }
       ]
     },
     {
@@ -719,8 +1798,100 @@ const graphData = {
       "death": 1541,
       "place": "Germany",
       "group": "german",
-      "ustc_editions": 27,
-      "role": "Physician, alchemist"
+      "ustc_editions": 337,
+      "role": "Physician, alchemist",
+      "editions": [
+        {
+          "id": 81648,
+          "year": "1529",
+          "title": "Practica gemacht auff Europen anzufahen in dem nechstkunfftigen dreyssigsten jar",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 242593,
+          "year": "1529",
+          "title": "Practica gemacht auff Europen anzufahen in dem nechstkunfftigen dreyssigsten jar",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 352024,
+          "year": "1529",
+          "title": "Vom holtz guaiaco gr\u00fcndlicher heylung darinn essen unnd trincken saltz und ander",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 542087,
+          "year": "1529",
+          "title": "Practica gemacht auff Europen anzufahen in dem nechst k\u00fcnfftigen dreyssigsten ja",
+          "place": "Augsburg"
+        },
+        {
+          "id": 111160,
+          "year": "1530",
+          "title": "Pronosticatio auff diss gegenwertig jar betreffend ein confederation so von ande",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 294781,
+          "year": "1530",
+          "title": "Ein confederation od' B\u00fcndtnus auff di\u00df gegenwertig jar, betreffend, so von ande",
+          "place": "s.l. (Germany)"
+        },
+        {
+          "id": 334069,
+          "year": "1530",
+          "title": "Practica gemacht auff Europen anzufahen in dem jetzgegenwertigen dreyssigisten j",
+          "place": "Augsburg"
+        },
+        {
+          "id": 363273,
+          "year": "1530",
+          "title": "Practica gemacht auff Europen anzufahen in dem jetz gegenwertigen dreyssigisten ",
+          "place": "Augsburg"
+        },
+        {
+          "id": 464657,
+          "year": "1530",
+          "title": "Wunderbarer und mercklicher Geschichten",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 512100,
+          "year": "1530",
+          "title": "Wunderbarer unnd mercklicher Geschichten so ynn vier jaren nach einander bis man",
+          "place": "Zwickau"
+        },
+        {
+          "id": 549561,
+          "year": "1530",
+          "title": "Von der Frantzoesischen kranckheit drey buecher. Das erst von der impostur der a",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 602649,
+          "year": "1530",
+          "title": "Von der Frantzoesische kranckheit drey b\u00fccher. Das erst von der impostur der art",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 727130,
+          "year": "1530",
+          "title": "Practica gemacht auff Europen: anzufahen in dem nechstk\u00fcnfftigen dreyssigsten ja",
+          "place": "Wien"
+        },
+        {
+          "id": 800493,
+          "year": "1530",
+          "title": "Wunderbarer unnd mercklicher Geschichten so in vier jaren nach einander bi\u00df man ",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 369115,
+          "year": "1531",
+          "title": "Uszlegug der Erdbidem beschehen nach u\u00dfganng de\u00df cometens in den alpischen birge",
+          "place": "Konstanz"
+        }
+      ]
     },
     {
       "id": "champier",
@@ -729,8 +1900,100 @@ const graphData = {
       "death": 1538,
       "place": "Lyon",
       "group": "french",
-      "ustc_editions": 66,
-      "role": "Physician, Hermeticist"
+      "ustc_editions": 133,
+      "role": "Physician, Hermeticist",
+      "editions": [
+        {
+          "id": 410115,
+          "year": "1498",
+          "title": "Janua logicae et physicae",
+          "place": "Lyon"
+        },
+        {
+          "id": 740326,
+          "year": "1498",
+          "title": "In magicarum artium destructionem dialogus",
+          "place": "Lyon"
+        },
+        {
+          "id": 81883,
+          "year": "1502",
+          "title": "La nef des princes et des batailles de noblesse ",
+          "place": "Lyon"
+        },
+        {
+          "id": 349516,
+          "year": "1503",
+          "title": "Le guidon en francoys ",
+          "place": "Lyon"
+        },
+        {
+          "id": 783456,
+          "year": "1503",
+          "title": "La nef des dames vertueuses ",
+          "place": "Lyon"
+        },
+        {
+          "id": 425756,
+          "year": "1505",
+          "title": "Recueil des histoires des royaumes d'Austrasie ou Lorraine, de Jerusalem, de Sic",
+          "place": "Lyon"
+        },
+        {
+          "id": 213228,
+          "year": "1506",
+          "title": "Libelli duo. Primus de medicine claris scriptoribus secundus de legum divinarum ",
+          "place": "Lyon"
+        },
+        {
+          "id": 567128,
+          "year": "1506",
+          "title": "Index librorum in hoc volumine contentorum. Libelli duo. primus de medicine clar",
+          "place": "Lyon"
+        },
+        {
+          "id": 80912,
+          "year": "1507",
+          "title": "Tropheum Gallorum quadruplices eorumdem complectens historiam, in quatuor partit",
+          "place": "Lyon"
+        },
+        {
+          "id": 797020,
+          "year": "1507",
+          "title": "Liber de quadruplici vita. Theologia Asclepii, Hermetis Trismegisti discipuli, c",
+          "place": "Lyon"
+        },
+        {
+          "id": 393821,
+          "year": "1508",
+          "title": "De triplici disciplina cujus partes sunt. Philosophia naturalis. Medicina. Theol",
+          "place": "Lyon"
+        },
+        {
+          "id": 521216,
+          "year": "1509",
+          "title": "Le triumphe du tres chrestien roy de France xij de ce nom contenant l'origine et",
+          "place": "Lyon"
+        },
+        {
+          "id": 703223,
+          "year": "1509",
+          "title": "Le guidon en francoys ",
+          "place": "Paris"
+        },
+        {
+          "id": 6967,
+          "year": "1510",
+          "title": "Le recueil ou croniques des hystoires des royaulmes d'Austrasie ",
+          "place": "Lyon"
+        },
+        {
+          "id": 71582,
+          "year": "1510",
+          "title": "Le recueil ou croniques des hystoires des royaulmes d'Austrasie ",
+          "place": "Nancy"
+        }
+      ]
     },
     {
       "id": "lefevre",
@@ -738,7 +2001,100 @@ const graphData = {
       "birth": 1455,
       "death": 1536,
       "place": "Paris",
-      "group": "french"
+      "group": "french",
+      "ustc_editions": 45,
+      "editions": [
+        {
+          "id": 602736,
+          "year": "1501",
+          "title": "Compendiaria in Aristotelis ethicen introductio rei litterarie studiosis apprime",
+          "place": "Wien"
+        },
+        {
+          "id": 444192,
+          "year": "1506",
+          "title": "Utilissima introductio Jacobi stapul\u00f1sis in libros de anima Aristotelis adiectis",
+          "place": "Leipzig"
+        },
+        {
+          "id": 431025,
+          "year": "1507",
+          "title": "Introductio Jacobi Fabri Stapulsis in arithmecam divi seuerini boetii pariter et",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 418870,
+          "year": "1509",
+          "title": "Dialectica haec continens. De enunciatione. De quinqua vocibus, id est praedicab",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 14718,
+          "year": "1510",
+          "title": "Jacobi Scapulensis Introductiones in libros phisicoru[m] et de a[n]i[m]a Aristot",
+          "place": "Krak\u00f3w"
+        },
+        {
+          "id": 68282,
+          "year": "1511",
+          "title": "Artificiosa Jacobi Fabri Stapulensis introductio per modum epitomatis in decem l",
+          "place": "Leipzig"
+        },
+        {
+          "id": 659356,
+          "year": "1511",
+          "title": "Artificialis introductio: in dece, ethicorum libros Aristotelis: adiuncto famili",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 699323,
+          "year": "1511",
+          "title": "De officio missae, quem edidit rhomae.",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 384839,
+          "year": "1512",
+          "title": "Meteorologia Aristotelis. Eleganti Jacobi Fabri Stapulensis paraphrasi explanata",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 65642,
+          "year": "1513",
+          "title": "Compendiu philosophie moralis ex Aristotelis peripateticorum principis ethicorum",
+          "place": "Wien"
+        },
+        {
+          "id": 556799,
+          "year": "1513",
+          "title": "Contenta. Georgii trapezontii dialectica haec continens. De enunciatione. De qui",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 144351,
+          "year": "1514",
+          "title": "Introductio in physicam paraphrasim: adiectis annotationibus explanata. A Jacobo",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 127094,
+          "year": "1516",
+          "title": "Dialectica haec continens. De enunciatione. De quinque vocibus, id est praedicab",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 478723,
+          "year": "1516",
+          "title": "Meteorologia Aristotelis eleganti paraphrasi extricata: de impressionibus aeris.",
+          "place": "Leipzig"
+        },
+        {
+          "id": 499213,
+          "year": "1516",
+          "title": "Opus novum astronomicum cum lucidissima explanatone Christiani sculpini bangelte",
+          "place": "K\u00f6ln"
+        }
+      ]
     },
     {
       "id": "bovelles",
@@ -746,7 +2102,100 @@ const graphData = {
       "birth": 1479,
       "death": 1567,
       "place": "Paris",
-      "group": "french"
+      "group": "french",
+      "ustc_editions": 39,
+      "editions": [
+        {
+          "id": 288727,
+          "year": "1500",
+          "title": "Ars suppositionum",
+          "place": "Paris"
+        },
+        {
+          "id": 91445,
+          "year": "1501",
+          "title": "In artem oppositorum Introductio",
+          "place": "Paris"
+        },
+        {
+          "id": 95122,
+          "year": "1501",
+          "title": "De constitutione et utilitate artium humanarum. With additions by Johannes Pelli",
+          "place": "Paris"
+        },
+        {
+          "id": 328069,
+          "year": "1501",
+          "title": "De constitutione et utilitate artium humanarum",
+          "place": "Paris"
+        },
+        {
+          "id": 659036,
+          "year": "1503",
+          "title": "Metaphysicum introductorium cum alio quodam opusculo",
+          "place": "Paris"
+        },
+        {
+          "id": 708852,
+          "year": "1503",
+          "title": "Epitome compendiosaque introductio in libros arithmeticos divi Severini Boetii, ",
+          "place": "Paris"
+        },
+        {
+          "id": 7096,
+          "year": "1510",
+          "title": "Epitome compendiosaque introductio in libros arithmeticos divi Severini Boetii; ",
+          "place": "Paris"
+        },
+        {
+          "id": 423844,
+          "year": "1510",
+          "title": "Liber de intellectu. Liber de sensu. Liber de nichilo. Ars oppositorum. Liber de",
+          "place": "Paris"
+        },
+        {
+          "id": 495735,
+          "year": "1511",
+          "title": "Commentarius in primordiale evangelium divi Joannis; Vita Remundi eremite Philos",
+          "place": "Paris"
+        },
+        {
+          "id": 758338,
+          "year": "1511",
+          "title": "Dominica oratio tertrinis ecclesiastice Jherarchie ordinibus particulatim attrib",
+          "place": "Paris"
+        },
+        {
+          "id": 131081,
+          "year": "1512",
+          "title": "Physicorum elementorum libri decem",
+          "place": "Paris"
+        },
+        {
+          "id": 153642,
+          "year": "1512",
+          "title": "Physicorum elementorum libri decem",
+          "place": "Paris"
+        },
+        {
+          "id": 311499,
+          "year": "1513",
+          "title": "Quaestionum theologicarum libri septem; dialogi de Trinitate duo; de divinis pre",
+          "place": "Paris"
+        },
+        {
+          "id": 462052,
+          "year": "1514",
+          "title": "Commentarius in primordiale evangelium divi Johannis; vita Remundi Eremitae; phi",
+          "place": "Paris"
+        },
+        {
+          "id": 712481,
+          "year": "1515",
+          "title": "Theologicarum conclusionum libri decem",
+          "place": "Paris"
+        }
+      ]
     },
     {
       "id": "pomponazzi",
@@ -755,7 +2204,69 @@ const graphData = {
       "death": 1525,
       "place": "Padua/Bologna",
       "group": "italian",
-      "ustc_editions": 4
+      "ustc_editions": 10,
+      "editions": [
+        {
+          "id": 73029,
+          "year": "1511",
+          "title": "Logices adminicula hic contenta: Ammonius In predicabilia Porphyrii, Pompon prae",
+          "place": "Paris"
+        },
+        {
+          "id": 84163,
+          "year": "1514",
+          "title": "In apostolorum simbolum Pauli ricii oratoris philosophi et theologi oculatissimi",
+          "place": "Augsburg"
+        },
+        {
+          "id": 416486,
+          "year": "1514",
+          "title": "In apostolorum simbolum <ivxta peripateticorum dogma dialogus perplane ac summo ",
+          "place": "Augsburg"
+        },
+        {
+          "id": 480244,
+          "year": "1514",
+          "title": "In apostolorum simbolum <ivxta peripateticorum dogma dialogus perplane ac summo ",
+          "place": "Augsburg"
+        },
+        {
+          "id": 609049,
+          "year": "1515",
+          "title": "Tractatus de reactione",
+          "place": "Bologna"
+        },
+        {
+          "id": 1532925,
+          "year": "1515",
+          "title": "Tractatus contradictionum",
+          "place": "Bologna"
+        },
+        {
+          "id": 498314,
+          "year": "1516",
+          "title": "Tractatus de immortalitae animae",
+          "place": "Bologna"
+        },
+        {
+          "id": 599551,
+          "year": "1534",
+          "title": "De immortalitate animae",
+          "place": "Leiden"
+        },
+        {
+          "id": 78352,
+          "year": "1556",
+          "title": "De naturalium effectuum causis, sive de incantationibus, opus abstrusioris philo",
+          "place": "Basel"
+        },
+        {
+          "id": 751941,
+          "year": "1567",
+          "title": "De fato et libero arbitrio de fato, libero arbitrio, praedestinatione, provident",
+          "place": "Basel"
+        }
+      ]
     },
     {
       "id": "nifo",
@@ -764,7 +2275,99 @@ const graphData = {
       "death": 1538,
       "place": "Naples",
       "group": "italian",
-      "ustc_editions": 90
+      "ustc_editions": 192,
+      "editions": [
+        {
+          "id": 376679,
+          "year": "1503",
+          "title": "Super tres libros de anima",
+          "place": "Venezia"
+        },
+        {
+          "id": 412617,
+          "year": "1503",
+          "title": "Liber de intellectu",
+          "place": "Venezia"
+        },
+        {
+          "id": 414401,
+          "year": "1504",
+          "title": "De primi motoris infinitate liber castigatissime nuperrime impressus",
+          "place": "Venezia"
+        },
+        {
+          "id": 719816,
+          "year": "1504",
+          "title": "De diebus criticis seu decretoriis aureus liber: nuper editus et maxima cum dili",
+          "place": "Venezia"
+        },
+        {
+          "id": 37448,
+          "year": "1505",
+          "title": "De nostrarum calamitatum causis liber",
+          "place": "Venezia"
+        },
+        {
+          "id": 193638,
+          "year": "1505",
+          "title": "Averroys de mixtione defensio",
+          "place": "Venezia"
+        },
+        {
+          "id": 242387,
+          "year": "1505",
+          "title": "In duodecimum meta ta phisika seu metaphysices Aristotelis et Averrois volumen: ",
+          "place": "Venezia"
+        },
+        {
+          "id": 601731,
+          "year": "1506",
+          "title": "Physicarum acroasum hoc est naturalium auscultationum liber interprete atque exp",
+          "place": "Venezia"
+        },
+        {
+          "id": 764415,
+          "year": "1506",
+          "title": "De generatione & corruptione liber Augustino Nipho philosopho Suessano interpret",
+          "place": "Venezia"
+        },
+        {
+          "id": 183356,
+          "year": "1507",
+          "title": "Perihermenias hoc est de interpretatione liber. Eutyco Augustino Nipho philotheo",
+          "place": "Venezia"
+        },
+        {
+          "id": 224098,
+          "year": "1508",
+          "title": "Physicarum acroasum hoc est naturalium auscultationum liber interprete atque exp",
+          "place": "Venezia"
+        },
+        {
+          "id": 474856,
+          "year": "1508",
+          "title": "In Averroys de animae beatitudine",
+          "place": "Venezia"
+        },
+        {
+          "id": 705322,
+          "year": "1508",
+          "title": "Commentationes in librum De substantia orbis",
+          "place": "Venezia"
+        },
+        {
+          "id": 289303,
+          "year": "1511",
+          "title": "Metaphysicarum disputationum dilucidarium",
+          "place": "Napoli"
+        },
+        {
+          "id": 688586,
+          "year": "1513",
+          "title": "Ad Syluium Pandonium Bouiani episcopum Eutichi Augustini Niphi philophei Suessan",
+          "place": "Napoli"
+        }
+      ]
     },
     {
       "id": "fracastoro",
@@ -772,7 +2375,100 @@ const graphData = {
       "birth": 1478,
       "death": 1553,
       "place": "Verona",
-      "group": "italian"
+      "group": "italian",
+      "ustc_editions": 42,
+      "editions": [
+        {
+          "id": 121693,
+          "year": "1530",
+          "title": "Syphilis sive Morbus Gallicus",
+          "place": "Verona"
+        },
+        {
+          "id": 80657,
+          "year": "1531",
+          "title": "Syphilis, sive Morbus Gallicus",
+          "place": "Roma"
+        },
+        {
+          "id": 208879,
+          "year": "1531",
+          "title": "Syphilis, sive morbus Gallicus",
+          "place": "Paris"
+        },
+        {
+          "id": 466517,
+          "year": "1531",
+          "title": "Syphilis, sive morbus Gallicus",
+          "place": "Paris"
+        },
+        {
+          "id": 332048,
+          "year": "1536",
+          "title": "Syphilis sive morbus Gallicus",
+          "place": "Basel"
+        },
+        {
+          "id": 109374,
+          "year": "1538",
+          "title": "Homocentrica. Eiusdem De causis criticorum dierum per ea quae in nobis sunt",
+          "place": "Venezia"
+        },
+        {
+          "id": 737370,
+          "year": "1538",
+          "title": "Homocentrica, eiusdem De causis criticorum dierum per ea quae in nobis sunt",
+          "place": "Venezia"
+        },
+        {
+          "id": 285862,
+          "year": "1539",
+          "title": "De ligni sancti multiplici medicina, et vini exhibitione, libri quatuor. Quibus ",
+          "place": "Paris"
+        },
+        {
+          "id": 763049,
+          "year": "1539",
+          "title": "De ligni sancti multiplici medicina et vini exhibitione, libri quatuor",
+          "place": "Paris"
+        },
+        {
+          "id": 319479,
+          "year": "1540",
+          "title": "De ligni sancti multiplici medicina, et vini exhibitione, libri quatuor",
+          "place": "Paris"
+        },
+        {
+          "id": 693093,
+          "year": "1540",
+          "title": "De ligni sancti multiplici medicina, et vini exhibitione, libri quatuor",
+          "place": "Paris"
+        },
+        {
+          "id": 210937,
+          "year": "1542",
+          "title": "De ligni sancti multiplici medicina, et vini exhibitione libri quatuor. Quibus n",
+          "place": "Paris"
+        },
+        {
+          "id": 756155,
+          "year": "1542",
+          "title": "De ligni sancti multiplici medicina, et vini exhibitione, libri quatuor",
+          "place": "Paris"
+        },
+        {
+          "id": 484757,
+          "year": "1543",
+          "title": "De ligni sancti multiplici medicina, et vini exhibitione libri quatuor, quibus n",
+          "place": "Paris"
+        },
+        {
+          "id": 659217,
+          "year": "1543",
+          "title": "De ligni sancti multiplici medicina, et vini exhibitione, libri quatuor. Quibus ",
+          "place": "Paris"
+        }
+      ]
     },
     {
       "id": "cardano",
@@ -781,7 +2477,99 @@ const graphData = {
       "death": 1576,
       "place": "Milan",
       "group": "italian",
-      "ustc_editions": 16
+      "ustc_editions": 211,
+      "editions": [
+        {
+          "id": 715197,
+          "year": "1534",
+          "title": "Pronostico o vero judicio generale composto per lo eccellente messer Hieronymo C",
+          "place": "Venezia"
+        },
+        {
+          "id": 683890,
+          "year": "1535",
+          "title": "Pronostico del anno 1535. de lo excellentissimo astrologo Hieronimo Gardano Mila",
+          "place": "Milano"
+        },
+        {
+          "id": 419232,
+          "year": "1536",
+          "title": "De malo recentiorum medicorum medendi usu libellus Eiusdem libellus de simpliciu",
+          "place": "Venezia"
+        },
+        {
+          "id": 526253,
+          "year": "1536",
+          "title": "Quaestiones musicae in usum scholae northusianae, per Joann. Spang. Herdess. Col",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 41183,
+          "year": "1538",
+          "title": "Libellus qui dicitur suplementum almanach. Libellus alius de restitutione tempor",
+          "place": "Milano"
+        },
+        {
+          "id": 449262,
+          "year": "1539",
+          "title": "Practica arithmetice, & mensurandi singularis. In qua que preter alia continentu",
+          "place": "Milano"
+        },
+        {
+          "id": 355302,
+          "year": "1542",
+          "title": "De consolatione libri tres",
+          "place": "Venezia"
+        },
+        {
+          "id": 173565,
+          "year": "1543",
+          "title": "De restitutione temporum et motuum caelestium geniturae LXVII insignes casibus e",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 1532988,
+          "year": "1543",
+          "title": "De consolatione libri tres.",
+          "place": "Milano"
+        },
+        {
+          "id": 321995,
+          "year": "1544",
+          "title": "De consolatione de libris propriis Hieronymi cardani medici Mediolanesis, de sap",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 69875,
+          "year": "1545",
+          "title": "Artis magnae, sive de regulis algebraicis, lib.unus, qui et totius operis de ari",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 268087,
+          "year": "1545",
+          "title": "Liber de immortalitate animorum",
+          "place": "Lyon"
+        },
+        {
+          "id": 403690,
+          "year": "1545",
+          "title": "Contradicentium medicorum liber continens contradictiones centum octo. Hieronymo",
+          "place": "Venezia"
+        },
+        {
+          "id": 688458,
+          "year": "1545",
+          "title": "De malo recentiorum medicorum medendi usu libellus, centum errores illorum conti",
+          "place": "Venezia"
+        },
+        {
+          "id": 795707,
+          "year": "1547",
+          "title": "Libelli quinque. Quorum duo priores, iam denuo sunt emendati, duo sequentes iam ",
+          "place": "N\u00fcrnberg"
+        }
+      ]
     },
     {
       "id": "egidio",
@@ -789,7 +2577,100 @@ const graphData = {
       "birth": 1469,
       "death": 1532,
       "place": "Rome",
-      "group": "cabalist"
+      "group": "cabalist",
+      "ustc_editions": 15,
+      "editions": [
+        {
+          "id": 78902,
+          "year": "1512",
+          "title": "Oratio habita post tertiam sacri Lateranensis Concilii sessionem in ecclesia diu",
+          "place": "Roma"
+        },
+        {
+          "id": 326601,
+          "year": "1512",
+          "title": "Oratio prima synodi sive concilii lateranensis habita per reverendu. P. Egidium ",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 352845,
+          "year": "1512",
+          "title": "Oratio prima synodi lateranensis habita per egidium viterbiensem Augustiniani or",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 374059,
+          "year": "1512",
+          "title": "Oratio prima Synodi Lateranensis habita per Egidium Viterbiensem Augustiniani or",
+          "place": "Roma"
+        },
+        {
+          "id": 213118,
+          "year": "1513",
+          "title": "Oratio prima Synodi Lateranensis habita per Egidium Viterbiensem Augustiniani or",
+          "place": "Roma"
+        },
+        {
+          "id": 793414,
+          "year": "1520",
+          "title": "Caccia amorosa enigmata novamente composta et sotto velame fabricata",
+          "place": "Bologna"
+        },
+        {
+          "id": 360081,
+          "year": "1523",
+          "title": "Amore di Hieronimo Beniveni fiorentino, allo illustrissimo s. Nicolo da Correggi",
+          "place": "Venezia"
+        },
+        {
+          "id": 502178,
+          "year": "1526",
+          "title": "Amore di Hieronimo Beniveni fiorentino, allo illustris. s. Nicolo da Correggio. ",
+          "place": "Venezia"
+        },
+        {
+          "id": 502396,
+          "year": "1532",
+          "title": "Amore Et una Caccia de amore bellissima de Egidio et cinque capituli Composti pe",
+          "place": "Venezia"
+        },
+        {
+          "id": 148941,
+          "year": "1533",
+          "title": "Amore. Et una Caccia de amore bellissima de Egidio et cinque capituli composti p",
+          "place": "Venezia"
+        },
+        {
+          "id": 522926,
+          "year": "1535",
+          "title": "Amore et una Caccia de amore bellissima de Egidio & cinque capituli. Composti pe",
+          "place": "Venezia"
+        },
+        {
+          "id": 87147,
+          "year": "1537",
+          "title": "Caccia bellissima del reverendissimo Egidio con i dilettevoli amori di messer Gi",
+          "place": "Venezia"
+        },
+        {
+          "id": 602261,
+          "year": "1538",
+          "title": "Caccia bellissima del reverendissimo Egidio, con i dilettevoli amori di messer G",
+          "place": "Venezia"
+        },
+        {
+          "id": 745384,
+          "year": "1556",
+          "title": "Hieroglyphica sive de sacris Aegyptiorum literis commentarii, Joannis pierii val",
+          "place": "Basel"
+        },
+        {
+          "id": 322159,
+          "year": "s.d.",
+          "title": "Dialogus in honorem sanctissimi Cesaris Charoli regis catholici Hispaniarum utri",
+          "place": "Barcelona"
+        }
+      ]
     },
     {
       "id": "galatino",
@@ -798,7 +2679,99 @@ const graphData = {
       "death": 1540,
       "place": "Rome",
       "group": "cabalist",
-      "ustc_editions": 6
+      "ustc_editions": 15,
+      "editions": [
+        {
+          "id": 751337,
+          "year": "1513",
+          "title": "Fratris Petri Galatini Oratio funebris atque consolatoria in illustrissimi princ",
+          "place": "s.l. (Italy)"
+        },
+        {
+          "id": 355466,
+          "year": "1515",
+          "title": "Oratio de circumcisione Dominica. Petri Galatini",
+          "place": "Roma"
+        },
+        {
+          "id": 763068,
+          "year": "1518",
+          "title": "Opus toti christianae reipublicae maxime utile, de arcanis catholicae veritatis,",
+          "place": "Ortona"
+        },
+        {
+          "id": 175683,
+          "year": "1522",
+          "title": "Oratio de Dominica Passione, in cappella papae nuperrime habita, ac Hadriano VI ",
+          "place": "Roma"
+        },
+        {
+          "id": 128257,
+          "year": "1524",
+          "title": "Oratio de dominica passione, in capella papae nuperrime habita, ac Hadriano VI P",
+          "place": "Roma"
+        },
+        {
+          "id": 440554,
+          "year": "1550",
+          "title": "De arte cabalistica libri tres Petri galatini opus de arcanis catholicae veritat",
+          "place": "Basel"
+        },
+        {
+          "id": 615149,
+          "year": "1561",
+          "title": "De arte cabalistica liber de verbo mirifico libri tres de verbo mirifico Petri g",
+          "place": "Basel"
+        },
+        {
+          "id": 445656,
+          "year": "1602",
+          "title": "P. Galatini de arcanis catholicae veritatis libri XII : quibus pleraque religion",
+          "place": "Frankfurt am Main"
+        },
+        {
+          "id": 223637,
+          "year": "1603",
+          "title": "De arcanis catholicae veritas libri XII... item Johannis Reuchlini... de cabale ",
+          "place": "Paris"
+        },
+        {
+          "id": 276647,
+          "year": "1603",
+          "title": "De Arcanis Catholicae Veritatis : Libri XII. Quibus Pleraque Religionis Christia",
+          "place": "Frankfurt am Main"
+        },
+        {
+          "id": 797811,
+          "year": "1603",
+          "title": "De Arcanis Catholicae Veritatis : Libri XII. Quibus Pleraque Religionis Christia",
+          "place": "Hanau"
+        },
+        {
+          "id": 284044,
+          "year": "1612",
+          "title": "De Arcanis Catholicae Veritatis : Libri XII. Quibus Pleraque Religionis Christia",
+          "place": "Frankfurt am Main"
+        },
+        {
+          "id": 296830,
+          "year": "1647",
+          "title": "Index doctrinarum pro deipara Petri Galatini minoritae, maxime circa immaculatum",
+          "place": "Cuenca"
+        },
+        {
+          "id": 506892,
+          "year": "1647",
+          "title": "Argomento della notte festiva per la nascita di Nostro Signor Giesu Christo, dra",
+          "place": "Roma"
+        },
+        {
+          "id": 1080826,
+          "year": "1672",
+          "title": "De Arcanis Catholicae Veritatis: Libri XII. Quibus Pleraque Religionis Christian",
+          "place": "Frankfurt am Main"
+        }
+      ]
     },
     {
       "id": "giorgio",
@@ -807,7 +2780,15 @@ const graphData = {
       "death": 1540,
       "place": "Venice",
       "group": "cabalist",
-      "ustc_editions": 6
+      "ustc_editions": 1,
+      "editions": [
+        {
+          "id": 314610,
+          "year": "1588",
+          "title": "Hebdomas animae christianae authore p.f. Georgio Veneto ordinis sancti Francisci",
+          "place": "Vicenza"
+        }
+      ]
     },
     {
       "id": "regiomontanus",
@@ -816,11 +2797,103 @@ const graphData = {
       "death": 1476,
       "place": "Nuremberg",
       "group": "astronomy",
-      "ustc_editions": 103,
+      "ustc_editions": 92,
       "role": "Astronomer, mathematician, printer",
       "key_works": [
         "Epitome Almagesti (1496)",
         "Calendarium (1474)"
+      ],
+      "editions": [
+        {
+          "id": 49087,
+          "year": "1474",
+          "title": "Ephemerides, 1475-1506",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 165580,
+          "year": "1474",
+          "title": "Kalendarium",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 424889,
+          "year": "1474",
+          "title": "Kalendarium  Kalender",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 375652,
+          "year": "1475",
+          "title": "Disputationes contra Cremonensia deliramenta",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 53671,
+          "year": "1476",
+          "title": "Kalendarium [Italian] Calendario ",
+          "place": "Venezia"
+        },
+        {
+          "id": 384464,
+          "year": "1476",
+          "title": "Kalendarium",
+          "place": "Venezia"
+        },
+        {
+          "id": 623792,
+          "year": "1478",
+          "title": "Kalendarium [German] Kalender",
+          "place": "Venezia"
+        },
+        {
+          "id": 690145,
+          "year": "1481",
+          "title": "Ephemerides, 1482-1506. Bartholomaeus Mariens\u00fcss: Expositiones in Ephemerides et",
+          "place": "Venezia"
+        },
+        {
+          "id": 305360,
+          "year": "1482",
+          "title": "Kalendarium",
+          "place": "Venezia"
+        },
+        {
+          "id": 664797,
+          "year": "1483",
+          "title": "Kalendarium",
+          "place": "Venezia"
+        },
+        {
+          "id": 710042,
+          "year": "1484",
+          "title": "Ephemerides 1484-1506",
+          "place": "Venezia"
+        },
+        {
+          "id": 692138,
+          "year": "1485",
+          "title": "Kalendarium",
+          "place": "Venezia"
+        },
+        {
+          "id": 133355,
+          "year": "1488",
+          "title": "Prognosticum",
+          "place": "Lyon"
+        },
+        {
+          "id": 364636,
+          "year": "1488",
+          "title": "Ephemerides 1489-1506",
+          "place": "Augsburg"
+        },
+        {
+          "id": 5593,
+          "year": "1489",
+          "title": "Kalendarium  Kalender",
+          "place": "Augsburg"
+        }
       ]
     },
     {
@@ -830,11 +2903,103 @@ const graphData = {
       "death": 1461,
       "place": "Vienna",
       "group": "astronomy",
-      "ustc_editions": 71,
+      "ustc_editions": 67,
       "role": "Astronomer, humanist",
       "key_works": [
         "Theoricae novae planetarum (1454)",
         "Epitome Almagesti (with Regiomontanus)"
+      ],
+      "editions": [
+        {
+          "id": 468123,
+          "year": "1474",
+          "title": "Theoricae novae planetarum",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 282900,
+          "year": "1495",
+          "title": "Theoricae novae planetarum. With the exposition of Franciscus Capuanus",
+          "place": "Venezia"
+        },
+        {
+          "id": 220693,
+          "year": "1500",
+          "title": "Algorithmus",
+          "place": "Wien"
+        },
+        {
+          "id": 109009,
+          "year": "1503",
+          "title": "Opus algorithmi jucundissimu magistri Georgii peurbachii wiennensis <preceptoris",
+          "place": "Leipzig"
+        },
+        {
+          "id": 594389,
+          "year": "1507",
+          "title": "Opusculum theoricarum planetarum magistri Georgii peurbachii preceptoris singula",
+          "place": "Frankfurt an der Oder"
+        },
+        {
+          "id": 54266,
+          "year": "1510",
+          "title": "Opus algorithimi jucudissimu magri Georgii puerbachii wiennensis <preceptoris si",
+          "place": "Leipzig"
+        },
+        {
+          "id": 178813,
+          "year": "1510",
+          "title": "Opus algorithmi",
+          "place": "Wien"
+        },
+        {
+          "id": 796521,
+          "year": "1510",
+          "title": "Algorithmus",
+          "place": "Wien"
+        },
+        {
+          "id": 210587,
+          "year": "1511",
+          "title": "Omnium acutissimi institutiones in arithmeticam: cum aliis tum in primis adulesc",
+          "place": "Wien"
+        },
+        {
+          "id": 112945,
+          "year": "1513",
+          "title": "In spheram ac theoricas preclarissima commentaria",
+          "place": "Venezia"
+        },
+        {
+          "id": 737110,
+          "year": "1513",
+          "title": "Omnium acutissimi institutiones in arihtmeticam: cum aliis tum inprimis adulesce",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 406741,
+          "year": "1514",
+          "title": "In spheram ac theoricas planetarum preclarissima commentaria",
+          "place": "Milano"
+        },
+        {
+          "id": 437204,
+          "year": "1514",
+          "title": "Tabulae eclypsiu magistri Georgii peurbachii. Tabula primi mobilis Joannis de mo",
+          "place": "Wien"
+        },
+        {
+          "id": 17433,
+          "year": "1515",
+          "title": "Theoricarum novarum textus,cum expositione. Item in easdem commentatio. Insuper ",
+          "place": "Paris"
+        },
+        {
+          "id": 481430,
+          "year": "1515",
+          "title": "Theoricarum novarum textus,cum expositione. Item in easdem commentatio. Insuper ",
+          "place": "Paris"
+        }
       ]
     },
     {
@@ -844,11 +3009,12 @@ const graphData = {
       "death": 1504,
       "place": "Bologna",
       "group": "astronomy",
-      "ustc_editions": 20,
+      "ustc_editions": 0,
       "role": "Astronomer, astrologer",
       "key_works": [
         "Prognostica (1483-1503)"
-      ]
+      ],
+      "editions": []
     },
     {
       "id": "copernicus",
@@ -857,10 +3023,102 @@ const graphData = {
       "death": 1543,
       "place": "Poland",
       "group": "astronomy",
-      "ustc_editions": 3,
+      "ustc_editions": 23,
       "role": "Astronomer, canon",
       "key_works": [
         "De revolutionibus (1543)"
+      ],
+      "editions": [
+        {
+          "id": 252688,
+          "year": "1542",
+          "title": "De lateribus et angulis triangulorum, tum planorum rectilineorum, tum sphaericor",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 74640,
+          "year": "1543",
+          "title": "De revolutionibus orbium coelestium, libri VI.",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 109919,
+          "year": "1543",
+          "title": "In honorem clarissimi viri, sapientia et virtute praestantis D. Henrici iagow Hi",
+          "place": "Frankfurt an der Oder"
+        },
+        {
+          "id": 362327,
+          "year": "1543",
+          "title": "De revolutionibus orbium coelestium, libri VI.",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 93108,
+          "year": "1554",
+          "title": "Sylvvla complectens praecipva meteororum genera, quae apud Aristotelem et alios ",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 368101,
+          "year": "1556",
+          "title": "Elegia de morte nobilis viri, virtute, consilio, et pietate praestantis, Erasmi ",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 228865,
+          "year": "1557",
+          "title": "De angelis carmen ad inclytum principem ac dominum, dominum Joachimum Fridericum",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 799413,
+          "year": "1558",
+          "title": "Rhetoricarum quaestionum libri quatuor de primis eius artis elementis",
+          "place": "Magdeburg"
+        },
+        {
+          "id": 44492,
+          "year": "1560",
+          "title": "Gamelion erdmani copernici scriptum. Ornatissimo viro ludolpho schradero, I.v.do",
+          "place": "Frankfurt an der Oder"
+        },
+        {
+          "id": 160801,
+          "year": "1560",
+          "title": "Elegia viadri ad albim. Continens gratulationem de adventu et coniugio clarissim",
+          "place": "Frankfurt an der Oder"
+        },
+        {
+          "id": 292796,
+          "year": "1561",
+          "title": "Oratio de prima juris origine progressionibus et incrementis recitata ab erdmano",
+          "place": "Frankfurt an der Oder"
+        },
+        {
+          "id": 605168,
+          "year": "1561",
+          "title": "Idyllia quatuor amyntas philetas aeglus alcon de clarissimis viris Martino Luthe",
+          "place": "Frankfurt an der Oder"
+        },
+        {
+          "id": 621815,
+          "year": "1561",
+          "title": "Idyllia quatuor amyntas philetas aeglus alcon de clarissimis viris Martino Luthe",
+          "place": "Frankfurt an der Oder"
+        },
+        {
+          "id": 661680,
+          "year": "1561",
+          "title": "Institutionum imperialium summaria vel resolutiones conscriptae a Paulo praetori",
+          "place": "Frankfurt an der Oder"
+        },
+        {
+          "id": 678385,
+          "year": "1564",
+          "title": "Rhetoricarum quaestionum libri quatuor de primis eius artis elementis",
+          "place": "Wittenberg"
+        }
       ]
     },
     {
@@ -870,7 +3128,99 @@ const graphData = {
       "death": 1574,
       "place": "Wittenberg",
       "group": "astronomy",
-      "ustc_editions": 8
+      "ustc_editions": 22,
+      "editions": [
+        {
+          "id": 121139,
+          "year": "1513",
+          "title": "Thesaurus Mathematicus Sive Canon Sinuum Ad Radium 1.00000.00000.00000 : Et Ad D",
+          "place": "Frankfurt am Main"
+        },
+        {
+          "id": 620285,
+          "year": "1513",
+          "title": "Sinus Primi Et Postremi Gradus Ad Singula Scrupula Secunda : Et Ad Partes Radii ",
+          "place": "Frankfurt am Main"
+        },
+        {
+          "id": 137547,
+          "year": "1540",
+          "title": "Ad clarissimum virum D. Joannem Schonerum, de libris revolutionu eruditissimi vi",
+          "place": "Gda\u0144sk"
+        },
+        {
+          "id": 140694,
+          "year": "1540",
+          "title": "De libris revolutionum Nicolai Copernici per quendam juvenem, mathematicae studi",
+          "place": "Gda\u0144sk"
+        },
+        {
+          "id": 592291,
+          "year": "1541",
+          "title": "De libris revolutionum eruditissimi viri, et mathematici excellentiss. Reverendi",
+          "place": "Basel"
+        },
+        {
+          "id": 77597,
+          "year": "1542",
+          "title": "Tabulae astronomicae in gratiam studiosae juventutis seorsim editae. De ascensio",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 252688,
+          "year": "1542",
+          "title": "De lateribus et angulis triangulorum, tum planorum rectilineorum, tum sphaericor",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 292283,
+          "year": "1542",
+          "title": "Orationes duae, prima de astronomia et geographia, altera de physica, habitae vu",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 416212,
+          "year": "1542",
+          "title": "Tabulae astronomicae in gratiam studiosae juventutis seorsim aeditae. I de aequa",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 333449,
+          "year": "1545",
+          "title": "Tabulae astronomicae in gratiam studiosae juventutis seorsim editae. De ascensio",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 494777,
+          "year": "1545",
+          "title": "Tabulae astronomicae in gratiam studiosae juventutis seorsim editae. De ascensio",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 36642,
+          "year": "1549",
+          "title": "Eukleidu stoicheion biblia hex. Evclidis elementorum geometricorum libri sex, co",
+          "place": "Leipzig"
+        },
+        {
+          "id": 22233,
+          "year": "1550",
+          "title": "Ephemerides novae seu expositio positus djurni siderum et syschematismon praecip",
+          "place": "Leipzig"
+        },
+        {
+          "id": 655834,
+          "year": "1550",
+          "title": "Prognosticon oder practica Deutsch auff das jar Christi M.D.II.",
+          "place": "Leipzig"
+        },
+        {
+          "id": 239953,
+          "year": "1551",
+          "title": "Canon doctrinae triangulorum. Nunc primum a Georgio Joachimo rhetico, in lucem e",
+          "place": "Leipzig"
+        }
+      ]
     },
     {
       "id": "bruno",
@@ -879,11 +3229,103 @@ const graphData = {
       "death": 1600,
       "place": "Italy",
       "group": "post",
-      "ustc_editions": 15,
+      "ustc_editions": 37,
       "role": "Philosopher, cosmologist",
       "key_works": [
         "De l'infinito (1584)",
         "De la causa (1584)"
+      ],
+      "editions": [
+        {
+          "id": 473476,
+          "year": "1582",
+          "title": "De compendiosa architectura, et complemento artis Lullii",
+          "place": "Paris"
+        },
+        {
+          "id": 507814,
+          "year": "1582",
+          "title": "Cantus Circaeus ad eam memoriae praxim ordinatus quam ipse judicariam appellat",
+          "place": "Paris"
+        },
+        {
+          "id": 542707,
+          "year": "1582",
+          "title": "Candelaio. Comedia",
+          "place": "Paris"
+        },
+        {
+          "id": 640286,
+          "year": "1582",
+          "title": "De umbris idearum. Implicantibus artem, quaerendi, inveniendi, jud candi, ordina",
+          "place": "Paris"
+        },
+        {
+          "id": 212534,
+          "year": "1583",
+          "title": "Philothei Iordani Bruni Nolani recens et completa ars reminiscendi et in phantas",
+          "place": "London"
+        },
+        {
+          "id": 6134,
+          "year": "1584",
+          "title": "De la causa, principio, et uno. A' L'illustrissimo Signor di Mauuissiero",
+          "place": "Venezia"
+        },
+        {
+          "id": 144158,
+          "year": "1584",
+          "title": "De la causa, principio, et uno",
+          "place": "Venezia"
+        },
+        {
+          "id": 193967,
+          "year": "1584",
+          "title": "Spaccio de la bestia trionfante. Proposto da Giove, effettuato dal conseglo [!],",
+          "place": "Paris"
+        },
+        {
+          "id": 244897,
+          "year": "1584",
+          "title": "De l'infinito universo et mondi",
+          "place": "Venezia"
+        },
+        {
+          "id": 280836,
+          "year": "1584",
+          "title": "De l'infinito universo et mondi. All'illustrissimo Signor di Maunissiero",
+          "place": "London"
+        },
+        {
+          "id": 380891,
+          "year": "1584",
+          "title": "Spaccio de la bestia trionfante. Proposto da Giove, effettuato dal conseglo [sic",
+          "place": "Paris"
+        },
+        {
+          "id": 542164,
+          "year": "1584",
+          "title": "Spaccio de la bestia trionfante proposto da Gioue, effettuato dal conseglo, reve",
+          "place": "Paris"
+        },
+        {
+          "id": 616599,
+          "year": "1584",
+          "title": "La cena de le ceneri",
+          "place": "London"
+        },
+        {
+          "id": 692054,
+          "year": "1584",
+          "title": "La cena de ceneri Descritta in cinque dialogi, per quattro interlocutori, con tr",
+          "place": "London"
+        },
+        {
+          "id": 37068,
+          "year": "1585",
+          "title": "La bestia trionfante",
+          "place": "Paris"
+        }
       ]
     },
     {
@@ -893,8 +3335,100 @@ const graphData = {
       "death": 1608,
       "place": "England",
       "group": "post",
-      "ustc_editions": 8,
-      "role": "Mathematician, astrologer, occultist"
+      "ustc_editions": 21,
+      "role": "Mathematician, astrologer, occultist",
+      "editions": [
+        {
+          "id": 466385,
+          "year": "1556",
+          "title": "Ephemeris anni. 1557. currentis iuxta Copernici et Reinhaldi canones fideliter p",
+          "place": "London"
+        },
+        {
+          "id": 115624,
+          "year": "1558",
+          "title": "Propaedeumata aphoristica, de praestantioribus quibusdam naturae virtutibus ad G",
+          "place": "London"
+        },
+        {
+          "id": 118330,
+          "year": "1558",
+          "title": "Propaedeumata aphoristica, de praestantioribus quibusdam naturae virtutibus, ad ",
+          "place": "London"
+        },
+        {
+          "id": 9813,
+          "year": "1561",
+          "title": "The grounde of artes teaching the worke and practise of arithmetike, both in who",
+          "place": "London"
+        },
+        {
+          "id": 350420,
+          "year": "1564",
+          "title": "Monas hieroglyphica, mathematice, magice, cabalistice, anagogiceque explicata",
+          "place": "Antwerpen"
+        },
+        {
+          "id": 211763,
+          "year": "1568",
+          "title": "Propaedeumata aphoristica, de praestantioribus quibusdam naturae virtutibus",
+          "place": "London"
+        },
+        {
+          "id": 326440,
+          "year": "1570",
+          "title": "Libro del modo di dividere le superficie",
+          "place": "Pesaro"
+        },
+        {
+          "id": 478168,
+          "year": "1570",
+          "title": "The elements of geometrie. Whereunto are annexed certaine scholies, annotations,",
+          "place": "London"
+        },
+        {
+          "id": 595047,
+          "year": "1570",
+          "title": "De superficierum divisionibus liber Machometo Bagdedino ascriptus nunc primum Io",
+          "place": "Pesaro"
+        },
+        {
+          "id": 90261,
+          "year": "1573",
+          "title": "Parallaticae commentationis praxeosque nucleus quidam. Authore Ioanne Dee, Londi",
+          "place": "London"
+        },
+        {
+          "id": 121314,
+          "year": "1577",
+          "title": "General and rare memorials pertayning to the perfect arte of navigation annexed ",
+          "place": "London"
+        },
+        {
+          "id": 137609,
+          "year": "1591",
+          "title": "A triple almanacke for the yeere of our Lorde God 1591, being the thirde from th",
+          "place": "London"
+        },
+        {
+          "id": 244933,
+          "year": "1591",
+          "title": "A triple almanacke for the yeere of our Lorde God. 1591 being the thirde from th",
+          "place": "London"
+        },
+        {
+          "id": 401450,
+          "year": "1591",
+          "title": "Monas hieroglyphica Joannis dee, londinensis, ad Maximilianum, Dei gratia Romano",
+          "place": "Frankfurt am Main"
+        },
+        {
+          "id": 88754,
+          "year": "1599",
+          "title": "A letter, containing a most briefe discourse apologeticall with a plaine demonst",
+          "place": "London"
+        }
+      ]
     },
     {
       "id": "kepler",
@@ -903,11 +3437,103 @@ const graphData = {
       "death": 1630,
       "place": "Germany",
       "group": "post",
-      "ustc_editions": 45,
+      "ustc_editions": 95,
       "role": "Astronomer, mathematician",
       "key_works": [
         "Mysterium Cosmographicum (1596)",
         "Harmonices Mundi (1619)"
+      ],
+      "editions": [
+        {
+          "id": 349943,
+          "year": "1590",
+          "title": "Elegia de nuptiis doctissimi et integerrimi juvenis D. magistri Joannis Huldenri",
+          "place": "T\u00fcbingen"
+        },
+        {
+          "id": 225170,
+          "year": "1592",
+          "title": "Lessus in funere reverendi viri, d.m. Ulrici holpii, pastoris leobergensis vigil",
+          "place": "T\u00fcbingen"
+        },
+        {
+          "id": 145439,
+          "year": "1594",
+          "title": "Adoreola. Iovae. Opt. Max. Stat. Et conser. Auspicio. Collata. Ad. Nicrum. Tubin",
+          "place": "T\u00fcbingen"
+        },
+        {
+          "id": 306778,
+          "year": "1596",
+          "title": "Ad clarissimum virum D. Johannem Schonerum de libris revolutionum Nicolai copern",
+          "place": "T\u00fcbingen"
+        },
+        {
+          "id": 709615,
+          "year": "1596",
+          "title": "Schreib calender auff das jahr nach des Herrn Christi unsers erloesers geburt M.",
+          "place": "Graz"
+        },
+        {
+          "id": 502780,
+          "year": "1597",
+          "title": "Schreib calender auff das jahr nach de\u00df Herren Christi unsers erloesers geburt. ",
+          "place": "Graz"
+        },
+        {
+          "id": 501232,
+          "year": "1598",
+          "title": "Schreib calender auff das jar nach des Herren Christi unsers erloesers geburt. M",
+          "place": "Graz"
+        },
+        {
+          "id": 836879,
+          "year": "1601",
+          "title": "De fundamentis astrologiae certioribus : nova dissertatiuncula ad cosmotheoriam ",
+          "place": "Praha"
+        },
+        {
+          "id": 836744,
+          "year": "1602",
+          "title": "De Fundamentis Astrologiae certioribvs, nova dissertatiuncula ad Cosmotheoriam s",
+          "place": "Praha"
+        },
+        {
+          "id": 1586971,
+          "year": "1602",
+          "title": "Prognosticum auff das Jahr nach Christi vnsers Heylandes geburt 1603 : sampt ang",
+          "place": "Praha"
+        },
+        {
+          "id": 440684,
+          "year": "1603",
+          "title": "Prognosticum Auff das Jahr nach Christi unsers Heylandes geburt 1604. Sampt vorg",
+          "place": "Praha"
+        },
+        {
+          "id": 268687,
+          "year": "1604",
+          "title": "Gr\u00fcndtlicher Bericht Von einem ungewohnlichen Newen Stern, wellicher im October ",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 389559,
+          "year": "1604",
+          "title": "Gr\u00fcndtlicher Bericht Von einem ungewohnlichen Newen Stern, wellicher im October ",
+          "place": "Praha"
+        },
+        {
+          "id": 555573,
+          "year": "1604",
+          "title": "Ad Vitellionem Paralipomena, Quibus Astronomiae Pars Optica Traditur : Poti\u00dfimum",
+          "place": "Frankfurt am Main"
+        },
+        {
+          "id": 589434,
+          "year": "1604",
+          "title": "Gr\u00fcndlicher Bericht Von einem Ungew\u00f6hnlichen Newen Stern, Welcher im October di\u00df",
+          "place": "s.l. (Germany)"
+        }
       ]
     },
     {
@@ -917,8 +3543,100 @@ const graphData = {
       "death": 1524,
       "place": "Ferrara",
       "group": "medical",
-      "ustc_editions": 12,
-      "role": "Physician, medical humanist"
+      "ustc_editions": 99,
+      "role": "Physician, medical humanist",
+      "editions": [
+        {
+          "id": 108271,
+          "year": "1486",
+          "title": "Carmina diversorum poetarum",
+          "place": "Venezia"
+        },
+        {
+          "id": 785972,
+          "year": "1492",
+          "title": "De Plinii et aliorum in medicina erroribus",
+          "place": "Ferrara"
+        },
+        {
+          "id": 571886,
+          "year": "1497",
+          "title": "De morbo gallico",
+          "place": "Venezia"
+        },
+        {
+          "id": 725174,
+          "year": "1497",
+          "title": "De morbo gallico",
+          "place": "Milano"
+        },
+        {
+          "id": 485123,
+          "year": "1498",
+          "title": "De Tiro seu Vipera",
+          "place": "Venezia"
+        },
+        {
+          "id": 533258,
+          "year": "1499",
+          "title": "De morbo gallico",
+          "place": "Leipzig"
+        },
+        {
+          "id": 105495,
+          "year": "1506",
+          "title": "De virtute formativa. Epistola. ",
+          "place": "Venezia"
+        },
+        {
+          "id": 461810,
+          "year": "1508",
+          "title": "In libros Galeni",
+          "place": "Venezia"
+        },
+        {
+          "id": 616769,
+          "year": "1508",
+          "title": "Commentaria non parum utilia in libros Galeni de febrium differentiis cum ipsius",
+          "place": "Lyon"
+        },
+        {
+          "id": 179654,
+          "year": "1509",
+          "title": "De Plinii, & plurium aliorum medicorum in medicina erroribus opus. Epistola ad H",
+          "place": "Ferrara"
+        },
+        {
+          "id": 387804,
+          "year": "1509",
+          "title": "In libros Galeni",
+          "place": "Ferrara"
+        },
+        {
+          "id": 785688,
+          "year": "1513",
+          "title": "Carmen in funere domini nostri Iesu Christi : in assumptione et annuntiatione Vi",
+          "place": "Venezia"
+        },
+        {
+          "id": 427912,
+          "year": "1514",
+          "title": "Commentaria non parum utilia in libros Galeni de febrium differentiis cum ipsius",
+          "place": "Lyon"
+        },
+        {
+          "id": 556740,
+          "year": "1514",
+          "title": "Opera: de differentiis morborum libri duo; de inaequali intemperatura liber unus",
+          "place": "Paris"
+        },
+        {
+          "id": 199971,
+          "year": "1518",
+          "title": "De serpentibus opus singulare ac exactissimum",
+          "place": "Bologna"
+        }
+      ]
     },
     {
       "id": "manardi",
@@ -927,7 +3645,99 @@ const graphData = {
       "death": 1536,
       "place": "Ferrara",
       "group": "medical",
-      "ustc_editions": 2
+      "ustc_editions": 30,
+      "editions": [
+        {
+          "id": 133646,
+          "year": "1500",
+          "title": "De erroribus Simonis Pistoris circa morbum Gallicum",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 125660,
+          "year": "1501",
+          "title": "Opus ad Martinum mellerstadt ducalem phisicum de erroribus symonis pistoris de l",
+          "place": "N\u00fcrnberg"
+        },
+        {
+          "id": 775156,
+          "year": "1521",
+          "title": "Epistolae medicinales in quibus multa recentiorum errata et antiquorum decreta r",
+          "place": "Ferrara"
+        },
+        {
+          "id": 281726,
+          "year": "1525",
+          "title": "Ars medicinalis per Ioannem Manardum versa, divinisque commentariolis adeo docte",
+          "place": "Roma"
+        },
+        {
+          "id": 647902,
+          "year": "1528",
+          "title": "Epistolae medicinales",
+          "place": "Paris"
+        },
+        {
+          "id": 735249,
+          "year": "1529",
+          "title": "De victus ratione",
+          "place": "Basel"
+        },
+        {
+          "id": 774393,
+          "year": "1529",
+          "title": "Medicinales epistolae io. Manardi medici ferrarie\u00f1. Doctiss. Rectiorum errata, e",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 319984,
+          "year": "1531",
+          "title": "Epistolarum medicinalium tomus secundus",
+          "place": "Bologna"
+        },
+        {
+          "id": 750782,
+          "year": "1532",
+          "title": "Epistolarum medicinalium tomus secundus, nunquam antea in Gallia excuses",
+          "place": "Lyon"
+        },
+        {
+          "id": 612534,
+          "year": "1535",
+          "title": "Epistolarum medicinalium libri duodeuiginti",
+          "place": "Basel"
+        },
+        {
+          "id": 767233,
+          "year": "1536",
+          "title": "In primum artis parvae Galeni librum commentaria, iam primum recens nata & aedit",
+          "place": "Basel"
+        },
+        {
+          "id": 367098,
+          "year": "1540",
+          "title": "Epistolarum medicinaliu libros XX.",
+          "place": "Basel"
+        },
+        {
+          "id": 155091,
+          "year": "1541",
+          "title": "Ars medicinalis",
+          "place": "Basel"
+        },
+        {
+          "id": 657757,
+          "year": "1542",
+          "title": "Epistolarum medicinalium libri XX eiusdem in Ioan. Mesue simplicia et composita ",
+          "place": "Venezia"
+        },
+        {
+          "id": 7932,
+          "year": "1549",
+          "title": "Epistolarum medicinalium libri XX. In Joannem Mesue Simplicia et composita annot",
+          "place": "Lyon"
+        }
+      ]
     },
     {
       "id": "cusanus",
@@ -936,11 +3746,103 @@ const graphData = {
       "death": 1464,
       "place": "Germany",
       "group": "precursor",
-      "ustc_editions": 68,
+      "ustc_editions": 34,
       "role": "Cardinal, philosopher, mathematician",
       "key_works": [
         "De docta ignorantia (1440)",
         "De coniecturis (1442)"
+      ],
+      "editions": [
+        {
+          "id": 233664,
+          "year": "1488",
+          "title": "Opuscula theologica et mathematica",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 376537,
+          "year": "1492",
+          "title": "Repertorium in postillam super vetus et novum testamentum",
+          "place": "Sevilla"
+        },
+        {
+          "id": 19760,
+          "year": "1499",
+          "title": "De vera sapientia (Ydiota)",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 5303,
+          "year": "1500",
+          "title": "Propositiones de virtute ipsius. Conradus Celtis: Carmen saeculare",
+          "place": "Wien"
+        },
+        {
+          "id": 59081,
+          "year": "1502",
+          "title": "Opuscula theologica et mathematica",
+          "place": "Cortemaggiore"
+        },
+        {
+          "id": 342129,
+          "year": "1502",
+          "title": "In hoc volumine continentur certi tractatus & libri altissimae contemplationis &",
+          "place": "Cortemaggiore"
+        },
+        {
+          "id": 502090,
+          "year": "1502",
+          "title": "Passio Christi simul cum commentariis Nicolai de Lyra",
+          "place": "Salamanca"
+        },
+        {
+          "id": 629499,
+          "year": "1515",
+          "title": "In librum differentiarum veteris testamenti cum quibusdam aliis additionibus et ",
+          "place": "Alcal\u00e1 de Henares"
+        },
+        {
+          "id": 462678,
+          "year": "1557",
+          "title": "La conjecture des derniers jours du tresdocte cardinal de Cusa ",
+          "place": "Paris"
+        },
+        {
+          "id": 325203,
+          "year": "1562",
+          "title": "La conjecture des derniers jours du tresdocte cardinal de Cusa ",
+          "place": "Paris"
+        },
+        {
+          "id": 202992,
+          "year": "1626",
+          "title": "Instructions chrestiennes et practique de bien viure en l\u2019estat seculier",
+          "place": "Douai"
+        },
+        {
+          "id": 1610600,
+          "year": "1626",
+          "title": "Christliche nothwendige Unterweisung, darinnen auch Auffl\u00f6sung aller Schweren Fr",
+          "place": "Luxembourg"
+        },
+        {
+          "id": 1610601,
+          "year": "1626",
+          "title": "Eschole Chrestienne",
+          "place": "Luxembourg"
+        },
+        {
+          "id": 639603,
+          "year": "1627",
+          "title": "Christliche Zuchtschul in welcher neben dem Catechismo, auch gr\u00fcndliche und warh",
+          "place": "Luxembourg"
+        },
+        {
+          "id": 96232,
+          "year": "1628",
+          "title": "Instructions chr\u00e9tiennes et pratique de bien vivre en l'\u00e9tat s\u00e9culier",
+          "place": "Paris"
+        }
       ]
     },
     {
@@ -954,6 +3856,99 @@ const graphData = {
       "key_works": [
         "Notebooks (unpublished)",
         "Divina proportione illustrations"
+      ],
+      "ustc_editions": 95,
+      "editions": [
+        {
+          "id": 603048,
+          "year": "1495",
+          "title": "Utrum deceat sapientem duxere uxorem an caelibato vivere [Italian]",
+          "place": "Bologna"
+        },
+        {
+          "id": 487145,
+          "year": "1509",
+          "title": "Divina proportione. Opera a tutti glingegni perspicaci e curiosi necessaria ove ",
+          "place": "Venezia"
+        },
+        {
+          "id": 386301,
+          "year": "1527",
+          "title": "Opera nova de messer Antonio Vinciguerra secretario della illustrissima Signoria",
+          "place": "Venezia"
+        },
+        {
+          "id": 113838,
+          "year": "1553",
+          "title": "Primordia Christianae religionis, per euualdum vincium nouesie\u00f1. In profectum Pe",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 594114,
+          "year": "1556",
+          "title": "Elegia super obitu reverendissimi in Christo patris et illustrissimi domini D. A",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 33780,
+          "year": "1558",
+          "title": "Il primo libro di motetti a cinque voci",
+          "place": "Venezia"
+        },
+        {
+          "id": 103968,
+          "year": "1560",
+          "title": "primo libro della musica a due voce",
+          "place": "Venezia"
+        },
+        {
+          "id": 1233581,
+          "year": "1560",
+          "title": "\u02beOr \u02bfolam : tif\u02beeret Yi\u015bra\u02beel pereq \u02bfal ha-devequt ... / \u1e25ibr\u02b9 ... Ye\u02beudah Natan",
+          "place": "Istanbul"
+        },
+        {
+          "id": 380827,
+          "year": "1561",
+          "title": "libro primo di madrigali a cinque voci",
+          "place": "Venezia"
+        },
+        {
+          "id": 165049,
+          "year": "1563",
+          "title": "libro primo di madrigali a cinque voci",
+          "place": "Venezia"
+        },
+        {
+          "id": 12104,
+          "year": "1564",
+          "title": "primo libro de madrigali a cinque voci novamente per Antonio Gardano ristampato,",
+          "place": "Venezia"
+        },
+        {
+          "id": 796190,
+          "year": "1566",
+          "title": "primo libro di madrigali a cinque voci. Novamente ristampato, & da molti errori ",
+          "place": "Venezia"
+        },
+        {
+          "id": 2184,
+          "year": "1567",
+          "title": "secondo libro de madrigali a cinque voci",
+          "place": "Venezia"
+        },
+        {
+          "id": 185448,
+          "year": "1567",
+          "title": "Disticha grammatices euualdus vincius ista nussiacus divi confecit in urbe quiri",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 66002,
+          "year": "1571",
+          "title": "Il terzo libro de madrigali a cinque voci",
+          "place": "Venezia"
+        }
       ]
     },
     {
@@ -963,11 +3958,43 @@ const graphData = {
       "death": 1517,
       "place": "Florence/Milan",
       "group": "mathematician",
-      "ustc_editions": 2,
+      "ustc_editions": 5,
       "role": "Mathematician, Franciscan friar",
       "key_works": [
         "Summa de arithmetica (1494)",
         "Divina proportione (1509)"
+      ],
+      "editions": [
+        {
+          "id": 485446,
+          "year": "1509",
+          "title": "Opera a Campano interprete fidissimo tralata Lucas Paciolus theologus insignis, ",
+          "place": "Venezia"
+        },
+        {
+          "id": 487145,
+          "year": "1509",
+          "title": "Divina proportione. Opera a tutti glingegni perspicaci e curiosi necessaria ove ",
+          "place": "Venezia"
+        },
+        {
+          "id": 13012,
+          "year": "1523",
+          "title": "Summa de arithmetica geometria. Proportioni: et proportionalita: nuovamente impr",
+          "place": "Toscolano"
+        },
+        {
+          "id": 780552,
+          "year": "1547",
+          "title": "A notable and very excellente woorke",
+          "place": "London"
+        },
+        {
+          "id": 202232,
+          "year": "1588",
+          "title": "A briefe instruction and maner how to keepe bookes of accompts after the order o",
+          "place": "London"
+        }
       ]
     },
     {
@@ -977,11 +4004,103 @@ const graphData = {
       "death": 1472,
       "place": "Florence",
       "group": "artist",
-      "ustc_editions": 87,
+      "ustc_editions": 91,
       "role": "Architect, humanist, theorist",
       "key_works": [
         "De pictura (1435)",
         "De re aedificatoria (1452)"
+      ],
+      "editions": [
+        {
+          "id": 128851,
+          "year": "1471",
+          "title": "Deifira",
+          "place": "Padova"
+        },
+        {
+          "id": 774925,
+          "year": "1471",
+          "title": "Ecatomfila",
+          "place": "Padova"
+        },
+        {
+          "id": 202484,
+          "year": "1485",
+          "title": "De re aedificatoria. Angelus Politianus: Epistola ad Laurentium Medicem. Baptist",
+          "place": "Firenze"
+        },
+        {
+          "id": 443799,
+          "year": "1491",
+          "title": "Ecatomfila",
+          "place": "Venezia"
+        },
+        {
+          "id": 740953,
+          "year": "1493",
+          "title": "Ippolito Buondelmonti e Dianora de' Bardi",
+          "place": "Venezia"
+        },
+        {
+          "id": 18547,
+          "year": "1495",
+          "title": "Ippolito Buondelmonti e Dianora de' Bardi",
+          "place": "Firenze"
+        },
+        {
+          "id": 786483,
+          "year": "1499",
+          "title": "Opera.",
+          "place": "Firenze"
+        },
+        {
+          "id": 161810,
+          "year": "1501",
+          "title": "Comoedia philodoxeos",
+          "place": "Salamanca"
+        },
+        {
+          "id": 461559,
+          "year": "1501",
+          "title": "Comoedia Philodoxeos. Johannes Franciscus Poggius, Epistola ad Alexandrum VI in ",
+          "place": "Salamanca"
+        },
+        {
+          "id": 519955,
+          "year": "1512",
+          "title": "Libri de re aedificatoria decem. Opus integrum et absolutum diligenterque recogn",
+          "place": "Paris"
+        },
+        {
+          "id": 779972,
+          "year": "1514",
+          "title": "Opuscula quaedam literata virorum doctorum opusculis Plutarchi praeiungenda; de ",
+          "place": "Paris"
+        },
+        {
+          "id": 696236,
+          "year": "1516",
+          "title": "Triuia senatoria",
+          "place": "Venezia"
+        },
+        {
+          "id": 490908,
+          "year": "1520",
+          "title": "Momus",
+          "place": "Roma"
+        },
+        {
+          "id": 673137,
+          "year": "1520",
+          "title": "De principe",
+          "place": "Roma"
+        },
+        {
+          "id": 619941,
+          "year": "1528",
+          "title": "Hecatomphila",
+          "place": "Venezia"
+        }
       ]
     },
     {
@@ -991,7 +4110,100 @@ const graphData = {
       "death": 1492,
       "place": "Sansepolcro",
       "group": "artist",
-      "role": "Painter, mathematician"
+      "role": "Painter, mathematician",
+      "ustc_editions": 37,
+      "editions": [
+        {
+          "id": 51161,
+          "year": "1595",
+          "title": "Rime spirituali sopra i misterii del santissimo rosario, di Francesca Turina Buf",
+          "place": "Roma"
+        },
+        {
+          "id": 460101,
+          "year": "1614",
+          "title": "Viaggio da Venetia al Santo Sepolcro et al Monte Sinai col dissegno delle citta,",
+          "place": "Venezia"
+        },
+        {
+          "id": 447298,
+          "year": "1615",
+          "title": "Viaggio da Venetia al Santo Sepolcro, & al monte Sinai. Co 'l disegno delle citt",
+          "place": "Venezia"
+        },
+        {
+          "id": 107808,
+          "year": "1618",
+          "title": "Il primo libro delle musiche a una e due voci",
+          "place": "Firenze"
+        },
+        {
+          "id": 747737,
+          "year": "1623",
+          "title": "Officia propria sanctorum ordinis Minorum",
+          "place": "Venezia"
+        },
+        {
+          "id": 63820,
+          "year": "1625",
+          "title": "La liberazione di Ruggiero dall'isola d'Alcina balletto rappresentata in musica ",
+          "place": "Firenze"
+        },
+        {
+          "id": 583067,
+          "year": "1627",
+          "title": "Rime all'illustrissima & eccellentissima signora donna Anna Colonna",
+          "place": "Citt\u00e0 di Castello"
+        },
+        {
+          "id": 166549,
+          "year": "1628",
+          "title": "Rime all'illustrissima & eccellentissima signora donna Anna Colonna",
+          "place": "Citt\u00e0 di Castello"
+        },
+        {
+          "id": 299619,
+          "year": "1629",
+          "title": "Arie a una, due e tre voci. Opera prima con privileggio",
+          "place": "Roma"
+        },
+        {
+          "id": 349116,
+          "year": "1630",
+          "title": "Mensa fiorita varie meditationi fondate nel authorita della sacra scrittura dedi",
+          "place": "Napoli"
+        },
+        {
+          "id": 366759,
+          "year": "1637",
+          "title": "Viaggio da Venetia al Santo Sepolcro. Et al Monte Sinai. Col disegno delle citta",
+          "place": "Venezia"
+        },
+        {
+          "id": 308920,
+          "year": "1638",
+          "title": "Viaggio da Venetia al Santo Sepolcro & al monte Sinai. Col disegno delle citta, ",
+          "place": "Venezia"
+        },
+        {
+          "id": 649776,
+          "year": "1642",
+          "title": "Lettera spirituale, et esortatoria. Scritta alle religiose delli venerabili mona",
+          "place": "Roma"
+        },
+        {
+          "id": 1533247,
+          "year": "1642",
+          "title": "[De reliquis animalibus exanguibus, nempe de mollibus, crustaceis, testaceis, et",
+          "place": "Bologna"
+        },
+        {
+          "id": 255449,
+          "year": "1650",
+          "title": "Apparatus ad imaginatiuam doctoris subtilissimi suscitandam sive opus complecten",
+          "place": "Pavia"
+        }
+      ]
     },
     {
       "id": "verrocchio",
@@ -999,7 +4211,9 @@ const graphData = {
       "birth": 1435,
       "death": 1488,
       "place": "Florence",
-      "group": "artist"
+      "group": "artist",
+      "ustc_editions": 0,
+      "editions": []
     },
     {
       "id": "beroaldo",
@@ -1008,11 +4222,103 @@ const graphData = {
       "death": 1505,
       "place": "Bologna",
       "group": "bologna",
-      "ustc_editions": 213,
+      "ustc_editions": 503,
       "role": "Humanist, professor of rhetoric",
       "key_works": [
         "Commentary on Pliny (1476)",
         "Apuleius commentary (1500)"
+      ],
+      "editions": [
+        {
+          "id": 49050,
+          "year": "1476",
+          "title": "Historia naturalis.",
+          "place": "Parma"
+        },
+        {
+          "id": 154496,
+          "year": "1477",
+          "title": "Cosmographia",
+          "place": "Bologna"
+        },
+        {
+          "id": 11329,
+          "year": "1478",
+          "title": "Oratio de laudibus gymnasii Parisiorum",
+          "place": "Paris"
+        },
+        {
+          "id": 137444,
+          "year": "1478",
+          "title": "Opera [Bucolica, Georgica, Aeneis, with argumenta].",
+          "place": "Paris"
+        },
+        {
+          "id": 215153,
+          "year": "1478",
+          "title": "Opera. Ed: Philippus Beroaldus",
+          "place": "Lyon"
+        },
+        {
+          "id": 601253,
+          "year": "1479",
+          "title": "Historia naturalis.",
+          "place": "Treviso"
+        },
+        {
+          "id": 346924,
+          "year": "1480",
+          "title": "Historia naturalis.",
+          "place": "Parma"
+        },
+        {
+          "id": 160876,
+          "year": "1481",
+          "title": "Historia naturalis.",
+          "place": "Parma"
+        },
+        {
+          "id": 625798,
+          "year": "1481",
+          "title": "Carmen de die dominicae passionis. Carmen de officio scribae. Vir prudens",
+          "place": "Bologna"
+        },
+        {
+          "id": 697167,
+          "year": "1482",
+          "title": "Annotationes in commentarios Servii Vergilianos",
+          "place": "Bologna"
+        },
+        {
+          "id": 416909,
+          "year": "1483",
+          "title": "Opera. Ed: Philippus Beroaldus",
+          "place": "Paris"
+        },
+        {
+          "id": 597617,
+          "year": "1483",
+          "title": "Historia naturalis.",
+          "place": "Venezia"
+        },
+        {
+          "id": 255504,
+          "year": "1484",
+          "title": "Opera",
+          "place": "Paris"
+        },
+        {
+          "id": 2968,
+          "year": "1487",
+          "title": "Elegiae.",
+          "place": "Bologna"
+        },
+        {
+          "id": 86454,
+          "year": "1487",
+          "title": "Historia naturalis.",
+          "place": "Venezia"
+        }
       ]
     },
     {
@@ -1022,11 +4328,103 @@ const graphData = {
       "death": 1500,
       "place": "Bologna",
       "group": "bologna",
-      "ustc_editions": 6,
+      "ustc_editions": 33,
       "role": "Humanist, Greek professor",
       "key_works": [
         "Sermones (1502)",
         "Orationes (1502)"
+      ],
+      "editions": [
+        {
+          "id": 60407,
+          "year": "1493",
+          "title": "Silva de armorum ostentatione",
+          "place": "Bologna"
+        },
+        {
+          "id": 146074,
+          "year": "1502",
+          "title": "Orationes seu sermones ut ipse appellabat. Epistolae. Siluae. Satyrae. Eglogae. ",
+          "place": "Bologna"
+        },
+        {
+          "id": 1532829,
+          "year": "1502",
+          "title": "In Hoc Codri Volvmine Haec Continentur.",
+          "place": "Bologna"
+        },
+        {
+          "id": 177441,
+          "year": "1506",
+          "title": "Orationes sive Sermones",
+          "place": "Venezia"
+        },
+        {
+          "id": 328145,
+          "year": "1506",
+          "title": "Orationes seu sermones ut ipse appelabat. Epistole silue satyre egloge [!] epigr",
+          "place": "Venezia"
+        },
+        {
+          "id": 644468,
+          "year": "1515",
+          "title": "In hoc codri volumine hec continentur. Orationes seu sermones ut ipse appellabat",
+          "place": "Paris"
+        },
+        {
+          "id": 307078,
+          "year": "1518",
+          "title": "Aulularia",
+          "place": "Paris"
+        },
+        {
+          "id": 144761,
+          "year": "1527",
+          "title": "Aulularia nunquam castigatius excussa",
+          "place": "Paris"
+        },
+        {
+          "id": 523874,
+          "year": "1527",
+          "title": "Aulularia, absoluta et adjectis annotationibus exposita",
+          "place": "Paris"
+        },
+        {
+          "id": 554673,
+          "year": "1538",
+          "title": "Aulularia absoluta et adjectis annorationibus exposita",
+          "place": "Paris"
+        },
+        {
+          "id": 314177,
+          "year": "1569",
+          "title": "<S\u00f4zomena t\u00f4n palaiotat\u00f4n poi\u00eat\u00f4n. Ge\u00f4rgika, Boukolika kai Gnomika>. Vetustissim",
+          "place": "Gen\u00e8ve"
+        },
+        {
+          "id": 231493,
+          "year": "1589",
+          "title": "Viaggi spirituali, dell'huomo christiano, al cielo, opera, co'l divino aiuto, co",
+          "place": "Venezia"
+        },
+        {
+          "id": 498784,
+          "year": "1591",
+          "title": "De christiana, ac tuta medendi ratione. Libri duo varia doctrina referti. Tracta",
+          "place": "Ferrara"
+        },
+        {
+          "id": 792512,
+          "year": "1595",
+          "title": "De morbis veneficis ac veneficiis. Libri quattuor",
+          "place": "Venezia"
+        },
+        {
+          "id": 352318,
+          "year": "1597",
+          "title": "De vitiis vocis, libri duo. Cui accedit consilium de raucedine, ac methodus test",
+          "place": "Frankfurt am Main"
+        }
       ]
     },
     {
@@ -1036,10 +4434,102 @@ const graphData = {
       "death": 1540,
       "place": "Bologna",
       "group": "bologna",
-      "ustc_editions": 48,
+      "ustc_editions": 27,
       "role": "Humanist, philologist",
       "key_works": [
         "Annotamenta (1505)"
+      ],
+      "editions": [
+        {
+          "id": 38292,
+          "year": "1496",
+          "title": "Praelectio in Plautum et Apuleium",
+          "place": "Bologna"
+        },
+        {
+          "id": 778979,
+          "year": "1500",
+          "title": "Praelectio in Lucretium et Suetonium",
+          "place": "Bologna"
+        },
+        {
+          "id": 1532821,
+          "year": "1501",
+          "title": "Ad reuerendissimum prothonortarium Antonium Galeatium Bentiuolum Ioannis Baptist",
+          "place": "Bologna"
+        },
+        {
+          "id": 1532834,
+          "year": "1503",
+          "title": "Annotamenta...Quaedam praelectiones",
+          "place": "Bologna"
+        },
+        {
+          "id": 209565,
+          "year": "1504",
+          "title": "Ioannes Baptista Pius Bononiensis domino Uldarico Lapicio Croato Austrensi. Sal.",
+          "place": "Bologna"
+        },
+        {
+          "id": 1532844,
+          "year": "1504",
+          "title": "Annotamenta Joannis Baptiste Pii Bononiensis.",
+          "place": "Bologna"
+        },
+        {
+          "id": 21616,
+          "year": "1505",
+          "title": "Annotamenta Joannis Baptiste Pii Bononiensis",
+          "place": "Bologna"
+        },
+        {
+          "id": 115866,
+          "year": "1505",
+          "title": "Annotamenta CCX, vel annotationes linguae latinae graecaeque",
+          "place": "Bologna"
+        },
+        {
+          "id": 244851,
+          "year": "1509",
+          "title": "Elegidia Ioannis Baptistae Pii Bononiensis",
+          "place": "Bologna"
+        },
+        {
+          "id": 172065,
+          "year": "1511",
+          "title": "In Carum Lucretium poetam commentarii a Ioanne Baptista Pio editi, codice Lucret",
+          "place": "Bologna"
+        },
+        {
+          "id": 413387,
+          "year": "1511",
+          "title": "De verborum proprietate compendium; de lingua Latina et de analogia",
+          "place": "Paris"
+        },
+        {
+          "id": 428507,
+          "year": "1514",
+          "title": "In Carum Lucretium commentarii; codice diligenter emendato, additus est index li",
+          "place": "Paris"
+        },
+        {
+          "id": 475105,
+          "year": "1514",
+          "title": "In Carum Lucretium commentarii; codice diligenter emendato, additus est index li",
+          "place": "Paris"
+        },
+        {
+          "id": 536505,
+          "year": "1514",
+          "title": "Pharsalia, cum commentariis",
+          "place": "Paris"
+        },
+        {
+          "id": 738396,
+          "year": "1514",
+          "title": "Pharsalia, cum commentariis",
+          "place": "Paris"
+        }
       ]
     },
     {
@@ -1049,10 +4539,102 @@ const graphData = {
       "death": 1541,
       "place": "Ferrara",
       "group": "ferrara",
-      "ustc_editions": 25,
+      "ustc_editions": 45,
       "role": "Humanist, proto-Copernican",
       "key_works": [
         "Quod caelum stet, terra moveatur (c.1525)"
+      ],
+      "editions": [
+        {
+          "id": 39815,
+          "year": "1502",
+          "title": "Illustriss. Alphonsi Esten. ac Lucretiae Borgiae epithalamium per Caelium Calcag",
+          "place": "Ferrara"
+        },
+        {
+          "id": 7111,
+          "year": "1512",
+          "title": "De situ orbis opus studiosis necessarium, quo gentes, populi, urbes, maria, flum",
+          "place": "Ferrara"
+        },
+        {
+          "id": 265567,
+          "year": "1522",
+          "title": "De situ orbis, opus studiosis necessarium, Graece scriptum. In Latinitatem \u00e0 rhe",
+          "place": "Basel"
+        },
+        {
+          "id": 686563,
+          "year": "1522",
+          "title": "Dionysii afri de situ orbis, opus studiosis necessarium, Graece scriptum. Idem i",
+          "place": "Basel"
+        },
+        {
+          "id": 753933,
+          "year": "1525",
+          "title": "Coelii calcagnini libellus elegans de libero arbitrio ex philosophiae penetralib",
+          "place": "Basel"
+        },
+        {
+          "id": 441542,
+          "year": "1530",
+          "title": "Poetae pater et filius",
+          "place": "Paris"
+        },
+        {
+          "id": 612534,
+          "year": "1535",
+          "title": "Epistolarum medicinalium libri duodeuiginti",
+          "place": "Basel"
+        },
+        {
+          "id": 160116,
+          "year": "1537",
+          "title": "De obitu divi Alfonsi Estensis principis invictiss. epicedion. Hercules Estensis",
+          "place": "Ferrara"
+        },
+        {
+          "id": 252117,
+          "year": "1538",
+          "title": "Disquisitiones in libros officiorum Ciceronis",
+          "place": "Basel"
+        },
+        {
+          "id": 342706,
+          "year": "1539",
+          "title": "Huic libello insunt lilli Gregorii gyraldi ferrariensis herculis vita. Eiusdem d",
+          "place": "Basel"
+        },
+        {
+          "id": 681807,
+          "year": "1539",
+          "title": "De officiis libri III. Cum commentariis, annotationibus et disquisitionibus. De ",
+          "place": "Paris"
+        },
+        {
+          "id": 67368,
+          "year": "1540",
+          "title": "Cynthii Joannis Baptistae gyraldi ferrariensis poematia,",
+          "place": "Basel"
+        },
+        {
+          "id": 367098,
+          "year": "1540",
+          "title": "Epistolarum medicinaliu libros XX.",
+          "place": "Basel"
+        },
+        {
+          "id": 93020,
+          "year": "1543",
+          "title": "De officiis libri III. Cum commentariis, annotationibus, et disquisitionibus. De",
+          "place": "Paris"
+        },
+        {
+          "id": 706489,
+          "year": "1544",
+          "title": "Opera aliquot. Ad illustrissimum & excellontiss.principem d.herculem secundum, d",
+          "place": "Basel"
+        }
       ]
     },
     {
@@ -1062,10 +4644,102 @@ const graphData = {
       "death": 1460,
       "place": "Ferrara",
       "group": "ferrara",
-      "ustc_editions": 87,
+      "ustc_editions": 221,
       "role": "Humanist educator",
       "key_works": [
         "Regulae grammaticales"
+      ],
+      "editions": [
+        {
+          "id": 642577,
+          "year": "1459",
+          "title": "De liberis educandis.",
+          "place": "Mantova"
+        },
+        {
+          "id": 550164,
+          "year": "1470",
+          "title": "Regulae grammaticales. Carmina differentialia",
+          "place": "Venezia"
+        },
+        {
+          "id": 367765,
+          "year": "1471",
+          "title": "Regulae grammaticales. Carmina differentialia",
+          "place": "Venezia"
+        },
+        {
+          "id": 509257,
+          "year": "1471",
+          "title": "Regulae grammaticales. Carmina differentialia",
+          "place": "Venezia"
+        },
+        {
+          "id": 190399,
+          "year": "1472",
+          "title": "De liberis educandis (Tr: Guarinus Veronensis). Add: S. Hieronymus: De officiis ",
+          "place": "Parma"
+        },
+        {
+          "id": 241791,
+          "year": "1472",
+          "title": "De diphthongis; Vocabula per Y scribenda",
+          "place": "Venezia"
+        },
+        {
+          "id": 298781,
+          "year": "1472",
+          "title": "Geographia, libri XVI",
+          "place": "Venezia"
+        },
+        {
+          "id": 622474,
+          "year": "1472",
+          "title": "De liberis educandis",
+          "place": "Padova"
+        },
+        {
+          "id": 654684,
+          "year": "1472",
+          "title": "Regulae grammaticales",
+          "place": "Padova"
+        },
+        {
+          "id": 293801,
+          "year": "1473",
+          "title": "De liberis educandis",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 530387,
+          "year": "1473",
+          "title": "Geographia, libri XVI",
+          "place": "Roma"
+        },
+        {
+          "id": 553326,
+          "year": "1473",
+          "title": "Regulae grammaticales. Carmina differentialia",
+          "place": "Mantova"
+        },
+        {
+          "id": 216711,
+          "year": "1474",
+          "title": "Regulae grammaticales. Carmina differentialia",
+          "place": "Roma"
+        },
+        {
+          "id": 422470,
+          "year": "1474",
+          "title": "Regulae grammaticales. Carmina differentialia. De diphthongis",
+          "place": "Venezia"
+        },
+        {
+          "id": 591736,
+          "year": "1474",
+          "title": "Regulae grammaticales. Carmina differentialia",
+          "place": "Napoli"
+        }
       ]
     },
     {
@@ -1075,8 +4749,100 @@ const graphData = {
       "death": 1508,
       "place": "Bologna",
       "group": "patron",
-      "ustc_editions": 3,
-      "role": "Ruler of Bologna"
+      "ustc_editions": 188,
+      "role": "Ruler of Bologna",
+      "editions": [
+        {
+          "id": 515253,
+          "year": "1492",
+          "title": "Oratio ad Alexandrum VI nomine Bononiensium habita (Ed: Ferdinandus de Salazar)",
+          "place": "Roma"
+        },
+        {
+          "id": 526075,
+          "year": "1492",
+          "title": "Oratio ad Alexandrum VI nomine Bononiensium habita (Ed: Ferdinandus de Salazar)",
+          "place": "Roma"
+        },
+        {
+          "id": 706736,
+          "year": "1492",
+          "title": "Oratio ad Alexandrum VI nomine Bononiensium habita (Ed: Ferdinandus de Salazar)",
+          "place": "Roma"
+        },
+        {
+          "id": 347803,
+          "year": "1530",
+          "title": "Il sogno amoroso, e l'Egloge",
+          "place": "Venezia"
+        },
+        {
+          "id": 67745,
+          "year": "1544",
+          "title": "Il geloso. Comedia del signor Hercole Bentiuoglio",
+          "place": "Venezia"
+        },
+        {
+          "id": 567619,
+          "year": "1544",
+          "title": "I fantasmi. Comedia del signor Hercole Bentiuoglio",
+          "place": "Venezia"
+        },
+        {
+          "id": 6875,
+          "year": "1545",
+          "title": "Il geloso. Comedia",
+          "place": "Venezia"
+        },
+        {
+          "id": 174576,
+          "year": "1545",
+          "title": "I fantasmi. Comedia",
+          "place": "Venezia"
+        },
+        {
+          "id": 371431,
+          "year": "1546",
+          "title": "Le satire et altre rime piacevoli del signor Hercole Bentiuoglio",
+          "place": "Venezia"
+        },
+        {
+          "id": 700360,
+          "year": "1547",
+          "title": "Il geloso. Comedia del signor Hercole Bentiuoglio",
+          "place": "Venezia"
+        },
+        {
+          "id": 771720,
+          "year": "1547",
+          "title": "I fantasmi. Comedia del signor Hercole Bentivoglio",
+          "place": "Venezia"
+        },
+        {
+          "id": 152524,
+          "year": "1550",
+          "title": "Le satire et altre rime piacevoli",
+          "place": "Venezia"
+        },
+        {
+          "id": 556356,
+          "year": "1553",
+          "title": "Lettere o vero cartelli corsi fra l'ill. s. Cornelio Bentiuoglio et il san Franc",
+          "place": "s.l. (Italy)"
+        },
+        {
+          "id": 730580,
+          "year": "1555",
+          "title": "Manifesto con tutte le lettere et altre cose, che son passate fra lui e Cornelio",
+          "place": "Paris"
+        },
+        {
+          "id": 225503,
+          "year": "1556",
+          "title": "Manifesto con tutte le lettere et altre cose che son passate, fra lui, et Cornel",
+          "place": "s.l. (France)"
+        }
+      ]
     },
     {
       "id": "sforza",
@@ -1085,8 +4851,100 @@ const graphData = {
       "death": 1508,
       "place": "Milan",
       "group": "patron",
-      "ustc_editions": 0,
-      "role": "Duke of Milan"
+      "ustc_editions": 209,
+      "role": "Duke of Milan",
+      "editions": [
+        {
+          "id": 634510,
+          "year": "1494",
+          "title": "Decreta ducalia: Fecit nuper senatus noster secretus. Milan, 19 Mar. 1494",
+          "place": "Milano"
+        },
+        {
+          "id": 753923,
+          "year": "1494",
+          "title": "Grida per pubblicazione di amnistia",
+          "place": "Milano"
+        },
+        {
+          "id": 408056,
+          "year": "1495",
+          "title": "Decreta ducalia: De rebus civilibus, De criminalibus, De magistratibus, Circa bl",
+          "place": "Milano"
+        },
+        {
+          "id": 477440,
+          "year": "1495",
+          "title": "Decreta ducalia",
+          "place": "Milano"
+        },
+        {
+          "id": 650292,
+          "year": "1495",
+          "title": "Decretum circa testamentorum donationum et dotium instrumenta et nonnulla alia",
+          "place": "Milano"
+        },
+        {
+          "id": 652822,
+          "year": "1495",
+          "title": "Decreto generale [Latin]",
+          "place": "Cremona"
+        },
+        {
+          "id": 333680,
+          "year": "1497",
+          "title": "Decretum reformatum et renovatum",
+          "place": "Milano"
+        },
+        {
+          "id": 647013,
+          "year": "1498",
+          "title": "Decretum pro libertate ecclesiastica",
+          "place": "Milano"
+        },
+        {
+          "id": 639481,
+          "year": "1499",
+          "title": "Pianto e lamento di Ludovico Sforza",
+          "place": "Venezia"
+        },
+        {
+          "id": 16204,
+          "year": "1500",
+          "title": "Storia della rotta e della presa del Moro e di Ascanio",
+          "place": "Venezia"
+        },
+        {
+          "id": 445063,
+          "year": "1500",
+          "title": "Storia di come Ludovico part\u00e0 da Milano",
+          "place": "Venezia"
+        },
+        {
+          "id": 396898,
+          "year": "1501",
+          "title": "Storia di come Ludovico part\u00ec da Milano",
+          "place": "Bologna"
+        },
+        {
+          "id": 512827,
+          "year": "1530",
+          "title": "Franciscus secundus dux Mediolani &c. Cum nuper nobilis Iacobus ex marchionibus ",
+          "place": "s.l. (Italy)"
+        },
+        {
+          "id": 689456,
+          "year": "1531",
+          "title": "Franciscus II dvx Mediolani. Adversus decipulas, fraudes et subterfugia eorum qu",
+          "place": "Milano"
+        },
+        {
+          "id": 463486,
+          "year": "1534",
+          "title": "Dux Mediolani etc. Eggregie dilecte noster mittimus ad uos decretum gratiae gene",
+          "place": "Milano"
+        }
+      ]
     },
     {
       "id": "matthias",
@@ -1095,8 +4953,100 @@ const graphData = {
       "death": 1490,
       "place": "Hungary",
       "group": "patron",
-      "ustc_editions": 0,
-      "role": "King of Hungary, bibliophile"
+      "ustc_editions": 425,
+      "role": "King of Hungary, bibliophile",
+      "editions": [
+        {
+          "id": 52357,
+          "year": "1496",
+          "title": "Cosmographia.",
+          "place": "Basel"
+        },
+        {
+          "id": 490014,
+          "year": "1496",
+          "title": "Structura carminum",
+          "place": "Leipzig"
+        },
+        {
+          "id": 346843,
+          "year": "1500",
+          "title": "Latinum idioma",
+          "place": "Speyer"
+        },
+        {
+          "id": 555691,
+          "year": "1500",
+          "title": "Carmen de nympharum conquestione. Johannes Werner",
+          "place": "Leipzig"
+        },
+        {
+          "id": 563841,
+          "year": "1500",
+          "title": "Latinum idioma",
+          "place": "Speyer"
+        },
+        {
+          "id": 1530464,
+          "year": "1502",
+          "title": "Hortulus elegantiarum",
+          "place": "Wroc\u0142aw"
+        },
+        {
+          "id": 99931,
+          "year": "1503",
+          "title": "Latinum idioma",
+          "place": "Augsburg"
+        },
+        {
+          "id": 132538,
+          "year": "1503",
+          "title": "Extemporalitates vuratislauie sigismundi fagiluci pierii idest epigrammaton suor",
+          "place": "Wroc\u0142aw"
+        },
+        {
+          "id": 192916,
+          "year": "1503",
+          "title": "Cracovia Poloniae metropolis hortulus elegantiarum magistri",
+          "place": "Wroc\u0142aw"
+        },
+        {
+          "id": 292517,
+          "year": "1503",
+          "title": "Hortulus elegantiarum",
+          "place": "Leipzig"
+        },
+        {
+          "id": 298588,
+          "year": "1503",
+          "title": "In nomine domini. A. Latinum ydeoma magistri Laurentii corvini novoforen.",
+          "place": "Wroc\u0142aw"
+        },
+        {
+          "id": 599746,
+          "year": "1503",
+          "title": "Hortulus elegantiarum",
+          "place": "Wroc\u0142aw"
+        },
+        {
+          "id": 687601,
+          "year": "1503",
+          "title": "Carmen elegiacum magistri Laurentii Corvini novoforensis de apolline et novem mu",
+          "place": "Wroc\u0142aw"
+        },
+        {
+          "id": 489488,
+          "year": "1504",
+          "title": "Compendiosa et facilis diversorum carminum structura cum exemplis aptissimis ac ",
+          "place": "Leipzig"
+        },
+        {
+          "id": 22114,
+          "year": "1505",
+          "title": "Latinum ydeoma. Ab innumeris fere mendis quibus antehac scatebat: penitus exempt",
+          "place": "Leipzig"
+        }
+      ]
     },
     {
       "id": "aldus",
@@ -1105,10 +5055,102 @@ const graphData = {
       "death": 1515,
       "place": "Venice",
       "group": "printer",
-      "ustc_editions": 150,
+      "ustc_editions": 528,
       "role": "Printer, publisher, humanist",
       "key_works": [
         "Aldine Press editions of Greek classics"
+      ],
+      "editions": [
+        {
+          "id": 460127,
+          "year": "1489",
+          "title": "Musarum panagyris. Epistola ad Catherinam Piam",
+          "place": "Venezia"
+        },
+        {
+          "id": 292969,
+          "year": "1490",
+          "title": "Paraenesis ad Leonellum Pium",
+          "place": "Venezia"
+        },
+        {
+          "id": 591586,
+          "year": "1493",
+          "title": "Institutiones grammaticae",
+          "place": "Venezia"
+        },
+        {
+          "id": 516693,
+          "year": "1497",
+          "title": "Brevissima introductio ad litteras graecas",
+          "place": "Venezia"
+        },
+        {
+          "id": 38188,
+          "year": "1498",
+          "title": "Libri graeci impressi usque diem primum octobris MIID",
+          "place": "Venezia"
+        },
+        {
+          "id": 334217,
+          "year": "1500",
+          "title": "Introductio utilissima Hebraice discere cupientibus",
+          "place": "Venezia"
+        },
+        {
+          "id": 729481,
+          "year": "1501",
+          "title": "Rudimenta grammatices Latinae linguae. De literis Graecis & diphthongis, & quema",
+          "place": "Venezia"
+        },
+        {
+          "id": 732829,
+          "year": "1501",
+          "title": "Vergilius",
+          "place": "Lyon"
+        },
+        {
+          "id": 177434,
+          "year": "1502",
+          "title": "Quae hoc volumine continentur. Ad Marinum Sannutum Epistola qui apud Graecos scr",
+          "place": "Venezia"
+        },
+        {
+          "id": 501209,
+          "year": "1502",
+          "title": "Martialis",
+          "place": "Lyon"
+        },
+        {
+          "id": 544507,
+          "year": "1502",
+          "title": "Introductio ad litteras Hebraicas utilissima alphabetum Hebraicum et eius lectur",
+          "place": "Erfurt"
+        },
+        {
+          "id": 295408,
+          "year": "1504",
+          "title": "Lucanus",
+          "place": "Lyon"
+        },
+        {
+          "id": 778813,
+          "year": "1504",
+          "title": "Satyrae VI",
+          "place": "Lyon"
+        },
+        {
+          "id": 419318,
+          "year": "1505",
+          "title": "Valerius Maximus cum commenti Oliuerii Arzignanensis et pulcherrima ac utilissim",
+          "place": "Venezia"
+        },
+        {
+          "id": 689541,
+          "year": "1506",
+          "title": "Satyrae VI",
+          "place": "Lyon"
+        }
       ]
     },
     {
@@ -1118,11 +5160,103 @@ const graphData = {
       "death": 1519,
       "place": "England",
       "group": "english",
-      "ustc_editions": 37,
+      "ustc_editions": 107,
       "role": "Dean of St Paul's, humanist",
       "key_works": [
         "Lectures on Romans",
         "St Paul's School foundation"
+      ],
+      "editions": [
+        {
+          "id": 745848,
+          "year": "1512",
+          "title": "Oratio habita a D. Ioanne Colet decano Sancti Pauli ad clerum in convocatione. A",
+          "place": "London"
+        },
+        {
+          "id": 80714,
+          "year": "1515",
+          "title": "Absolutissimus de octo orationis partitum constructione libellus",
+          "place": "Basel"
+        },
+        {
+          "id": 133454,
+          "year": "1515",
+          "title": "Absolutissimus de octo orationis partium constructione libellus",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 224691,
+          "year": "1515",
+          "title": "Absolutissimus de octo orationis partium constructione libellus",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 547950,
+          "year": "1515",
+          "title": "Absolutissimus de octo orationis partium constructione libellus",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 134998,
+          "year": "1517",
+          "title": "De octo orationis partium constructione libel lus, tum elegans imprimis, turn di",
+          "place": "Basel"
+        },
+        {
+          "id": 221638,
+          "year": "1517",
+          "title": "Absolutissimus de octo orationis partitum constructione libellus",
+          "place": "Basel"
+        },
+        {
+          "id": 254531,
+          "year": "1517",
+          "title": "Absolutissimus de octo orationis partium constructione libellus",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 390463,
+          "year": "1518",
+          "title": "De octo orationis partium constructione libellus, tum elegans inprimis, tum dilu",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 230515,
+          "year": "1519",
+          "title": "O foelix Colonia enchiridion militis Christiani, saluberrimis praeceptis refertu",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 612273,
+          "year": "1519",
+          "title": "De octo orationis constructione",
+          "place": "Paris"
+        },
+        {
+          "id": 670531,
+          "year": "1519",
+          "title": "Enchiridion militis Christiani, saluberrimis praeceptis refertum, autore Des. Er",
+          "place": "Strasbourg"
+        },
+        {
+          "id": 189328,
+          "year": "1520",
+          "title": "Absolutissimus de octo orationis partium constructione libellus de constructione",
+          "place": "Hagenau"
+        },
+        {
+          "id": 372725,
+          "year": "1520",
+          "title": "De octo orationis partium constructione libellus, tum elegans in primis, tum dil",
+          "place": "Basel"
+        },
+        {
+          "id": 700285,
+          "year": "1520",
+          "title": "Libellus de constructione octo partium orationis",
+          "place": "Leipzig"
+        }
       ]
     },
     {
@@ -1132,11 +5266,103 @@ const graphData = {
       "death": 1547,
       "place": "Venice",
       "group": "italian",
-      "ustc_editions": 64,
+      "ustc_editions": 252,
       "role": "Cardinal, humanist, poet",
       "key_works": [
         "Prose della volgar lingua (1525)",
         "Gli Asolani (1505)"
+      ],
+      "editions": [
+        {
+          "id": 698409,
+          "year": "1502",
+          "title": "Le cose vulgari",
+          "place": "Lyon"
+        },
+        {
+          "id": 84093,
+          "year": "1505",
+          "title": "Gli Asolani di messer Pietro Bembo",
+          "place": "Venezia"
+        },
+        {
+          "id": 679010,
+          "year": "1505",
+          "title": "Gli Asolani",
+          "place": "Firenze"
+        },
+        {
+          "id": 214688,
+          "year": "1513",
+          "title": "Epistolarum Leonis decimi pontificis maximi nomine scriptarum libri XVI. Placuit",
+          "place": "Lyon"
+        },
+        {
+          "id": 83201,
+          "year": "1515",
+          "title": "Gli Asolani di messer Pietro Bembo",
+          "place": "Venezia"
+        },
+        {
+          "id": 278481,
+          "year": "1515",
+          "title": "Gli asolani di messer Pietro Bembo",
+          "place": "Firenze"
+        },
+        {
+          "id": 763580,
+          "year": "1515",
+          "title": "Gli Asolani di messer Pietro Bembo",
+          "place": "Venezia"
+        },
+        {
+          "id": 487443,
+          "year": "1516",
+          "title": "Gli Asolani di messer Pietro Bembo",
+          "place": "Bologna"
+        },
+        {
+          "id": 374717,
+          "year": "1517",
+          "title": "Gli Asolani",
+          "place": "Milano"
+        },
+        {
+          "id": 571197,
+          "year": "1518",
+          "title": "De elementis de imitatione io\u00b7francisci pici mirandulae domini, concordi\u00e1eque co",
+          "place": "Basel"
+        },
+        {
+          "id": 64911,
+          "year": "1521",
+          "title": "Elegantissima epistola, de imitatione.",
+          "place": "Wittenberg"
+        },
+        {
+          "id": 621433,
+          "year": "1522",
+          "title": "Gli Asolani di messer Pietro Bembo, con alcune altre sue stanze d'amore novament",
+          "place": "Venezia"
+        },
+        {
+          "id": 407064,
+          "year": "1524",
+          "title": "Orationes duae pro defensione sua in crimen lesae maiestatis, longe exactiori qu",
+          "place": "Firenze"
+        },
+        {
+          "id": 446116,
+          "year": "1524",
+          "title": "Benacus. Augustini Beatiani Verona",
+          "place": "Roma"
+        },
+        {
+          "id": 586991,
+          "year": "1524",
+          "title": "Oratio in susceptione R. Cracoviensis episcopi habita",
+          "place": "Krak\u00f3w"
+        }
       ]
     },
     {
@@ -1146,11 +5372,103 @@ const graphData = {
       "death": 1516,
       "place": "Venice",
       "group": "artist",
-      "ustc_editions": 0,
+      "ustc_editions": 73,
       "role": "Painter, printmaker",
       "key_works": [
         "Portrait of Luca Pacioli (1495)",
         "View of Venice (1500)"
+      ],
+      "editions": [
+        {
+          "id": 598843,
+          "year": "1499",
+          "title": "Privilegium magnificae civitatis Cremonae",
+          "place": "Venezia"
+        },
+        {
+          "id": 25965,
+          "year": "1558",
+          "title": "Musicae epitome ex gla reani dodecachordo un\u00e0 cum quinque vocum melodiis super e",
+          "place": "Basel"
+        },
+        {
+          "id": 323354,
+          "year": "1560",
+          "title": "Cantiones sacrae, quatuor vocum, quae vulgo mutata vocantur Tenor",
+          "place": "Augsburg"
+        },
+        {
+          "id": 800647,
+          "year": "1606",
+          "title": "Madrigali di diversi autori posti in musica da Bartolomeo Barbarino da Fabriano ",
+          "place": "Venezia"
+        },
+        {
+          "id": 67759,
+          "year": "1607",
+          "title": "Il secondo libro de madrigali de diversi auttori posti in musica da Bartolomeo B",
+          "place": "Venezia"
+        },
+        {
+          "id": 322349,
+          "year": "1609",
+          "title": "Madrigali di diversi autori posti in musica per cantare sopra il chitarrone, cla",
+          "place": "Venezia"
+        },
+        {
+          "id": 370860,
+          "year": "1610",
+          "title": "Il primo libro de mottetti di mottetti da cantarsi a una voce sola, o in soprano",
+          "place": "Venezia"
+        },
+        {
+          "id": 505807,
+          "year": "1610",
+          "title": "Il terzo libro de madrigali diversi autori posti in musica per cantare sopra il ",
+          "place": "Venezia"
+        },
+        {
+          "id": 478550,
+          "year": "1611",
+          "title": "Il secondo libro de madrigali de diversi autori posti in musica per cantare sopr",
+          "place": "Venezia"
+        },
+        {
+          "id": 59288,
+          "year": "1614",
+          "title": "Il primo libro de mottetti da cantarsi da una voce sola o in soprano o in tenore",
+          "place": "Venezia"
+        },
+        {
+          "id": 86230,
+          "year": "1614",
+          "title": "Il Secondo libro delli Mottetti di Bartolomeo Barbarino da Fabriano detto il Pes",
+          "place": "Venezia"
+        },
+        {
+          "id": 529518,
+          "year": "1614",
+          "title": "Il Quarto libro de madrigali de diversi auttori posti in musica da BartolomeoBar",
+          "place": "Venezia"
+        },
+        {
+          "id": 492498,
+          "year": "1615",
+          "title": "Spartitura con la parte privilegiata del secondo libro delli motetti",
+          "place": "Venezia"
+        },
+        {
+          "id": 599429,
+          "year": "1616",
+          "title": "Canzonette a una e due voci con alcuni sonetti da cantarsi da una voce sola nel ",
+          "place": "Venezia"
+        },
+        {
+          "id": 314070,
+          "year": "1617",
+          "title": "Kurtzer unpartheyischer, doch wolgegr\u00fcndter Discurs und Bedencken. H. Iustiniani",
+          "place": "s.l. (Germany)"
+        }
       ]
     },
     {
@@ -1165,7 +5483,8 @@ const graphData = {
       "key_works": [
         "Letter to Columbus (1474)",
         "Astronomical observations (unpublished)"
-      ]
+      ],
+      "editions": []
     },
     {
       "id": "gaza",
@@ -1174,11 +5493,103 @@ const graphData = {
       "death": 1475,
       "place": "Rome/Ferrara",
       "group": "greek",
-      "ustc_editions": 202,
+      "ustc_editions": 130,
       "role": "Greek scholar, translator",
       "key_works": [
         "Aristotle translations",
         "Greek grammar (1495)"
+      ],
+      "editions": [
+        {
+          "id": 635986,
+          "year": "1473",
+          "title": "Problemata (Text beginning: Cur exuperantiae).",
+          "place": "Mantova"
+        },
+        {
+          "id": 444280,
+          "year": "1483",
+          "title": "De historia et causis plantarum.",
+          "place": "Treviso"
+        },
+        {
+          "id": 568926,
+          "year": "1495",
+          "title": "Grammatica introductiva [Greek]. Add: Gaza: De mensibus [Greek]; Apollonius Dysc",
+          "place": "Venezia"
+        },
+        {
+          "id": 216555,
+          "year": "1501",
+          "title": "Problemata Alexandri Aphrodisei. Georgio Valla interprete. Problemata Aristoteli",
+          "place": "Venezia"
+        },
+        {
+          "id": 451605,
+          "year": "1501",
+          "title": "Problemata Aristotelis cum dpulici [!] translatione antiqua & nova Theodori Gaze",
+          "place": "Venezia"
+        },
+        {
+          "id": 107148,
+          "year": "1502",
+          "title": "Liber Hysagoge Ioannici, Liber Philareti de pulsibus, Liber Theophili de urinis,",
+          "place": "Venezia"
+        },
+        {
+          "id": 511413,
+          "year": "1504",
+          "title": "Habentur hoc volumine haec Theodoro Gaza interprete. Aristotelis De natura anima",
+          "place": "Venezia"
+        },
+        {
+          "id": 466930,
+          "year": "1505",
+          "title": "De historia plantarum libri IX et decimi principium duntaxat. De causis plantaru",
+          "place": "Lyon"
+        },
+        {
+          "id": 712366,
+          "year": "1505",
+          "title": "De natura animalium libri IX; de partibus animalium libri IIII; de generatione a",
+          "place": "Lyon"
+        },
+        {
+          "id": 751103,
+          "year": "1505",
+          "title": "Problemata Aristotelis cum duplici translatione antiqua videlicet. & nova sancti",
+          "place": "Venezia"
+        },
+        {
+          "id": 781618,
+          "year": "1505",
+          "title": "Problematum Aristotelis sectiones duae de quadraginta. Problematun [!] Alexandri",
+          "place": "Lyon"
+        },
+        {
+          "id": 629615,
+          "year": "1511",
+          "title": "Introductivae grammatices libri quatuor",
+          "place": "Paris"
+        },
+        {
+          "id": 726704,
+          "year": "1512",
+          "title": "Erotemata Chrysolorae. De anomalis verbis. De formatione temporum ex libro Chalc",
+          "place": "Venezia"
+        },
+        {
+          "id": 69896,
+          "year": "1513",
+          "title": "Habentur hoc volumine haec Theodoro Gaza interprete. Aristotelis De natura anima",
+          "place": "Venezia"
+        },
+        {
+          "id": 132727,
+          "year": "1515",
+          "title": "Theodori Grammatices introductionis libri quatuor. Eiusdem De mensibus. Georgii ",
+          "place": "Firenze"
+        }
       ]
     },
     {
@@ -1188,11 +5599,103 @@ const graphData = {
       "death": 1472,
       "place": "Rome",
       "group": "greek",
-      "ustc_editions": 161,
+      "ustc_editions": 139,
       "role": "Greek scholar, translator, Aristotelian",
       "key_works": [
         "Comparatio Platonis et Aristotelis",
         "Ptolemy translation"
+      ],
+      "editions": [
+        {
+          "id": 406356,
+          "year": "1470",
+          "title": "De evangelica praeparatione.",
+          "place": "Venezia"
+        },
+        {
+          "id": 661843,
+          "year": "1471",
+          "title": "De partibus orationis ex Prisciano compendium",
+          "place": "Milano"
+        },
+        {
+          "id": 127452,
+          "year": "1472",
+          "title": "Rhetorica",
+          "place": "Venezia"
+        },
+        {
+          "id": 172417,
+          "year": "1472",
+          "title": "De partibus orationis ex Prisciano compendium",
+          "place": "Milano"
+        },
+        {
+          "id": 561498,
+          "year": "1472",
+          "title": "Compendium dialectices Aristotelis",
+          "place": "Venezia"
+        },
+        {
+          "id": 18191,
+          "year": "1473",
+          "title": "De evangelica praeparatione.",
+          "place": "K\u00f6ln"
+        },
+        {
+          "id": 575386,
+          "year": "1473",
+          "title": "De evangelica praeparatione.",
+          "place": "Venezia"
+        },
+        {
+          "id": 728682,
+          "year": "1474",
+          "title": "De partibus orationis ex Prisciano compendium",
+          "place": "Milano"
+        },
+        {
+          "id": 292264,
+          "year": "1475",
+          "title": "Commentarii in Philippicas Ciceronis",
+          "place": "Venezia"
+        },
+        {
+          "id": 433877,
+          "year": "1478",
+          "title": "De partibus orationis ex Prisciano compendium",
+          "place": "Milano"
+        },
+        {
+          "id": 309226,
+          "year": "1480",
+          "title": "De evangelica praeparatione.",
+          "place": "Treviso"
+        },
+        {
+          "id": 699924,
+          "year": "1480",
+          "title": "Compendium de partibus orationis ex Prisciano",
+          "place": "Bologna"
+        },
+        {
+          "id": 233900,
+          "year": "1493",
+          "title": "Rhetorica",
+          "place": "Milano"
+        },
+        {
+          "id": 516266,
+          "year": "1497",
+          "title": "De evangelica praeparatione.",
+          "place": "Venezia"
+        },
+        {
+          "id": 623381,
+          "year": "1498",
+          "title": "Der Ritter vom Turm ",
+          "place": "Augsburg"
+        }
       ]
     },
     {
@@ -1202,11 +5705,25 @@ const graphData = {
       "death": 1511,
       "place": "Florence/Milan",
       "group": "greek",
-      "ustc_editions": 44,
+      "ustc_editions": 2,
       "role": "Greek scholar, first professor of Greek",
       "key_works": [
         "Editio princeps of Homer (1488)",
         "Greek grammar"
+      ],
+      "editions": [
+        {
+          "id": 743523,
+          "year": "1525",
+          "title": "Grammaticae institutiones Graecae",
+          "place": "Paris"
+        },
+        {
+          "id": 757731,
+          "year": "1567",
+          "title": "Historia Bysantina",
+          "place": "Paris"
+        }
       ]
     },
     {
@@ -1216,10 +5733,102 @@ const graphData = {
       "death": 1501,
       "place": "Milan/Messina",
       "group": "greek",
-      "ustc_editions": 44,
+      "ustc_editions": 26,
       "role": "Greek scholar, grammarian",
       "key_works": [
         "Erotemata (1476) - first Greek book printed"
+      ],
+      "editions": [
+        {
+          "id": 679093,
+          "year": "1476",
+          "title": "Erotemata [Greek]",
+          "place": "Milano"
+        },
+        {
+          "id": 311442,
+          "year": "1480",
+          "title": "Erotemata [Greek]. With the Latin translation of Johannes Crastonus Placentinus",
+          "place": "Milano"
+        },
+        {
+          "id": 292983,
+          "year": "1489",
+          "title": "Erotemata [Greek] With the Latin translation of Johannes Crastonus Placentinus",
+          "place": "Vicenza"
+        },
+        {
+          "id": 442220,
+          "year": "1489",
+          "title": "De nomine et verbo [Greek]",
+          "place": "Vicenza"
+        },
+        {
+          "id": 594106,
+          "year": "1499",
+          "title": "Vitae philosophorum Siculorum et Calabrorum",
+          "place": "Messina"
+        },
+        {
+          "id": 692808,
+          "year": "1510",
+          "title": "Institutiones universae cum plurimis auctariis nuperrime impressae tanta diligen",
+          "place": "Ferrara"
+        },
+        {
+          "id": 680774,
+          "year": "1512",
+          "title": "In hoc libro haec habentur. Constantini Lascaris Byzantini De octo partibus orat",
+          "place": "Venezia"
+        },
+        {
+          "id": 148639,
+          "year": "1515",
+          "title": "In hoc libro haec continentur. Constantini Lascaris Byzantini de octo partibus o",
+          "place": "Firenze"
+        },
+        {
+          "id": 795617,
+          "year": "1515",
+          "title": "In hoc libro haec continentur. Constantini Lascaris Byzantini de octo partibus o",
+          "place": "Firenze"
+        },
+        {
+          "id": 547174,
+          "year": "1516",
+          "title": "De octo partibus orationis liber primus. De constructione liber secundus. De nom",
+          "place": "Leuven"
+        },
+        {
+          "id": 786705,
+          "year": "1519",
+          "title": "De octo partibus orationis liber primus. De constructione liber secundus. De nom",
+          "place": "Leuven"
+        },
+        {
+          "id": 152505,
+          "year": "1521",
+          "title": "In hoc libro haec continentur. Constantini Lascaris Byzantini de octo partibus o",
+          "place": "Venezia"
+        },
+        {
+          "id": 252497,
+          "year": "1525",
+          "title": "Libellus de flatibus",
+          "place": "Paris"
+        },
+        {
+          "id": 219988,
+          "year": "1533",
+          "title": "De octo orationis partibus una cum eiusdem authoris et aliorum opusculis, atque ",
+          "place": "Venezia"
+        },
+        {
+          "id": 303929,
+          "year": "1537",
+          "title": "Graecae institutiones, un\u00e0 cum interpretatione latina, corum usui atque commodo ",
+          "place": "Venezia"
+        }
       ]
     },
     {
@@ -1229,11 +5838,25 @@ const graphData = {
       "death": 1514,
       "place": "Milan/Rome",
       "group": "artist",
-      "ustc_editions": 0,
+      "ustc_editions": 2,
       "role": "Architect",
       "key_works": [
         "Tempietto (1502)",
         "St. Peter's Basilica design (1506)"
+      ],
+      "editions": [
+        {
+          "id": 256969,
+          "year": "1647",
+          "title": "Prospettive diverse",
+          "place": "Roma"
+        },
+        {
+          "id": 1195045,
+          "year": "1695",
+          "title": "La sterilit\u00e0 felice oratorio da cantarsi nella basilica, et insigne collegiata d",
+          "place": "Milano"
+        }
       ]
     }
   ],
@@ -2129,13 +6752,34 @@ function showDetailPanel(d) {
         worksSection.style.display = 'none';
     }
 
-    // USTC link
+    // USTC editions
     const ustcSection = document.getElementById('ustc-section');
     const ustcLink = document.getElementById('detail-ustc');
+    const editionsList = document.getElementById('detail-editions');
+    const editionCount = document.getElementById('edition-count');
+
     if (d.ustc_editions && d.ustc_editions > 0) {
-        const searchName = d.label.split(' ').slice(-1)[0]; // Last name
+        editionCount.textContent = d.ustc_editions;
+
+        // Populate editions list
+        if (d.editions && d.editions.length > 0) {
+            editionsList.innerHTML = d.editions.map(e => {
+                const ustcUrl = `https://www.ustc.ac.uk/record/${e.id}`;
+                return `<li>
+                    <a href="${ustcUrl}" target="_blank">
+                        <span class="edition-year">${e.year || 'n.d.'}</span>
+                        <span class="edition-place">${e.place || ''}</span>
+                        <span class="edition-title">${e.title}</span>
+                    </a>
+                </li>`;
+            }).join('');
+        } else {
+            editionsList.innerHTML = '<li>No edition details available</li>';
+        }
+
+        // USTC search link
+        const searchName = d.label.split(' ').slice(-1)[0];
         ustcLink.href = `https://www.ustc.ac.uk/search?q=${encodeURIComponent(searchName)}&qp=author`;
-        ustcLink.textContent = `${d.ustc_editions} editions → Search USTC`;
         ustcSection.style.display = 'block';
     } else {
         ustcSection.style.display = 'none';
