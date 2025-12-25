@@ -765,7 +765,50 @@ const graphData = {
         "Les Raisons des forces mouvantes (1615)",
         "Hortus Palatinus gardens"
       ],
-      "note": "Fellow engineer at Prince Henry's court. Both Drebbel and de Caus cited as models for Bacon's Salomon's House (Colie 1955)."
+      "note": "Fellow engineer at Prince Henry's court. Paid £100 pension. Both Drebbel and de Caus cited as models for Bacon's Salomon's House (Colie 1955)."
+    },
+    {
+      "id": "inigo_jones",
+      "label": "Inigo Jones",
+      "birth": 1573,
+      "death": 1652,
+      "place": "London",
+      "group": "england",
+      "role": "Architect, surveyor, stage designer",
+      "key_works": [
+        "Banqueting House, Whitehall (1622)",
+        "Queen's House, Greenwich (1635)",
+        "Masque designs with Ben Jonson"
+      ],
+      "note": "Surveyor of Prince Henry's works 1610-1612. Worked with de Caus at Richmond. Later Surveyor-General to James I and Charles I. Father of English Palladianism."
+    },
+    {
+      "id": "de_servi",
+      "label": "Costantino de' Servi",
+      "birth": 1554,
+      "death": 1622,
+      "place": "Florence → England",
+      "group": "england",
+      "role": "Architect, painter, engineer",
+      "key_works": [
+        "Masque designs for Prince Henry",
+        "Garden designs at Richmond"
+      ],
+      "note": "Florentine artist sent by Cosimo II to Prince Henry's court 1611-1615. Paid double what Inigo Jones received. Rival of Jones; 'bear pit of back-biting and intrigue.'"
+    },
+    {
+      "id": "isaac_de_caus",
+      "label": "Isaac de Caus",
+      "birth": 1590,
+      "death": 1648,
+      "place": "France → England",
+      "group": "science",
+      "role": "Engineer, garden designer",
+      "key_works": [
+        "Wilton House gardens (1630s)",
+        "Water-powered singing birds automata"
+      ],
+      "note": "Salomon's younger brother. Created automata including singing birds at Dieppe (1617) and Wilton House. Worked with Inigo Jones on garden grottoes."
     },
 
     // PRAGUE - RUDOLF II'S COURT
@@ -1144,7 +1187,34 @@ const graphData = {
      "evidence": "Both served as engineers/inventors under Prince Henry c. 1608-1612."},
     {"source": "henry", "target": "de_caus", "type": "patron", "label": "Engineer and tutor",
      "citation": "Strong, Roy. Henry, Prince of Wales and England's Lost Renaissance, 1986.",
-     "evidence": "De Caus taught perspective and designed fountains for Henry."},
+     "evidence": "De Caus taught perspective and designed fountains for Henry. £100 pension from 1610."},
+    {"source": "henry", "target": "inigo_jones", "type": "patron", "label": "Surveyor of works 1610-1612",
+     "citation": "History of Parliament Online: Inigo Jones; DNB.",
+     "evidence": "Appointed surveyor at 3s. per day upon Henry's creation as Prince of Wales, Dec 1610."},
+    {"source": "henry", "target": "de_servi", "type": "patron", "label": "Architect and painter",
+     "citation": "Drammaturgia.it: 'The Spectacle of Power' article on de' Servi.",
+     "evidence": "Cosimo II sent de' Servi to Prince Henry 1611. Paid double Jones's salary."},
+    {"source": "inigo_jones", "target": "de_caus", "type": "collaborated", "label": "Richmond gardens project",
+     "citation": "History of Parliament Online: Inigo Jones.",
+     "evidence": "Jones 'prepared estimates for work related to the new gardens at Richmond in conjunction with the French hydraulics expert, Salomon de Caus.'"},
+    {"source": "inigo_jones", "target": "de_servi", "type": "colleague", "label": "Rivals at Prince Henry's court",
+     "citation": "History of Parliament Online; Drammaturgia.it.",
+     "evidence": "De' Servi attempted to supplant Jones. 'Bear pit of back-biting and intrigue.'"},
+    {"source": "inigo_jones", "target": "jonson", "type": "collaborated", "label": "Masque designs",
+     "citation": "Jonson, Ben. Works; Orgel & Strong, Inigo Jones: Theatre of the Stuart Court.",
+     "evidence": "Jones designed sets for Jonson's court masques 1605-1631. Later quarreled bitterly."},
+    {"source": "inigo_jones", "target": "drebbel", "type": "colleague", "label": "Both at Prince Henry's court",
+     "citation": "Court records; Tierie (1932).",
+     "evidence": "Both served Prince Henry 1608-1612. Jones as surveyor, Drebbel as inventor/entertainer."},
+    {"source": "de_servi", "target": "drebbel", "type": "colleague", "label": "Both at Prince Henry's court",
+     "citation": "Drammaturgia.it; Tierie (1932).",
+     "evidence": "Both at court 1611-1612. De' Servi focused on architecture/masques, Drebbel on inventions."},
+    {"source": "de_caus", "target": "isaac_de_caus", "type": "family", "label": "Brothers",
+     "citation": "Wikipedia: Isaac de Caus; Oxford DNB.",
+     "evidence": "Isaac was Salomon's younger brother. Both hydraulic engineers and garden designers."},
+    {"source": "isaac_de_caus", "target": "inigo_jones", "type": "collaborated", "label": "Wilton House grottoes",
+     "citation": "Worcester College catalogue of Jones/de Caus drawings; Colvin, Biographical Dictionary of British Architects.",
+     "evidence": "Isaac worked with Jones on Wilton House gardens in 1630s, creating grottoes and automata."},
 
     // PRAGUE - Rudolf's court
     {"source": "rudolf", "target": "drebbel", "type": "patron", "label": "Invited to Prague 1610",
