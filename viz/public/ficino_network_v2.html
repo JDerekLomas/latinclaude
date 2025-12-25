@@ -313,6 +313,173 @@
             border-radius: 4px;
             font-family: inherit;
         }
+
+        /* Detail Panel */
+        #detail-panel {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-card);
+            padding: 24px 28px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            max-width: 500px;
+            width: 90%;
+            max-height: 70vh;
+            overflow-y: auto;
+            z-index: 200;
+            display: none;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+        }
+        #detail-panel.visible { display: block; }
+        #detail-panel .close-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        #detail-panel .close-btn:hover { background: rgba(255,255,255,0.1); color: var(--text); }
+        #detail-panel h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            color: var(--gold);
+            margin-bottom: 4px;
+        }
+        #detail-panel .meta {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+        #detail-panel .role {
+            color: var(--gold-light);
+            font-style: italic;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+        #detail-panel .section {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        #detail-panel .section:last-child { border-bottom: none; }
+        #detail-panel .section-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        #detail-panel .works-list {
+            list-style: none;
+            font-size: 13px;
+        }
+        #detail-panel .works-list li {
+            margin: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        #detail-panel .works-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--text-muted);
+        }
+        #detail-panel .ustc-link {
+            display: inline-block;
+            background: rgba(201, 162, 39, 0.15);
+            color: var(--gold);
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            transition: background 0.2s;
+        }
+        #detail-panel .ustc-link:hover { background: rgba(201, 162, 39, 0.25); }
+        #detail-panel .connections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        #detail-panel .connection-group h4 {
+            font-size: 12px;
+            color: var(--gold-light);
+            margin-bottom: 6px;
+        }
+        #detail-panel .connection-list {
+            list-style: none;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        #detail-panel .connection-list li {
+            margin: 3px 0;
+            cursor: pointer;
+            padding: 2px 0;
+        }
+        #detail-panel .connection-list li:hover { color: var(--text); }
+        #detail-panel .connection-list .type {
+            font-size: 10px;
+            opacity: 0.6;
+            margin-left: 4px;
+        }
+
+        /* Layout toggle */
+        #layout-toggle {
+            position: absolute;
+            top: 100px;
+            right: 24px;
+            margin-top: 200px;
+            background: var(--bg-card);
+            padding: 12px 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(20px);
+        }
+        #layout-toggle h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 12px;
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        #layout-toggle .toggle-btn {
+            display: block;
+            width: 100%;
+            background: none;
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-muted);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            cursor: pointer;
+            margin: 4px 0;
+            transition: all 0.2s;
+            text-align: left;
+        }
+        #layout-toggle .toggle-btn:hover { border-color: var(--gold); color: var(--text); }
+        #layout-toggle .toggle-btn.active {
+            background: rgba(201, 162, 39, 0.15);
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        /* Timeline axis */
+        .timeline-axis text {
+            fill: var(--text-muted);
+            font-size: 10px;
+        }
+        .timeline-axis line, .timeline-axis path {
+            stroke: rgba(255,255,255,0.1);
+        }
     </style>
 </head>
 <body>
@@ -362,6 +529,43 @@
         </div>
 
         <div id="tooltip"></div>
+
+        <div id="detail-panel">
+            <button class="close-btn">&times;</button>
+            <h2 id="detail-name"></h2>
+            <div class="meta" id="detail-meta"></div>
+            <div class="role" id="detail-role"></div>
+
+            <div class="section" id="works-section">
+                <div class="section-title">Key Works</div>
+                <ul class="works-list" id="detail-works"></ul>
+            </div>
+
+            <div class="section" id="ustc-section">
+                <div class="section-title">USTC Editions</div>
+                <a class="ustc-link" id="detail-ustc" href="#" target="_blank"></a>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Connections</div>
+                <div class="connections">
+                    <div class="connection-group">
+                        <h4>Influenced by</h4>
+                        <ul class="connection-list" id="detail-influenced-by"></ul>
+                    </div>
+                    <div class="connection-group">
+                        <h4>Influenced</h4>
+                        <ul class="connection-list" id="detail-influenced"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="layout-toggle">
+            <h3>Layout</h3>
+            <button class="toggle-btn active" data-layout="force">Force-directed</button>
+            <button class="toggle-btn" data-layout="timeline">Timeline (birth)</button>
+        </div>
     </div>
 
     <script>
@@ -1904,22 +2108,67 @@ node.on('mouseleave', function() {
     tooltip.style('opacity', 0);
 });
 
-// Click to highlight connections
-let selectedNode = null;
-node.on('click', function(event, d) {
-    event.stopPropagation();
+// Detail panel
+const detailPanel = document.getElementById('detail-panel');
+const nodeMap = new Map(graphData.nodes.map(n => [n.id, n]));
 
-    if (selectedNode === d.id) {
-        // Deselect
-        selectedNode = null;
-        node.classed('highlighted', false).classed('dimmed', false);
-        link.classed('highlighted', false).classed('dimmed', false);
-        return;
+function showDetailPanel(d) {
+    // Populate panel
+    document.getElementById('detail-name').textContent = d.label;
+    document.getElementById('detail-meta').textContent = `${d.birth || '?'} — ${d.death || '?'} · ${d.place || 'Unknown'}`;
+    document.getElementById('detail-role').textContent = d.role || '';
+    document.getElementById('detail-role').style.display = d.role ? 'block' : 'none';
+
+    // Works
+    const worksSection = document.getElementById('works-section');
+    const worksList = document.getElementById('detail-works');
+    if (d.key_works && d.key_works.length > 0) {
+        worksList.innerHTML = d.key_works.map(w => `<li>${w}</li>`).join('');
+        worksSection.style.display = 'block';
+    } else {
+        worksSection.style.display = 'none';
     }
 
-    selectedNode = d.id;
+    // USTC link
+    const ustcSection = document.getElementById('ustc-section');
+    const ustcLink = document.getElementById('detail-ustc');
+    if (d.ustc_editions && d.ustc_editions > 0) {
+        const searchName = d.label.split(' ').slice(-1)[0]; // Last name
+        ustcLink.href = `https://www.ustc.ac.uk/search?q=${encodeURIComponent(searchName)}&qp=author`;
+        ustcLink.textContent = `${d.ustc_editions} editions → Search USTC`;
+        ustcSection.style.display = 'block';
+    } else {
+        ustcSection.style.display = 'none';
+    }
 
-    // Find connected nodes
+    // Connections
+    const influencedBy = [];
+    const influenced = [];
+    graphData.edges.forEach(e => {
+        const sourceId = e.source.id || e.source;
+        const targetId = e.target.id || e.target;
+        if (targetId === d.id) {
+            const sourceNode = nodeMap.get(sourceId);
+            if (sourceNode) influencedBy.push({ node: sourceNode, type: e.type, label: e.label });
+        }
+        if (sourceId === d.id) {
+            const targetNode = nodeMap.get(targetId);
+            if (targetNode) influenced.push({ node: targetNode, type: e.type, label: e.label });
+        }
+    });
+
+    document.getElementById('detail-influenced-by').innerHTML = influencedBy.length > 0
+        ? influencedBy.map(c => `<li data-id="${c.node.id}">${c.node.label}<span class="type">${c.type}</span></li>`).join('')
+        : '<li style="opacity:0.5">None recorded</li>';
+
+    document.getElementById('detail-influenced').innerHTML = influenced.length > 0
+        ? influenced.map(c => `<li data-id="${c.node.id}">${c.node.label}<span class="type">${c.type}</span></li>`).join('')
+        : '<li style="opacity:0.5">None recorded</li>';
+
+    // Show panel
+    detailPanel.classList.add('visible');
+
+    // Highlight in graph
     const connected = new Set([d.id]);
     graphData.edges.forEach(e => {
         const sourceId = e.source.id || e.source;
@@ -1940,13 +2189,40 @@ node.on('click', function(event, d) {
         const targetId = e.target.id || e.target;
         return sourceId !== d.id && targetId !== d.id;
     });
+}
+
+function hideDetailPanel() {
+    detailPanel.classList.remove('visible');
+    node.classed('highlighted', false).classed('dimmed', false);
+    link.classed('highlighted', false).classed('dimmed', false);
+}
+
+// Click handlers for detail panel
+document.querySelector('#detail-panel .close-btn').addEventListener('click', hideDetailPanel);
+
+// Click connections in panel to navigate
+document.querySelectorAll('.connection-list').forEach(list => {
+    list.addEventListener('click', (e) => {
+        const li = e.target.closest('li');
+        if (li && li.dataset.id) {
+            const targetNode = nodeMap.get(li.dataset.id);
+            if (targetNode) showDetailPanel(targetNode);
+        }
+    });
+});
+
+// Click node to show detail
+let selectedNode = null;
+node.on('click', function(event, d) {
+    event.stopPropagation();
+    selectedNode = d.id;
+    showDetailPanel(d);
 });
 
 // Click background to reset
 svg.on('click', function() {
     selectedNode = null;
-    node.classed('highlighted', false).classed('dimmed', false);
-    link.classed('highlighted', false).classed('dimmed', false);
+    hideDetailPanel();
 });
 
 // Update positions on tick
@@ -1980,6 +2256,72 @@ d3.selectAll('.edge-filter').on('change', function() {
         activeTypes.push(this.value);
     });
     link.style('display', d => activeTypes.includes(d.type) ? 'block' : 'none');
+});
+
+// Layout toggle - Timeline by birthdate
+let currentLayout = 'force';
+const minBirth = d3.min(graphData.nodes, d => d.birth) || 1350;
+const maxBirth = d3.max(graphData.nodes, d => d.birth) || 1600;
+const timeScale = d3.scaleLinear()
+    .domain([minBirth, maxBirth])
+    .range([150, width - 150]);
+
+// Timeline axis (hidden by default)
+const timelineAxis = g.append('g')
+    .attr('class', 'timeline-axis')
+    .attr('transform', `translate(0, ${height - 80})`)
+    .style('opacity', 0);
+
+timelineAxis.call(d3.axisBottom(timeScale)
+    .tickFormat(d => d)
+    .ticks(10));
+
+timelineAxis.append('text')
+    .attr('x', width / 2)
+    .attr('y', 40)
+    .attr('fill', 'var(--text-muted)')
+    .attr('text-anchor', 'middle')
+    .attr('font-size', '11px')
+    .text('Birth Year');
+
+function setLayout(layout) {
+    currentLayout = layout;
+
+    // Update button states
+    document.querySelectorAll('#layout-toggle .toggle-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.layout === layout);
+    });
+
+    if (layout === 'timeline') {
+        // Switch to timeline layout
+        timelineAxis.transition().duration(500).style('opacity', 1);
+
+        // Update forces for timeline
+        simulation
+            .force('x', d3.forceX(d => timeScale(d.birth || 1450)).strength(0.8))
+            .force('y', d3.forceY(height / 2 - 50).strength(0.1))
+            .force('charge', d3.forceManyBody().strength(-100).distanceMax(200))
+            .force('collision', d3.forceCollide().radius(d => Math.sqrt(d.ustc_editions || 5) * 1.8 + 15))
+            .alpha(1)
+            .restart();
+
+    } else {
+        // Switch back to force layout
+        timelineAxis.transition().duration(500).style('opacity', 0);
+
+        simulation
+            .force('x', d3.forceX(width / 2).strength(0.03))
+            .force('y', d3.forceY(height / 2).strength(0.03))
+            .force('charge', d3.forceManyBody().strength(-400).distanceMax(500))
+            .force('collision', d3.forceCollide().radius(d => Math.sqrt(d.ustc_editions || 5) * 2 + 20))
+            .alpha(1)
+            .restart();
+    }
+}
+
+// Layout toggle buttons
+document.querySelectorAll('#layout-toggle .toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => setLayout(btn.dataset.layout));
 });
 
 // Update stats
