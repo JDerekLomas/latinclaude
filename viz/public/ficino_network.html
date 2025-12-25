@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficino → Copernicus: The Hermetic-Neoplatonic Network</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background: #1a1a2e; color: #eee; overflow: hidden; }
+        #container { width: 100vw; height: 100vh; position: relative; }
+        svg { width: 100%; height: 100%; }
+        .node circle { stroke: #fff; stroke-width: 2px; cursor: pointer; transition: all 0.3s; }
+        .node circle:hover { stroke-width: 4px; filter: brightness(1.3); }
+        .node text { font-size: 10px; fill: #fff; pointer-events: none; text-shadow: 0 0 3px #000, 0 0 6px #000; }
+        .link { stroke-opacity: 0.4; transition: all 0.3s; }
+        .link:hover { stroke-opacity: 1; stroke-width: 3px !important; }
+        #info { position: absolute; top: 20px; left: 20px; background: rgba(0,0,0,0.85); padding: 20px; border-radius: 10px; max-width: 320px; border: 1px solid #444; }
+        #info h1 { font-size: 16px; margin-bottom: 10px; color: #ffd700; }
+        #info p { font-size: 12px; line-height: 1.5; margin-bottom: 8px; }
+        #legend { position: absolute; bottom: 20px; left: 20px; background: rgba(0,0,0,0.85); padding: 12px; border-radius: 10px; border: 1px solid #444; font-size: 11px; }
+        #legend h3 { font-size: 12px; margin-bottom: 8px; color: #ffd700; }
+        .legend-item { display: flex; align-items: center; margin: 4px 0; }
+        .legend-circle { width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; border: 1px solid #fff; }
+        #tooltip { position: absolute; background: rgba(0,0,0,0.95); padding: 15px; border-radius: 8px; font-size: 12px; pointer-events: none; opacity: 0; transition: opacity 0.2s; border: 1px solid #666; max-width: 300px; z-index: 1000; }
+        #tooltip h4 { color: #ffd700; margin-bottom: 8px; font-size: 14px; }
+        #tooltip .meta { color: #aaa; margin-bottom: 5px; }
+        #tooltip .role { color: #4ecdc4; font-style: italic; margin-bottom: 8px; }
+        #tooltip .works { color: #96ceb4; font-size: 11px; }
+        #tooltip .ustc { color: #ff6b6b; font-weight: bold; }
+        #controls { position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.85); padding: 12px; border-radius: 10px; border: 1px solid #444; font-size: 11px; }
+        #controls h3 { font-size: 12px; margin-bottom: 8px; color: #ffd700; }
+        #controls label { display: block; margin: 4px 0; cursor: pointer; }
+        #controls input { margin-right: 5px; }
+        #stats { position: absolute; bottom: 20px; right: 20px; background: rgba(0,0,0,0.85); padding: 12px; border-radius: 10px; border: 1px solid #444; font-size: 11px; }
+        #stats h3 { font-size: 12px; margin-bottom: 8px; color: #ffd700; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <svg></svg>
+        <div id="info">
+            <h1>The Hermetic-Neoplatonic Network</h1>
+            <p>56 scholars connected from Ficino's Academy (1460s) to Copernicus's <em>De revolutionibus</em> (1543).</p>
+            <p><strong>Drag</strong> nodes · <strong>Hover</strong> for details · <strong>Click</strong> to highlight · <strong>Double-click</strong> to reset</p>
+            <p style="color:#ffd700; font-size:11px;">Node size = USTC editions</p>
+        </div>
+        <div id="legend">
+            <h3>Groups</h3>
+            <div class="legend-item"><div class="legend-circle" style="background: #ff6b6b;"></div> Florentine Academy</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #4ecdc4;"></div> Greek Scholars</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #45b7d1;"></div> German Transmission</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #96ceb4;"></div> French Transmission</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #dda0dd;"></div> Italian Cabalists</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #ffd700;"></div> Astronomers</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #ff9f43;"></div> Post-Copernican</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #a55eea;"></div> Patrons</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #e056fd;"></div> Artists</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #22a6b3;"></div> Mathematicians</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #eb4d4b;"></div> Bologna Circle</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #6ab04c;"></div> Ferrara Circle</div>
+            <div class="legend-item"><div class="legend-circle" style="background: #30336b;"></div> Printers</div>
+        </div>
+        <div id="controls">
+            <h3>Filter Edges</h3>
+            <label><input type="checkbox" class="edge-filter" value="teacher" checked> Teacher/Student</label>
+            <label><input type="checkbox" class="edge-filter" value="influenced" checked> Influenced</label>
+            <label><input type="checkbox" class="edge-filter" value="cited" checked> Cited</label>
+            <label><input type="checkbox" class="edge-filter" value="correspondent" checked> Correspondent</label>
+            <label><input type="checkbox" class="edge-filter" value="colleague" checked> Colleague</label>
+            <label><input type="checkbox" class="edge-filter" value="patron" checked> Patron</label>
+        </div>
+        <div id="stats">
+            <h3>Network Stats</h3>
+            <div>Nodes: <span id="node-count">51</span></div>
+            <div>Edges: <span id="edge-count">97</span></div>
+            <div>Total USTC editions: <span id="ustc-total">0</span></div>
+        </div>
+        <div id="tooltip"></div>
+    </div>
+
+    <script>
+const graphData = {
+  "nodes": [
+    {
+      "id": "ficino",
+      "label": "Marsilio Ficino",
+      "birth": 1433,
+      "death": 1499,
+      "place": "Florence",
+      "group": "florentine",
+      "ustc_editions": 45,
+      "role": "Philosopher, translator, priest",
+      "key_works": [
+        "Theologia Platonica (1482)",
+        "De triplici vita (1489)",
+        "Corpus Hermeticum translation (1463)"
+      ]
+    },
+    {
+      "id": "pico",
+      "label": "Giovanni Pico",
+      "birth": 1463,
+      "death": 1494,
+      "place": "Florence",
+      "group": "florentine",
+      "ustc_editions": 81,
+      "role": "Philosopher, Cabalist",
+      "key_works": [
+        "900 Conclusions (1486)",
+        "Oration on Dignity (1486)",
+        "Heptaplus (1489)"
+      ]
+    },
+    {
+      "id": "poliziano",
+      "label": "Angelo Poliziano",
+      "birth": 1454,
+      "death": 1494,
+      "place": "Florence",
+      "group": "florentine",
+      "ustc_editions": 107,
+      "role": "Poet, philologist"
+    },
+    {
+      "id": "landino",
+      "label": "Cristoforo Landino",
+      "birth": 1424,
+      "death": 1498,
+      "place": "Florence",
+      "group": "florentine",
+      "ustc_editions": 31,
+      "role": "Humanist, commentator"
+    },
+    {
+      "id": "lorenzo",
+      "label": "Lorenzo de' Medici",
+      "birth": 1449,
+      "death": 1492,
+      "place": "Florence",
+      "group": "patron",
+      "role": "Ruler, poet, patron"
+    },
+    {
+      "id": "cosimo",
+      "label": "Cosimo de' Medici",
+      "birth": 1389,
+      "death": 1464,
+      "place": "Florence",
+      "group": "patron",
+      "role": "Banker, patron"
+    },
+    {
+      "id": "plethon",
+      "label": "Gemistos Plethon",
+      "birth": 1355,
+      "death": 1452,
+      "place": "Byzantium",
+      "group": "greek"
+    },
+    {
+      "id": "bessarion",
+      "label": "Cardinal Bessarion",
+      "birth": 1403,
+      "death": 1472,
+      "place": "Rome",
+      "group": "greek",
+      "ustc_editions": 44,
+      "role": "Cardinal, Greek scholar, Platonist",
+      "key_works": [
+        "In Calumniatorem Platonis (1469)",
+        "Donated library to Venice"
+      ]
+    },
+    {
+      "id": "argyropoulos",
+      "label": "Johannes Argyropoulos",
+      "birth": 1415,
+      "death": 1487,
+      "place": "Florence",
+      "group": "greek",
+      "ustc_editions": 120,
+      "role": "Greek scholar, Aristotle translator",
+      "key_works": [
+        "Aristotle translations",
+        "Ethics, Physics lectures"
+      ]
+    },
+    {
+      "id": "reuchlin",
+      "label": "Johannes Reuchlin",
+      "birth": 1455,
+      "death": 1522,
+      "place": "Germany",
+      "group": "german",
+      "ustc_editions": 103,
+      "role": "Hebraist, Cabalist, jurist",
+      "key_works": [
+        "De verbo mirifico (1494)",
+        "De arte cabalistica (1517)"
+      ]
+    },
+    {
+      "id": "trithemius",
+      "label": "Johannes Trithemius",
+      "birth": 1462,
+      "death": 1516,
+      "place": "Germany",
+      "group": "german",
+      "ustc_editions": 43,
+      "role": "Abbot, cryptographer, occultist"
+    },
+    {
+      "id": "agrippa",
+      "label": "Cornelius Agrippa",
+      "birth": 1486,
+      "death": 1535,
+      "place": "Germany",
+      "group": "german",
+      "ustc_editions": 65,
+      "role": "Occult philosopher, physician",
+      "key_works": [
+        "De occulta philosophia (1531)"
+      ]
+    },
+    {
+      "id": "paracelsus",
+      "label": "Paracelsus",
+      "birth": 1493,
+      "death": 1541,
+      "place": "Germany",
+      "group": "german",
+      "ustc_editions": 27,
+      "role": "Physician, alchemist"
+    },
+    {
+      "id": "champier",
+      "label": "Symphorien Champier",
+      "birth": 1471,
+      "death": 1538,
+      "place": "Lyon",
+      "group": "french",
+      "ustc_editions": 66,
+      "role": "Physician, Hermeticist"
+    },
+    {
+      "id": "lefevre",
+      "label": "Jacques Lef\u00e8vre d'\u00c9taples",
+      "birth": 1455,
+      "death": 1536,
+      "place": "Paris",
+      "group": "french"
+    },
+    {
+      "id": "bovelles",
+      "label": "Charles de Bovelles",
+      "birth": 1479,
+      "death": 1567,
+      "place": "Paris",
+      "group": "french"
+    },
+    {
+      "id": "pomponazzi",
+      "label": "Pietro Pomponazzi",
+      "birth": 1462,
+      "death": 1525,
+      "place": "Padua/Bologna",
+      "group": "italian",
+      "ustc_editions": 4
+    },
+    {
+      "id": "nifo",
+      "label": "Agostino Nifo",
+      "birth": 1473,
+      "death": 1538,
+      "place": "Naples",
+      "group": "italian",
+      "ustc_editions": 90
+    },
+    {
+      "id": "fracastoro",
+      "label": "Girolamo Fracastoro",
+      "birth": 1478,
+      "death": 1553,
+      "place": "Verona",
+      "group": "italian"
+    },
+    {
+      "id": "cardano",
+      "label": "Girolamo Cardano",
+      "birth": 1501,
+      "death": 1576,
+      "place": "Milan",
+      "group": "italian",
+      "ustc_editions": 16
+    },
+    {
+      "id": "egidio",
+      "label": "Egidio da Viterbo",
+      "birth": 1469,
+      "death": 1532,
+      "place": "Rome",
+      "group": "cabalist"
+    },
+    {
+      "id": "galatino",
+      "label": "Pietro Galatino",
+      "birth": 1460,
+      "death": 1540,
+      "place": "Rome",
+      "group": "cabalist",
+      "ustc_editions": 6
+    },
+    {
+      "id": "giorgio",
+      "label": "Francesco Giorgio Veneto",
+      "birth": 1466,
+      "death": 1540,
+      "place": "Venice",
+      "group": "cabalist",
+      "ustc_editions": 6
+    },
+    {
+      "id": "regiomontanus",
+      "label": "Regiomontanus",
+      "birth": 1436,
+      "death": 1476,
+      "place": "Nuremberg",
+      "group": "astronomy",
+      "ustc_editions": 103,
+      "role": "Astronomer, mathematician, printer",
+      "key_works": [
+        "Epitome Almagesti (1496)",
+        "Calendarium (1474)"
+      ]
+    },
+    {
+      "id": "peurbach",
+      "label": "Georg Peurbach",
+      "birth": 1423,
+      "death": 1461,
+      "place": "Vienna",
+      "group": "astronomy",
+      "ustc_editions": 71,
+      "role": "Astronomer, humanist",
+      "key_works": [
+        "Theoricae novae planetarum (1454)",
+        "Epitome Almagesti (with Regiomontanus)"
+      ]
+    },
+    {
+      "id": "novara",
+      "label": "Domenico Maria Novara",
+      "birth": 1454,
+      "death": 1504,
+      "place": "Bologna",
+      "group": "astronomy",
+      "ustc_editions": 20,
+      "role": "Astronomer, astrologer",
+      "key_works": [
+        "Prognostica (1483-1503)"
+      ]
+    },
+    {
+      "id": "copernicus",
+      "label": "Nicolaus Copernicus",
+      "birth": 1473,
+      "death": 1543,
+      "place": "Poland",
+      "group": "astronomy",
+      "ustc_editions": 3,
+      "role": "Astronomer, canon",
+      "key_works": [
+        "De revolutionibus (1543)"
+      ]
+    },
+    {
+      "id": "rheticus",
+      "label": "Georg Joachim Rheticus",
+      "birth": 1514,
+      "death": 1574,
+      "place": "Wittenberg",
+      "group": "astronomy",
+      "ustc_editions": 8
+    },
+    {
+      "id": "bruno",
+      "label": "Giordano Bruno",
+      "birth": 1548,
+      "death": 1600,
+      "place": "Italy",
+      "group": "post",
+      "ustc_editions": 15,
+      "role": "Philosopher, cosmologist",
+      "key_works": [
+        "De l'infinito (1584)",
+        "De la causa (1584)"
+      ]
+    },
+    {
+      "id": "dee",
+      "label": "John Dee",
+      "birth": 1527,
+      "death": 1608,
+      "place": "England",
+      "group": "post",
+      "ustc_editions": 8,
+      "role": "Mathematician, astrologer, occultist"
+    },
+    {
+      "id": "kepler",
+      "label": "Johannes Kepler",
+      "birth": 1571,
+      "death": 1630,
+      "place": "Germany",
+      "group": "post",
+      "ustc_editions": 45,
+      "role": "Astronomer, mathematician",
+      "key_works": [
+        "Mysterium Cosmographicum (1596)",
+        "Harmonices Mundi (1619)"
+      ]
+    },
+    {
+      "id": "leoniceno",
+      "label": "Niccol\u00f2 Leoniceno",
+      "birth": 1428,
+      "death": 1524,
+      "place": "Ferrara",
+      "group": "medical",
+      "ustc_editions": 12,
+      "role": "Physician, medical humanist"
+    },
+    {
+      "id": "manardi",
+      "label": "Giovanni Manardi",
+      "birth": 1462,
+      "death": 1536,
+      "place": "Ferrara",
+      "group": "medical",
+      "ustc_editions": 2
+    },
+    {
+      "id": "cusanus",
+      "label": "Nicholas of Cusa",
+      "birth": 1401,
+      "death": 1464,
+      "place": "Germany",
+      "group": "precursor",
+      "ustc_editions": 68,
+      "role": "Cardinal, philosopher, mathematician",
+      "key_works": [
+        "De docta ignorantia (1440)",
+        "De coniecturis (1442)"
+      ]
+    },
+    {
+      "id": "leonardo",
+      "label": "Leonardo da Vinci",
+      "birth": 1452,
+      "death": 1519,
+      "place": "Florence/Milan",
+      "group": "artist",
+      "role": "Artist, engineer, scientist",
+      "key_works": [
+        "Notebooks (unpublished)",
+        "Divina proportione illustrations"
+      ]
+    },
+    {
+      "id": "pacioli",
+      "label": "Luca Pacioli",
+      "birth": 1447,
+      "death": 1517,
+      "place": "Florence/Milan",
+      "group": "mathematician",
+      "ustc_editions": 2,
+      "role": "Mathematician, Franciscan friar",
+      "key_works": [
+        "Summa de arithmetica (1494)",
+        "Divina proportione (1509)"
+      ]
+    },
+    {
+      "id": "alberti",
+      "label": "Leon Battista Alberti",
+      "birth": 1404,
+      "death": 1472,
+      "place": "Florence",
+      "group": "artist",
+      "ustc_editions": 87,
+      "role": "Architect, humanist, theorist",
+      "key_works": [
+        "De pictura (1435)",
+        "De re aedificatoria (1452)"
+      ]
+    },
+    {
+      "id": "piero",
+      "label": "Piero della Francesca",
+      "birth": 1415,
+      "death": 1492,
+      "place": "Sansepolcro",
+      "group": "artist",
+      "role": "Painter, mathematician"
+    },
+    {
+      "id": "verrocchio",
+      "label": "Andrea del Verrocchio",
+      "birth": 1435,
+      "death": 1488,
+      "place": "Florence",
+      "group": "artist"
+    },
+    {
+      "id": "beroaldo",
+      "label": "Filippo Beroaldo",
+      "birth": 1453,
+      "death": 1505,
+      "place": "Bologna",
+      "group": "bologna",
+      "ustc_editions": 213,
+      "role": "Humanist, professor of rhetoric",
+      "key_works": [
+        "Commentary on Pliny (1476)",
+        "Apuleius commentary (1500)"
+      ]
+    },
+    {
+      "id": "codro",
+      "label": "Antonio Urceo Codro",
+      "birth": 1446,
+      "death": 1500,
+      "place": "Bologna",
+      "group": "bologna",
+      "ustc_editions": 6,
+      "role": "Humanist, Greek professor",
+      "key_works": [
+        "Sermones (1502)",
+        "Orationes (1502)"
+      ]
+    },
+    {
+      "id": "pio",
+      "label": "Giovanni Battista Pio",
+      "birth": 1460,
+      "death": 1540,
+      "place": "Bologna",
+      "group": "bologna",
+      "ustc_editions": 48,
+      "role": "Humanist, philologist",
+      "key_works": [
+        "Annotamenta (1505)"
+      ]
+    },
+    {
+      "id": "calcagnini",
+      "label": "Celio Calcagnini",
+      "birth": 1479,
+      "death": 1541,
+      "place": "Ferrara",
+      "group": "ferrara",
+      "ustc_editions": 25,
+      "role": "Humanist, proto-Copernican",
+      "key_works": [
+        "Quod caelum stet, terra moveatur (c.1525)"
+      ]
+    },
+    {
+      "id": "guarino",
+      "label": "Guarino Veronese",
+      "birth": 1374,
+      "death": 1460,
+      "place": "Ferrara",
+      "group": "ferrara",
+      "ustc_editions": 87,
+      "role": "Humanist educator",
+      "key_works": [
+        "Regulae grammaticales"
+      ]
+    },
+    {
+      "id": "bentivoglio",
+      "label": "Giovanni II Bentivoglio",
+      "birth": 1443,
+      "death": 1508,
+      "place": "Bologna",
+      "group": "patron",
+      "ustc_editions": 3,
+      "role": "Ruler of Bologna"
+    },
+    {
+      "id": "sforza",
+      "label": "Ludovico Sforza",
+      "birth": 1452,
+      "death": 1508,
+      "place": "Milan",
+      "group": "patron",
+      "ustc_editions": 0,
+      "role": "Duke of Milan"
+    },
+    {
+      "id": "matthias",
+      "label": "Matthias Corvinus",
+      "birth": 1443,
+      "death": 1490,
+      "place": "Hungary",
+      "group": "patron",
+      "ustc_editions": 0,
+      "role": "King of Hungary, bibliophile"
+    },
+    {
+      "id": "aldus",
+      "label": "Aldus Manutius",
+      "birth": 1449,
+      "death": 1515,
+      "place": "Venice",
+      "group": "printer",
+      "ustc_editions": 150,
+      "role": "Printer, publisher, humanist",
+      "key_works": [
+        "Aldine Press editions of Greek classics"
+      ]
+    },
+    {
+      "id": "colet",
+      "label": "John Colet",
+      "birth": 1467,
+      "death": 1519,
+      "place": "England",
+      "group": "english",
+      "ustc_editions": 37,
+      "role": "Dean of St Paul's, humanist",
+      "key_works": [
+        "Lectures on Romans",
+        "St Paul's School foundation"
+      ]
+    },
+    {
+      "id": "bembo",
+      "label": "Pietro Bembo",
+      "birth": 1470,
+      "death": 1547,
+      "place": "Venice",
+      "group": "italian",
+      "ustc_editions": 64,
+      "role": "Cardinal, humanist, poet",
+      "key_works": [
+        "Prose della volgar lingua (1525)",
+        "Gli Asolani (1505)"
+      ]
+    },
+    {
+      "id": "barbari",
+      "label": "Jacopo de' Barbari",
+      "birth": 1460,
+      "death": 1516,
+      "place": "Venice",
+      "group": "artist",
+      "ustc_editions": 0,
+      "role": "Painter, printmaker",
+      "key_works": [
+        "Portrait of Luca Pacioli (1495)",
+        "View of Venice (1500)"
+      ]
+    },
+    {
+      "id": "toscanelli",
+      "label": "Paolo Toscanelli",
+      "birth": 1397,
+      "death": 1482,
+      "place": "Florence",
+      "group": "florentine",
+      "ustc_editions": 0,
+      "role": "Astronomer, mathematician, cartographer",
+      "key_works": [
+        "Letter to Columbus (1474)",
+        "Astronomical observations (unpublished)"
+      ]
+    },
+    {
+      "id": "gaza",
+      "label": "Theodorus Gaza",
+      "birth": 1398,
+      "death": 1475,
+      "place": "Rome/Ferrara",
+      "group": "greek",
+      "ustc_editions": 202,
+      "role": "Greek scholar, translator",
+      "key_works": [
+        "Aristotle translations",
+        "Greek grammar (1495)"
+      ]
+    },
+    {
+      "id": "trapezuntius",
+      "label": "George of Trebizond",
+      "birth": 1395,
+      "death": 1472,
+      "place": "Rome",
+      "group": "greek",
+      "ustc_editions": 161,
+      "role": "Greek scholar, translator, Aristotelian",
+      "key_works": [
+        "Comparatio Platonis et Aristotelis",
+        "Ptolemy translation"
+      ]
+    },
+    {
+      "id": "chalcondyles",
+      "label": "Demetrius Chalcondyles",
+      "birth": 1423,
+      "death": 1511,
+      "place": "Florence/Milan",
+      "group": "greek",
+      "ustc_editions": 44,
+      "role": "Greek scholar, first professor of Greek",
+      "key_works": [
+        "Editio princeps of Homer (1488)",
+        "Greek grammar"
+      ]
+    },
+    {
+      "id": "lascaris",
+      "label": "Constantinus Lascaris",
+      "birth": 1434,
+      "death": 1501,
+      "place": "Milan/Messina",
+      "group": "greek",
+      "ustc_editions": 44,
+      "role": "Greek scholar, grammarian",
+      "key_works": [
+        "Erotemata (1476) - first Greek book printed"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "cosimo",
+      "target": "ficino",
+      "type": "patron",
+      "label": "commissioned Hermetica translation"
+    },
+    {
+      "source": "lorenzo",
+      "target": "ficino",
+      "type": "patron",
+      "label": "continued patronage"
+    },
+    {
+      "source": "lorenzo",
+      "target": "pico",
+      "type": "patron",
+      "label": "protected from Inquisition"
+    },
+    {
+      "source": "lorenzo",
+      "target": "poliziano",
+      "type": "patron",
+      "label": "household member"
+    },
+    {
+      "source": "ficino",
+      "target": "pico",
+      "type": "colleague",
+      "label": "Florentine Academy"
+    },
+    {
+      "source": "ficino",
+      "target": "poliziano",
+      "type": "colleague",
+      "label": "Florentine Academy"
+    },
+    {
+      "source": "ficino",
+      "target": "landino",
+      "type": "colleague",
+      "label": "Florentine Academy"
+    },
+    {
+      "source": "pico",
+      "target": "poliziano",
+      "type": "colleague",
+      "label": "close friends"
+    },
+    {
+      "source": "plethon",
+      "target": "cosimo",
+      "type": "influenced",
+      "label": "Council of Florence 1439"
+    },
+    {
+      "source": "plethon",
+      "target": "bessarion",
+      "type": "teacher",
+      "label": "student in Mistra"
+    },
+    {
+      "source": "bessarion",
+      "target": "ficino",
+      "type": "correspondent",
+      "label": "exchanged texts"
+    },
+    {
+      "source": "argyropoulos",
+      "target": "ficino",
+      "type": "teacher",
+      "label": "Greek instruction"
+    },
+    {
+      "source": "argyropoulos",
+      "target": "poliziano",
+      "type": "teacher",
+      "label": "Greek instruction"
+    },
+    {
+      "source": "argyropoulos",
+      "target": "reuchlin",
+      "type": "teacher",
+      "label": "Greek in Rome"
+    },
+    {
+      "source": "ficino",
+      "target": "reuchlin",
+      "type": "influenced",
+      "label": "met in Florence"
+    },
+    {
+      "source": "pico",
+      "target": "reuchlin",
+      "type": "influenced",
+      "label": "Christian Cabala"
+    },
+    {
+      "source": "reuchlin",
+      "target": "trithemius",
+      "type": "correspondent",
+      "label": "Cabalist circle"
+    },
+    {
+      "source": "trithemius",
+      "target": "agrippa",
+      "type": "teacher",
+      "label": "occult philosophy"
+    },
+    {
+      "source": "trithemius",
+      "target": "paracelsus",
+      "type": "teacher",
+      "label": "alchemical instruction"
+    },
+    {
+      "source": "reuchlin",
+      "target": "agrippa",
+      "type": "influenced",
+      "label": "De arte cabalistica"
+    },
+    {
+      "source": "ficino",
+      "target": "agrippa",
+      "type": "cited",
+      "label": "De occulta philosophia"
+    },
+    {
+      "source": "pico",
+      "target": "agrippa",
+      "type": "cited",
+      "label": "De occulta philosophia"
+    },
+    {
+      "source": "ficino",
+      "target": "champier",
+      "type": "influenced",
+      "label": "disseminated to France"
+    },
+    {
+      "source": "ficino",
+      "target": "lefevre",
+      "type": "correspondent",
+      "label": "edited Cusanus"
+    },
+    {
+      "source": "cusanus",
+      "target": "lefevre",
+      "type": "cited",
+      "label": "published works"
+    },
+    {
+      "source": "lefevre",
+      "target": "bovelles",
+      "type": "teacher",
+      "label": "Paris circle"
+    },
+    {
+      "source": "pico",
+      "target": "egidio",
+      "type": "influenced",
+      "label": "Christian Cabala"
+    },
+    {
+      "source": "pico",
+      "target": "giorgio",
+      "type": "influenced",
+      "label": "corresponded"
+    },
+    {
+      "source": "reuchlin",
+      "target": "egidio",
+      "type": "correspondent",
+      "label": "Hebrew studies"
+    },
+    {
+      "source": "egidio",
+      "target": "galatino",
+      "type": "colleague",
+      "label": "Vatican circle"
+    },
+    {
+      "source": "ficino",
+      "target": "giorgio",
+      "type": "influenced",
+      "label": "Neoplatonism + Cabala"
+    },
+    {
+      "source": "agrippa",
+      "target": "giorgio",
+      "type": "correspondent",
+      "label": "Hebrew library"
+    },
+    {
+      "source": "peurbach",
+      "target": "regiomontanus",
+      "type": "teacher",
+      "label": "Vienna"
+    },
+    {
+      "source": "regiomontanus",
+      "target": "novara",
+      "type": "teacher",
+      "label": "astronomical methods"
+    },
+    {
+      "source": "novara",
+      "target": "copernicus",
+      "type": "teacher",
+      "label": "Bologna 1496-1500"
+    },
+    {
+      "source": "copernicus",
+      "target": "rheticus",
+      "type": "teacher",
+      "label": "transmitted system"
+    },
+    {
+      "source": "ficino",
+      "target": "novara",
+      "type": "influenced",
+      "label": "Florence education"
+    },
+    {
+      "source": "ficino",
+      "target": "copernicus",
+      "type": "cited",
+      "label": "Hermes in De revolutionibus"
+    },
+    {
+      "source": "ficino",
+      "target": "leoniceno",
+      "type": "colleague",
+      "label": "Ferrara connection"
+    },
+    {
+      "source": "leoniceno",
+      "target": "manardi",
+      "type": "teacher",
+      "label": "medical humanism"
+    },
+    {
+      "source": "champier",
+      "target": "leoniceno",
+      "type": "cited",
+      "label": "medical writings"
+    },
+    {
+      "source": "ficino",
+      "target": "pomponazzi",
+      "type": "opposed",
+      "label": "immortality debate"
+    },
+    {
+      "source": "pomponazzi",
+      "target": "nifo",
+      "type": "debated",
+      "label": "De immortalitate"
+    },
+    {
+      "source": "nifo",
+      "target": "cardano",
+      "type": "influenced",
+      "label": "natural philosophy"
+    },
+    {
+      "source": "fracastoro",
+      "target": "copernicus",
+      "type": "contemporary",
+      "label": "homocentric astronomy"
+    },
+    {
+      "source": "ficino",
+      "target": "bruno",
+      "type": "cited",
+      "label": "Oxford lectures"
+    },
+    {
+      "source": "copernicus",
+      "target": "bruno",
+      "type": "cited",
+      "label": "infinite universe"
+    },
+    {
+      "source": "agrippa",
+      "target": "dee",
+      "type": "cited",
+      "label": "Monas Hieroglyphica"
+    },
+    {
+      "source": "ficino",
+      "target": "dee",
+      "type": "cited",
+      "label": "Neoplatonic magic"
+    },
+    {
+      "source": "trithemius",
+      "target": "dee",
+      "type": "cited",
+      "label": "angel magic"
+    },
+    {
+      "source": "giorgio",
+      "target": "dee",
+      "type": "cited",
+      "label": "De harmonia mundi"
+    },
+    {
+      "source": "copernicus",
+      "target": "kepler",
+      "type": "cited",
+      "label": "heliocentric system"
+    },
+    {
+      "source": "ficino",
+      "target": "kepler",
+      "type": "influenced",
+      "label": "Pythagorean harmony"
+    },
+    {
+      "source": "cusanus",
+      "target": "ficino",
+      "type": "influenced",
+      "label": "docta ignorantia"
+    },
+    {
+      "source": "cusanus",
+      "target": "bruno",
+      "type": "cited",
+      "label": "infinite universe"
+    },
+    {
+      "source": "cusanus",
+      "target": "copernicus",
+      "type": "influenced",
+      "label": "earth moves"
+    },
+    {
+      "source": "verrocchio",
+      "target": "leonardo",
+      "type": "teacher",
+      "label": "artistic training"
+    },
+    {
+      "source": "lorenzo",
+      "target": "leonardo",
+      "type": "patron",
+      "label": "Medici garden"
+    },
+    {
+      "source": "ficino",
+      "target": "leonardo",
+      "type": "influenced",
+      "label": "met at Medici"
+    },
+    {
+      "source": "pacioli",
+      "target": "leonardo",
+      "type": "teacher",
+      "label": "mathematics 1496"
+    },
+    {
+      "source": "leonardo",
+      "target": "pacioli",
+      "type": "colleague",
+      "label": "illustrated Divina proportione"
+    },
+    {
+      "source": "piero",
+      "target": "pacioli",
+      "type": "teacher",
+      "label": "geometry in Sansepolcro"
+    },
+    {
+      "source": "alberti",
+      "target": "pacioli",
+      "type": "teacher",
+      "label": "mathematics"
+    },
+    {
+      "source": "alberti",
+      "target": "piero",
+      "type": "influenced",
+      "label": "perspective theory"
+    },
+    {
+      "source": "alberti",
+      "target": "ficino",
+      "type": "colleague",
+      "label": "Florentine humanists"
+    },
+    {
+      "source": "ficino",
+      "target": "pacioli",
+      "type": "colleague",
+      "label": "Florence circle"
+    },
+    {
+      "source": "pacioli",
+      "target": "novara",
+      "type": "teacher",
+      "label": "Florence mathematics"
+    },
+    {
+      "source": "lorenzo",
+      "target": "verrocchio",
+      "type": "patron",
+      "label": "Medici commissions"
+    },
+    {
+      "source": "lorenzo",
+      "target": "alberti",
+      "type": "patron",
+      "label": "architectural projects"
+    },
+    {
+      "source": "bentivoglio",
+      "target": "beroaldo",
+      "type": "patron",
+      "label": "Bologna patronage"
+    },
+    {
+      "source": "bentivoglio",
+      "target": "codro",
+      "type": "patron",
+      "label": "Bologna patronage"
+    },
+    {
+      "source": "bentivoglio",
+      "target": "novara",
+      "type": "patron",
+      "label": "university appointment"
+    },
+    {
+      "source": "beroaldo",
+      "target": "pio",
+      "type": "teacher",
+      "label": "Bologna"
+    },
+    {
+      "source": "beroaldo",
+      "target": "codro",
+      "type": "colleague",
+      "label": "Bologna faculty"
+    },
+    {
+      "source": "codro",
+      "target": "copernicus",
+      "type": "teacher",
+      "label": "Greek instruction"
+    },
+    {
+      "source": "codro",
+      "target": "poliziano",
+      "type": "correspondent",
+      "label": "Greek epigrams"
+    },
+    {
+      "source": "codro",
+      "target": "aldus",
+      "type": "correspondent",
+      "label": "Greek texts"
+    },
+    {
+      "source": "novara",
+      "target": "beroaldo",
+      "type": "colleague",
+      "label": "Bologna faculty"
+    },
+    {
+      "source": "novara",
+      "target": "codro",
+      "type": "colleague",
+      "label": "Bologna faculty"
+    },
+    {
+      "source": "guarino",
+      "target": "leoniceno",
+      "type": "influenced",
+      "label": "Ferrara humanism"
+    },
+    {
+      "source": "leoniceno",
+      "target": "calcagnini",
+      "type": "colleague",
+      "label": "Ferrara"
+    },
+    {
+      "source": "calcagnini",
+      "target": "copernicus",
+      "type": "influenced",
+      "label": "earth moves idea"
+    },
+    {
+      "source": "sforza",
+      "target": "pacioli",
+      "type": "patron",
+      "label": "Milan 1496-1499"
+    },
+    {
+      "source": "sforza",
+      "target": "leonardo",
+      "type": "patron",
+      "label": "Milan court"
+    },
+    {
+      "source": "sforza",
+      "target": "bramante",
+      "type": "patron",
+      "label": "architecture"
+    },
+    {
+      "source": "matthias",
+      "target": "ficino",
+      "type": "correspondent",
+      "label": "philosopher-king ideal"
+    },
+    {
+      "source": "ficino",
+      "target": "matthias",
+      "type": "correspondent",
+      "label": "dedicated Books III-IV"
+    },
+    {
+      "source": "aldus",
+      "target": "poliziano",
+      "type": "colleague",
+      "label": "Greek editions"
+    },
+    {
+      "source": "aldus",
+      "target": "bembo",
+      "type": "colleague",
+      "label": "Aldine Academy"
+    },
+    {
+      "source": "aldus",
+      "target": "pico",
+      "type": "correspondent",
+      "label": "published works"
+    },
+    {
+      "source": "ficino",
+      "target": "colet",
+      "type": "correspondent",
+      "label": "Platonic theology"
+    },
+    {
+      "source": "colet",
+      "target": "poliziano",
+      "type": "correspondent",
+      "label": "met in Italy"
+    },
+    {
+      "source": "bembo",
+      "target": "ficino",
+      "type": "influenced",
+      "label": "Neoplatonic love theory"
+    },
+    {
+      "source": "bembo",
+      "target": "pico",
+      "type": "influenced",
+      "label": "met in Florence"
+    },
+    {
+      "source": "barbari",
+      "target": "pacioli",
+      "type": "colleague",
+      "label": "painted portrait 1495"
+    },
+    {
+      "source": "barbari",
+      "target": "leonardo",
+      "type": "colleague",
+      "label": "proportion theory"
+    },
+    {
+      "source": "beroaldo",
+      "target": "ficino",
+      "type": "influenced",
+      "label": "spread Neoplatonism to Paris"
+    },
+    {
+      "source": "toscanelli",
+      "target": "cusanus",
+      "type": "colleague",
+      "label": "lifelong friends, shared observations"
+    },
+    {
+      "source": "toscanelli",
+      "target": "alberti",
+      "type": "colleague",
+      "label": "Florentine circle"
+    },
+    {
+      "source": "toscanelli",
+      "target": "ficino",
+      "type": "colleague",
+      "label": "older Florentine scholar"
+    },
+    {
+      "source": "toscanelli",
+      "target": "regiomontanus",
+      "type": "colleague",
+      "label": "shared astronomical observations"
+    },
+    {
+      "source": "toscanelli",
+      "target": "novara",
+      "type": "influenced",
+      "label": "astronomical methods"
+    },
+    {
+      "source": "plethon",
+      "target": "trapezuntius",
+      "type": "teacher",
+      "label": "Greek in Mistra"
+    },
+    {
+      "source": "plethon",
+      "target": "gaza",
+      "type": "teacher",
+      "label": "Greek in Mistra"
+    },
+    {
+      "source": "bessarion",
+      "target": "trapezuntius",
+      "type": "debated",
+      "label": "Plato-Aristotle controversy"
+    },
+    {
+      "source": "bessarion",
+      "target": "gaza",
+      "type": "colleague",
+      "label": "both in Rome"
+    },
+    {
+      "source": "bessarion",
+      "target": "regiomontanus",
+      "type": "patron",
+      "label": "sponsored Epitome Almagesti"
+    },
+    {
+      "source": "gaza",
+      "target": "argyropoulos",
+      "type": "colleague",
+      "label": "Greek scholars in Italy"
+    },
+    {
+      "source": "gaza",
+      "target": "leoniceno",
+      "type": "colleague",
+      "label": "Ferrara"
+    },
+    {
+      "source": "chalcondyles",
+      "target": "ficino",
+      "type": "colleague",
+      "label": "Florence Studio"
+    },
+    {
+      "source": "chalcondyles",
+      "target": "poliziano",
+      "type": "colleague",
+      "label": "Greek at Florence"
+    },
+    {
+      "source": "chalcondyles",
+      "target": "reuchlin",
+      "type": "teacher",
+      "label": "Greek instruction"
+    },
+    {
+      "source": "chalcondyles",
+      "target": "aldus",
+      "type": "colleague",
+      "label": "Homer editio princeps"
+    },
+    {
+      "source": "lascaris",
+      "target": "chalcondyles",
+      "type": "colleague",
+      "label": "Greek \u00e9migr\u00e9 scholars"
+    },
+    {
+      "source": "lascaris",
+      "target": "aldus",
+      "type": "correspondent",
+      "label": "Greek editions"
+    },
+    {
+      "source": "argyropoulos",
+      "target": "leonardo",
+      "type": "teacher",
+      "label": "may have attended lectures"
+    }
+  ]
+};
+
+const totalUstc = graphData.nodes.reduce((sum, n) => sum + (n.ustc_editions || 0), 0);
+document.getElementById('ustc-total').textContent = totalUstc.toLocaleString();
+document.getElementById('node-count').textContent = graphData.nodes.length;
+document.getElementById('edge-count').textContent = graphData.edges.length;
+
+const svg = d3.select('svg').attr('width', width).attr('height', height);
+const g = svg.append('g');
+
+const zoom = d3.zoom().scaleExtent([0.2, 5]).on('zoom', (event) => g.attr('transform', event.transform));
+svg.call(zoom);
+
+const simulation = d3.forceSimulation(graphData.nodes)
+    .force('link', d3.forceLink(graphData.edges).id(d => d.id).distance(100))
+    .force('charge', d3.forceManyBody().strength(-300))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(35));
+
+const link = g.append('g').selectAll('line').data(graphData.edges).enter().append('line')
+    .attr('class', 'link')
+    .attr('stroke', d => edgeColors[d.type] || '#666')
+    .attr('stroke-width', d => d.type === 'teacher' ? 2.5 : 1.5)
+    .attr('data-type', d => d.type);
+
+const node = g.append('g').selectAll('.node').data(graphData.nodes).enter().append('g')
+    .attr('class', 'node')
+    .call(d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended));
+
+node.append('circle')
+    .attr('r', d => {
+        const ustc = d.ustc_editions || 0;
+        return Math.max(6, Math.min(30, 6 + Math.sqrt(ustc) * 1.5));
+    })
+    .attr('fill', d => groupColors[d.group] || '#666');
+
+node.append('text').attr('dx', 12).attr('dy', 4).text(d => d.label);
+
+const tooltip = d3.select('#tooltip');
+
+node.on('mouseover', (event, d) => {
+    let html = `<h4>${d.label}</h4>`;
+    html += `<div class="meta">${d.birth}–${d.death} · ${d.place}</div>`;
+    if (d.role) html += `<div class="role">${d.role}</div>`;
+    if (d.ustc_editions) html += `<div class="ustc">${d.ustc_editions} USTC editions (1450-1550)</div>`;
+    if (d.key_works && d.key_works.length > 0) {
+        html += `<div class="works"><strong>Key works:</strong><br>`;
+        html += d.key_works.slice(0, 3).map(w => `• ${w}`).join('<br>');
+        html += `</div>`;
+    }
+    const connections = graphData.edges.filter(e => (e.source.id || e.source) === d.id || (e.target.id || e.target) === d.id);
+    html += `<div style="margin-top:8px; color:#888;">${connections.length} connections</div>`;
+    
+    tooltip.html(html).style('left', (event.pageX + 15) + 'px').style('top', (event.pageY - 10) + 'px').style('opacity', 1);
+});
+
+node.on('mouseout', () => tooltip.style('opacity', 0));
+
+node.on('click', (event, d) => {
+    const connectedIds = new Set([d.id]);
+    graphData.edges.forEach(e => {
+        const sourceId = e.source.id || e.source;
+        const targetId = e.target.id || e.target;
+        if (sourceId === d.id) connectedIds.add(targetId);
+        if (targetId === d.id) connectedIds.add(sourceId);
+    });
+    node.select('circle').style('opacity', n => connectedIds.has(n.id) ? 1 : 0.15);
+    node.select('text').style('opacity', n => connectedIds.has(n.id) ? 1 : 0.15);
+    link.style('opacity', e => ((e.source.id || e.source) === d.id || (e.target.id || e.target) === d.id) ? 1 : 0.03);
+});
+
+svg.on('dblclick', () => {
+    node.select('circle').style('opacity', 1);
+    node.select('text').style('opacity', 1);
+    link.style('opacity', 0.4);
+});
+
+link.on('mouseover', (event, d) => {
+    tooltip.html(`<h4>${d.source.label || d.source} → ${d.target.label || d.target}</h4><div class="meta">${d.type}: ${d.label}</div>`)
+        .style('left', (event.pageX + 15) + 'px').style('top', (event.pageY - 10) + 'px').style('opacity', 1);
+});
+link.on('mouseout', () => tooltip.style('opacity', 0));
+
+simulation.on('tick', () => {
+    link.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+    node.attr('transform', d => `translate(${d.x},${d.y})`);
+});
+
+function dragstarted(event, d) { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; }
+function dragged(event, d) { d.fx = event.x; d.fy = event.y; }
+function dragended(event, d) { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }
+
+d3.selectAll('.edge-filter').on('change', function() {
+    const activeTypes = [];
+    d3.selectAll('.edge-filter:checked').each(function() { activeTypes.push(this.value); });
+    link.style('display', d => activeTypes.includes(d.type) ? 'block' : 'none');
+});
+
+svg.call(zoom.transform, d3.zoomIdentity.translate(50, 50).scale(0.85));
+    </script>
+</body>
+</html>
