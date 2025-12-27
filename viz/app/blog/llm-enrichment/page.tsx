@@ -261,9 +261,11 @@ export default function LLMEnrichment() {
       </p>
 
       <p>
-        English-language works were excluded because our primary goal was translation.
-        A book already in English doesn&apos;t need its title translated, which is the most
-        valuable enrichment for discovery.
+        English-language works (~164,000) were excluded because our primary goal was
+        translation—a book already in English doesn&apos;t need its title translated.
+        Otherwise, we enriched <em>all</em> languages: Latin (40%), French (16%),
+        German (14%), Spanish (11%), Italian (9%), Dutch (5%), plus Greek, Portuguese,
+        Hebrew, Polish, and others.
       </p>
 
       <h2>The Results</h2>
