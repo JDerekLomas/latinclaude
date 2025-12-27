@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USTC Renaissance Book Explorer</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #2a2a4a;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 1.5rem;
+            background: #111118;
+            border-bottom: 1px solid #2a2a4a;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #64b5f6;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .chart-container {
+            background: #12121a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #2a2a4a;
+        }
+
+        .chart-container.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .chart-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .chart-subtitle {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        svg {
+            display: block;
+        }
+
+        .axis text {
+            fill: #888;
+            font-size: 11px;
+        }
+
+        .axis line, .axis path {
+            stroke: #333;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(20, 20, 30, 0.95);
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 12px 16px;
+            pointer-events: none;
+            font-size: 13px;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .tooltip-title {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .tooltip-value {
+            color: #64b5f6;
+            font-size: 1.1em;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: #aaa;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .legend-item:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        .treemap-cell {
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .treemap-cell:hover {
+            opacity: 0.8;
+        }
+
+        .treemap-label {
+            font-size: 11px;
+            fill: #fff;
+            pointer-events: none;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+        }
+
+        .area-layer {
+            transition: opacity 0.2s;
+        }
+
+        .area-layer:hover {
+            opacity: 1 !important;
+        }
+
+        @media (max-width: 1200px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>USTC Renaissance Book Explorer</h1>
+        <p class="subtitle">Enriched metadata for 630,862 books printed 1450-1700</p>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat">
+            <div class="stat-value" id="total-books">-</div>
+            <div class="stat-label">Total Books</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="total-languages">-</div>
+            <div class="stat-label">Languages</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="year-span">-</div>
+            <div class="stat-label">Year Span</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="total-countries">-</div>
+            <div class="stat-label">Countries</div>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="chart-container full-width">
+            <div class="chart-title">Language Distribution Over Time</div>
+            <div class="chart-subtitle">Stacked area chart showing publishing trends by language (1450-1700)</div>
+            <svg id="language-timeline"></svg>
+            <div class="legend" id="language-legend"></div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">Work Types</div>
+            <div class="chart-subtitle">Treemap of book categories</div>
+            <svg id="work-types-treemap"></svg>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">Religious Traditions</div>
+            <div class="chart-subtitle">Distribution of religious affiliations</div>
+            <svg id="religious-donut"></svg>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">Top Languages</div>
+            <div class="chart-subtitle">Horizontal bar chart of book counts</div>
+            <svg id="languages-bar"></svg>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">Publishing Countries</div>
+            <div class="chart-subtitle">Where Renaissance books were printed</div>
+            <svg id="countries-bar"></svg>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip" style="visibility: hidden;"></div>
+
+    <script>
+        // Colour palette
+        const colours = {
+            languages: {
+                'Latin': '#e74c3c',
+                'French': '#3498db',
+                'German': '#f39c12',
+                'Spanish': '#9b59b6',
+                'Italian': '#1abc9c',
+                'Dutch': '#e67e22',
+                'Greek': '#2ecc71',
+                'Portuguese': '#34495e',
+                'Hebrew': '#16a085',
+                'Polish': '#8e44ad',
+                'Other': '#7f8c8d'
+            },
+            workTypes: d3.schemeTableau10,
+            religious: {
+                'Catholic': '#c0392b',
+                'secular': '#3498db',
+                'Protestant': '#27ae60',
+                'Lutheran': '#f39c12',
+                'mixed': '#9b59b6',
+                'Christian': '#e74c3c',
+                'Jewish': '#1abc9c',
+                'Calvinist': '#2980b9',
+                'Anglican': '#8e44ad',
+                'Islamic': '#16a085'
+            }
+        };
+
+        const tooltip = d3.select('#tooltip');
+
+        function showTooltip(event, title, value, extra = '') {
+            tooltip
+                .style('visibility', 'visible')
+                .html(`<div class="tooltip-title">${title}</div>
+                       <div class="tooltip-value">${value.toLocaleString()} books</div>
+                       ${extra ? `<div style="color:#888;margin-top:4px">${extra}</div>` : ''}`);
+        }
+
+        function moveTooltip(event) {
+            tooltip
+                .style('top', (event.pageY - 10) + 'px')
+                .style('left', (event.pageX + 15) + 'px');
+        }
+
+        function hideTooltip() {
+            tooltip.style('visibility', 'hidden');
+        }
+
+        // Load and render data
+        d3.json('ustc_explorer_data.json').then(data => {
+            // Update stats
+            d3.select('#total-books').text(data.total_records.toLocaleString());
+            d3.select('#total-languages').text(data.languages.length);
+            d3.select('#year-span').text(`${data.year_range[0]}-${data.year_range[1]}`);
+            d3.select('#total-countries').text(data.countries.length);
+
+            // Render all charts
+            renderLanguageTimeline(data.language_by_decade);
+            renderWorkTypesTreemap(data.work_types);
+            renderReligiousDonut(data.religious_traditions);
+            renderLanguagesBar(data.languages);
+            renderCountriesBar(data.countries);
+        });
+
+        function renderLanguageTimeline(rawData) {
+            const container = d3.select('#language-timeline');
+            const width = container.node().parentNode.clientWidth - 48;
+            const height = 400;
+            const margin = { top: 20, right: 30, bottom: 40, left: 60 };
+
+            container.attr('width', width).attr('height', height);
+
+            const g = container.append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+
+            const innerWidth = width - margin.left - margin.right;
+            const innerHeight = height - margin.top - margin.bottom;
+
+            // Get top 6 languages, group rest as "Other"
+            const topLanguages = ['Latin', 'French', 'German', 'Spanish', 'Italian', 'Dutch'];
+
+            // Process data by decade
+            const decades = [...new Set(rawData.map(d => d.decade))].sort((a, b) => a - b);
+            const stackData = decades.map(decade => {
+                const row = { decade };
+                topLanguages.forEach(lang => {
+                    const match = rawData.find(d => d.decade === decade && d.detected_language === lang);
+                    row[lang] = match ? match.count : 0;
+                });
+                const otherSum = rawData
+                    .filter(d => d.decade === decade && !topLanguages.includes(d.detected_language))
+                    .reduce((sum, d) => sum + d.count, 0);
+                row['Other'] = otherSum;
+                return row;
+            });
+
+            const keys = [...topLanguages, 'Other'];
+            const stack = d3.stack().keys(keys);
+            const series = stack(stackData);
+
+            // Scales
+            const xScale = d3.scaleLinear()
+                .domain(d3.extent(decades))
+                .range([0, innerWidth]);
+
+            const yScale = d3.scaleLinear()
+                .domain([0, d3.max(series, s => d3.max(s, d => d[1]))])
+                .range([innerHeight, 0]);
+
+            // Area generator
+            const area = d3.area()
+                .x(d => xScale(d.data.decade))
+                .y0(d => yScale(d[0]))
+                .y1(d => yScale(d[1]))
+                .curve(d3.curveMonotoneX);
+
+            // Draw areas
+            g.selectAll('.area-layer')
+                .data(series)
+                .join('path')
+                .attr('class', 'area-layer')
+                .attr('d', area)
+                .attr('fill', d => colours.languages[d.key])
+                .attr('opacity', 0.85)
+                .on('mouseover', function(event, d) {
+                    d3.selectAll('.area-layer').attr('opacity', 0.3);
+                    d3.select(this).attr('opacity', 1);
+                    const total = d3.sum(d, pt => pt[1] - pt[0]);
+                    showTooltip(event, d.key, total);
+                })
+                .on('mousemove', moveTooltip)
+                .on('mouseout', function() {
+                    d3.selectAll('.area-layer').attr('opacity', 0.85);
+                    hideTooltip();
+                });
+
+            // Axes
+            g.append('g')
+                .attr('class', 'axis')
+                .attr('transform', `translate(0,${innerHeight})`)
+                .call(d3.axisBottom(xScale).tickFormat(d3.format('d')));
+
+            g.append('g')
+                .attr('class', 'axis')
+                .call(d3.axisLeft(yScale).tickFormat(d => d >= 1000 ? (d/1000) + 'k' : d));
+
+            // Legend
+            const legend = d3.select('#language-legend');
+            keys.forEach(key => {
+                legend.append('div')
+                    .attr('class', 'legend-item')
+                    .html(`<div class="legend-color" style="background:${colours.languages[key]}"></div>${key}`);
+            });
+        }
+
+        function renderWorkTypesTreemap(data) {
+            const container = d3.select('#work-types-treemap');
+            const width = container.node().parentNode.clientWidth - 48;
+            const height = 350;
+
+            container.attr('width', width).attr('height', height);
+
+            const hierarchy = d3.hierarchy({ children: data })
+                .sum(d => d.count);
+
+            const treemap = d3.treemap()
+                .size([width, height])
+                .padding(2)
+                .round(true);
+
+            const root = treemap(hierarchy);
+            const colourScale = d3.scaleOrdinal(d3.schemeTableau10);
+
+            container.selectAll('.treemap-cell')
+                .data(root.leaves())
+                .join('rect')
+                .attr('class', 'treemap-cell')
+                .attr('x', d => d.x0)
+                .attr('y', d => d.y0)
+                .attr('width', d => d.x1 - d.x0)
+                .attr('height', d => d.y1 - d.y0)
+                .attr('fill', (d, i) => colourScale(i))
+                .on('mouseover', (event, d) => {
+                    const pct = ((d.data.count / 630862) * 100).toFixed(1);
+                    showTooltip(event, d.data.type, d.data.count, `${pct}% of total`);
+                })
+                .on('mousemove', moveTooltip)
+                .on('mouseout', hideTooltip);
+
+            container.selectAll('.treemap-label')
+                .data(root.leaves().filter(d => (d.x1 - d.x0) > 60 && (d.y1 - d.y0) > 20))
+                .join('text')
+                .attr('class', 'treemap-label')
+                .attr('x', d => d.x0 + 6)
+                .attr('y', d => d.y0 + 18)
+                .text(d => d.data.type);
+        }
+
+        function renderReligiousDonut(data) {
+            const container = d3.select('#religious-donut');
+            const width = container.node().parentNode.clientWidth - 48;
+            const height = 350;
+            const radius = Math.min(width, height) / 2 - 20;
+
+            container.attr('width', width).attr('height', height);
+
+            const g = container.append('g')
+                .attr('transform', `translate(${width/2},${height/2})`);
+
+            const pie = d3.pie()
+                .value(d => d.count)
+                .sort(null);
+
+            const arc = d3.arc()
+                .innerRadius(radius * 0.5)
+                .outerRadius(radius);
+
+            const arcHover = d3.arc()
+                .innerRadius(radius * 0.5)
+                .outerRadius(radius + 10);
+
+            const arcs = g.selectAll('path')
+                .data(pie(data.slice(0, 8)))
+                .join('path')
+                .attr('d', arc)
+                .attr('fill', d => colours.religious[d.data.tradition] || '#666')
+                .attr('stroke', '#12121a')
+                .attr('stroke-width', 2)
+                .on('mouseover', function(event, d) {
+                    d3.select(this).transition().duration(200).attr('d', arcHover);
+                    const pct = ((d.data.count / 630862) * 100).toFixed(1);
+                    showTooltip(event, d.data.tradition, d.data.count, `${pct}% of total`);
+                })
+                .on('mousemove', moveTooltip)
+                .on('mouseout', function() {
+                    d3.select(this).transition().duration(200).attr('d', arc);
+                    hideTooltip();
+                });
+
+            // Center label
+            g.append('text')
+                .attr('text-anchor', 'middle')
+                .attr('dy', '-0.5em')
+                .attr('fill', '#fff')
+                .attr('font-size', '14px')
+                .text('Religious');
+            g.append('text')
+                .attr('text-anchor', 'middle')
+                .attr('dy', '1em')
+                .attr('fill', '#888')
+                .attr('font-size', '12px')
+                .text('Traditions');
+        }
+
+        function renderLanguagesBar(data) {
+            const container = d3.select('#languages-bar');
+            const width = container.node().parentNode.clientWidth - 48;
+            const height = 350;
+            const margin = { top: 10, right: 30, bottom: 30, left: 80 };
+
+            container.attr('width', width).attr('height', height);
+
+            const g = container.append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+
+            const innerWidth = width - margin.left - margin.right;
+            const innerHeight = height - margin.top - margin.bottom;
+
+            const top10 = data.slice(0, 10);
+
+            const yScale = d3.scaleBand()
+                .domain(top10.map(d => d.language))
+                .range([0, innerHeight])
+                .padding(0.2);
+
+            const xScale = d3.scaleLinear()
+                .domain([0, d3.max(top10, d => d.count)])
+                .range([0, innerWidth]);
+
+            g.selectAll('rect')
+                .data(top10)
+                .join('rect')
+                .attr('y', d => yScale(d.language))
+                .attr('x', 0)
+                .attr('height', yScale.bandwidth())
+                .attr('width', d => xScale(d.count))
+                .attr('fill', d => colours.languages[d.language] || '#666')
+                .attr('rx', 4)
+                .on('mouseover', (event, d) => showTooltip(event, d.language, d.count))
+                .on('mousemove', moveTooltip)
+                .on('mouseout', hideTooltip);
+
+            g.append('g')
+                .attr('class', 'axis')
+                .call(d3.axisLeft(yScale));
+
+            g.append('g')
+                .attr('class', 'axis')
+                .attr('transform', `translate(0,${innerHeight})`)
+                .call(d3.axisBottom(xScale).ticks(5).tickFormat(d => d >= 1000 ? (d/1000) + 'k' : d));
+        }
+
+        function renderCountriesBar(data) {
+            const container = d3.select('#countries-bar');
+            const width = container.node().parentNode.clientWidth - 48;
+            const height = 350;
+            const margin = { top: 10, right: 30, bottom: 30, left: 100 };
+
+            container.attr('width', width).attr('height', height);
+
+            const g = container.append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+
+            const innerWidth = width - margin.left - margin.right;
+            const innerHeight = height - margin.top - margin.bottom;
+
+            const top10 = data.slice(0, 10).map(d => ({
+                ...d,
+                country: d.country.length > 15 ? d.country.substring(0, 15) + '...' : d.country
+            }));
+
+            const yScale = d3.scaleBand()
+                .domain(top10.map(d => d.country))
+                .range([0, innerHeight])
+                .padding(0.2);
+
+            const xScale = d3.scaleLinear()
+                .domain([0, d3.max(top10, d => d.count)])
+                .range([0, innerWidth]);
+
+            const countryColours = d3.scaleOrdinal(d3.schemeSet3);
+
+            g.selectAll('rect')
+                .data(top10)
+                .join('rect')
+                .attr('y', d => yScale(d.country))
+                .attr('x', 0)
+                .attr('height', yScale.bandwidth())
+                .attr('width', d => xScale(d.count))
+                .attr('fill', (d, i) => countryColours(i))
+                .attr('rx', 4)
+                .on('mouseover', (event, d) => showTooltip(event, d.country, d.count))
+                .on('mousemove', moveTooltip)
+                .on('mouseout', hideTooltip);
+
+            g.append('g')
+                .attr('class', 'axis')
+                .call(d3.axisLeft(yScale));
+
+            g.append('g')
+                .attr('class', 'axis')
+                .attr('transform', `translate(0,${innerHeight})`)
+                .call(d3.axisBottom(xScale).ticks(5).tickFormat(d => d >= 1000 ? (d/1000) + 'k' : d));
+        }
+    </script>
+</body>
+</html>
