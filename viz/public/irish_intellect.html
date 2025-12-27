@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Irish Divergence: How the Reformation Split a Scholarly Tradition</title>
-    <meta name="description" content="After 1607, Irish intellectuals split into two worlds: Protestant scholars in Britain (Boyle, Ussher), Catholic exiles on the Continent (Wadding, Lombard). Visualizing the divergence.">
+    <meta name="description" content="From Eriugena to Burke: a thousand years of Irish thought. Carolingian scholars, medieval philosophers, and Enlightenment giants—visualized on an interactive timeline.">
 
     <!-- Open Graph / Social Sharing -->
     <meta property="og:title" content="The Irish Divergence: How the Reformation Split a Scholarly Tradition">
@@ -307,7 +307,7 @@
         <div class="tag">Data Visualization</div>
         <h1>The Irish Divergence</h1>
         <p class="subtitle">
-            How the Reformation split a thousand-year scholarly tradition into two separate worlds
+            From Carolingian wanderers to Enlightenment giants: a thousand years of Irish thought (750-1800)
         </p>
 
         <div class="thesis">
@@ -324,15 +324,18 @@
     <div class="legend">
         <div class="legend-item">
             <div class="legend-circle legend-medieval"></div>
-            <span>Unified Tradition (800-1500)</span>
+            <span>Wandering Scholars (750-1400)</span>
         </div>
         <div class="legend-item">
             <div class="legend-circle legend-protestant"></div>
-            <span>Protestant Path → Britain</span>
+            <span>Protestant → Britain (1580-1800)</span>
         </div>
         <div class="legend-item">
             <div class="legend-circle legend-catholic"></div>
-            <span>Catholic Path → Exile</span>
+            <span>Catholic → Exile (1550-1660)</span>
+        </div>
+        <div class="legend-item" style="color:#8b949e;font-size:0.85rem;margin-left:20px;">
+            <span>○ dashed = post-1700 (no USTC data)</span>
         </div>
     </div>
 
@@ -342,19 +345,19 @@
 
     <div class="insight-box">
         <div class="protestant-insight">
-            <h3>Protestant Path</h3>
-            <div class="number">426</div>
-            <div class="label">editions from 4 scholars</div>
+            <h3>Protestant → Britain</h3>
+            <div class="number">8</div>
+            <div class="label">major figures (1580-1800)</div>
             <p style="margin-top:12px;color:#c9d1d9;font-size:0.9rem;">
-                Robert Boyle alone (264 ed.) had more impact on print culture than the entire Catholic exile network combined.
+                Boyle (chemistry), Berkeley (philosophy), Swift (satire), Burke (conservatism), Hutcheson (moral philosophy). Shaped the Enlightenment.
             </p>
         </div>
         <div class="catholic-insight">
-            <h3>Catholic Exile</h3>
-            <div class="number">109</div>
-            <div class="label">editions from 4 scholars</div>
+            <h3>Catholic → Exile</h3>
+            <div class="number">4</div>
+            <div class="label">scholars in Louvain/Rome</div>
             <p style="margin-top:12px;color:#c9d1d9;font-size:0.9rem;">
-                Published in Rome, Louvain, Antwerp—contributing to Counter-Reformation scholarship but largely forgotten in Irish history.
+                Lombard, Wadding, Colgan preserved Irish identity abroad. Their work on Irish saints and history largely forgotten in anglophone scholarship.
             </p>
         </div>
     </div>
@@ -382,13 +385,21 @@
 
     <script>
         const scholars = [
-            // Medieval - Unified Tradition
+            // Carolingian Era - Wandering Scholars
+            { name: "Dicuil", birth: 770, death: 825, editions: 0,
+              significance: "Geographer at Louis the Pious's court. De Mensura Orbis Terrae (825)—earliest record of Irish monks reaching Iceland.",
+              tradition: "medieval", places: "Carolingian Court" },
             { name: "John Scotus Eriugena", birth: 815, death: 877, editions: 2,
-              significance: "Greatest philosopher between Augustine and Aquinas. Translated Pseudo-Dionysius. His Periphyseon was condemned posthumously but remained influential.",
+              significance: "Greatest philosopher between Augustine and Aquinas. Translated Pseudo-Dionysius. Head of Palace School under Charles the Bald.",
               tradition: "medieval", places: "Court of Charles the Bald" },
             { name: "Sedulius Scottus", birth: 830, death: 870, editions: 0,
               significance: "Carolingian poet-scholar at Liège. De rectoribus Christianis—a 'mirror for princes.' Works survive in manuscript only.",
               tradition: "medieval", places: "Liège" },
+            { name: "Marianus Scotus", birth: 1028, death: 1082, editions: 0,
+              significance: "Chronicler. His universal history (Chronica Clara) was used throughout medieval Europe, including by John of Worcester.",
+              tradition: "medieval", places: "Cologne, Fulda, Mainz" },
+
+            // High Medieval
             { name: "Duns Scotus", birth: 1266, death: 1308, editions: 191,
               significance: "The 'Subtle Doctor.' Birthplace disputed—probably Scottish (Duns, Berwickshire), though claimed by Ireland historically. Major Franciscan philosopher.",
               tradition: "medieval", places: "Oxford, Paris, Cologne", disputed: true },
@@ -399,7 +410,7 @@
               significance: "Archbishop of Armagh. His Defensorium Curatorum attacked mendicant privileges—a precursor to Wycliffite critique.",
               tradition: "medieval", places: "Avignon, Armagh" },
 
-            // Protestant Path
+            // Protestant Path (17th-18th c.)
             { name: "James Ussher", birth: 1581, death: 1656, editions: 144,
               significance: "Archbishop of Armagh. His Annales dated Creation to 4004 BC—printed in King James Bibles for centuries.",
               tradition: "protestant", places: "Dublin, Oxford, London" },
@@ -409,9 +420,21 @@
             { name: "William Molyneux", birth: 1656, death: 1698, editions: 7,
               significance: "Founded Dublin Philosophical Society (1683). The Case of Ireland (1698). Raised 'Molyneux's Problem' with Locke.",
               tradition: "protestant", places: "Dublin" },
+            { name: "Jonathan Swift", birth: 1667, death: 1745, editions: null,
+              significance: "Dean of St Patrick's. Gulliver's Travels (1726)—most widely read book by an Irish author. Master satirist.",
+              tradition: "protestant", places: "Dublin, London" },
             { name: "John Toland", birth: 1670, death: 1722, editions: 11,
               significance: "Christianity Not Mysterious (1696)—burned by Irish Parliament. Pioneer of Deism and pantheism.",
               tradition: "protestant", places: "London, Berlin, The Hague" },
+            { name: "George Berkeley", birth: 1685, death: 1753, editions: null,
+              significance: "Bishop of Cloyne. Founder of idealism—'to be is to be perceived.' Treatise on Human Knowledge (1710).",
+              tradition: "protestant", places: "Dublin, London, Rhode Island" },
+            { name: "Francis Hutcheson", birth: 1694, death: 1746, editions: null,
+              significance: "Father of Scottish Enlightenment. Taught Adam Smith. Coined 'greatest happiness for greatest number.'",
+              tradition: "protestant", places: "Dublin, Glasgow" },
+            { name: "Edmund Burke", birth: 1729, death: 1797, editions: null,
+              significance: "Founder of modern conservatism. Reflections on the Revolution in France (1790). Born Dublin, Trinity College.",
+              tradition: "protestant", places: "Dublin, London" },
 
             // Catholic Exile Path
             { name: "Peter Lombard", birth: 1555, death: 1625, editions: 12,
@@ -474,7 +497,7 @@
 
             // Scales
             const xScale = d3.scaleLinear()
-                .domain([800, 1720])
+                .domain([750, 1810])
                 .range([0, innerWidth]);
 
             const sizeScale = d3.scaleSqrt()
@@ -502,17 +525,17 @@
             g.append('path')
                 .attr('d', `M ${xScale(splitYear)} ${centerY}
                            Q ${xScale(1580)} ${centerY - 30}, ${xScale(1600)} ${protestantY}
-                           L ${xScale(1720)} ${protestantY}`)
+                           L ${xScale(1810)} ${protestantY}`)
                 .attr('fill', 'none')
                 .attr('stroke', colors.protestant)
                 .attr('stroke-width', 3)
                 .attr('stroke-opacity', 0.3);
 
-            // Catholic branch
+            // Catholic branch (fades out after ~1660)
             g.append('path')
                 .attr('d', `M ${xScale(splitYear)} ${centerY}
                            Q ${xScale(1580)} ${centerY + 30}, ${xScale(1600)} ${catholicY}
-                           L ${xScale(1720)} ${catholicY}`)
+                           L ${xScale(1680)} ${catholicY}`)
                 .attr('fill', 'none')
                 .attr('stroke', colors.catholic)
                 .attr('stroke-width', 3)
@@ -541,22 +564,22 @@
 
             // Path labels
             g.append('text')
-                .attr('x', xScale(1700))
+                .attr('x', xScale(1800))
                 .attr('y', protestantY - 40)
                 .attr('text-anchor', 'end')
                 .attr('fill', colors.protestant)
                 .attr('font-size', '13px')
                 .attr('font-weight', '500')
-                .text('Protestant → British Networks');
+                .text('Protestant → Britain & Enlightenment');
 
             g.append('text')
-                .attr('x', xScale(1700))
+                .attr('x', xScale(1680))
                 .attr('y', catholicY + 50)
                 .attr('text-anchor', 'end')
                 .attr('fill', colors.catholic)
                 .attr('font-size', '13px')
                 .attr('font-weight', '500')
-                .text('Catholic → Continental Exile');
+                .text('Catholic → Exile (fades after 1660)');
 
             // Ficino reference
             const ficinoY = innerHeight + 25;
@@ -578,7 +601,7 @@
 
             // Timeline axis
             const xAxis = d3.axisBottom(xScale)
-                .tickValues([900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700])
+                .tickValues([800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800])
                 .tickFormat(d => d);
 
             g.append('g')
@@ -621,36 +644,47 @@
                 .on('mousemove', moveTooltip)
                 .on('mouseout', hideTooltip);
 
+            // Helper to get node radius
+            function getRadius(d) {
+                if (d.editions === null || d.editions === undefined) return 20; // Post-USTC figures get medium size
+                return Math.max(sizeScale(d.editions), 8);
+            }
+
             // Glow
             nodes.append('circle')
-                .attr('r', d => sizeScale(d.editions) + 8)
+                .attr('r', d => getRadius(d) + 8)
                 .attr('fill', d => colors[d.tradition])
                 .attr('opacity', 0.15);
 
             // Main circle
             nodes.append('circle')
-                .attr('r', d => Math.max(sizeScale(d.editions), 8))
+                .attr('r', d => getRadius(d))
                 .attr('fill', d => colors[d.tradition])
                 .attr('stroke', '#fff')
-                .attr('stroke-width', d => d.editions > 50 ? 2 : 1)
+                .attr('stroke-width', d => (d.editions && d.editions > 50) || d.editions === null ? 2 : 1)
+                .attr('stroke-dasharray', d => d.editions === null ? '3,2' : 'none')
                 .attr('filter', 'url(#glow)');
 
             // Labels for major figures
-            nodes.filter(d => d.editions >= 30 || d.name === 'John Scotus Eriugena')
+            const majorFigures = ['John Scotus Eriugena', 'Duns Scotus', 'Robert Boyle', 'George Berkeley',
+                                  'Jonathan Swift', 'Edmund Burke', 'Francis Hutcheson', 'James Ussher',
+                                  'Luke Wadding', 'Dicuil', 'Marianus Scotus'];
+            nodes.filter(d => (d.editions && d.editions >= 30) || majorFigures.includes(d.name))
                 .append('text')
-                .attr('y', d => -sizeScale(Math.max(d.editions, 8)) - 8)
+                .attr('y', d => -getRadius(d) - 8)
                 .attr('text-anchor', 'middle')
                 .attr('fill', '#fff')
-                .attr('font-size', d => d.editions > 100 ? '12px' : '11px')
+                .attr('font-size', d => (d.editions && d.editions > 100) || d.editions === null ? '12px' : '11px')
                 .attr('font-weight', '500')
                 .text(d => {
                     if (d.name === 'John Scotus Eriugena') return 'Eriugena';
                     if (d.name === 'Richard FitzRalph') return 'FitzRalph';
+                    if (d.name === 'Marianus Scotus') return 'Marianus';
                     return d.name.split(' ').slice(-1)[0];
                 });
 
-            // Edition counts inside large nodes
-            nodes.filter(d => d.editions >= 40)
+            // Edition counts inside large nodes (only for USTC-era figures with high counts)
+            nodes.filter(d => d.editions && d.editions >= 40)
                 .append('text')
                 .attr('y', 5)
                 .attr('text-anchor', 'middle')
@@ -663,26 +697,35 @@
         function showTooltip(event, d) {
             const maxEditions = 264;
             const ficinoEditions = 106;
-            const barWidth = (d.editions / maxEditions) * 100;
+            const hasEditions = d.editions !== null && d.editions !== undefined;
+            const barWidth = hasEditions ? (d.editions / maxEditions) * 100 : 0;
             const ficinoPos = (ficinoEditions / maxEditions) * 100;
 
-            tooltip.style('visibility', 'visible')
-                .html(`
-                    <h3 style="color: ${colors[d.tradition]}">${d.name}</h3>
-                    <div class="dates">${d.birth}–${d.death}</div>
-                    <div class="editions" style="color: ${colors[d.tradition]}">${d.editions}</div>
-                    <div class="editions-label">editions in USTC (1450-1700)</div>
-                    <div class="significance">${d.significance}</div>
-                    <div style="margin-top:12px;color:#8b949e;font-size:0.85rem;">
-                        <strong>Published in:</strong> ${d.places}
-                    </div>
-                    <div class="context-bar">
+            const editionsHtml = hasEditions
+                ? `<div class="editions" style="color: ${colors[d.tradition]}">${d.editions}</div>
+                   <div class="editions-label">editions in USTC (1450-1700)</div>`
+                : `<div class="editions-label" style="color:#8b949e;font-style:italic;">Post-1700 (not in USTC)</div>`;
+
+            const contextBar = hasEditions
+                ? `<div class="context-bar">
                         <div style="font-size:0.8rem;color:#8b949e;">vs. Ficino (106 editions)</div>
                         <div class="bar-container">
                             <div class="bar-fill" style="width:${barWidth}%;background:${colors[d.tradition]}"></div>
                             <div class="ficino-marker" style="left:${ficinoPos}%"></div>
                         </div>
+                    </div>`
+                : '';
+
+            tooltip.style('visibility', 'visible')
+                .html(`
+                    <h3 style="color: ${colors[d.tradition]}">${d.name}</h3>
+                    <div class="dates">${d.birth}–${d.death}</div>
+                    ${editionsHtml}
+                    <div class="significance">${d.significance}</div>
+                    <div style="margin-top:12px;color:#8b949e;font-size:0.85rem;">
+                        <strong>Active in:</strong> ${d.places}
                     </div>
+                    ${contextBar}
                 `);
         }
 
