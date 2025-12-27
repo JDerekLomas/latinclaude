@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The River of Books: 250 Years of European Printing</title>
+    <meta name="description" content="1.6 million books visualized as a flowing river. Watch Latin give way to vernaculars, see the Reformation split, witness the birth of modern publishing.">
+
+    <meta property="og:title" content="The River of Books">
+    <meta property="og:description" content="250 years of European printing (1450-1700) visualized as a flowing river of 1.6 million books.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.secondrenaissance.ai/river_of_books.html">
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0f;
+            color: #e8e8e8;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 40px;
+            text-align: center;
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(100, 200, 255, 0.15);
+            color: #64c8ff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 500;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #64c8ff 0%, #a78bfa 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #8b949e;
+            line-height: 1.5;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #chart-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        #chart {
+            width: 100%;
+            height: 600px;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: #c9d1d9;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        .event-annotations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .tooltip {
+            position: absolute;
+            visibility: hidden;
+            background: rgba(15, 15, 25, 0.95);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 16px 20px;
+            max-width: 280px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .tooltip h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .tooltip .total {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .tooltip .breakdown {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            font-size: 0.85rem;
+        }
+
+        .tooltip .breakdown-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tooltip .breakdown-color {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+        }
+
+        .context-box {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 24px 32px;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .context-box h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .context-box p {
+            color: #8b949e;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .context-box strong {
+            color: #c9d1d9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer p {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #64c8ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .stats { gap: 24px; }
+            #chart { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="tag">Data Visualization</div>
+        <h1>The River of Books</h1>
+        <p class="subtitle">
+            250 years of European printing—1.6 million editions flowing from Gutenberg to the Enlightenment
+        </p>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">1,570,596</div>
+                <div class="stat-label">Editions</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">1450–1700</div>
+                <div class="stat-label">Timespan</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Languages</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background: #8b5cf6;"></div>
+            <span>Latin</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #3b82f6;"></div>
+            <span>German</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #06b6d4;"></div>
+            <span>French</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #10b981;"></div>
+            <span>Italian</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #f59e0b;"></div>
+            <span>English</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ef4444;"></div>
+            <span>Dutch</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ec4899;"></div>
+            <span>Spanish</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #6b7280;"></div>
+            <span>Other</span>
+        </div>
+    </div>
+
+    <div id="chart-container">
+        <svg id="chart"></svg>
+    </div>
+
+    <div class="context-box">
+        <h2>What You're Seeing</h2>
+        <p>
+            Each colored band represents books printed in a different language. The <strong>width</strong> shows
+            volume—watch Latin (purple) dominate early printing, then vernacular languages surge after
+            <strong>1517</strong> (the Reformation). German explodes as Luther's Bible spreads. By 1600,
+            the river has transformed: what began as a Latin stream becomes a multilingual flood.
+        </p>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <footer>
+        <p>
+            Data from <a href="https://ustc.ac.uk" target="_blank">Universal Short Title Catalogue</a> ·
+            Part of <a href="/">Second Renaissance</a>
+        </p>
+    </footer>
+
+    <script>
+        const colors = {
+            Latin: '#8b5cf6',
+            German: '#3b82f6',
+            French: '#06b6d4',
+            Italian: '#10b981',
+            English: '#f59e0b',
+            Dutch: '#ef4444',
+            Spanish: '#ec4899',
+            Other: '#6b7280'
+        };
+
+        const keys = ['Latin', 'German', 'French', 'Italian', 'English', 'Dutch', 'Spanish', 'Other'];
+
+        const events = [
+            { year: 1453, label: 'Fall of Constantinople', desc: 'Greek scholars flee west' },
+            { year: 1455, label: 'Gutenberg Bible', desc: 'First printed book' },
+            { year: 1517, label: 'Reformation', desc: 'Luther\'s 95 Theses', major: true },
+            { year: 1534, label: 'Luther\'s Bible', desc: 'German vernacular surge' },
+            { year: 1543, label: 'Scientific Revolution', desc: 'Copernicus & Vesalius' },
+            { year: 1618, label: 'Thirty Years\' War', desc: 'German printing crashes' },
+            { year: 1648, label: 'Peace of Westphalia', desc: 'Recovery begins' }
+        ];
+
+        const svg = d3.select('#chart');
+        const container = document.getElementById('chart-container');
+        const tooltip = d3.select('#tooltip');
+
+        async function loadAndDraw() {
+            const data = await d3.json('/river_data.json');
+
+            function draw() {
+                const width = container.clientWidth;
+                const height = 600;
+                const margin = { top: 40, right: 40, bottom: 50, left: 60 };
+                const innerWidth = width - margin.left - margin.right;
+                const innerHeight = height - margin.top - margin.bottom;
+
+                svg.attr('width', width).attr('height', height);
+                svg.selectAll('*').remove();
+
+                const g = svg.append('g')
+                    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+                // Scales
+                const x = d3.scaleLinear()
+                    .domain([1450, 1700])
+                    .range([0, innerWidth]);
+
+                // Stack the data
+                const stack = d3.stack()
+                    .keys(keys)
+                    .offset(d3.stackOffsetWiggle)
+                    .order(d3.stackOrderInsideOut);
+
+                const series = stack(data);
+
+                // Find y extent
+                const yMin = d3.min(series, s => d3.min(s, d => d[0]));
+                const yMax = d3.max(series, s => d3.max(s, d => d[1]));
+
+                const y = d3.scaleLinear()
+                    .domain([yMin, yMax])
+                    .range([innerHeight, 0]);
+
+                // Area generator with smooth curves
+                const area = d3.area()
+                    .x(d => x(d.data.year))
+                    .y0(d => y(d[0]))
+                    .y1(d => y(d[1]))
+                    .curve(d3.curveBasis);
+
+                // Draw the streams
+                g.selectAll('.stream')
+                    .data(series)
+                    .join('path')
+                    .attr('class', 'stream')
+                    .attr('d', area)
+                    .attr('fill', d => colors[d.key])
+                    .attr('opacity', 0.85)
+                    .on('mouseover', function(event, d) {
+                        d3.selectAll('.stream').attr('opacity', 0.3);
+                        d3.select(this).attr('opacity', 1);
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.stream').attr('opacity', 0.85);
+                    });
+
+                // Add subtle "flow" pattern overlay
+                const defs = svg.append('defs');
+                const pattern = defs.append('pattern')
+                    .attr('id', 'flow')
+                    .attr('patternUnits', 'userSpaceOnUse')
+                    .attr('width', 100)
+                    .attr('height', 10);
+                pattern.append('path')
+                    .attr('d', 'M0 5 Q 25 0, 50 5 T 100 5')
+                    .attr('stroke', 'rgba(255,255,255,0.03)')
+                    .attr('stroke-width', 1)
+                    .attr('fill', 'none');
+
+                // X axis
+                const xAxis = d3.axisBottom(x)
+                    .tickValues([1450, 1500, 1550, 1600, 1650, 1700])
+                    .tickFormat(d => d);
+
+                g.append('g')
+                    .attr('transform', `translate(0,${innerHeight + 10})`)
+                    .call(xAxis)
+                    .selectAll('text')
+                    .style('fill', '#8b949e')
+                    .style('font-size', '12px');
+
+                g.selectAll('.domain').remove();
+                g.selectAll('.tick line').style('stroke', 'rgba(255,255,255,0.1)');
+
+                // Event annotations
+                events.forEach(evt => {
+                    const ex = x(evt.year);
+
+                    // Vertical line
+                    g.append('line')
+                        .attr('x1', ex)
+                        .attr('x2', ex)
+                        .attr('y1', 0)
+                        .attr('y2', innerHeight)
+                        .attr('stroke', evt.major ? 'rgba(239,68,68,0.5)' : 'rgba(255,255,255,0.2)')
+                        .attr('stroke-width', evt.major ? 2 : 1)
+                        .attr('stroke-dasharray', evt.major ? 'none' : '4,4');
+
+                    // Label
+                    g.append('text')
+                        .attr('x', ex)
+                        .attr('y', -10)
+                        .attr('text-anchor', 'middle')
+                        .attr('fill', evt.major ? '#ef4444' : '#8b949e')
+                        .attr('font-size', evt.major ? '12px' : '10px')
+                        .attr('font-weight', evt.major ? '600' : '400')
+                        .text(evt.year);
+
+                    g.append('text')
+                        .attr('x', ex)
+                        .attr('y', -25)
+                        .attr('text-anchor', 'middle')
+                        .attr('fill', evt.major ? '#ef4444' : '#6b7280')
+                        .attr('font-size', '10px')
+                        .text(evt.label);
+                });
+
+                // Interactive overlay for year details
+                const bisect = d3.bisector(d => d.year).left;
+
+                const overlay = g.append('rect')
+                    .attr('width', innerWidth)
+                    .attr('height', innerHeight)
+                    .attr('fill', 'transparent')
+                    .style('cursor', 'crosshair');
+
+                const verticalLine = g.append('line')
+                    .attr('stroke', 'rgba(255,255,255,0.5)')
+                    .attr('stroke-width', 1)
+                    .style('visibility', 'hidden');
+
+                overlay.on('mousemove', function(event) {
+                    const [mx] = d3.pointer(event);
+                    const year = Math.round(x.invert(mx));
+                    const idx = bisect(data, year);
+                    const d = data[Math.min(idx, data.length - 1)];
+
+                    if (!d) return;
+
+                    const total = keys.reduce((sum, k) => sum + d[k], 0);
+
+                    verticalLine
+                        .attr('x1', x(d.year))
+                        .attr('x2', x(d.year))
+                        .attr('y1', 0)
+                        .attr('y2', innerHeight)
+                        .style('visibility', 'visible');
+
+                    const breakdown = keys
+                        .filter(k => d[k] > 0)
+                        .sort((a, b) => d[b] - d[a])
+                        .map(k => `
+                            <div class="breakdown-item">
+                                <div class="breakdown-color" style="background:${colors[k]}"></div>
+                                <span>${k}: ${d[k].toLocaleString()}</span>
+                            </div>
+                        `).join('');
+
+                    tooltip.style('visibility', 'visible')
+                        .html(`
+                            <h3>${d.year}</h3>
+                            <div class="total" style="color:#64c8ff">${total.toLocaleString()}</div>
+                            <div style="color:#8b949e;font-size:0.85rem;margin-bottom:12px;">editions printed</div>
+                            <div class="breakdown">${breakdown}</div>
+                        `)
+                        .style('left', (event.pageX + 20) + 'px')
+                        .style('top', (event.pageY - 10) + 'px');
+                });
+
+                overlay.on('mouseout', function() {
+                    verticalLine.style('visibility', 'hidden');
+                    tooltip.style('visibility', 'hidden');
+                });
+            }
+
+            draw();
+            window.addEventListener('resize', draw);
+        }
+
+        loadAndDraw();
+    </script>
+</body>
+</html>
